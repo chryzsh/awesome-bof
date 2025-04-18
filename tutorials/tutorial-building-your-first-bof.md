@@ -28,8 +28,21 @@ sudo apt install gcc-mingw-w64 -y
 
 ## 🛠️ Step-by-Step
 
-### 1. Create the Source File
-Create a file called `hello.c`:
+### 1. Download the Beacon header file
+Create a folder for your project
+
+```bash
+mkdir hello-bof
+cd hello-bof
+```
+
+Download the Beacon header file
+```bash
+wget https://github.com/Cobalt-Strike/bof_template/raw/refs/heads/main/beacon.h
+```
+
+### 2. Create the Source File
+Create a file called `hello.c` with the following code:
 
 ```c
 #include <windows.h>
@@ -40,11 +53,13 @@ void go(char *args, int len) {
 }
 ```
 
+In case its not obvious, the code simply prints a hello world type message.
+
 > `go` is the entry point for all BOFs.
 
 ---
 
-### 2. Compile the BOF
+### 3. Compile the BOF
 Use MinGW to compile it into a `.o` COFF object:
 
 ```bash
@@ -60,18 +75,16 @@ You now have a lightweight, position-independent object file.
 
 ---
 
-### 3. Load into Cobalt Strike (or other C2 framework you have access to)
+### 4. Load into Cobalt Strike (or other C2 framework you have access to)
 
-In Cobalt Strike:
-```powershell
-bof ./hello.o
-```
-Then run:
+In a Cobalt Strike beacon:
 ```powershell
 inline_execute hello.o
 ```
 
-> In some frameworks you may need to register the BOF with metadata, such as `extension.json` in Sliver.
+![Hello world BOF in CS Beacon](../resources/hello-bof-cs.png)
+
+Congratulations! You have made your first BOF and executed it.
 
 ---
 

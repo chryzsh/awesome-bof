@@ -261,5 +261,3 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 | [Bof2PIC](https://github.com/timwhitez/Bof2PIC) | Convert BOF/COFF to shellcode (PIC) using Golang |
 
 ---
-
-This reorganization attempts to follow your categories strictly. All unique BOFs from the original list should be present in one of the categories above, with duplicates removed. The "Other BOFs" category is necessarily large as it captures all the specialized tools and utilities.
