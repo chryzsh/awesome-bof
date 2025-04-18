@@ -67,7 +67,6 @@ This page catalogs key blog posts, whitepapers, and research articles related to
 | Title | Author | Details | Date |
 |-------|--------|---------|------------------|
 | [CoffLoader ](https://otterhacker.github.io/Malware/CoffLoader.html) | An introduction to writing a COFF loader | otterhacker | 2025 | 
-
 | [Introducing Goffloader: A Pure Go Implementation of an In-Memory COFFLoader and PE Loader](https://www.praetorian.com/blog/introducing-goffloader-a-pure-go-implementation-of-an-in-memory-coffloader-and-pe-loader/)| Michael Weber (Praetorian) | Go implementation of an in-memory COFFLoader and PE loader. | 2024-09-02 |
 | [Operator's Guide to the Meterpreter BOFLoader](https://trustedsec.com/blog/operators-guide-to-the-meterpreter-bofloader)| Kevin Clark (TrustedSec) | Demonstrate uses of the Meterpreter BOFLoader. | 2023-01-24 |
 | [Coffee: A COFF loader made in Rust](https://hakaisecurity.io/coffee-a-coff-loader-made-in-rust/research-blog/) | Rafael "biscoito" Felix | Demo of a COFF loader made in Rust | 2023-06-22|
