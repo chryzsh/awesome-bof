@@ -15,7 +15,7 @@
 
 ### 🛠️ How-To Guides — *Solving Specific Tasks*
 - [Set Up Visual Studio for BOF Development](./how-to/setup-visual-studio-bof.md)
-- [Excute BOFs in C2 frameworks](./how-to/how-to-execute-bofs-in-c2.md) 
+- [Execute BOFs in C2 frameworks](./how-to/how-to-execute-bofs-in-c2.md) 
 - [Running BOFs Asynchronously in Cobalt Strike](./how-to/how-to-async-execute.md)
 
 ### 📖 Explanation — *Understanding Concepts*
@@ -30,7 +30,7 @@
 - [C2 Framework BOF Support](./reference/c2-framework-bof-support.md)
 - [Reference: Developer Tooling & Templates](./reference/reference-bof-dev.md)
 - [Blog Posts and Research on BOF Development](./reference/bof-blogs-and-research.md)
-- [BOF training courses](./reference/bof-training-courses.md)
+- [BOF Training Courses](./reference/bof-training-courses.md)
 
 ---
 
