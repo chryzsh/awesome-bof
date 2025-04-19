@@ -330,6 +330,12 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 | [SyscallPack](https://github.com/epichoxha/SyscallPack) | BOF and Shellcode for full DLL unhooking using dynamic syscalls.                                                          | ![](https://img.shields.io/github/stars/epichoxha/SyscallPack?label=&style=flat) | ![](https://img.shields.io/github/last-commit/epichoxha/SyscallPack?label=&style=flat) |
 | [ntdll-refresher-hook-removal-bof](https://github.com/js0ncheng/ntdll-refresher-hook-removal-bof) | NTDLL refresher hook removal BOF.                                                                                         | ![](https://img.shields.io/github/stars/js0ncheng/ntdll-refresher-hook-removal-bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/js0ncheng/ntdll-refresher-hook-removal-bof?label=&style=flat) |
 
+## Not on Github
+| Project | Description | Stars | Last commit |
+|---------|-------------|-------|-------------|
+| [BOF-Adios](https://gitlab.com/nephosec/bof-adios) | BOF Adios is based on the (awesome) work from Nerdworks Blogorama, which you can find here: https://blogorama.nerdworks.in/selfdeletingexecutables/ |![](https://img.shields.io/gitlab/stars/nephosec/bof-adios?label=&style=flat) | ![](https://img.shields.io/gitlab/last-commit/nephosec/bof-adios?label=&style=flat)
+| [BOF-JobControl](https://gitlab.com/nephosec/bof-jobcontrol) | Tamper with processes to limit their bandwidth, CPU, etc. | ![](https://img.shields.io/gitlab/stars/nephosec/bof-jobcontrol?label=&style=flat) | ![](https://img.shields.io/gitlab/last-commit/nephosec/bof-jobcontrol?label=&style=flat)
+
 ---
 
 ## Supporting Tools (Not BOFs Themselves)
