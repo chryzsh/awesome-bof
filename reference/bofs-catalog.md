@@ -3,7 +3,7 @@
 This catalog organizes public Beacon Object File (BOF) repositories into four key categories: **Toolkit Collections**, **Lists of BOFs**, **Smaller BOF Packs**, and **Other BOFs**. Use this as a quick reference to find curated toolkits, comprehensive lists, bite‑sized BOF bundles, or explore the broader ecosystem.
 
 
-## 🧰 Toolkit Collections
+## 🧰 BOF Collections
 
 These repositories contain a variety of BOFs covering multiple functions, often organized as a suite or kit.
 
@@ -16,6 +16,231 @@ These repositories contain a variety of BOFs covering multiple functions, often 
 
 ---
 
+<details>
+<summary>Click to view commands from <a href="https://github.com/trustedsec/CS-Situational-Awareness-BOF?tab=readme-ov-file#available-commands" target="_blank">trustedsec/CS-Situational-Awareness-BOF</a> </summary>
+
+These are commands available in the `TrustedSec/CS-Situational-Awareness-BOF` repo as per 2025-04-19.
+Note that you cannot click them from this repo, you have to visit the repo itself to view each BOF in detail.
+
+*Content manually copied from the TrustedSec repository. Please refer to the original for the most up-to-date information.*
+
+## Available commands
+|Commands|Usage|Notes|
+|--------|-----|-----|
+|adcs_enum | adcs_enum| Enumerate CAs and templates in the AD using Win32 functions|
+|adcs_enum_com | adcs_enum_com| Enumerate CAs and templates in the AD using ICertConfig COM object|
+|adcs_enum_com2 | adcs_enum_com2| Enumerate CAs and templates in the AD using IX509PolicyServerListManager COM object|
+|adv_audit_policies | adv_audit_policies| Retrieve advanced security audit policies|
+|arp | arp| List ARP table|
+|cacls|cacls [filepath]| List user permissions for the specified file, wildcards supported|
+|dir| dir [directory] [/s]| List files in a directory. Supports wildcards (e.g. "C:\Windows\S*") unlike the CobaltStrike `ls` command|
+|driversigs| driversigs| Enumerate installed services Imagepaths to check the signing cert against known AV/EDR vendors|
+|enum_filter_driver| enum_filter_driver [opt:computer]| Enumerate filter drivers|
+|enumLocalSessions| enumLocalSessions| Enumerate currently attached user sessions both local and over RDP|
+|env| env| List process environment variables|
+|findLoadedModule| findLoadedModule [modulepart] [opt:procnamepart]| Find what processes \*modulepart\* are loaded into, optionally searching just \*procnamepart\*|
+|get_password_policy| get_password_policy [hostname]| Get target server or domain's configured password policy and lockouts|
+|get_session_info| get_session_info | prints out information related to the current users logon session |
+|ipconfig| ipconfig| List IPv4 address, hostname, and DNS server|
+|ldapsearch| ldapsearch [query] [opt: attribute] [opt: results_limit] [opt: DC hostname or IP] [opt: Distingished Name]| Execute LDAP searches (NOTE: specify *,ntsecuritydescriptor as attribute parameter if you want all attributes + base64 encoded ACL of the objects, this can then be resolved using BOFHound. Could possibly break pagination, although everything seemed fine during testing.)|
+|listdns| listdns| List DNS cache entries. Attempt to query and resolve each|
+|list_firewall_rules| list_firewall_rules| List Windows firewall rules|
+|listmods| listmods [opt: pid]| List process modules (DLL). Target current process if PID is empty. Complement to driversigs to determine if our process was injected by AV/EDR|
+|listpipes| listpipes| List named pipes|
+|locale| locale| List system locale language, locale ID, date, time, and country|
+|netGroupList| netGroupList [opt: domain]| List groups from the default or specified domain|
+|netGroupListMembers| netGroupListMembers [groupname] [opt: domain]| List group members from the default or specified domain|
+|netLocalGroupList| netLocalGroupList [opt: server]| List local groups from the local or specified computer|
+|netLocalGroupListMembers| netLocalGroupListMembers [groupname] [opt: server]| List local groups from the local or specified computer|
+|netLocalGroupListMembers2| netLocalGroupListMembers2 [opt: groupname] [opt: server]| Modified version of `netLocalGroupListMembers` that supports BOFHound|
+|netloggedon| netloggedon [hostname]| Return users logged on the local or remote computer|
+|netloggedon2| netloggedon2 [opt: hostname]| Modified version of `netloggedon` that supports BOFHound|
+|netsession| netsession [opt:computer]| Enumerate sessions on the local or specified computer|
+|netsession2| netsession2 [opt:computer] [opt:resolution method] [opt:dns server]| Modified version of `netsession` that supports BOFHound|
+|netshares| netshares [hostname]| List shares on the local or remote computer|
+|netstat| netstat| TCP and UDP IPv4 listing ports|
+|nettime| nettime [hostname]| Display time on remote computer|
+|netuptime| netuptime [hostname]| Return information about the boot time on the local or remote computer|
+|netuser| netuser [username] [opt: domain]| Get info about specific user. Pull from domain if a domainname is specified|
+|netuse_add| netuse_add [sharename] [opt:username] [opt:password] [opt:/DEVICE:devicename] [opt:/PERSIST] [opt:/REQUIREPRIVACY]| Bind a new connection to a remote computer|
+|netuse_delete| netuse_delete [device\|\|sharename] [opt:/PERSIST] [opt:/FORCE]| Delete the bound device / sharename]|
+|netuse_list| netuse_list [opt:target]| List all bound share resources or info about target local resource|
+|netview| netview| List reachable computers in the current domain|
+|nslookup| nslookup [hostname] [opt:dns server] [opt: record type]| Make a DNS query.<br/>  DNS server is the server you want to query (do not specify or 0 for default) <br/>record type is something like A, AAAA, or ANY. Some situations are limited due to observed crashes|
+|probe| probe [host] [port]| Check if a specific port is open|
+|regsession| regsession [opt: hostname]| Return logged on user SIDs by enumerating HKEY_USERS. BOFHound compatible|
+|reg_query| [opt:hostname] [hive] [path] [opt: value to query]| Query a registry value or enumerate a single key|
+|reg_query_recursive| [opt:hostname] [hive] [path]| Recursively enumerate a key starting at path|
+|resources| resources| List memory usage and available disk space on the primary hard drive|
+|routeprint| routeprint| List IPv4 routes|
+|sc_enum| sc_enum [opt:server]| Enumerate services for qc, query, qfailure, and qtriggers info|
+|sc_qc| sc_qc [service name] [opt:server]| sc qc impelmentation in BOF|
+|sc_qdescription| sc_qdescription [service name] [opt: server]| sc qdescription implementation in BOF|
+|sc_qfailure| sc_qfailure [service name] [opt:server]| Query a service for failure conditions|
+|sc_qtriggerinfo| sc_qtriggerinfo [service name] [opt:server]| Query a service for trigger conditions|
+|sc_query| sc_query [opt: service name] [opt: server]| sc query implementation in BOF|
+|schtasksenum| schtasksenum [opt: server]| Enumerate scheduled tasks on the local or remote computer|
+|schtasksquery| schtasksquery [opt: server] [taskpath]| Query the given task on the local or remote computer|
+|tasklist| tasklist [opt: server]| List running processes including PID, PPID, and ComandLine (uses wmi)|
+|uptime| uptime| List system boot time and how long it has been running|
+|useridletime| useridletime| Shows how long the user as been idle, displayed in seconds, minutes, hours and days.|
+|vssenum| vssenum [hostname] [opt:sharename]| Enumerate Shadow Copies on some Server 2012+ servers|
+|whoami| whoami| List whoami /all|
+|windowlist| windowlist [opt:all]| List visible windows in the current user session|
+|wmi_query| wmi_query query [opt: server] [opt: namespace]| Run a wmi query and display results in CSV format|
+
+
+</details>
+
+
+
+<details>
+<summary>Click to view commands from <a href="https://github.com/outflanknl/C2-Tool-Collection" target="_blank">outflanknl/C2-Tool-Collection</a> </summary>
+
+These are commands available in the `outflanknl/C2-Tool-Collection` repo as per 2025-04-19.
+Note that you cannot click them from this repo, you have to visit the repo itself to view each BOF in detail.
+
+*Content manually copied from the repository. Please refer to the original for the most up-to-date information.*
+
+## Available commands
+|Name|Decription|
+|----|----------|
+|**[AddMachineAccount](BOF/AddMachineAccount)**|Abuse default Active Directory machine quota settings (ms-DS-MachineAccountQuota) to add rogue machine accounts.|
+|**[Askcreds](BOF/Askcreds)**|Collect passwords by simply asking.|
+|**[CVE-2022-26923](BOF/CVE-2022-26923)**|CVE-2022-26923 Active Directory (ADCS) Domain Privilege Escalation exploit.|
+|**[Domaininfo](BOF/Domaininfo)**|Enumerate domain information using Active Directory Domain Services.|
+|**[FindObjects](BOF/FindObjects)**|Enumerate processes for specific loaded modules or process handles.|
+|**[Kerberoast](BOF/Kerberoast)**|List all SPN enabled user/service accounts or request service tickets (TGS-REP) which can be cracked offline using HashCat.|
+|**[KerbHash](BOF/KerbHash)**|Hash password to kerberos keys (rc4_hmac, aes128_cts_hmac_sha1, aes256_cts_hmac_sha1, and des_cbc_md5).|
+|**[Klist](BOF/Klist)**|Displays a list of currently cached Kerberos tickets.|
+|**[Lapsdump](BOF/Lapsdump)**|Dump LAPS passwords from specified computers within Active Directory.|
+|**[PetitPotam](BOF/PetitPotam)**|BOF implementation of the PetitPotam attack published by [@topotam77](https://twitter.com/topotam77).|
+|**[Psc](BOF/Psc)**|Show detailed information from processes with established TCP and RDP connections.|
+|**[Psw](BOF/Psw)**|Show window titles from processes with active windows.|
+|**[Psx](BOF/Psx)**|Show detailed information from all processes running on the system and provides a summary of installed security products and tools.|
+|**[Psm](BOF/Psm)**|Show detailed information from a specific process id (loaded modules, tcp connections e.g.).|
+|**[Psk](BOF/Psk)**|Show detailed information from the windows kernel and loaded driver modules and provides a summary of installed security products (AV/EDR drivers).|
+|**[ReconAD](BOF/ReconAD)**|Use ADSI to query Active Directory objects and attributes.|
+|**[Smbinfo](BOF/Smbinfo)**|Gather remote system version info using the NetWkstaGetInfo API without having to run the Cobalt Strike port (tcp-445) scanner.|
+|**[SprayAD](BOF/SprayAD)**|Perform a fast Kerberos or LDAP password spraying attack against Active Directory.|
+|**[StartWebClient](BOF/StartWebClient)**|Start the WebClient Service programmatically from user context using a service trigger.|
+|**[WdToggle](BOF/WdToggle)**|Patch lsass to enable WDigest credential caching and to circumvent Credential Guard (if enabled).|
+|**[Winver](BOF/Winver)**|Display the version of Windows that is running, the build number and patch release (Update Build Revision).|
+
+***Others***
+
+|Name|Decription|
+|----|----------|
+|**[PetitPotam](Other/PetitPotam)**|Reflective DLL implementation of the PetitPotam attack published by [@topotam77](https://twitter.com/topotam77)|
+|**[RemotePipeList](Other/RemotePipeList)**|.NET tool to enumerate remote named pipes|
+
+
+</details>
+
+<details>
+<summary>Click to view commands from <a href="https://github.com/trustedsec/CS-Remote-OPs-BOF" target="_blank">trustedsec/CS-Remote-OPs-BOF</a> </summary>
+
+These are commands available in the `trustedsec/CS-Remote-OPs-BOF` repo as per 2025-04-19.
+Note that you cannot click them from this repo, you have to visit the repo itself to view each BOF in detail.
+
+*Content manually copied from the repository. Please refer to the original for the most up-to-date information.*
+
+## Available commands
+|Command|Notes|
+|-------|-----|
+|adcs_request| Request an enrollment certificate|
+|adcs_request_on_behalf| Request an enrollment certificate on behalf of another user|
+|adduser| Add specified user to a machine|
+|addusertogroup| Add specified user to a group|
+|chromeKey| Decrypt the provided base64 encoded Chrome key|
+|enableuser| Enable and unlock the specified user account|
+|get_azure_token| Attempts to complete an OAuth codeflow grant against azure using saved logins |
+|get_priv| Activate the specified token privledge, more for non-cobalt strike users|
+|global_unprotect| Locates and Decrypts GlobalProtect config files converted from: [GlobalUnProtect](https://github.com/rotarydrone/GlobalUnProtect/tree/409d64b097e0a928a5545051e40e1566e9c26bd0)|
+|lastpass | Search Chrome, brave memory for LastPass passwords and data|
+|make_token_cert| impersonates a user using the altname of a .pfx file |
+|office_tokens| Collect Office JWT Tokens from any Office process|
+|procdump| Dump the specified process to the specified output file|
+|ProcessDestroy| Close handle(s) in a process|
+|ProcessListHandles| List all open handles in a specified process|
+|reg_delete| Delete a registry key|
+|reg_save| Save a registry hive to disk|
+|reg_set| Set / create a registry key|
+|sc_config| Configure an existing service|
+|sc_create| Create a new service|
+|sc_delete| Delete an existing service|
+|sc_failure| Configures the actions upon failure of an existing service|
+|sc_description| Modify an existing services description|
+|sc_start| Start an existing service|
+|sc_stop| Stop an existing service|
+|schtaskscreate| Create a new scheduled task (via xml definition)|
+|schtasksdelete| Delete an existing scheduled task|
+|schtasksrun| Start a scheduled task|
+|schtasksstop| Stop a running scheduled task|
+|setuserpass| Set a user's password|
+|shspawnas| A misguided attempt at injecting code into a newly spawned process|
+|shutdown| Shutdown or reboot a local or remote computer, with or without a warning/message
+|slack_cookie| Collect the Slack authentication cookie from a Slack process|
+|unexpireuser| Set a user account to never expire|
+|ghost_task| Add/Delete a ghost task.
+
+
+</details>
+
+<details>
+<summary>Click to view commands from <a href="https://github.com/REDMED-X/OperatorsKit" target="_blank">REDMED-X/OperatorsKit</a> </summary>
+
+These are commands available in the `REDMED-X/OperatorsKit` repo as per 2025-04-19.
+Note that you cannot click them from this repo, you have to visit the repo itself to view each BOF in detail.
+
+*Content manually copied from the repository. Please refer to the original for the most up-to-date information.*
+
+## Available commands
+
+|Name|Description|
+|----|----------|
+|**[AddExclusion](KIT/AddExclusion)**|Add a new exclusion to Windows Defender for a folder, file, process or extension.|
+|**[AddFirewallRule](KIT/AddFirewallRule)**|Add a new inbound/outbound firewall rule.|
+|**[AddLocalCert](KIT/AddLocalCert)**|Add a (self signed) certificate to a specific local computer certificate store.|
+|**[AddTaskScheduler](KIT/AddTaskScheduler)**|Create a scheduled task on the current- or remote host.|
+|**[BlindEventlog](KIT/BlindEventlog)**|Blind Eventlog by suspending its threads.|
+|**[CaptureNetNTLM](KIT/CaptureNetNTLM)**|Capture the NetNTLMv2 hash of the current user.|
+|**[CredPrompt](KIT/CredPrompt)**|Start persistent credential prompt in an attempt to capture user credentials.|
+|**[DelExclusion](KIT/DelExclusion)**|Delete an exclusion from Windows Defender for a folder, file, process or extension.|
+|**[DelFirewallRule](KIT/DelFirewallRule)**|Delete a firewall rule.|
+|**[DelLocalCert](KIT/DelLocalCert)**|Delete a local computer certificate from a specific store.|
+|**[DelTaskScheduler](KIT/DelTaskScheduler)**|Delete a scheduled task on the current- or a remote host.|
+|**[DllComHijacking](KIT/DllComHijacking)**|Leverage DLL Hijacking by instantiating a COM object on a target host |
+|**[DllEnvHijacking](KIT/DllEnvHijacking)**|BOF implementation of DLL environment hijacking.|
+|**[EnumDotnet](KIT/EnumDotnet)**|Enumerate processes that most likely have .NET loaded.|
+|**[EnumDrives](KIT/EnumDrives)**|Enumerate drive letters and type.|
+|**[EnumExclusions](KIT/EnumExclusions)**|Check the AV for excluded files, folders, extentions and processes.|
+|**[EnumFiles](KIT/EnumFiles)**|Search for matching files based on a word, extention or keyword in the file content.|
+|**[EnumHandles](KIT/EnumHandles)**|Enumerate "process" and "thread" handle types between processes.|
+|**[EnumLib](KIT/EnumLib)**|Enumerate loaded module(s) in remote process(es).|
+|**[EnumLocalCert](KIT/EnumLocalCert)**|Enumerate all local computer certificates from a specific store.|
+|**[EnumRWX](KIT/EnumRWX)**|Enumerate RWX memory regions in a target process.|
+|**[EnumSecProducts](KIT/EnumSecProducts)**|Enumerate security products (like AV/EDR) that are running on the current/remote host.|
+|**[EnumShares](KIT/EnumShares)**|Enumerate remote shares and your access level using a predefined list with hostnames.|
+|**[EnumSysmon](KIT/EnumSysmon)**|Verify if Sysmon is running by checking the registry and listing Minifilter drivers.|
+|**[EnumTaskScheduler](KIT/EnumTaskScheduler)**|Enumerate all scheduled tasks in the root folder.|
+|**[EnumWebClient](KIT/EnumWebClient)**|Find hosts with the WebClient service running based on a list with predefined hostnames.|
+|**[EnumWSC](KIT/EnumWSC)**|List what security products are registered in Windows Security Center.|
+|**[ExecuteCrossSession](KIT/ExecuteCrossSession)**|Execute a binary in the context of another user via COM cross-session interaction|
+|**[ForceLockScreen](KIT/ForceLockScreen)**|Force the lock screen of the current user session.|
+|**[HideFile](KIT/HideFile)**|Hide a file or directory by setting it's attributes to systemfile + hidden.|
+|**[IdleTime](KIT/IdleTime)**|Check current user activity based on the user's last input.|
+|**[InjectPoolParty](KIT/InjectPoolParty)**|Inject beacon shellcode and execute it via Windows Thread Pools|
+|**[LoadLib](KIT/LoadLib)**|Load an on disk present DLL via RtlRemoteCall API in a remote process.|
+|**[PSremote](KIT/PSremote)**|Enumerate all running processes on a remote host.|
+|**[PasswordSpray](KIT/PasswordSpray)**|Validate a single password against multiple accounts using kerberos authentication.|
+|**[SilenceSysmon](KIT/SilenceSysmon)**|Silence the Sysmon service by patching its capability to write ETW events to the log.|
+|**[SystemInfo](KIT/SystemInfo)**|Enumerate system information via WMI (limited use case).|
+
+</details>
+
+
+
 ## 📚 Lists of BOFs
 
 These pages primarily serve as curated lists or collections of links to *other* BOF repositories, rather than containing BOF code themselves.
@@ -27,54 +252,53 @@ These pages primarily serve as curated lists or collections of links to *other* 
 | [Awesome-CobaltStrike](https://github.com/zer0yu/Awesome-CobaltStrike?tab=readme-ov-file#0x03-bof) | Includes a massive list of public BOF projects  | ![](https://img.shields.io/github/stars/zer0yu/Awesome-CobaltStrike?label=&style=flat) | ![](https://img.shields.io/github/last-commit/zer0yu/Awesome-CobaltStrike?label=&style=flat) |
 | [BofAllTheThings](https://github.com/N7WEra/BofAllTheThings) | Master curated list of public BOF repos with categorization and documentation  | ![](https://img.shields.io/github/stars/N7WEra/BofAllTheThings?label=&style=flat) | ![](https://img.shields.io/github/last-commit/N7WEra/BofAllTheThings?label=&style=flat) |
 | [CobaltStrike_BOF_Collections](https://github.com/wsummerhill/C2_RedTeam_CheatSheets/blob/main/CobaltStrike/BOF_Collections.md) | Useful BOFs collected and used during red team ops | ![](https://img.shields.io/github/stars/wsummerhill/C2_RedTeam_CheatSheets?label=&style=flat) | ![](https://img.shields.io/github/last-commit/wsummerhill/C2_RedTeam_CheatSheets?label=&style=flat)
+| [BOFs](https://github.com/BOFs/BOFs) | General-purpose Beacon Object Files repository | `https` | ![](https://img.shields.io/github/stars/BOFs/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/BOFs/BOFs?label=&style=flat) |
 
 ---
 
 ## 🤏 Smaller BOF Packs
 
-Repositories typically containing a small number (e.g., 3-4) of specific BOFs.
+Repositories typically containing a small number (e.g., 3-4) of specific BOFs or a collection to target one specific technology (like Kerberos).
 
-| Project | Description | Stars | Last commit |
-|---------|-------------|-------|-------------|
-| [UAC-BOF-Bonanza](https://github.com/icyguider/UAC-BOF-Bonanza) | Collection of UAC Bypass Techniques Weaponized as BOFs  | ![](https://img.shields.io/github/stars/icyguider/UAC-BOF-Bonanza?label=&style=flat) | ![](https://img.shields.io/github/last-commit/icyguider/UAC-BOF-Bonanza?label=&style=flat) |
-| [BOF_Collection](https://github.com/rvrsh3ll/BOF_Collection) | Various Cobalt Strike BOFs (Collection)                                                | ![](https://img.shields.io/github/stars/rvrsh3ll/BOF_Collection?label=&style=flat) | ![](https://img.shields.io/github/last-commit/rvrsh3ll/BOF_Collection?label=&style=flat) |
-| [SQL-BOF](https://github.com/Tw1sm/SQL-BOF) | Library of BOFs to interact with SQL servers  | ![](https://img.shields.io/github/stars/Tw1sm/SQL-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Tw1sm/SQL-BOF?label=&style=flat) |
-| [Kerbeus-BOF](https://github.com/RalfHacker/Kerbeus-BOF) | Kerberos abuse toolkit implemented as BOF (Rubeus-style)  | ![](https://img.shields.io/github/stars/RalfHacker/Kerbeus-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/RalfHacker/Kerbeus-BOF?label=&style=flat) |
-| [BRC4-BOF-Artillery](https://github.com/paranoidninja/BRC4-BOF-Artillery) | Brute Ratel-focused BOF utilities  | ![](https://img.shields.io/github/stars/paranoidninja/BRC4-BOF-Artillery?label=&style=flat) | ![](https://img.shields.io/github/last-commit/paranoidninja/BRC4-BOF-Artillery?label=&style=flat) |
-| [BOF-pack-1](https://github.com/jsecu/BOF-pack-1) | Includes GetAppLockerPolicy, TokenElevate and PrivChanger.  | ![](https://img.shields.io/github/stars/jsecu/BOF-pack-1?label=&style=flat) | ![](https://img.shields.io/github/last-commit/jsecu/BOF-pack-1?label=&style=flat) |
-| [MagicBOFs](https://github.com/Yeeb1/MagicBOFs) | A themed set of Beacon Object Files inspired by Magic: The Gathering  | ![](https://img.shields.io/github/stars/Yeeb1/MagicBOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Yeeb1/MagicBOFs?label=&style=flat) |
-| [bof-collection](https://github.com/NioZow/bof-collection) | BOF collection by NioZow.                                                                                                   | ![](https://img.shields.io/github/stars/NioZow/bof-collection?label=&style=flat) | ![](https://img.shields.io/github/last-commit/NioZow/bof-collection?label=&style=flat) |
-| [BOFCode](https://github.com/Mr-Un1k0d3r/BOFCode) | A collection of general-purpose BOFs  | ![](https://img.shields.io/github/stars/Mr-Un1k0d3r/BOFCode?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Mr-Un1k0d3r/BOFCode?label=&style=flat) |
-| [aad-bofs](https://github.com/kozmer/aad-bofs) | AzureAD-focused Beacon Object Files  | ![](https://img.shields.io/github/stars/kozmer/aad-bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/kozmer/aad-bofs?label=&style=flat) |
-| [QoL-BOFs](https://github.com/ZephrFish/QoL-BOFs) | Curated BOFs with submodules for cloning and use  | ![](https://img.shields.io/github/stars/ZephrFish/QoL-BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/ZephrFish/QoL-BOFs?label=&style=flat) |
-| [BOFs](https://github.com/v1stra/BOFs) | Minimal starter collection of BOFs  | ![](https://img.shields.io/github/stars/v1stra/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/v1stra/BOFs?label=&style=flat) |
-| [BOF_All_Things](https://github.com/Patrick0x41/BOF_All_Things) | Beacon Object Files (BOF) for Cobalt Strike  | ![](https://img.shields.io/github/stars/Patrick0x41/BOF_All_Things?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Patrick0x41/BOF_All_Things?label=&style=flat) |
-| [proctools](https://github.com/mlcsec/proctools) | Extract information and dump sensitive strings from processes via BOFs  | ![](https://img.shields.io/github/stars/mlcsec/proctools?label=&style=flat) | ![](https://img.shields.io/github/last-commit/mlcsec/proctools?label=&style=flat) |
-| [BOF_Files](https://github.com/ricardojoserf/BOF_Files) | Repository to gather personal BOF developments  | ![](https://img.shields.io/github/stars/ricardojoserf/BOF_Files?label=&style=flat) | ![](https://img.shields.io/github/last-commit/ricardojoserf/BOF_Files?label=&style=flat) |
-| [BOFs](https://github.com/BOFs/BOFs) | General-purpose Beacon Object Files repository  | ![](https://img.shields.io/github/stars/BOFs/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/BOFs/BOFs?label=&style=flat) |
-| [BOFs](https://github.com/JamesCooteUK/BOFs) | Personal collection of Beacon Object Files  | ![](https://img.shields.io/github/stars/JamesCooteUK/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/JamesCooteUK/BOFs?label=&style=flat) |
-| [BOFs](https://github.com/jordanjoewatson/BOFs) | Personal collection of BOFs by jordanjoewatson  | ![](https://img.shields.io/github/stars/jordanjoewatson/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/jordanjoewatson/BOFs?label=&style=flat) |
-| [BOF-CobaltStrike](https://github.com/hrtywhy/BOF-CobaltStrike) | Cobalt Strike BOFs used during red team engagements  | ![](https://img.shields.io/github/stars/hrtywhy/BOF-CobaltStrike?label=&style=flat) | ![](https://img.shields.io/github/last-commit/hrtywhy/BOF-CobaltStrike?label=&style=flat) |
-| [bof-collection](https://github.com/crypt0p3g/bof-collection) | General collection of BOFs for Cobalt Strike  | ![](https://img.shields.io/github/stars/crypt0p3g/bof-collection?label=&style=flat) | ![](https://img.shields.io/github/last-commit/crypt0p3g/bof-collection?label=&style=flat) |
-| [BOFs](https://github.com/ajpc500/BOFs) | General BOF collection from ajpc500, including a useful Curl BOF | ![](https://img.shields.io/github/stars/ajpc500/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/ajpc500/BOFs?label=&style=flat) |
-| [cobaltstrike_bofs](https://github.com/m57/cobaltstrike_bofs) | Collection of BOFs used with Cobalt Strike  | ![](https://img.shields.io/github/stars/m57/cobaltstrike_bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/m57/cobaltstrike_bofs?label=&style=flat) |
-| [BOFs](https://github.com/guervild/BOFs) | Collection of BOFs by guervild, including a SilentLsassDump  | ![](https://img.shields.io/github/stars/guervild/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/guervild/BOFs?label=&style=flat) |
-| [BofRoast](https://github.com/cube0x0/BofRoast) | BOFs for roasting Kerberos tickets in AD environments  | ![](https://img.shields.io/github/stars/cube0x0/BofRoast?label=&style=flat) | ![](https://img.shields.io/github/last-commit/cube0x0/BofRoast?label=&style=flat) |
-| [CS-BOFs](https://github.com/pwn1sher/CS-BOFs) | Collection of Cobalt Strike BOFs  | ![](https://img.shields.io/github/stars/pwn1sher/CS-BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/pwn1sher/CS-BOFs?label=&style=flat) |
-| [BOFs](https://github.com/RiccardoAncarani/BOFs) | Miscellaneous BOFs like `cat`  | ![](https://img.shields.io/github/stars/RiccardoAncarani/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/RiccardoAncarani/BOFs?label=&style=flat) |
-| [bofs](https://github.com/ndur0/bofs) | Home Directory path modification via LDAP  | ![](https://img.shields.io/github/stars/ndur0/bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/ndur0/bofs?label=&style=flat) |
-| [BOFs](https://github.com/rookuu/BOFs) | MiniDumpWriteDump BOF  | ![](https://img.shields.io/github/stars/rookuu/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/rookuu/BOFs?label=&style=flat) |
-| [PrivKit](https://github.com/mertdas/PrivKit) | PrivKit is a simple beacon object file that detects privilege escalation vulnerabilities caused by misconfigurations on Windows OS.  | ![](https://img.shields.io/github/stars/mertdas/PrivKit?label=&style=flat) | ![](https://img.shields.io/github/last-commit/mertdas/PrivKit?label=&style=flat) |
-| [BeaconObjectFile](https://github.com/chrispentester/BeaconObjectFile) | BOF Collection by chrispentester.                                                                                           | ![](https://img.shields.io/github/stars/chrispentester/BeaconObjectFile?label=&style=flat) | ![](https://img.shields.io/github/last-commit/chrispentester/BeaconObjectFile?label=&style=flat) |
-| [BOFs](https://github.com/dust-life/BOFs) | Beacon Object Files collection by dust-life.                                                                                | ![](https://img.shields.io/github/stars/dust-life/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/dust-life/BOFs?label=&style=flat) |
-| [CobaltStrike-BOF](https://github.com/Yaxser/CobaltStrike-BOF) | Collection of BOFs for learning Cobalt Strike internals  | ![](https://img.shields.io/github/stars/Yaxser/CobaltStrike-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Yaxser/CobaltStrike-BOF?label=&style=flat) |
-| [cobaltstrike-bof-toolset](https://github.com/3as0n/cobaltstrike-bof-toolset) | Collection of BOF tools for Cobalt Strike (Chinese description)                    | ![](https://img.shields.io/github/stars/3as0n/cobaltstrike-bof-toolset?label=&style=flat) | ![](https://img.shields.io/github/last-commit/3as0n/cobaltstrike-bof-toolset?label=&style=flat) |
-| [bof-collection](https://github.com/matro7sh/bof-collection) | Collection of beacon object file (Cobalt strike) by matro7sh.                                                               | ![](https://img.shields.io/github/stars/matro7sh/bof-collection?label=&style=flat) | ![](https://img.shields.io/github/last-commit/matro7sh/bof-collection?label=&style=flat) |
-| [BasicBOFs](https://github.com/r00t0v3rr1d3/BasicBOFs) | A collection of assorted BOFs by r00t0v3rr1d3.                                                                            | ![](https://img.shields.io/github/stars/r00t0v3rr1d3/BasicBOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/r00t0v3rr1d3/BasicBOFs?label=&style=flat) |
-| [BOF](https://github.com/aahmad097/BOF) | Beacon-Object-Files collection by aahmad097.                                                                              | ![](https://img.shields.io/github/stars/aahmad097/BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/aahmad097/BOF?label=&style=flat) |
-| [Cobalt-BOFs-and-CNA](https://github.com/Nagomez97/Cobalt-BOFs-and-CNA) | Cobalt BOFs and CNA collection by Nagomez97.                                                                              | ![](https://img.shields.io/github/stars/Nagomez97/Cobalt-BOFs-and-CNA?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Nagomez97/Cobalt-BOFs-and-CNA?label=&style=flat) |
-| [cobaltstrike_bofs](https://github.com/merlinepedra/cobaltstrike_bofs) | BOF collection by merlinepedra.                                                                                             | ![](https://img.shields.io/github/stars/merlinepedra/cobaltstrike_bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/merlinepedra/cobaltstrike_bofs?label=&style=flat) |
-| [cobaltstrike_bofs](https://github.com/merlinepedra25/cobaltstrike_bofs) | BOF collection by merlinepedra25 (Likely fork/copy).                                                                      | ![](https://img.shields.io/github/stars/merlinepedra25/cobaltstrike_bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/merlinepedra25/cobaltstrike_bofs?label=&style=flat) |
+*Note*: I've used AI to make python script to make a *best effort* attempt at extracting and including list of BOFs from each repo for easy reference.
+
+| Project | Description | Includes | Stars | Last commit |
+|---------|-------------|----------|-------|-------------|
+| [SQL-BOF](https://github.com/Tw1sm/SQL-BOF) | Library of BOFs to interact with SQL servers | `Available`, `sql-1434udp`, `sql-adsi`, `sql-agentcmd`, `sql-agentstatus`, `sql-checkrpc`, `sql-clr`, `sql-columns`, `sql-databases`, `sql-disableclr`, `sql-disableole`, `sql-disablerpc`, `sql-disablexp`, `sql-enableclr`, `sql-enableole`, `sql-enablerpc`, `sql-enablexp`, `sql-impersonate`, `sql-info`, `sql-links`, `sql-olecmd`, `sql-query`, `sql-rows`, `sql-search`, `sql-smb`, `sql-tables`, `sql-users`, `sql-whoami`, `sql-xpcmd` | ![](https://img.shields.io/github/stars/Tw1sm/SQL-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Tw1sm/SQL-BOF?label=&style=flat) |
+| [Kerbeus-BOF](https://github.com/RalfHacker/Kerbeus-BOF) | Kerberos abuse toolkit implemented as BOF (Rubeus-style) | `asktgs`, `asktgt`, `changepw`, `CS-Situational-Awareness-BOF`, `describe`, `dump`, `FORWARDABLE`, `hash`, `kerberoasting`, `klist`, `msds-allowedtodelegateto`, `must`, `nanorobeus`, `ptt`, `purge`, `renew`, `Rubeus`, `tgtdeleg`, `triage`, `TrustedToAuthForDelegation` | ![](https://img.shields.io/github/stars/RalfHacker/Kerbeus-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/RalfHacker/Kerbeus-BOF?label=&style=flat) |
+| [BRC4-BOF-Artillery](https://github.com/paranoidninja/BRC4-BOF-Artillery) | Brute Ratel-focused BOF utilities | `BR-Remote-Ops`, `BRc4-Generic`, `Generic`, `Kerbeus`, `Kerbeus-BOF`, `Operators-Kit`, `OperatorsKit`, `ThreadPoolInjection` | ![](https://img.shields.io/github/stars/paranoidninja/BRC4-BOF-Artillery?label=&style=flat) | ![](https://img.shields.io/github/last-commit/paranoidninja/BRC4-BOF-Artillery?label=&style=flat) |
+| [UAC-BOF-Bonanza](https://github.com/icyguider/UAC-BOF-Bonanza) | Collection of UAC Bypass Techniques Weaponized as BOFs | `AcquireModernLicenseWithPreviousId`, `All`, `CmstpElevatedCOM`, `ColorDataProxy`, `DisplayCalibrator`, `EditionUpgradeManager`, `entry.c`, `LaunchDccw`, `make`, `RegistryShellCommand`, `Required`, `SetRegistryStringValue`, `ShellExec`, `SilentCleanupWinDir`, `SspiUacBypass`, `TrustedPathDLLHijack` | ![](https://img.shields.io/github/stars/icyguider/UAC-BOF-Bonanza?label=&style=flat) | ![](https://img.shields.io/github/last-commit/icyguider/UAC-BOF-Bonanza?label=&style=flat) |
+| [BOF_Collection](https://github.com/rvrsh3ll/BOF_Collection) | Various Cobalt Strike BOFs (Collection) | `dumpwifi.c`, `enumwifi`, `GetClipboard.c`, `GetClipboard.o`, `GetDomainInfo.c`, `GetDomainInfo.o`, `PortScan.c`, `RegistryPersistence.c`, `RegistryPersistence.o` | ![](https://img.shields.io/github/stars/rvrsh3ll/BOF_Collection?label=&style=flat) | ![](https://img.shields.io/github/last-commit/rvrsh3ll/BOF_Collection?label=&style=flat) |
+| [CobaltStrike-BOF](https://github.com/Yaxser/CobaltStrike-BOF) | Collection of BOFs for learning Cobalt Strike internals | `DCOM Lateral Movement`, `WMI Lateral Movement` | ![](https://img.shields.io/github/stars/Yaxser/CobaltStrike-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Yaxser/CobaltStrike-BOF?label=&style=flat) |
+| [BOF-pack-1](https://github.com/jsecu/BOF-pack-1) | A care package of useful bofs for red team engagments | Includes `GetAppLockerPolicy`, `TokenElevate` and `PrivChanger`. | ![](https://img.shields.io/github/stars/jsecu/BOF-pack-1?label=&style=flat) | ![](https://img.shields.io/github/last-commit/jsecu/BOF-pack-1?label=&style=flat) |
+| [MagicBOFs](https://github.com/Yeeb1/MagicBOFs) | A themed set of Beacon Object Files inspired by Magic: The Gathering |`curl`, `DropOfHoney`, `Mimikatz`, `TappingAtTheWindow`, `tspatch.c`, `WarpWorld` | ![](https://img.shields.io/github/stars/Yeeb1/MagicBOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Yeeb1/MagicBOFs?label=&style=flat) |
+| [BOFCode](https://github.com/Mr-Un1k0d3r/BOFCode) | A collection of general-purpose BOFs | multiple: `elevate_pid`, `env`, etc. | ![](https://img.shields.io/github/stars/Mr-Un1k0d3r/BOFCode?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Mr-Un1k0d3r/BOFCode?label=&style=flat) |
+| [aad-bofs](https://github.com/kozmer/aad-bofs) | AzureAD-focused Beacon Object Files | `imds_management_token`, `request_aad_prt` | ![](https://img.shields.io/github/stars/kozmer/aad-bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/kozmer/aad-bofs?label=&style=flat) |
+| [QoL-BOFs](https://github.com/ZephrFish/QoL-BOFs) | Curated BOFs with submodules for cloning and use | `BOF-patchit`, `ChromeKatz`, `Cobalt-Clip`, `cobaltstrike-cat-bof`, `Contributions`, `Defender-Exclusions-Creator`, `EDREnum`, `inject-assembly`, `InlineExecute-Assembly`, `Kerbeus-BOF`, `Koh`, `MiniDumpWriteDump`, `nanorobeus`, `PrivKit`, `QoL-BOFs`, `ScreenshotBOF`, `SilentLsassDump`, `Simplified`, `SQL-BOF`, `tgtdelegation`, `Uses`, `WdToggle`, `whereami`, `xPipe` | ![](https://img.shields.io/github/stars/ZephrFish/QoL-BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/ZephrFish/QoL-BOFs?label=&style=flat) |
+| [BOFs](https://github.com/v1stra/BOFs) | Minimal starter collection of BOFs | `netman service trigger`, `early cascade injection` | ![](https://img.shields.io/github/stars/v1stra/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/v1stra/BOFs?label=&style=flat) |
+| [BOF_All_Things](https://github.com/Patrick0x41/BOF_All_Things) | Beacon Object Files (BOF) for Cobalt Strike | `detect-hooks` | ![](https://img.shields.io/github/stars/Patrick0x41/BOF_All_Things?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Patrick0x41/BOF_All_Things?label=&style=flat) |
+| [proctools](https://github.com/mlcsec/proctools) | Extract information and dump sensitive strings from processes via BOFs | `__chkstk`, `company`, `Inline-Execute-PE`, `internal`, `kill`, `legal`, `private`, `procargs`, `procargs-BOF.c`, `procargs-BOF.o`, `procargs.c`, `procinfo`, `procinfo-BOF.c`, `procinfo-BOF.o`, `prockill`, `prockill-BOF.c`, `prockill-BOF.o`, `procsearch`, `procsearch-BOF.c`, `procsearch-BOF.o`, `product`, `searches`, `special` | ![](https://img.shields.io/github/stars/mlcsec/proctools?label=&style=flat) | ![](https://img.shields.io/github/last-commit/mlcsec/proctools?label=&style=flat) |
+| [BOF_Files](https://github.com/ricardojoserf/BOF_Files) | Repository to gather personal BOF developments | `NestedZipper`, `Zipper` | ![](https://img.shields.io/github/stars/ricardojoserf/BOF_Files?label=&style=flat) | ![](https://img.shields.io/github/last-commit/ricardojoserf/BOF_Files?label=&style=flat) |
+| [BOFs](https://github.com/JamesCooteUK/BOFs) | Personal collection of Beacon Object Files | `sharefolder_create`, `sharefolder_delete` | ![](https://img.shields.io/github/stars/JamesCooteUK/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/JamesCooteUK/BOFs?label=&style=flat) |
+| [BOFs](https://github.com/jordanjoewatson/BOFs) | Personal collection of BOFs by jordanjoewatson | `audiorecorder`, `crappyransom`, `netlocalgroupgetmembers`, `netuseradd`, `rsrc`, `uacbypassfoldhelper` | ![](https://img.shields.io/github/stars/jordanjoewatson/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/jordanjoewatson/BOFs?label=&style=flat) |
+| [BOF-CobaltStrike](https://github.com/hrtywhy/BOF-CobaltStrike) | Cobalt Strike BOFs used during red team engagements | `GetClipboard.o`, `GetDomainInfo.o`, `helpx`, `inject-assembly`, `InlineExecute-Assembly`, `MiniDumpWriteDump`, `RegistryPersistence.o`, `SilentLsassDump`, `unhook`, `very`, `WdToggle`, `WdToggle.o`, `whereami` | ![](https://img.shields.io/github/stars/hrtywhy/BOF-CobaltStrike?label=&style=flat) | ![](https://img.shields.io/github/last-commit/hrtywhy/BOF-CobaltStrike?label=&style=flat) |
+| [bof-collection](https://github.com/crypt0p3g/bof-collection) | General collection of BOFs for Cobalt Strike | `BOF.o`, `ES_CONTINUOUS`, `ES_SYSTEM_REQUIRED`, `FoBOF.o`, `MinGW`, `Sleeping`, `Visual`, `x64.o` | ![](https://img.shields.io/github/stars/crypt0p3g/bof-collection?label=&style=flat) | ![](https://img.shields.io/github/last-commit/crypt0p3g/bof-collection?label=&style=flat) |
+| [BOFs](https://github.com/ajpc500/BOFs) | General BOF collection from ajpc500, including a useful Curl BOF | `BeaconSpawnTemporaryProcess`, `check_function`, `Create`, `Fetch`, `Inject`, `inject_dll.c`, `Patch`, `Read`, `read_function`, `Unhook` | ![](https://img.shields.io/github/stars/ajpc500/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/ajpc500/BOFs?label=&style=flat) |
+| [cobaltstrike_bofs](https://github.com/m57/cobaltstrike_bofs) | Collection of BOFs used with Cobalt Strike | `Dump`, `SeBackupPrivilege` | ![](https://img.shields.io/github/stars/m57/cobaltstrike_bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/m57/cobaltstrike_bofs?label=&style=flat) |
+| [BOFs](https://github.com/guervild/BOFs) | Collection of BOFs by guervild, including a SilentLsassDump | `CredEnum`, `WindowsVault` | ![](https://img.shields.io/github/stars/guervild/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/guervild/BOFs?label=&style=flat) |
+| [CS-BOFs](https://github.com/pwn1sher/CS-BOFs) | Collection of Cobalt Strike BOFs | `defender-exclusions`, `get-loggedon`, `get-system`, `lsass` | ![](https://img.shields.io/github/stars/pwn1sher/CS-BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/pwn1sher/CS-BOFs?label=&style=flat) |
+| [BOFs](https://github.com/RiccardoAncarani/BOFs) | Miscellaneous BOFs like `cat` | `cat`, `NOTE`, `send_shellcode_via_pipe`, `unhook`, `wts_enum_remote_processes` | ![](https://img.shields.io/github/stars/RiccardoAncarani/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/RiccardoAncarani/BOFs?label=&style=flat) |
+| [bofs](https://github.com/ndur0/bofs) | Home Directory path modification via LDAP | `aka`, `dcsync`, `decrypt`, `separate`, `use` | ![](https://img.shields.io/github/stars/ndur0/bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/ndur0/bofs?label=&style=flat) |
+| [PrivKit](https://github.com/mertdas/PrivKit) | PrivKit is a simple beacon object file that detects privilege escalation vulnerabilities caused by misconfigurations on Windows OS. | `cfile.c`, `ofile.o`, `tokenprivileges.o` | ![](https://img.shields.io/github/stars/mertdas/PrivKit?label=&style=flat) | ![](https://img.shields.io/github/last-commit/mertdas/PrivKit?label=&style=flat) |
+| [BeaconObjectFile](https://github.com/chrispentester/BeaconObjectFile) | BOF Collection by chrispentester. | `Compile`, `Load`, `Run` | ![](https://img.shields.io/github/stars/chrispentester/BeaconObjectFile?label=&style=flat) | ![](https://img.shields.io/github/last-commit/chrispentester/BeaconObjectFile?label=&style=flat) |
+| [BOFs](https://github.com/dust-life/BOFs) | Beacon Object Files collection by dust-life. | `BSOD`, `EnablePriv` | ![](https://img.shields.io/github/stars/dust-life/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/dust-life/BOFs?label=&style=flat) |
+| [cobaltstrike-bof-toolset](https://github.com/3as0n/cobaltstrike-bof-toolset) | Collection of BOF tools for Cobalt Strike (Chinese description) | `https` | ![](https://img.shields.io/github/stars/3as0n/cobaltstrike-bof-toolset?label=&style=flat) | ![](https://img.shields.io/github/last-commit/3as0n/cobaltstrike-bof-toolset?label=&style=flat) |
+| [bof-collection](https://github.com/matro7sh/bof-collection) | Collection of beacon object file (Cobalt strike) by matro7sh. | `getAV.c`, `getAV.o`, `PathToFile.o`, `RegCloseKey` | ![](https://img.shields.io/github/stars/matro7sh/bof-collection?label=&style=flat) | ![](https://img.shields.io/github/last-commit/matro7sh/bof-collection?label=&style=flat) |
+| [BasicBOFs](https://github.com/r00t0v3rr1d3/BasicBOFs) | A collection of assorted BOFs by r00t0v3rr1d3. | `touch` | ![](https://img.shields.io/github/stars/r00t0v3rr1d3/BasicBOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/r00t0v3rr1d3/BasicBOFs?label=&style=flat) |
+| [BOF](https://github.com/aahmad097/BOF) | Beacon-Object-Files collection by aahmad097. | `luser` | ![](https://img.shields.io/github/stars/aahmad097/BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/aahmad097/BOF?label=&style=flat) |
+| [Cobalt-BOFs-and-CNA](https://github.com/Nagomez97/Cobalt-BOFs-and-CNA) | Cobalt BOFs and CNA collection by Nagomez97. | `beacon.o`, `Fobeacon.o` | ![](https://img.shields.io/github/stars/Nagomez97/Cobalt-BOFs-and-CNA?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Nagomez97/Cobalt-BOFs-and-CNA?label=&style=flat) |
+| [cobaltstrike_bofs](https://github.com/merlinepedra/cobaltstrike_bofs) | BOF collection by merlinepedra. | `Dump`, `SeBackupPrivilege` | ![](https://img.shields.io/github/stars/merlinepedra/cobaltstrike_bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/merlinepedra/cobaltstrike_bofs?label=&style=flat) |
+| [cobaltstrike_bofs](https://github.com/merlinepedra25/cobaltstrike_bofs) | BOF collection by merlinepedra25 (Likely fork/copy). | `Dump`, `SeBackupPrivilege` | ![](https://img.shields.io/github/stars/merlinepedra25/cobaltstrike_bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/merlinepedra25/cobaltstrike_bofs?label=&style=flat) |
 
 
 ---
@@ -92,6 +316,7 @@ This category includes BOFs that were written specifically for a C2 framework th
 | [sliver-bof-hello-world](https://github.com/1mansh0w/sliver-bof-hello-world) | Hello World BOF for Sliver C2.                                                                                            | ![](https://img.shields.io/github/stars/1mansh0w/sliver-bof-hello-world?label=&style=flat) | ![](https://img.shields.io/github/last-commit/1mansh0w/sliver-bof-hello-world?label=&style=flat) |
 | [armory](https://github.com/FarrimWildaxe/armory) | BOF Armory for Sliver C2.                                                                                                   | ![](https://img.shields.io/github/stars/FarrimWildaxe/armory?label=&style=flat) | ![](https://img.shields.io/github/last-commit/FarrimWildaxe/armory?label=&style=flat) |
 | [tgtdelegation (fork)](https://github.com/sliverarmory/tgtdelegation) | BOF to obtain a TGT via delegation trick (forked)  | ![](https://img.shields.io/github/stars/sliverarmory/tgtdelegation?label=&style=flat) | ![](https://img.shields.io/github/last-commit/sliverarmory/tgtdelegation?label=&style=flat) |
+| [bof-collection](https://github.com/NioZow/bof-collection) | BOF collection by NioZow. Includes keylogger, sammy, token-vault, window list (havoc) | ![](https://img.shields.io/github/stars/NioZow/bof-collection?label=&style=flat) | ![](https://img.shields.io/github/last-commit/NioZow/bof-collection?label=&style=flat) |
 
 ---
 
@@ -99,8 +324,14 @@ This category includes BOFs that were written specifically for a C2 framework th
 
 This category includes single-purpose BOFs, specialized tools, loaders, templates, frameworks, exploit implementations, specific technique implementations, forks, and any other BOF projects not fitting the categories above.
 
+*Not sorted in any specific order.*
+
 | Project | Description | Stars | Last commit |
 |---------|-------------|-------|-------------|
+| [Backstap](https://github.com/Fauzan-Aldi/Backstap) | Beacon Object File implementation of Yaxser's Backstab (Potential variant/fork).                                            | ![](https://img.shields.io/github/stars/Fauzan-Aldi/Backstap?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Fauzan-Aldi/Backstap?label=&style=flat) |
+| [Enumeration-of-Buffer-Overflow-Protections](https://github.com/Fauzan-Aldi/Enumeration-of-Buffer-Overflow-Protections) | BOF to calculate system processes and identify their respective protection levels.                                        | ![](https://img.shields.io/github/stars/Fauzan-Aldi/Enumeration-of-Buffer-Overflow-Protections?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Fauzan-Aldi/Enumeration-of-Buffer-Overflow-Protections?label=&style=flat) |
+| [BofRoast](https://github.com/cube0x0/BofRoast) | BOFs for roasting Kerberos tickets in AD environments | ![](https://img.shields.io/github/stars/cube0x0/BofRoast?label=&style=flat) | ![](https://img.shields.io/github/last-commit/cube0x0/BofRoast?label=&style=flat) |
+| [BOFs](https://github.com/rookuu/BOFs) | MiniDumpWriteDump BOF  | ![](https://img.shields.io/github/stars/rookuu/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/rookuu/BOFs?label=&style=flat) |
 | [nanodump](https://github.com/fortra/nanodump) | Dump LSASS memory without touching disk or spawning a new process  | ![](https://img.shields.io/github/stars/fortra/nanodump?label=&style=flat) | ![](https://img.shields.io/github/last-commit/fortra/nanodump?label=&style=flat) |
 | [No-Consolation](https://github.com/fortra/No-Consolation) | Executes unmanaged PEs inline without allocating a console window or spawning conhost.exe  | ![](https://img.shields.io/github/stars/fortra/No-Consolation?label=&style=flat) | ![](https://img.shields.io/github/last-commit/fortra/No-Consolation?label=&style=flat) |
 | [CredManBOF](https://github.com/jsecu/CredManBOF) | Dumps saved credentials from Windows Credential Manager  | ![](https://img.shields.io/github/stars/jsecu/CredManBOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/jsecu/CredManBOF?label=&style=flat) |
@@ -286,8 +517,6 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 | [fileSearcher](https://github.com/MaorSabag/fileSearcher) | A simple BOF (Beacon Object File) to search files in the system.                                                            | ![](https://img.shields.io/github/stars/MaorSabag/fileSearcher?label=&style=flat) | ![](https://img.shields.io/github/last-commit/MaorSabag/fileSearcher?label=&style=flat) |
 | [CVE-2024-35250-BOF](https://github.com/yinsel/CVE-2024-35250-BOF) | Beacon Object File (BOF) implementation for CVE-2024-35250 (Chinese description).                                           | ![](https://img.shields.io/github/stars/yinsel/CVE-2024-35250-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/yinsel/CVE-2024-35250-BOF?label=&style=flat) |
 | [samdump-bof](https://github.com/0x3rhy/samdump-bof) | Beacon Object File Dump sam file (Potential variant/fork).                                                                  | ![](https://img.shields.io/github/stars/0x3rhy/samdump-bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/0x3rhy/samdump-bof?label=&style=flat) |
-| [Backstap](https://github.com/Fauzan-Aldi/Backstap) | Beacon Object File implementation of Yaxser's Backstab (Potential variant/fork).                                            | ![](https://img.shields.io/github/stars/Fauzan-Aldi/Backstap?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Fauzan-Aldi/Backstap?label=&style=flat) |
-| [Enumeration-of-Buffer-Overflow-Protections](https://github.com/Fauzan-Aldi/Enumeration-of-Buffer-Overflow-Protections) | BOF to calculate system processes and identify their respective protection levels.                                        | ![](https://img.shields.io/github/stars/Fauzan-Aldi/Enumeration-of-Buffer-Overflow-Protections?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Fauzan-Aldi/Enumeration-of-Buffer-Overflow-Protections?label=&style=flat) |
 | [WhatsAppKeyBOF](https://github.com/0xRedpoll/WhatsAppKeyBOF) | A BOF to retrieve decryption keys for WhatsApp Desktop and a utility script to decrypt the databases.                      | ![](https://img.shields.io/github/stars/0xRedpoll/WhatsAppKeyBOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/0xRedpoll/WhatsAppKeyBOF?label=&style=flat) |
 | [Enable-EFS-BOF](https://github.com/carlisleet/Enable-EFS-BOF) | Enable EFS BOF.                                                                                                             | ![](https://img.shields.io/github/stars/carlisleet/Enable-EFS-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/carlisleet/Enable-EFS-BOF?label=&style=flat) |
 | [bof-modules](https://github.com/mr-r3bot/bof-modules) | BOF for C2 framework by mr-r3bot.                                                                                           | ![](https://img.shields.io/github/stars/mr-r3bot/bof-modules?label=&style=flat) | ![](https://img.shields.io/github/last-commit/mr-r3bot/bof-modules?label=&style=flat) |
