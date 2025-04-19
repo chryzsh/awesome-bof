@@ -104,5 +104,5 @@ Congratulations! You have made your first BOF and executed it.
 
 ---
 
-Next up: Try creating a BOF that runs whoami. 
+Next up: Try the second tutorial that extends this prject with some arguments
 
