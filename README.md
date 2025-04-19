@@ -1,5 +1,4 @@
 # awesome-bof
-## About awesome-bof
 > 🧠 The ultimate, community-curated resource for Beacon Object Files (BOFs) — tutorials, how-tos, deep dives, and reference materials.
 
 ## 🎯 Goals
