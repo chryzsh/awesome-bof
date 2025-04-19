@@ -13,6 +13,7 @@ This page catalogs key blog posts, whitepapers, and research articles related to
 | [Beacon Object Files](https://hstechdocs.helpsystems.com/manuals/cobaltstrike/current/userguide/content/topics/beacon-object-files_main.htm) | Fortra (Official docs) | Official documentation on BOF implementation and usage | 2023-08-20 |
 | [Beginner introduction to CobaltStrike BOF development](https://ph3n1x.com/posts/beginner-introduction-to-cobaltstrike-bof-development/) | ph3n1x | Step-by-step guide for beginners to create their first BOF | 2025-05-03 |
 | [Introduction to BOF, Beacon Object Files not Buffer OverFlows](https://blog.shashwatshah.me/2023/03/26/Bofs_Part-1.html) | 0xEr3bus | Beginner-friendly blog explaining BOFs and writing custom process injector and remote Etw patching. | 2023-03-26 |
+| [Developing Cobalt Strike BOFs with Visual Studio](https://www.securify.nl/en/blog/creating-cobalt-strike-bofs-with-visual-studio/) | Yasse Alhzami | 2021-11-16 | Simple tutorial to develop BOFs with VS.
 
 ---
 
@@ -34,6 +35,7 @@ This page catalogs key blog posts, whitepapers, and research articles related to
 | [Building Your TTP Arsenal Video Series: Identifying Risks (BOF)](https://youtu.be/M6Y5Q8OVkSo) | TrustedSec | Demo of multiple BOFs addressing opsec | 2021-04-15
 | [Advanced Audit Settings](https://www.youtube.com/watch?app=desktop&v=zeuiCrUPMAs) | TrustedSec | Covers the importance of enumerating Advanced Audit Settings using BOFs | 2021-05-28
 | [LastPass in Memory Exposure](https://www.youtube.com/watch?app=desktop&v=9hC15PzcQgc) | TrustedSec | Dump lastpass using BOF demo | 2022-10-24
+| [How to Dump LSASS.exe Process Memory with Nanodump BOF - Windows Defender Bypass](https://www.youtube.com/watch?v=jwETspKR6JU) | Gemini Cyber Security | Dumping lsass with nanodump demo | 2023-08-18
 
 ---
 
@@ -52,8 +54,8 @@ This page catalogs key blog posts, whitepapers, and research articles related to
 | [CredBandit (In memory BOF MiniDump) - Tool review - Part 1](https://www.cobaltstrike.com/blog/credbandit-a-review-of-a-tool-developed-built-by-the-cobalt-strike-user-community)| Joe Vest | Demonstrating the [CredBandit](https://github.com/xforcered/CredBandit) BOF | 2021-07-13 |
 | [Creating the WhereAmI Cobalt Strike BOF ](https://0xboku.com/2021/08/19/Bof-WhereAmI.html) | boku7 | This is a walkthrough of creating the Cobalt Strike Beacon Object File (BOF) “Where Am I?” | 2021-08-19 |
 | [Exploiting (D)COM in C; CobaltStrike BOF as PoC.](https://yaxser.github.io/CobaltStrike-BOF/) | Yaxser | Explaining the DCOM lateral movement BOF | 2020 |
-
 ---
+| [Exploring WinRM plugins for lateral movement](https://falconforce.nl/exploring-winrm-plugins-for-lateral-movement/) | FalconForce | Exploring WinRM plugins for lateral movement | 2025-01-20
 
 ## 🔬 Advanced Techniques and Stealth
 
@@ -68,6 +70,9 @@ This page catalogs key blog posts, whitepapers, and research articles related to
 | [FalconFriday: Direct System Calls and Cobalt Strike BOFs](https://falconforce.nl/falconfriday-direct-system-calls-and-cobalt-strike-bofs-0xff14/) | FalconForce | Analysis of direct syscall techniques in BOFs | 2022-11-04 |
 | [Direct Syscalls in Beacon Object Files](https://www.outflank.nl/blog/2020/12/26/direct-syscalls-in-beacon-object-files/) | Cornelis de Plaa (Outflank) | Implementation of direct syscalls in BOFs to evade EDR hooks | 2020-12-10 |
 | [BOF2shellcode — a tutorial converting a stand-alone BOF loader into shellcode](https://falconforce.nl/bof2shellcode-a-tutorial-converting-a-stand-alone-bof-loader-into-shellcode/) | FalconForce | Converting BOFs to shellcode | 2021
+| [Introducing the Mutator Kit: Creating Object File Monstrosities with Sleep Mask and LLVM](https://www.cobaltstrike.com/blog/introducing-the-mutator-kit-creating-object-file-monstrosities-with-sleep-mask-and-llvm) | William Burgess (Fortra) | Mutator kit to compile BOFs | 2024
+| [	
+Cobalt Strike 4.9: Take Me To Your Loader](https://www.cobaltstrike.com/blog/cobalt-strike-49-take-me-to-your-loader) | Greg Darwin (Fortra) | Storing BOFs in beacon data store | 2023
 
 --- 
 
@@ -110,6 +115,7 @@ This page catalogs key blog posts, whitepapers, and research articles related to
 | [Introducing CS2BR pt. I – How we enabled Brute Ratel Badgers to run Cobalt Strike BOFs](https://blog.nviso.eu/2023/05/15/introducing-cs2br-pt-i-how-we-enabled-brute-ratel-badgers-to-run-cobalt-strike-bofs/) | Nviso | Running CS BOFs in Brute Ratel | 2023-05-15
 | [BOFs in Mythic with Xenon Agent](https://github.com/MythicAgents/xenon) | Mythic Contributors | BOF implementation for the Mythic C2 framework | 2023-04-30 |
 | [Learning Sliver C2 (12) - Extensions](https://dominicbreuker.com/post/learning_sliver_c2_12_extensions/) | dominicbreuker.com |  | 2023-03-23 |
+| [Meterpreter & Beacon Object Files (BOF)](https://moulinette.org/posts/msf-bof/) | moulinette.org | French article on using BOFs in MSF | 2023-05-29 
 
 ---
 
