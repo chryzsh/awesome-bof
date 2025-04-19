@@ -1,0 +1,49 @@
+Exploiting (D)COM in C; CobaltStrike BOF as PoC. | CobaltStrike-BOF
+YouTube
+Building Your TTP Arsenal Video Series
+Advanced Audit Settings - YouTube
+LastPass in Memory Exposure - YouTube
+tijme/amd-ryzen-master-driver-v17-exploit
+Reddit - The heart of the internet
+FalconFriday — Direct system calls and Cobalt Strike BOFs — 0xFF14 - FalconForce
+Running Cobalt Strike BOFs from Python | Naksyn’s blog
+Cobalt-Strike/bof_template
+connormcgarr/cThreadHijack
+chrispentester/BeaconObjectFile
+dust-life/BOFs
+topotam/BOF_dumpclip
+FalconForceTeam/SysWhispers2BOF
+RobertDiep/sandbox-process-bof
+Cerbersec/KillDefenderBOF
+nick-frischkorn/TokenStripBOF
+nick-frischkorn/SuspendEventLogBOF
+stufus/bofs
+Sh0ckFR/InlineWhispers2
+NVISOsecurity/CobaltWhispers
+Real-Cryillic/GOFFER
+matro7sh/bof-collection
+0x3rhy/samdump-bof
+Hagrid29/BOF-SprayAD
+Hagrid29/BOF-RemoteRegSave
+0x3rhy/ServiceSetSD-Bof
+snovvcrash/BOFs
+VirtualSamuraii/memlist-bof
+Hagrid29/BOF-DCOMPotato-PrintNotify
+Introduction to BOF, Beacon Object Files not Buffer OverFlows - 0xEr3bus's Blog
+D4rkCorp/Introduction-to-BOF
+Und3rf10w/CobaltStrikeBOFs
+KingOfTheNOPs/ChangeWallpaper-BOF
+ewby/Mockingjay_BOF
+MaorSabag/fileSearcher
+yinsel/CVE-2024-35250-BOF
+cyberphor/warlock
+100daysofredteam/hello-world-bof-havoc-c2
+nseckt/BOF-Exec
+cirosec/bof-loader
+tdeerenberg/InlineWhispers3
+Fauzan-Aldi/Backstap
+Fauzan-Aldi/Enumeration-of-Buffer-Overflow-Protections
+0xRedpoll/WhatsAppKeyBOF
+NioZow/bof-collection
+CyberSecurityUP/Havoc-BOF-Development
+carlisleet/Enable-EFS-BOF

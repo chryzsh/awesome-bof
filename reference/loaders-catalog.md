@@ -21,8 +21,8 @@ This catalog summarizes known BOF (Beacon Object File) loaders and runtimes. The
 
 ## 🧪 Standalone Loaders (Local Testing & Debugging)
 
-| Tool | Language  | Description |
-|------|-----------|-------------|
+| Tool | Language  | Description | Stars | Last commit |
+|------|-----------|-------------|-------|-------------|
 | [COFFLoader](https://github.com/trustedsec/COFFLoader) | C | CLI tool to run `.o` files outside Cobalt Strike for testing and development |
 | [BOF.NET](https://github.com/CCob/BOF.NET) | C# / Native  | Embeds .NET runtime within BOFs to enable managed code execution |
 | [BOF-PE](https://github.com/NetSPI/BOF-PE) | C / C++ | Portable Executable format for BOFs with extended capabilities and improved compatibility |
@@ -43,10 +43,9 @@ This catalog summarizes known BOF (Beacon Object File) loaders and runtimes. The
 | [nim-lazy-bof](https://github.com/zimnyaa/nim-lazy-bof) | Nim | Nim port of Sliver's BOF loader |
 | [coff_loader](https://github.com/soheil-01/coff_loader) | Zig | Experimental COFF loader for Cobalt Strike BOFs |
 | [BOF2shellcode](https://github.com/FalconForceTeam/BOF2shellcode) | Convert BOFs into raw shellcode |
-
----
-
-
+| [warlock](https://github.com/cyberphor/warlock) | C | Beacon Object File (BOF) generator, client, and loader.| 
+| [GOFFER](https://github.com/Real-Cryillic/GOFFER) | Go | Beacon Object File loaderin Go.|
+| [bof-loader](https://github.com/cirosec/bof-loader) | C++ | Beacon Object File (BOF) Runtime/Loader
 
 ---
 
