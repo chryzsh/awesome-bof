@@ -11,6 +11,7 @@
 
 ### 🧪 Tutorials — *Learning by Doing*
 - [Building Your First BOF](./tutorials/tutorial-building-your-first-bof.md)
+- [Building Your Second BOF](./tutorials/tutorial-building-your-second-bof.md)
 
 ### 🛠️ How-To Guides — *Solving Specific Tasks*
 - [Set Up Visual Studio for BOF Development](./how-to/setup-visual-studio-bof.md)
@@ -27,7 +28,7 @@
 - [Public BOF Repositories Catalog](./reference/bofs-catalog.md)
 - [BOF and COFF loaders](./reference/loaders-catalog.md)
 - [C2 Framework BOF Support](./reference/c2-framework-bof-support.md)
-- [Reference: Developer Tooling & Templates](./reference/reference-bof-dev.md)
+- [Developer Tooling & Templates](./reference/reference-bof-dev.md)
 - [Blog Posts and Research on BOF Development](./reference/bof-blogs-and-research.md)
 - [BOF Training Courses](./reference/bof-training-courses.md)
 
@@ -42,6 +43,8 @@ These are articles where changes are appropriate, or not yet written. Hopefully 
 - Expand [Execute BOFs in C2 frameworks](./how-to/how-to-execute-bofs-in-c2.md) with more detail for each C2 framework
 
 ### New article ideas
+- Explanation article about BOF detection strategies
+- How-to article demonstrating how to detect BOF execution
 - How-to article on intermediate level BOF development
 - How-to article on advanced BOF development
 - How-to article on writing aggressor scripts for BOF support in CS
