@@ -1,14 +1,14 @@
 # 🛠️ Reference: Developer Tooling & Templates
 These are templates and tools used in BOF development.
 
-| Tool | Description |
-|------|-------------|
-| [Beacon Object File Visual Studio Template (bof-vs)](https://github.com/Cobalt-Strike/bof-vs) | A complete Visual Studio environment for writing and debugging BOFs |
-| [linux_bof_template](https://github.com/outflanknl/linux_bof_template) | Boilerplate to write Linux-compatible BOFs (ELF) |
-| [BOF Patcher](https://github.com/Octoberfest7/Enumprotections_BOF?tab=readme-ov-file#compilation) | A proprietary tool to patch symbols post-compilation. Provided in the BOF Development and Tradecraft course.
-| [Speedloader: Rust COFF Loader Template/Library ](https://github.com/aliwioiod/speedloader) | This is a Rust template/library designed for implementing your own COFF loader.
-| [bof-vs-template](https://github.com/nccgroup/nccfsas/tree/main/Tools/bof-vs-template) | Visual Studio template for building BOFs (part of nccfsas)                        |
-| [bof_oxide](https://github.com/KickedDroid/bof_oxide) | POC template for writing BOFs in Rust for multiple frameworks |
-| [bof_template](https://github.com/Cobalt-Strike/bof_template) | Minimal working BOF template with Beacon API use |
-| [linux_bof](https://github.com/chryzsh/linux_bof) | Fork of Outflank’s Linux BOF template |
-| [Visual-Studio-BOF-template](https://github.com/securifybv/Visual-Studio-BOF-template) | Visual Studio template to create Cobalt Strike BOFs |
+| Tool | Description | Stars | Last commit |
+|------|-------------|-------|-------------|
+| [Beacon Object File Visual Studio Template (bof-vs)](https://github.com/Cobalt-Strike/bof-vs) | A complete Visual Studio environment for writing and debugging BOFs | ![](https://img.shields.io/github/stars/Cobalt-Strike/bof-vs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Cobalt-Strike/bof-vs?label=&style=flat) 
+| [linux_bof_template](https://github.com/outflanknl/linux_bof_template) | Boilerplate to write Linux-compatible BOFs (ELF) | ![](https://img.shields.io/github/stars/outflanknl/linux_bof_template?label=&style=flat) | ![](https://img.shields.io/github/last-commit/outflanknl/linux_bof_template?label=&style=flat) 
+| [BOF Patcher](https://github.com/Octoberfest7/Enumprotections_BOF?tab=readme-ov-file#compilation) | A proprietary tool to patch symbols post-compilation. Provided in the BOF Development and Tradecraft course.| ![](https://img.shields.io/github/stars/Octoberfest7/Enumprotections_BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Octoberfest7/Enumprotections_BOF?label=&style=flat) 
+| [Speedloader: Rust COFF Loader Template/Library ](https://github.com/aliwioiod/speedloader) | This is a Rust template/library designed for implementing your own COFF loader.| ![](https://img.shields.io/github/stars/aliwioiod/speedloader?label=&style=flat) | ![](https://img.shields.io/github/last-commit/aliwioiod/speedloader?label=&style=flat) 
+| [bof-vs-template](https://github.com/nccgroup/nccfsas/tree/main/Tools/bof-vs-template) | Visual Studio template for building BOFs (part of nccfsas)                        | ![](https://img.shields.io/github/stars/nccgroup/nccfsas?label=&style=flat) | ![](https://img.shields.io/github/last-commit/nccgroup/nccfsas?label=&style=flat) 
+| [bof_oxide](https://github.com/KickedDroid/bof_oxide) | POC template for writing BOFs in Rust for multiple frameworks | ![](https://img.shields.io/github/stars/KickedDroid/bof_oxide?label=&style=flat) | ![](https://img.shields.io/github/last-commit/KickedDroid/bof_oxide?label=&style=flat) 
+| [bof_template](https://github.com/Cobalt-Strike/bof_template) | Minimal working BOF template with Beacon API use | ![](https://img.shields.io/github/stars/Cobalt-Strike/bof_template?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Cobalt-Strike/bof_template?label=&style=flat) 
+| [linux_bof](https://github.com/chryzsh/linux_bof) | Fork of Outflank’s Linux BOF template | ![](https://img.shields.io/github/stars/chryzsh/linux_bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/chryzsh/linux_bof?label=&style=flat) 
+| [Visual-Studio-BOF-template](https://github.com/securifybv/Visual-Studio-BOF-template) | Visual Studio template to create Cobalt Strike BOFs | ![](https://img.shields.io/github/stars/securifybv/Visual-Studio-BOF-template?label=&style=flat) | ![](https://img.shields.io/github/last-commit/securifybv/Visual-Studio-BOF-template?label=&style=flat) 

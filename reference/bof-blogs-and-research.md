@@ -30,6 +30,11 @@ This page catalogs key blog posts, whitepapers, and research articles related to
 | [CVE-2020-0796 (SMBGhost) as a Beacon Object File](https://www.youtube.com/watch?v=HrYtctprUUc) | Cobalt Strike Archive | Demonstration of SMBGhost vulnerability exploitation via BOF | 2020-09-17 |
 | [CVE-2020-1472 Zerologon as a Beacon Object File](https://www.youtube.com/watch?v=zGf1Rat3rEk) | Cobalt Strike Archive | Demonstration of Zerologon attack chain with Cobalt Strike | 2020-09-17 |
 | [Beacon Object Files - Luser Demo](https://youtu.be/gfYswA_Ronw) | Cobalt Strike Archive | Basic demonstration of BOF usage and implementation | 2020-06-19 |
+| [Cobalt Strike BOF: Enum_filter_driver](https://www.youtube.com/watch?v=MvRY0qS8XFk) | TrustedSec | Demo of the enum_filter_driver BOF | 2021-05-06
+| [Building Your TTP Arsenal Video Series: Identifying Risks (BOF)](https://youtu.be/M6Y5Q8OVkSo) | TrustedSec | Demo of multiple BOFs addressing opsec | 2021-04-15
+| [Advanced Audit Settings](https://www.youtube.com/watch?app=desktop&v=zeuiCrUPMAs) | TrustedSec | Covers the importance of enumerating Advanced Audit Settings using BOFs | 2021-05-28
+| [LastPass in Memory Exposure](https://www.youtube.com/watch?app=desktop&v=9hC15PzcQgc) | TrustedSec | Dump lastpass using BOF demo | 2022-10-24
+
 ---
 
 ## 🧰 BOF Development and Tooling
@@ -45,6 +50,8 @@ This page catalogs key blog posts, whitepapers, and research articles related to
 | [Process Injection via custom Beacon Object Files Part 2](https://cerbersec.com/2021/08/26/beacon-object-files-part-2.html) | Cerbersec | Implementing the [CobaltWhispers](https://github.com/NVISOsecurity/CobaltWhispers) BOF | 2022-08-21
 | [Process Injection via custom Beacon Object Files Part 1](https://cerbersec.com/2021/08/26/beacon-object-files-part-1.html) | Cerbersec | Implementing the [CobaltWhispers](https://github.com/NVISOsecurity/CobaltWhispers) BOF | 2022-08-21
 | [CredBandit (In memory BOF MiniDump) - Tool review - Part 1](https://www.cobaltstrike.com/blog/credbandit-a-review-of-a-tool-developed-built-by-the-cobalt-strike-user-community)| Joe Vest | Demonstrating the [CredBandit](https://github.com/xforcered/CredBandit) BOF | 2021-07-13 |
+| [Creating the WhereAmI Cobalt Strike BOF ](https://0xboku.com/2021/08/19/Bof-WhereAmI.html) | boku7 | This is a walkthrough of creating the Cobalt Strike Beacon Object File (BOF) “Where Am I?” | 2021-08-19 |
+| [Exploiting (D)COM in C; CobaltStrike BOF as PoC.](https://yaxser.github.io/CobaltStrike-BOF/) | Yaxser | Explaining the DCOM lateral movement BOF | 2020 |
 
 ---
 
@@ -75,6 +82,7 @@ This page catalogs key blog posts, whitepapers, and research articles related to
 | [Malware development part 8 - COFF injection and in-memory execution](https://0xpat.github.io/Malware_development_part_8/) | Explanation of COFF injection |  0xpat | 2021-03-16 | 
 | [Invoke-Bof](https://skyblue.team/posts/invoke-bof/) | Sky Blueteam | A PowerShell based BOF loader | 2021-12-09
 | [COFFLoader: Building your own in memory loader or how to run BOFs](https://trustedsec.com/blog/coffloader-building-your-own-in-memory-loader-or-how-to-run-bofs)| Kevin Haubris (TrustedSec) | Building a BOF loader | 2021-02-22 |
+| [Running Cobalt Strike BOFs from Python ](https://www.naksyn.com/injection/2022/02/16/running-cobalt-strike-bofs-from-python.html) | Naksyn | Demonstrating python-bof-runner | 2022-02-16 |
 
 ---
 
