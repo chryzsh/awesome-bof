@@ -575,7 +575,6 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 | [Ghosting-BOF](https://github.com/qigpig/Ghosting-BOF) | 主要用于隐藏进程真实路径，进程带windows真签名 | ![](https://img.shields.io/github/stars/qigpig/Ghosting-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/qigpig/Ghosting-BOF?label=&style=flat) |
 | [BOF-BypassUAC](https://github.com/theomilan3/BOF-BypassUAC) | 一个BypassUAC的BOF用来bypass Windows Defender。(请给我加个星，谢谢。)  | ![](https://img.shields.io/github/stars/theomilan3/BOF-BypassUAC?label=&style=flat) | ![](https://img.shields.io/github/last-commit/theomilan3/BOF-BypassUAC?label=&style=
 | [BOF-whoami-ldap](https://github.com/steve-embling/BOF-whoami-ldap) | Quick and dirty reimplementation of Get-LdapCurrentUser.ps1 by Lee Christensen (@tifkin_)  as a BOF | ![](https://img.shields.io/github/stars/steve-embling/BOF-whoami-ldap?label=&style=flat) | ![](https://img.shields.io/github/last-commit/steve-embling/BOF-whoami-ldap?label=&style=flat) |
-└─$ python3 generate_md.py https://github.com/MayerDaniel/createprocess-bof
 | [createprocess-bof](https://github.com/MayerDaniel/createprocess-bof) | Simple bof that calls CreateProcess to start executables | ![](https://img.shields.io/github/stars/MayerDaniel/createprocess-bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/MayerDaniel/createprocess-bof?label=&style=flat) |
 | [seclogon_execute_bof](https://github.com/BambiZombie/seclogon_execute_bof) | 一个普通的BOF用来执行程序 | ![](https://img.shields.io/github/stars/BambiZombie/seclogon_execute_bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/BambiZombie/seclogon_execute_bof?label=&style=flat) |
 | [bypass_uac_bof](https://github.com/BambiZombie/bypass_uac_bof) | 一个普通的BOF用来BypassUAC | ![](https://img.shields.io/github/stars/BambiZombie/bypass_uac_bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/BambiZombie/bypass_uac_bof?label=&style=flat) |
@@ -584,8 +583,6 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 | [BOF](https://github.com/vaq130/BOF) | Firewall_Enumerator_BOF | ![](https://img.shields.io/github/stars/vaq130/BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/vaq130/BOF?label=&style=flat) |
 | [winrmsh](https://github.com/219adlab/winrmsh) | bof of winrm shell | ![](https://img.shields.io/github/stars/219adlab/winrmsh?label=&style=flat) | ![](https://img.shields.io/github/last-commit/219adlab/winrmsh?label=&style=flat) |
 | [CVE-2023-36874_BOF](https://github.com/Octoberfest7/CVE-2023-36874_BOF) | Weaponized CobaltStrike BOF for CVE-2023-36874 Windows Error Reporting LPE | ![](https://img.shields.io/github/stars/Octoberfest7/CVE-2023-36874_BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Octoberfest7/CVE-2023-36874_BOF?label=&style=flat) |
-
-
 
 ---
 
