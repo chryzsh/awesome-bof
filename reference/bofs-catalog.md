@@ -613,6 +613,7 @@ These are BOF related tools that are not BOFs themselves.
 | [lnkcreate_bofnet](https://github.com/inzlain/lnkcreate_bofnet) | BOF.NET class for creating LNK files | ![](https://img.shields.io/github/stars/inzlain/lnkcreate_bofnet?label=&style=flat) | ![](https://img.shields.io/github/last-commit/inzlain/lnkcreate_bofnet?label=&style=flat) |
 | [BOF-Builder](https://github.com/ceramicskate0/BOF-Builder) | .NET 5.0 tool to mass-build BOFs  | ![](https://img.shields.io/github/stars/ceramicskate0/BOF-Builder?label=&style=flat) | ![](https://img.shields.io/github/last-commit/ceramicskate0/BOF-Builder?label=&style=flat) |
 | [SharpMailBOF](https://github.com/xenoscr/SharpMailBOF) | A BOF.NET program to split a file into smaller chunks and email it via a specified SMTP relay. | ![](https://img.shields.io/github/stars/xenoscr/SharpMailBOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/xenoscr/SharpMailBOF?label=&style=flat) |
-
+| [BOFMask](https://github.com/passthehashbrowns/BOFMask) | BOFMask is a proof-of-concept for masking Cobalt Strike's Beacon payload while executing a Beacon Object File (BOF).  | ![](https://img.shields.io/github/stars/passthehashbrowns/BOFMask?label=&style=flat) | ![](https://img.shields.io/github/last-commit/passthehashbrowns/BOFMask?label=&style=flat) |
+| [Shoggoth](https://github.com/frkngksl/Shoggoth) | Shoggoth: Asmjit Based Polymorphic Encryptor | ![](https://img.shields.io/github/stars/frkngksl/Shoggoth?label=&style=flat) | ![](https://img.shields.io/github/last-commit/frkngksl/Shoggoth?label=&style=flat) |
 
 ---

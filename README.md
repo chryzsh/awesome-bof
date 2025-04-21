@@ -15,6 +15,7 @@
 
 ### 🛠️ How-To Guides — *Solving Specific Tasks*
 - [Set Up Visual Studio for BOF Development](./how-to/setup-visual-studio-bof.md)
+- [Set Up VSCode for BOF Development](./how-to/setup-vscode-bof.md)
 - [Execute BOFs in C2 frameworks](./how-to/how-to-execute-bofs-in-c2.md) 
 - [Running BOFs Asynchronously in Cobalt Strike](./how-to/how-to-async-execute.md)
 
