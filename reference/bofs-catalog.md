@@ -572,6 +572,8 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 | [Defender-Exclusions-Creator-BOF](https://github.com/EspressoCake/Defender-Exclusions-Creator-BOF) | A BOF to add or remove Windows Defender exclusions: | ![](https://img.shields.io/github/stars/EspressoCake/Defender-Exclusions-Creator-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/EspressoCake/Defender-Exclusions-Creator-BOF?label=&style=flat) |
 | [BOF](https://github.com/vaq130/BOF) | Firewall_Enumerator_BOF | ![](https://img.shields.io/github/stars/vaq130/BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/vaq130/BOF?label=&style=flat) |
 | [winrmsh](https://github.com/219adlab/winrmsh) | bof of winrm shell | ![](https://img.shields.io/github/stars/219adlab/winrmsh?label=&style=flat) | ![](https://img.shields.io/github/last-commit/219adlab/winrmsh?label=&style=flat) |
+| [logon_monitor](https://github.com/thatwinterquiet/logon_monitor) | A BOF to regularly check for active users on a target. | ![](https://img.shields.io/github/stars/thatwinterquiet/logon_monitor?label=&style=flat) | ![](https://img.shields.io/github/last-commit/thatwinterquiet/logon_monitor?label=&style=flat) |
+
 
 ---
 
