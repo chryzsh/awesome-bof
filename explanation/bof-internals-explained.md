@@ -1,8 +1,9 @@
 ---
-title: BOF Internals – How Beacon Object Files Work   # what shows in the sidebar
-parent: Explanation            # name of the section (comes from explanation/index.md)
-grand_parent: awesome-bof      # site-root (comes from /index.md) – optional but tidy
-nav_order: 2                   # order inside the Explanation section (optional)
+title: "BOF Internals – How Beacon Object Files Work"
+parent: "Explanation"      
+grand_parent: "awesome-bof"
+nav_order: 2
+# ⚠️ remove inline comments after the values; YAML stops reading at the #
 ---
 
 # Explanation: BOF Internals – How Beacon Object Files Work
