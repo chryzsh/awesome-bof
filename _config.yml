@@ -1,14 +1,13 @@
-title: "awesome-bof"
+title: awesome-bof
 
-# activate the theme
-theme: "just-the-docs"
+remote_theme: just-the-docs/just-the-docs   # ← replaces `theme:`
 
-# start in dark mode
-color_scheme: "dark"
+color_scheme: dark
 
-# enable instant search box (optional)
-search_enabled: true
+url: "https://chryzsh.github.io"
 
-# link back to the repo (optional)
-aux_links:
-  "GitHub Repo": "https://github.com/chryzsh/awesome-bof"
+baseurl: "/awesome-bof"
+
+plugins:            # make sure the plugin is on
+  - jekyll-remote-theme
+
