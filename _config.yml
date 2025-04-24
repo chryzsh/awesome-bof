@@ -1,0 +1,8 @@
+title: awesome-bof
+theme: just-the-docs        # activates the theme
+color_scheme: dark          # default dark-mode
+search_enabled: true        # optional – theme feature
+
+# (nice to have) link back to the repo
+aux_links:
+  "GitHub Repo": https://github.com/chryzsh/awesome-bof
