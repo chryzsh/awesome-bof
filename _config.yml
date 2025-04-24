@@ -1,8 +1,14 @@
-title: awesome-bof
-theme: just-the-docs        # activates the theme
-color_scheme: dark          # default dark-mode
-search_enabled: true        # optional – theme feature
+title: "awesome-bof"
 
-# (nice to have) link back to the repo
+# activate the theme
+theme: "just-the-docs"
+
+# start in dark mode
+color_scheme: "dark"
+
+# enable instant search box (optional)
+search_enabled: true
+
+# link back to the repo (optional)
 aux_links:
-  "GitHub Repo": https://github.com/chryzsh/awesome-bof
+  "GitHub Repo": "https://github.com/chryzsh/awesome-bof"
