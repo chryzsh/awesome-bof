@@ -1,3 +1,10 @@
+---
+title: BOF Internals – How Beacon Object Files Work   # what shows in the sidebar
+parent: Explanation            # name of the section (comes from explanation/index.md)
+grand_parent: awesome-bof      # site-root (comes from /index.md) – optional but tidy
+nav_order: 2                   # order inside the Explanation section (optional)
+---
+
 # Explanation: BOF Internals – How Beacon Object Files Work
 
 Beacon Object Files (BOFs) are small compiled C programs designed to run directly within the memory space of a C2 agent (like Cobalt Strike’s Beacon). This execution model allows stealthy, fast, and fileless tasking of post-exploitation actions without creating new processes or touching disk.
