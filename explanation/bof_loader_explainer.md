@@ -56,6 +56,15 @@ A BOF loader is a runtime or tool that:
 - Compatible with x86 and x86_64 Linux
 - [ELFLoader on GitHub](https://github.com/trustedsec/ELFLoader)
 
+### 🧬 **bof-launcher and cli4bofs (Z-Labs)**
+- Allows writing BOFs in C and [Zig](https://ziglang.org/)
+- Supports Windows COFF (x86_64, x86) and Linux ELF (x86_64, x86, arm, aarch64)
+- Provides reusable library with simple [C API for launching BOFs](https://github.com/The-Z-Labs/bof-launcher/blob/main/bof-launcher/src/bof_launcher_api.h)
+- cli4bofs is standalone command-line tool for launching, injecting and organizing BOFs outside Cobalt Strike
+- Supports `exec` and `inject` commands to run/inject BOFs directly
+- [bof-launcher on GitHub](https://github.com/The-Z-Labs/bof-launcher)
+- [cli4bofs on GitHub](https://github.com/The-Z-Labs/cli4bofs)
+
 ### 🧬 **Custom Agent Loaders (e.g., Xenon, Havoc, Brute Ratel)**
 - Many modern C2s implement their own BOF loaders:
   - **Xenon** (Mythic) — parses and executes `.o` files directly
