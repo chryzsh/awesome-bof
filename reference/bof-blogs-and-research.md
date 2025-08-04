@@ -43,6 +43,9 @@ This page catalogs key blog posts, whitepapers, and research articles related to
 
 | Title | Author | Details | Date |
 |-------|-------|---------|------------------|
+| [Async BOFs – “Wake Me Up, Before You Go Go”](https://www.outflank.nl/blog/2025/07/16/async-bofs-wake-me-up-before-you-go-go/) | Dima van de Wouw (Outflank) | Discussing the journey into Async BOFs | 2025-07-16 |
+| [BOF Linting for Accelerated Development](https://www.outflank.nl/blog/2025/06/30/bof-linting-for-accelerated-development/?trk=feed_main-feed-card_feed-article-content) | Cedric Van Bockhaven (Outflank) | Description of a BOF linting tool to address some of the common pitfalls of BOF development. | 2025-06-30 |
+| [Beacon Object Files – Five Years On…](https://aff-wg.org/2025/06/26/beacon-object-files-five-years-on/) | Raphael Mudge | History of Beacon Object Files and add some insight to the questions and discourse around them today.| 2025-06-26 |
 | [f Our Beacon Object Files (BOFs)](https://www.netspi.com/blog/technical-blog/adversary-simulation/the-future-of-beacon-object-files/) | Ceri Coburn (NetSPI) | Advanced BOF format for extended capabilities | 2025-03-19 |
 | [Writing Beacon Object Files Without DFR](https://blog.cybershenanigans.space/posts/writing-bofs-without-dfr/) | Matt Ehrnschwender | Techniques for BOF development without Dynamic Function Resolution | 2024-11-18 |
 | [An Operators Guide to BeaconkObject Files](https://maldev.nl/posts/operator-guide-bof/) | notb9 | Demonstrating BOF use with the Invoke-Bof project | 2024-11-01
