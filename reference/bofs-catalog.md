@@ -338,6 +338,7 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 
 | Project | Description | Stars | Last commit |
 |---------|-------------|-------|-------------|
+| [wambam-bof](https://github.com/grayhatkiller/wambam-bof) | [No description provided] | ![](https://img.shields.io/github/stars/grayhatkiller/wambam-bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/grayhatkiller/wambam-bof?label=&style=flat) |
 | [TBRES-unprotect](https://github.com/sakkis91/TBRES-unprotect) | Cobalt Strike BOF to fetch tokens from Token Broker cache | ![](https://img.shields.io/github/stars/sakkis91/TBRES-unprotect?label=&style=flat) | ![](https://img.shields.io/github/last-commit/sakkis91/TBRES-unprotect?label=&style=flat) |
 | [cIdentifyServiceDependencies_BOF](https://github.com/EspressoCake/cIdentifyServiceDependencies_BOF) | Beacon Object File (BOF) for identifying dependent child services of a given parent. | ![](https://img.shields.io/github/stars/EspressoCake/cIdentifyServiceDependencies_BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/EspressoCake/cIdentifyServiceDependencies_BOF?label=&style=flat) |
 | [SafeHarbor-BOF](https://github.com/ibaiC/SafeHarbor-BOF) | Safe Harbor is a BOF that streamlines process reconnaissance for red team operations by identifying trusted, low-noise targets to maintain stealth and robust OPSEC. | ![](https://img.shields.io/github/stars/ibaiC/SafeHarbor-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/ibaiC/SafeHarbor-BOF?label=&style=flat) |
