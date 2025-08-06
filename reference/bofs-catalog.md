@@ -338,6 +338,7 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 
 | Project | Description | Stars | Last commit |
 |---------|-------------|-------|-------------|
+| [listpipes-bof](https://github.com/chryzsh/listpipes-bof) | A simple BOF to list named pipes locally. | ![](https://img.shields.io/github/stars/chryzsh/listpipes-bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/chryzsh/listpipes-bof?label=&style=flat) |
 | [wambam-bof](https://github.com/grayhatkiller/wambam-bof) | [No description provided] | ![](https://img.shields.io/github/stars/grayhatkiller/wambam-bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/grayhatkiller/wambam-bof?label=&style=flat) |
 | [TBRES-unprotect](https://github.com/sakkis91/TBRES-unprotect) | Cobalt Strike BOF to fetch tokens from Token Broker cache | ![](https://img.shields.io/github/stars/sakkis91/TBRES-unprotect?label=&style=flat) | ![](https://img.shields.io/github/last-commit/sakkis91/TBRES-unprotect?label=&style=flat) |
 | [cIdentifyServiceDependencies_BOF](https://github.com/EspressoCake/cIdentifyServiceDependencies_BOF) | Beacon Object File (BOF) for identifying dependent child services of a given parent. | ![](https://img.shields.io/github/stars/EspressoCake/cIdentifyServiceDependencies_BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/EspressoCake/cIdentifyServiceDependencies_BOF?label=&style=flat) |
