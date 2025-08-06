@@ -77,6 +77,3 @@ This project follow the approach of the [Diátaxis](https://diataxis.fr/) docume
 - The Cobalt Strike team for pushing the direction of BOF development since 2020 
 - TrustedSec for all their awesome blog posts, BOF collections and training
 - Zero-point for their awesome course on BOF development
-
-## ⚖️ License
-This project is licensed under [](./LICENSE). Attribution encouraged when citing.
