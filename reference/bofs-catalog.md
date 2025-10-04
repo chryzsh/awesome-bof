@@ -600,7 +600,8 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 | [BOF](https://github.com/vaq130/BOF) | Firewall_Enumerator_BOF | ![](https://img.shields.io/github/stars/vaq130/BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/vaq130/BOF?label=&style=flat) |
 | [winrmsh](https://github.com/219adlab/winrmsh) | BOF of winrm shell | ![](https://img.shields.io/github/stars/219adlab/winrmsh?label=&style=flat) | ![](https://img.shields.io/github/last-commit/219adlab/winrmsh?label=&style=flat) |
 | [logon_monitor](https://github.com/thatwinterquiet/logon_monitor) | A BOF to regularly check for active users on a target. | ![](https://img.shields.io/github/stars/thatwinterquiet/logon_monitor?label=&style=flat) | ![](https://img.shields.io/github/last-commit/thatwinterquiet/logon_monitor?label=&style=flat) |
-| RAIWhateverTrigger](https://github.com/klezVirus/RAIWhateverTrigger) | A BOF implementation of RAITrigger for system coercions. | ![](https://img.shields.io/github/star/klezVirus/RAIWhateverTrigger?label=&style=flat) | ![](https://img.shields.io/github/last-commit/klezVirus/RAIWhateverTrigger?label=&style=flat) |
+| [RAIWhateverTrigger](https://github.com/klezVirus/RAIWhateverTrigger) | A BOF implementation of RAITrigger for system coercions. | ![](https://img.shields.io/github/stars/klezVirus/RAIWhateverTrigger?label=&style=flat) | ![](https://img.shields.io/github/last-commit/klezVirus/RAIWhateverTrigger?label=&style=flat) |
+| [sekken-enum](https://github.com/Nomad0x7/sekken-enum) | Active Directory Web Services (ADWS) enumeration BOF | ![](https://img.shields.io/github/stars/Nomad0x7/sekken-enum?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Nomad0x7/sekken-enum?label=&style=flat) |
 
 ---
 
