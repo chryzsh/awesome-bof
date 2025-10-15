@@ -602,6 +602,7 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 | [logon_monitor](https://github.com/thatwinterquiet/logon_monitor) | A BOF to regularly check for active users on a target. | ![](https://img.shields.io/github/stars/thatwinterquiet/logon_monitor?label=&style=flat) | ![](https://img.shields.io/github/last-commit/thatwinterquiet/logon_monitor?label=&style=flat) |
 | [RAIWhateverTrigger](https://github.com/klezVirus/RAIWhateverTrigger) | A BOF implementation of RAITrigger for system coercions. | ![](https://img.shields.io/github/stars/klezVirus/RAIWhateverTrigger?label=&style=flat) | ![](https://img.shields.io/github/last-commit/klezVirus/RAIWhateverTrigger?label=&style=flat) |
 | [sekken-enum](https://github.com/Nomad0x7/sekken-enum) | Active Directory Web Services (ADWS) enumeration BOF | ![](https://img.shields.io/github/stars/Nomad0x7/sekken-enum?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Nomad0x7/sekken-enum?label=&style=flat) |
+| [msi_lateral_mv](https://github.com/werdhaihai/msi_lateral_mv) | Lateral Movement BOF with MSI ODBC Driver Install | ![](https://img.shields.io/github/stars/werdhaihai/msi_lateral_mv?label=&style=flat) | ![](https://img.shields.io/github/last-commit/werdhaihai/msi_lateral_mv?label=&style=flat) |
 
 ---
 
