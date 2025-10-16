@@ -338,6 +338,7 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 
 | Project | Description | Stars | Last commit |
 |---------|-------------|-------|-------------|
+
 | [listpipes-bof](https://github.com/chryzsh/listpipes-bof) | A simple BOF to list named pipes locally. | ![](https://img.shields.io/github/stars/chryzsh/listpipes-bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/chryzsh/listpipes-bof?label=&style=flat) |
 | [wambam-bof](https://github.com/grayhatkiller/wambam-bof) | [No description provided] | ![](https://img.shields.io/github/stars/grayhatkiller/wambam-bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/grayhatkiller/wambam-bof?label=&style=flat) |
 | [TBRES-unprotect](https://github.com/sakkis91/TBRES-unprotect) | Cobalt Strike BOF to fetch tokens from Token Broker cache | ![](https://img.shields.io/github/stars/sakkis91/TBRES-unprotect?label=&style=flat) | ![](https://img.shields.io/github/last-commit/sakkis91/TBRES-unprotect?label=&style=flat) |
@@ -372,6 +373,7 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 | [SharpHunter](https://github.com/lintstar/SharpHunter) | Automated host information hunting tool for Windows  | ![](https://img.shields.io/github/stars/lintstar/SharpHunter?label=&style=flat) | ![](https://img.shields.io/github/last-commit/lintstar/SharpHunter?label=&style=flat) |
 | [ScreenshotBOF](https://github.com/CodeXTF2/ScreenshotBOF) | Takes in-memory screenshots using WinAPI without fork & run  | ![](https://img.shields.io/github/stars/CodeXTF2/ScreenshotBOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/CodeXTF2/ScreenshotBOF?label=&style=flat) |
 | [checkUAC-BOF](https://github.com/cl4ym0re/checkUAC-BOF) | BOF to check UAC status before bypassing it  | ![](https://img.shields.io/github/stars/cl4ym0re/checkUAC-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/cl4ym0re/checkUAC-BOF?label=&style=flat) |
+| [InlineExecuteEx](https://github.com/0xTriboulet/InlineExecuteEx) | A BOF that's a BOF Loader. Implements COFFLoader in Cobalt Strike | ![](https://img.shields.io/github/stars/0xTriboulet/InlineExecuteEx?label=&style=flat) | ![](https://img.shields.io/github/last-commit/0xTriboulet/InlineExecuteEx?label=&style=flat) 
 | [Inline-EA](https://github.com/EricEsquivel/Inline-EA) | BOF for evasive .NET assembly execution  | ![](https://img.shields.io/github/stars/EricEsquivel/Inline-EA?label=&style=flat) | ![](https://img.shields.io/github/last-commit/EricEsquivel/Inline-EA?label=&style=flat) |
 | [cli4bofs](https://github.com/The-Z-Labs/cli4bofs) | Command-line interface for running BOFs  | ![](https://img.shields.io/github/stars/The-Z-Labs/cli4bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/The-Z-Labs/cli4bofs?label=&style=flat) |
 | [WebcamBOF](https://github.com/CodeXTF2/WebcamBOF) | Capture webcam images and stream them back via memory  | ![](https://img.shields.io/github/stars/CodeXTF2/WebcamBOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/CodeXTF2/WebcamBOF?label=&style=flat) |
