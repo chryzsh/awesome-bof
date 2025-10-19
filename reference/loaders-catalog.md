@@ -23,6 +23,7 @@ This catalog summarizes known BOF (Beacon Object File) loaders and runtimes. The
 
 | Tool | Language  | Description | Stars | Last commit |
 |------|-----------|-------------|-------|-------------|
+| [async_bof](https://github.com/9Insomnie/async_bof) [translated version](https://github-com.translate.goog/9Insomnie/async_bof?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp) | 异步Beacon Object Files概念的实现。它提供了一个框架，用于运行可以检测事件并报告回Cobalt Strike团队服务器的异步监控任务。 | ![](https://img.shields.io/github/stars/9Insomnie/async_bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/9Insomnie/async_bof?label=&style=flat) |
 | [COFFLoader](https://github.com/trustedsec/COFFLoader) | C | CLI tool to run `.o` files outside Cobalt Strike for testing and development | ![](https://img.shields.io/github/stars/trustedsec/COFFLoader?label=&style=flat) | ![](https://img.shields.io/github/last-commit/trustedsec/COFFLoader?label=&style=flat) 
 | [BOF.NET](https://github.com/CCob/BOF.NET) | C# / Native  | Embeds .NET runtime within BOFs to enable managed code execution | ![](https://img.shields.io/github/stars/CCob/BOF.NET?label=&style=flat) | ![](https://img.shields.io/github/last-commit/CCob/BOF.NET?label=&style=flat) 
 | [InlineExecuteEx](https://github.com/0xTriboulet/InlineExecuteEx) | A BOF that's a BOF Loader. Implements COFFLoader in Cobalt Strike | ![](https://img.shields.io/github/stars/0xTriboulet/InlineExecuteEx?label=&style=flat) | ![](https://img.shields.io/github/last-commit/0xTriboulet/InlineExecuteEx?label=&style=flat) 
@@ -49,6 +50,7 @@ This catalog summarizes known BOF (Beacon Object File) loaders and runtimes. The
 | [GOFFER](https://github.com/Real-Cryillic/GOFFER) | Go | Beacon Object File loaderin Go.| ![](https://img.shields.io/github/stars/Real-Cryillic/GOFFER?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Real-Cryillic/GOFFER?label=&style=flat) 
 | [bof-loader](https://github.com/cirosec/bof-loader) | C++ | Beacon Object File (BOF) Runtime/Loader| ![](https://img.shields.io/github/stars/cirosec/bof-loader?label=&style=flat) | ![](https://img.shields.io/github/last-commit/cirosec/bof-loader?label=&style=flat) 
 | [BOF-Exec](https://github.com/nseckt/BOF-Exec) | C++ | A small tool that loads and executes a Beacon Object File (BOF) and optionally passes arguments to it.| ![](https://img.shields.io/github/stars/nseckt/BOF-Exec?label=&style=flat) | ![](https://img.shields.io/github/last-commit/nseckt/BOF-Exec?label=&style=flat) 
+| [blacksandbeacon](https://github.com/grisuno/blacksandbeacon) | C | Black Sand Beacon — a lightweight, memory-resident micro beacon or implant for the LazyOwn RedTeam Framework — is the first offensive platform to deliver true native BOF (Beacon Object File) support for Linux. Inspired by the Windows-based Black Basalt Beacon, it enables red teams to write position-independent, fileless post-exploitation modules | ![](https://img.shields.io/github/stars/grisuno/blacksandbeacon?label=&style=flat) | ![](https://img.shields.io/github/last-commit/grisuno/blacksandbeacon?label=&style=flat) |
 
 ---
 
