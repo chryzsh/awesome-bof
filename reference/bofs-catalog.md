@@ -340,6 +340,7 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 
 | Project | Description | Stars | Last commit |
 |---------|-------------|-------|-------------|
+| [BOF_Spawn](https://github.com/NtDallas/BOF_Spawn) | Cobalt Strike BOF for beacon/shellcode injection using fork & run technique with Draugr synthetic stack frames | ![](https://img.shields.io/github/stars/NtDallas/BOF_Spawn?label=&style=flat) | ![](https://img.shields.io/github/last-commit/NtDallas/BOF_Spawn?label=&style=flat) |
 | [WerDump](https://github.com/M1ndo/WerDump) | A Beacon Object File (BOF) for Havoc/CS to Bypass PPL and Dump Lsass | ![](https://img.shields.io/github/stars/M1ndo/WerDump?label=&style=flat) | ![](https://img.shields.io/github/last-commit/M1ndo/WerDump?label=&style=flat) |
 | [ClipboardHistoryThief-BOF](https://github.com/matsmi7h/ClipboardHistoryThief-BOF) | Beacon Object File (BOF) to extract all persistent clipboard history data from clipboard service process memory | ![](https://img.shields.io/github/stars/matsmi7h/ClipboardHistoryThief-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/matsmi7h/ClipboardHistoryThief-BOF?label=&style=flat) |
 | [ClearEventlogBOF](https://github.com/mertdas/ClearEventlogBOF) | Clear Event Logs | ![](https://img.shields.io/github/stars/mertdas/ClearEventlogBOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/mertdas/ClearEventlogBOF?label=&style=flat) |
