@@ -4,6 +4,7 @@ These are templates and tools used in BOF development.
 ## Templates
 | Tool | Description | Stars | Last commit |
 |------|-------------|-------|-------------|
+| [bof-vscode](https://github.com/brmkit/bof-vscode) | vscode development environment for Beacon Object Files (BOFs) | ![](https://img.shields.io/github/stars/brmkit/bof-vscode?label=&style=flat) | ![](https://img.shields.io/github/last-commit/brmkit/bof-vscode?label=&style=flat) |
 | [Beacon Object File Visual Studio Template (bof-vs)](https://github.com/Cobalt-Strike/bof-vs) | A complete Visual Studio environment for writing and debugging BOFs.<br> This is an official template from the Cobalt Strike team. | ![](https://img.shields.io/github/stars/Cobalt-Strike/bof-vs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Cobalt-Strike/bof-vs?label=&style=flat) 
 | [bof_template](https://github.com/Cobalt-Strike/bof_template) | Minimal working BOF template with Beacon API use. <br>This is a official template from the Cobalt Strike team. | ![](https://img.shields.io/github/stars/Cobalt-Strike/bof_template?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Cobalt-Strike/bof_template?label=&style=flat) 
 | [linux_bof_template](https://github.com/outflanknl/linux_bof_template) | Boilerplate to write Linux-compatible BOFs (ELF) from Outflank. | ![](https://img.shields.io/github/stars/outflanknl/linux_bof_template?label=&style=flat) | ![](https://img.shields.io/github/last-commit/outflanknl/linux_bof_template?label=&style=flat) 
