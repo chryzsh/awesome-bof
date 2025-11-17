@@ -12,7 +12,7 @@ This catalog summarizes known BOF (Beacon Object File) loaders and runtimes. The
 | Sliver | Sliver | Win/Linux | ❌ | Uses `bof upload` and `bof execute` commands with `extension.json` for registration |
 | Havoc | Havoc (Demon agent) | Windows | ❌ | Supports inline execution and script-based BOF registration |
 | Meterpreter | Metasploit | Windows | ❌ | Requires `bofloader` extension with limited Beacon API compatibility |
-| OST (Outflank) | Outflank C2 | Windows | ❌ | Integrated BOF loader used in stealthy tradecraft operations |
+| OST (Outflank) | Outflank C2 | Windows | ✅ | Integrated BOF loader with support for "async BOFs" |
 | Brute Ratel | Brute Ratel | Windows | ✅ | Implements high-fidelity BOF support with asynchronous execution |
 | Nighthawk | Nighthawk | Windows | ✅ | Private commercial C2 with high-performance BOF runtime |
 | Mythic (Xenon) | Mythic | Windows | ❌ | Xenon agent supports `.o` execution via `execute_bof` command |
