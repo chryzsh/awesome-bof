@@ -1,0 +1,86 @@
+# BOF Search
+
+Search across 1200+ BOF commands from the catalog using fuzzy search.
+
+## Quick Start
+
+```bash
+./scripts/bof-search.sh
+```
+
+This opens an interactive search interface. Type to filter, press Enter to select.
+
+## Requirements
+
+- `jq` - JSON processor
+- `fzf` - Fuzzy finder
+
+Install on Debian/Ubuntu:
+```bash
+sudo apt install jq fzf
+```
+
+Install on macOS:
+```bash
+brew install jq fzf
+```
+
+## Usage
+
+### Interactive search
+```bash
+./scripts/bof-search.sh
+```
+
+### Search with initial query
+```bash
+./scripts/bof-search.sh ldap      # Find LDAP-related BOFs
+./scripts/bof-search.sh dump      # Find dump/dumping commands
+./scripts/bof-search.sh kerberos  # Find Kerberos commands
+```
+
+### Keyboard shortcuts
+
+| Key | Action |
+|-----|--------|
+| `Enter` | Select and show details, then open repo |
+| `Ctrl-O` | Open repository in browser |
+| `Ctrl-Y` | Copy repository URL |
+| `Ctrl-C` | Exit |
+
+## How it works
+
+The search uses a pre-generated index (`bof-index.json`) containing BOF metadata extracted from all repositories in the catalog.
+
+Each entry contains:
+- **name** - Command/BOF name
+- **description** - What it does
+- **repository** - Source GitHub repo
+- **source_file** - Where the metadata was found
+- **source_format** - How it was parsed (readme_table, cna, etc.)
+
+## Updating the index
+
+To refresh the index with latest BOFs from all repositories:
+
+```bash
+python3 scripts/bof_indexer.py
+```
+
+This will:
+1. Parse `BOF-CATALOG.md` for repository URLs
+2. Clone each repo shallowly
+3. Extract BOF metadata from READMEs, .cna files, directory structures
+4. Output updated `bof-index.json`
+
+Note: This downloads all repos and takes several minutes.
+
+## Index statistics
+
+The index parses multiple formats:
+- README tables
+- Cobalt Strike `.cna` aggressor scripts
+- Directory structures (folders containing .c/.o files)
+- OC2 `stage1.py` files
+- Havoc `havoc.py` files
+- README bullet lists
