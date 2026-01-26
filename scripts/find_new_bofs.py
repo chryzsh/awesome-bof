@@ -142,7 +142,7 @@ def main():
 
     # Get existing catalog URLs
     script_dir = Path(__file__).parent
-    catalog_path = script_dir.parent / "reference" / "bofs-catalog.md"
+    catalog_path = script_dir.parent / "BOF-CATALOG.md"
     existing_urls = get_catalog_urls(catalog_path)
     print(f"Found {len(existing_urls)} repos already in catalog", file=sys.stderr)
 
