@@ -21,7 +21,7 @@ These repositories contain a variety of BOFs covering multiple functions, often 
 <details>
 <summary>Click to view commands from <a href="https://github.com/trustedsec/CS-Situational-Awareness-BOF?tab=readme-ov-file#available-commands" target="_blank">trustedsec/CS-Situational-Awareness-BOF</a> </summary>
 
-These are commands available in the `TrustedSec/CS-Situational-Awareness-BOF` repo as per 2025-04-19.
+These are commands available in the `TrustedSec/CS-Situational-Awareness-BOF` repo as per 2026-01-26.
 Note that you cannot click them from this repo, you have to visit the repo itself to view each BOF in detail.
 
 *Content manually copied from the TrustedSec repository. Please refer to the original for the most up-to-date information.*
@@ -41,10 +41,12 @@ Note that you cannot click them from this repo, you have to visit the repo itsel
 |enumLocalSessions| enumLocalSessions| Enumerate currently attached user sessions both local and over RDP|
 |env| env| List process environment variables|
 |findLoadedModule| findLoadedModule [modulepart] [opt:procnamepart]| Find what processes \*modulepart\* are loaded into, optionally searching just \*procnamepart\*|
+|get_dpapi_system| get_dpapi_system | Get the DPAPI_SYSTEM key and bootkey |
 |get_password_policy| get_password_policy [hostname]| Get target server or domain's configured password policy and lockouts|
 |get_session_info| get_session_info | prints out information related to the current users logon session |
 |ipconfig| ipconfig| List IPv4 address, hostname, and DNS server|
-|ldapsearch| ldapsearch [query] [opt: attribute] [opt: results_limit] [opt: DC hostname or IP] [opt: Distingished Name]| Execute LDAP searches (NOTE: specify *,ntsecuritydescriptor as attribute parameter if you want all attributes + base64 encoded ACL of the objects, this can then be resolved using BOFHound. Could possibly break pagination, although everything seemed fine during testing.)|
+|ldapsearch| ldapsearch <query> [--attributes] [--count] [--scope] [--hostname] [--dn] [--ldaps] | Execute LDAP searches (NOTE: specify *,ntsecuritydescriptor as attribute parameter if you want all attributes + base64 encoded ACL of the objects, this can then be resolved using BOFHound. Could possibly break pagination, although everything seemed fine during testing.)|
+|ldapsecuritycheck| ldapsecuritycheck [opt:dc]| Check LDAP signing and LDAPS channel binding requirements on domain controllers. Performs authentication tests to detect security configurations.|
 |listdns| listdns| List DNS cache entries. Attempt to query and resolve each|
 |list_firewall_rules| list_firewall_rules| List Windows firewall rules|
 |listmods| listmods [opt: pid]| List process modules (DLL). Target current process if PID is empty. Complement to driversigs to determine if our process was injected by AV/EDR|
@@ -69,6 +71,7 @@ Note that you cannot click them from this repo, you have to visit the repo itsel
 |netuse_list| netuse_list [opt:target]| List all bound share resources or info about target local resource|
 |netview| netview| List reachable computers in the current domain|
 |nslookup| nslookup [hostname] [opt:dns server] [opt: record type]| Make a DNS query.<br/>  DNS server is the server you want to query (do not specify or 0 for default) <br/>record type is something like A, AAAA, or ANY. Some situations are limited due to observed crashes|
+|md5| md5 [filename]| Hash filename using md5|
 |probe| probe [host] [port]| Check if a specific port is open|
 |regsession| regsession [opt: hostname]| Return logged on user SIDs by enumerating HKEY_USERS. BOFHound compatible|
 |reg_query| [opt:hostname] [hive] [path] [opt: value to query]| Query a registry value or enumerate a single key|
@@ -83,6 +86,8 @@ Note that you cannot click them from this repo, you have to visit the repo itsel
 |sc_query| sc_query [opt: service name] [opt: server]| sc query implementation in BOF|
 |schtasksenum| schtasksenum [opt: server]| Enumerate scheduled tasks on the local or remote computer|
 |schtasksquery| schtasksquery [opt: server] [taskpath]| Query the given task on the local or remote computer|
+|sha1| sha1 [filename]| Hash filename using sha1|
+|sha256| sha256 [filename]| Hash filename using sha256|
 |tasklist| tasklist [opt: server]| List running processes including PID, PPID, and ComandLine (uses wmi)|
 |uptime| uptime| List system boot time and how long it has been running|
 |useridletime| useridletime| Shows how long the user as been idle, displayed in seconds, minutes, hours and days.|
@@ -99,7 +104,7 @@ Note that you cannot click them from this repo, you have to visit the repo itsel
 <details>
 <summary>Click to view commands from <a href="https://github.com/outflanknl/C2-Tool-Collection" target="_blank">outflanknl/C2-Tool-Collection</a> </summary>
 
-These are commands available in the `outflanknl/C2-Tool-Collection` repo as per 2025-04-19.
+These are commands available in the `outflanknl/C2-Tool-Collection` repo as per 2026-01-26.
 Note that you cannot click them from this repo, you have to visit the repo itself to view each BOF in detail.
 
 *Content manually copied from the repository. Please refer to the original for the most up-to-date information.*
@@ -142,7 +147,7 @@ Note that you cannot click them from this repo, you have to visit the repo itsel
 <details>
 <summary>Click to view commands from <a href="https://github.com/trustedsec/CS-Remote-OPs-BOF" target="_blank">trustedsec/CS-Remote-OPs-BOF</a> </summary>
 
-These are commands available in the `trustedsec/CS-Remote-OPs-BOF` repo as per 2025-04-19.
+These are commands available in the `trustedsec/CS-Remote-OPs-BOF` repo as per 2026-01-26.
 Note that you cannot click them from this repo, you have to visit the repo itself to view each BOF in detail.
 
 *Content manually copied from the repository. Please refer to the original for the most up-to-date information.*
@@ -154,6 +159,7 @@ Note that you cannot click them from this repo, you have to visit the repo itsel
 |adcs_request_on_behalf| Request an enrollment certificate on behalf of another user|
 |adduser| Add specified user to a machine|
 |addusertogroup| Add specified user to a group|
+|ask_mfa| Displays a fake Microsoft Authenticator approval dialog with the specified number|
 |chromeKey| Decrypt the provided base64 encoded Chrome key|
 |enableuser| Enable and unlock the specified user account|
 |get_azure_token| Attempts to complete an OAuth codeflow grant against azure using saved logins |
@@ -192,7 +198,7 @@ Note that you cannot click them from this repo, you have to visit the repo itsel
 <details>
 <summary>Click to view commands from <a href="https://github.com/REDMED-X/OperatorsKit" target="_blank">REDMED-X/OperatorsKit</a> </summary>
 
-These are commands available in the `REDMED-X/OperatorsKit` repo as per 2025-04-19.
+These are commands available in the `REDMED-X/OperatorsKit` repo as per 2026-01-26.
 Note that you cannot click them from this repo, you have to visit the repo itself to view each BOF in detail.
 
 *Content manually copied from the repository. Please refer to the original for the most up-to-date information.*
@@ -232,12 +238,14 @@ Note that you cannot click them from this repo, you have to visit the repo itsel
 |**[ForceLockScreen](KIT/ForceLockScreen)**|Force the lock screen of the current user session.|
 |**[HideFile](KIT/HideFile)**|Hide a file or directory by setting it's attributes to systemfile + hidden.|
 |**[IdleTime](KIT/IdleTime)**|Check current user activity based on the user's last input.|
-|**[InjectPoolParty](KIT/InjectPoolParty)**|Inject beacon shellcode and execute it via Windows Thread Pools|
+|**[InjectPoolParty](KIT/InjectPoolParty)**|Inject beacon shellcode and execute it via Windows Thread Pools.|
+|**[KeyloggerRawInput](KIT/KeyloggerRawInput)**|Keylogger based on RegisterRawInputDevices.|
 |**[LoadLib](KIT/LoadLib)**|Load an on disk present DLL via RtlRemoteCall API in a remote process.|
 |**[PSremote](KIT/PSremote)**|Enumerate all running processes on a remote host.|
 |**[PasswordSpray](KIT/PasswordSpray)**|Validate a single password against multiple accounts using kerberos authentication.|
 |**[SilenceSysmon](KIT/SilenceSysmon)**|Silence the Sysmon service by patching its capability to write ETW events to the log.|
 |**[SystemInfo](KIT/SystemInfo)**|Enumerate system information via WMI (limited use case).|
+|**[WiFiPasswords](KIT/WiFiPasswords)**|Enumerates all saved SSID's, then retrieves each AP's stored plaintext password.|
 
 </details>
 
