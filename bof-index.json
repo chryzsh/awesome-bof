@@ -1,14 +1,14 @@
 {
   "metadata": {
-    "total_bofs": 1234,
-    "total_repos": 374,
-    "repos_parsed": 336,
+    "total_bofs": 1299,
+    "total_repos": 397,
+    "repos_parsed": 355,
     "format_stats": {
-      "readme_table": 13,
-      "cna": 258,
-      "directory_structure": 370,
+      "readme_table": 16,
+      "cna": 265,
+      "directory_structure": 390,
       "stage1_py": 9,
-      "havoc_py": 30,
+      "havoc_py": 33,
       "readme_bullet": 8
     }
   },
@@ -665,17 +665,10 @@
       "source_format": "readme_table"
     },
     {
-      "name": "GetMachineAccountQuota",
-      "description": "Read the MachineAccountQuota value from the Active Directory domain.",
+      "name": "psxx",
+      "description": "Show more detailed information from all processes running on the system.",
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
-      "source_file": "MachineAccounts.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "DelMachineAccount",
-      "description": "Remove a computer account from the Active Directory domain.",
-      "repository": "https://github.com/outflanknl/C2-Tool-Collection",
-      "source_file": "MachineAccounts.cna",
+      "source_file": "Psx.cna",
       "source_format": "cna"
     },
     {
@@ -700,13 +693,6 @@
       "source_format": "cna"
     },
     {
-      "name": "psxx",
-      "description": "Show more detailed information from all processes running on the system.",
-      "repository": "https://github.com/outflanknl/C2-Tool-Collection",
-      "source_file": "Psx.cna",
-      "source_format": "cna"
-    },
-    {
       "name": "FindProcHandle",
       "description": "Find specific process handles.",
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
@@ -718,6 +704,20 @@
       "description": "Find loaded modules.",
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "FindObjects.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "GetMachineAccountQuota",
+      "description": "Read the MachineAccountQuota value from the Active Directory domain.",
+      "repository": "https://github.com/outflanknl/C2-Tool-Collection",
+      "source_file": "MachineAccounts.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "DelMachineAccount",
+      "description": "Remove a computer account from the Active Directory domain.",
+      "repository": "https://github.com/outflanknl/C2-Tool-Collection",
+      "source_file": "MachineAccounts.cna",
       "source_format": "cna"
     },
     {
@@ -1393,13 +1393,6 @@
       "source_format": "readme_table"
     },
     {
-      "name": "shadowcreds",
-      "description": "Execute Shadow Credentials attack - write msDS-KeyCredentialLink and obtain NT hash via PKINIT",
-      "repository": "https://github.com/RayRRT/BOFs",
-      "source_file": "shadowcreds.cna",
-      "source_format": "cna"
-    },
-    {
       "name": "ihxexec",
       "description": "Execute binary in another user",
       "repository": "https://github.com/RayRRT/BOFs",
@@ -1411,6 +1404,13 @@
       "description": "List active Windows sessions",
       "repository": "https://github.com/RayRRT/BOFs",
       "source_file": "ihxexec.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "shadowcreds",
+      "description": "Execute Shadow Credentials attack - write msDS-KeyCredentialLink and obtain NT hash via PKINIT",
+      "repository": "https://github.com/RayRRT/BOFs",
+      "source_file": "shadowcreds.cna",
       "source_format": "cna"
     },
     {
@@ -1708,43 +1708,8 @@
       "source_format": "readme_table"
     },
     {
-      "name": "app_count",
-      "description": "Counts the number of installed applications via the registry, de-duplicates, and prints. Applied to a large number of beacons, allows us to infer things about a device based on app count differences.",
-      "repository": "https://github.com/atomiczsec/Adrenaline",
-      "source_file": "README.md",
-      "source_format": "readme_table"
-    },
-    {
-      "name": "amsi_etw_detect",
-      "description": "Checks for AMSI and ETW presence in the current process by detecting loaded DLLs and ETW-related exports. Useful for picking targets with less security activity when applied broadly.",
-      "repository": "https://github.com/atomiczsec/Adrenaline",
-      "source_file": "README.md",
-      "source_format": "readme_table"
-    },
-    {
-      "name": "wsc_status",
-      "description": "Queries Windows Security Center health status, including Anti-Virus, Firewall, Anti-Spyware, WSC Service, Auto-Update, Internet Settings, and User Account Control.",
-      "repository": "https://github.com/atomiczsec/Adrenaline",
-      "source_file": "README.md",
-      "source_format": "readme_table"
-    },
-    {
-      "name": "asr_status",
-      "description": "Enumerates Windows Defender Attack Surface Reduction (ASR) rules from registry locations to identify which ASR rules are configured, their enforcement state (Block/Audit/Warn/Disabled), and the policy source (Intune/MDM vs Group Policy).",
-      "repository": "https://github.com/atomiczsec/Adrenaline",
-      "source_file": "README.md",
-      "source_format": "readme_table"
-    },
-    {
-      "name": "user_idle",
-      "description": "Gets user idle time since last input and GUI resource usage (GDI/USER handles) in the current process for timing intelligence.",
-      "repository": "https://github.com/atomiczsec/Adrenaline",
-      "source_file": "README.md",
-      "source_format": "readme_table"
-    },
-    {
-      "name": "window_handles_enum",
-      "description": "Enumerates window handles across all system processes and uses a legitimate window handle to access the clipboard.",
+      "name": "ai_surface",
+      "description": "Maps which AI/Copilot tools are present on an endpoint and reports their key storage locations. Checks for Windows Copilot, Office Copilot, Edge Copilot, GitHub Copilot, and third-party AI tools (ChatGPT, Claude, Cursor IDE).",
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table"
@@ -1757,50 +1722,8 @@
       "source_format": "readme_table"
     },
     {
-      "name": "process_tokens_list",
-      "description": "Enumerates accessible tokens from running processes, showing user context, token type (primary/impersonation), and impersonation level. Supports optional filtering by PID or process name. SeDebugPrivilege is disabled by default for OPSEC.",
-      "repository": "https://github.com/atomiczsec/Adrenaline",
-      "source_file": "README.md",
-      "source_format": "readme_table"
-    },
-    {
-      "name": "certstore_loot",
-      "description": "Enumerates local certificate stores to find certificates with exportable private keys and provides you with the path to export them.",
-      "repository": "https://github.com/atomiczsec/Adrenaline",
-      "source_file": "README.md",
-      "source_format": "readme_table"
-    },
-    {
-      "name": "bitlocker_status",
-      "description": "Enumerates BitLocker encryption status, policy configurations, and recovery key backup locations by scanning registry keys.",
-      "repository": "https://github.com/atomiczsec/Adrenaline",
-      "source_file": "README.md",
-      "source_format": "readme_table"
-    },
-    {
-      "name": "applocker_policy",
-      "description": "Enumerates AppLocker policy configurations, rule collections, and enforcement modes by scanning the relevant registry keys.",
-      "repository": "https://github.com/atomiczsec/Adrenaline",
-      "source_file": "README.md",
-      "source_format": "readme_table"
-    },
-    {
-      "name": "mdm_policy_artifacts",
-      "description": "Uses a scoring model to assess MDM enrollment posture on Windows systems by evaluating indicators including join state, scheduled tasks, policy configuration, and enrollment artifacts.",
-      "repository": "https://github.com/atomiczsec/Adrenaline",
-      "source_file": "README.md",
-      "source_format": "readme_table"
-    },
-    {
-      "name": "wef_detect",
-      "description": "Detects Windows Event Forwarding (WEF) configuration, which indicates centralized logging. If found, indicates security events are being forwarded to a central server.",
-      "repository": "https://github.com/atomiczsec/Adrenaline",
-      "source_file": "README.md",
-      "source_format": "readme_table"
-    },
-    {
-      "name": "ai_surface",
-      "description": "Maps which AI/Copilot tools are present on an endpoint and reports their key storage locations. Checks for Windows Copilot, Office Copilot, Edge Copilot, GitHub Copilot, and third-party AI tools (ChatGPT, Claude, Cursor IDE).",
+      "name": "window_handles_enum",
+      "description": "Enumerates window handles across all system processes and uses a legitimate window handle to access the clipboard.",
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table"
@@ -1815,6 +1738,118 @@
     {
       "name": "session_view",
       "description": "Enumerates Windows Terminal Services sessions, displaying session IDs, usernames, domains, connection states, and session LUIDs. Original Source: SessionView by lsecqt",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "certstore_loot",
+      "description": "Enumerates local certificate stores to find certificates with exportable private keys and provides you with the path to export them.",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "process_tokens_list",
+      "description": "Enumerates accessible tokens from running processes, showing user context, token type (primary/impersonation), and impersonation level. Supports optional filtering by PID or process name. SeDebugPrivilege is disabled by default for OPSEC.",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "amsi_etw_detect",
+      "description": "Checks for AMSI and ETW presence in the current process by detecting loaded DLLs and ETW-related exports. Useful for picking targets with less security activity when applied broadly.",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "app_count",
+      "description": "Counts the number of installed applications via the registry, de-duplicates, and prints. Applied to a large number of beacons, allows us to infer things about a device based on app count differences.",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "applocker_policy",
+      "description": "Enumerates AppLocker policy configurations, rule collections, and enforcement modes by scanning the relevant registry keys.",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "asr_status",
+      "description": "Enumerates Windows Defender Attack Surface Reduction (ASR) rules from registry locations to identify which ASR rules are configured, their enforcement state (Block/Audit/Warn/Disabled), and the policy source (Intune/MDM vs Group Policy).",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "bitlocker_status",
+      "description": "Enumerates BitLocker encryption status, policy configurations, and recovery key backup locations by scanning registry keys.",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "com_probe",
+      "description": "Probe whether a COM object can be instantiated from a given CLSID.",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "mdm_policy_artifacts",
+      "description": "Uses a scoring model to assess MDM enrollment posture on Windows systems by evaluating indicators including join state, scheduled tasks, policy configuration, and enrollment artifacts.",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "netjoin_query",
+      "description": "Queries Windows domain join information and workstation details, identifying if the system is domain-joined or in a workgroup.",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "user_idle",
+      "description": "Gets user idle time since last input and GUI resource usage (GDI/USER handles) in the current process for timing intelligence.",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "wallpaper_enum",
+      "description": "Enumerates the current desktop wallpaper path for each attached monitor using the modern IDesktopWallpaper COM interface. Centralized wallpapers are sometimes on internal SMB shares or imaging servers, revealing network paths, domain trusts, and policy enforcement without touching disk or the network.",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "wef_detect",
+      "description": "Detects Windows Event Forwarding (WEF) configuration, which indicates centralized logging. If found, indicates security events are being forwarded to a central server.",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "wevt_logon_enum",
+      "description": "Enumerates recent Security log (successful/failed) logon events (Event IDs 4624,4625,4672) via the wevtapi API and prints remote workstation name/IP plus the target username.",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "window_list",
+      "description": "Enumerates the titles of all visible windows on the current user's desktop, optionally including Process IDs (PIDs).",
+      "repository": "https://github.com/atomiczsec/Adrenaline",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "wsc_status",
+      "description": "Queries Windows Security Center health status, including Anti-Virus, Firewall, Anti-Spyware, WSC Service, Auto-Update, Internet Settings, and User Account Control.",
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table"
@@ -1848,6 +1883,13 @@
       "source_format": "havoc_py"
     },
     {
+      "name": "bofportscan",
+      "description": "",
+      "repository": "https://github.com/rvrsh3ll/BOF_Collection",
+      "source_file": "portscan.cna",
+      "source_format": "cna"
+    },
+    {
       "name": "wifidump",
       "description": "",
       "repository": "https://github.com/rvrsh3ll/BOF_Collection",
@@ -1862,20 +1904,6 @@
       "source_format": "cna"
     },
     {
-      "name": "bofportscan",
-      "description": "",
-      "repository": "https://github.com/rvrsh3ll/BOF_Collection",
-      "source_file": "portscan.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "static_syscalls_dump",
-      "description": "Use static syscalls to dump a given PID and save to disk",
-      "repository": "https://github.com/ajpc500/BOFs",
-      "source_file": "syscalls_dump.cna",
-      "source_format": "cna"
-    },
-    {
       "name": "syscalls_shspawn",
       "description": "Use syscalls from on-disk dll to spawn process and execute custom shellcode launch with Nt functions.",
       "repository": "https://github.com/ajpc500/BOFs",
@@ -1887,6 +1915,55 @@
       "description": "Use syscalls from on-disk dll to spawn process and execute CRT beacon shellcode launch with Nt functions.",
       "repository": "https://github.com/ajpc500/BOFs",
       "source_file": "syscalls_spawn.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "static_syscalls_apc_shspawn",
+      "description": "Spawn process and use syscalls to execute custom shellcode launch with Nt functions (NtMapViewOfSection -> NtQueueUserApc).",
+      "repository": "https://github.com/ajpc500/BOFs",
+      "source_file": "static_syscalls_apc_spawn.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "static_syscalls_apc_spawn",
+      "description": "Spawn process and use syscalls to execute beacon shellcode launch with Nt functions (NtMapViewOfSection -> NtQueueUserApc).",
+      "repository": "https://github.com/ajpc500/BOFs",
+      "source_file": "static_syscalls_apc_spawn.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "syscalls_shinject",
+      "description": "Use syscalls from on-disk dll to execute custom shellcode launch with Nt functions.",
+      "repository": "https://github.com/ajpc500/BOFs",
+      "source_file": "syscalls_inject.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "syscalls_inject",
+      "description": "Use syscalls from on-disk dll to execute CRT beacon shellcode launch with Nt functions.",
+      "repository": "https://github.com/ajpc500/BOFs",
+      "source_file": "syscalls_inject.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "static_syscalls_dump",
+      "description": "Use static syscalls to dump a given PID and save to disk",
+      "repository": "https://github.com/ajpc500/BOFs",
+      "source_file": "syscalls_dump.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "etw",
+      "description": "Start or stop ETW logging.",
+      "repository": "https://github.com/ajpc500/BOFs",
+      "source_file": "etw.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "curl",
+      "description": "Performs a web request against target server and port",
+      "repository": "https://github.com/ajpc500/BOFs",
+      "source_file": "curl.cna",
       "source_format": "cna"
     },
     {
@@ -1911,27 +1988,6 @@
       "source_format": "cna"
     },
     {
-      "name": "etw",
-      "description": "Start or stop ETW logging.",
-      "repository": "https://github.com/ajpc500/BOFs",
-      "source_file": "etw.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "static_syscalls_apc_shspawn",
-      "description": "Spawn process and use syscalls to execute custom shellcode launch with Nt functions (NtMapViewOfSection -> NtQueueUserApc).",
-      "repository": "https://github.com/ajpc500/BOFs",
-      "source_file": "static_syscalls_apc_spawn.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "static_syscalls_apc_spawn",
-      "description": "Spawn process and use syscalls to execute beacon shellcode launch with Nt functions (NtMapViewOfSection -> NtQueueUserApc).",
-      "repository": "https://github.com/ajpc500/BOFs",
-      "source_file": "static_syscalls_apc_spawn.cna",
-      "source_format": "cna"
-    },
-    {
       "name": "static_syscalls_shinject",
       "description": "Use static syscalls to execute custom shellcode launch with Nt functions.",
       "repository": "https://github.com/ajpc500/BOFs",
@@ -1943,27 +1999,6 @@
       "description": "Use static syscalls to execute CRT beacon shellcode launch with Nt functions.",
       "repository": "https://github.com/ajpc500/BOFs",
       "source_file": "static_syscalls_inject.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "syscalls_shinject",
-      "description": "Use syscalls from on-disk dll to execute custom shellcode launch with Nt functions.",
-      "repository": "https://github.com/ajpc500/BOFs",
-      "source_file": "syscalls_inject.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "syscalls_inject",
-      "description": "Use syscalls from on-disk dll to execute CRT beacon shellcode launch with Nt functions.",
-      "repository": "https://github.com/ajpc500/BOFs",
-      "source_file": "syscalls_inject.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "curl",
-      "description": "Performs a web request against target server and port",
-      "repository": "https://github.com/ajpc500/BOFs",
-      "source_file": "curl.cna",
       "source_format": "cna"
     },
     {
@@ -2422,143 +2457,10 @@
       "source_format": "stage1_py"
     },
     {
-      "name": "make_token_cert",
-      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "make_token_cert.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "adduser",
-      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "adduser.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "unexpire_user",
-      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "unexpire_user.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "reg_del",
-      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "reg_del.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "reg_save",
-      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "reg_save.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "reg_set",
-      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "reg_set.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "list_process_handles",
-      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "list_process_handles.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "shutdown",
-      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "shutdown.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "change_pass",
-      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "change_pass.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "adduser_to_group",
-      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "adduser_to_group.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "adcs_request",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "adcs_request.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "schtasks_create",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "schtasks_create.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "schtasks_del",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "schtasks_del.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "schtasks_run",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "schtasks_run.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "schtasks_stop",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "schtasks_stop.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "adcs_enum",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "adcs_enum.c",
-      "source_format": "directory_structure"
-    },
-    {
       "name": "pool_injection_variants",
       "description": "This repo was built to support BRc4 BOFs and the single file pool_injection_variants.c contains the variant injection types 4-8.",
       "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
       "source_file": "pool_injection_variants.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "kerberoasting",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "kerberoasting.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "tgtdeleg",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "tgtdeleg.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "renew",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "renew.c",
       "source_format": "directory_structure"
     },
     {
@@ -2569,10 +2471,10 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "hash",
+      "name": "klist",
       "description": "",
       "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "hash.c",
+      "source_file": "klist.c",
       "source_format": "directory_structure"
     },
     {
@@ -2583,24 +2485,87 @@
       "source_format": "directory_structure"
     },
     {
+      "name": "kerberoasting",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "kerberoasting.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "connection",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "connection.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "crypt_enc",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "crypt_enc.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "asn_encode",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "asn_encode.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "crypt_checksum",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "crypt_checksum.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "crypt_dec",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "crypt_dec.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "crypt_key",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "crypt_key.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "crypt_b64",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "crypt_b64.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "asn_decode",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "asn_decode.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "asn_convert",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "asn_convert.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "functions",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "functions.c",
+      "source_format": "directory_structure"
+    },
+    {
       "name": "asktgs",
       "description": "",
       "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
       "source_file": "asktgs.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "purge",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "purge.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "describe",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "describe.c",
       "source_format": "directory_structure"
     },
     {
@@ -2618,80 +2583,24 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "crypt_dec",
+      "name": "purge",
       "description": "",
       "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "crypt_dec.c",
+      "source_file": "purge.c",
       "source_format": "directory_structure"
     },
     {
-      "name": "functions",
+      "name": "describe",
       "description": "",
       "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "functions.c",
+      "source_file": "describe.c",
       "source_format": "directory_structure"
     },
     {
-      "name": "crypt_checksum",
+      "name": "hash",
       "description": "",
       "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "crypt_checksum.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "asn_convert",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "asn_convert.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "crypt_b64",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "crypt_b64.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "crypt_key",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "crypt_key.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "crypt_enc",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "crypt_enc.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "connection",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "connection.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "asn_encode",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "asn_encode.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "asn_decode",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "asn_decode.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "cross_s4u",
-      "description": "",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "cross_s4u.c",
+      "source_file": "hash.c",
       "source_format": "directory_structure"
     },
     {
@@ -2702,59 +2611,24 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "klist",
+      "name": "cross_s4u",
       "description": "",
       "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "klist.c",
+      "source_file": "cross_s4u.c",
       "source_format": "directory_structure"
     },
     {
-      "name": "dump_procargs",
-      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
+      "name": "tgtdeleg",
+      "description": "",
       "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "dump_procargs.c",
+      "source_file": "tgtdeleg.c",
       "source_format": "directory_structure"
     },
     {
-      "name": "get_netntlm",
-      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
+      "name": "renew",
+      "description": "",
       "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "get_netntlm.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "mem_search",
-      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "mem_search.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "proc_version",
-      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "proc_version.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "contact_harvester",
-      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "contact_harvester.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "mem_read",
-      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "mem_read.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "cryptvortex",
-      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
-      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "cryptvortex.c",
+      "source_file": "renew.c",
       "source_format": "directory_structure"
     },
     {
@@ -2765,10 +2639,164 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "EnumFiles",
-      "description": "This repository includes a port of Operators Kit from the below source. Any existing bugs in the original open-source projects have not been addressed and may not be fixed here. This repository solely",
+      "name": "get_netntlm",
+      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
       "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
-      "source_file": "EnumFiles.c",
+      "source_file": "get_netntlm.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "mem_read",
+      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "mem_read.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "proc_version",
+      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "proc_version.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "mem_search",
+      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "mem_search.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "contact_harvester",
+      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "contact_harvester.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "cryptvortex",
+      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "cryptvortex.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "dump_procargs",
+      "description": "This repository includes a collection of generic BOFs I wrote over a period of time. This repository solely focuses on porting and execution, without modifying the original source for stability. While",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "dump_procargs.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "reg_set",
+      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "reg_set.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "adduser_to_group",
+      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "adduser_to_group.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "make_token_cert",
+      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "make_token_cert.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "reg_save",
+      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "reg_save.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "change_pass",
+      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "change_pass.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "unexpire_user",
+      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "unexpire_user.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "reg_del",
+      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "reg_del.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "adduser",
+      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "adduser.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "shutdown",
+      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "shutdown.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "list_process_handles",
+      "description": "This repository includes a collection of open-source BOFs that have been ported to Brute Ratel C4 from the below source. Any existing bugs in the original open-source projects have not been addressed ",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "list_process_handles.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "adcs_enum",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "adcs_enum.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "schtasks_del",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "schtasks_del.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "schtasks_run",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "schtasks_run.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "schtasks_create",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "schtasks_create.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "schtasks_stop",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "schtasks_stop.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "adcs_request",
+      "description": "",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "adcs_request.c",
       "source_format": "directory_structure"
     },
     {
@@ -2779,6 +2807,13 @@
       "source_format": "directory_structure"
     },
     {
+      "name": "EnumFiles",
+      "description": "This repository includes a port of Operators Kit from the below source. Any existing bugs in the original open-source projects have not been addressed and may not be fixed here. This repository solely",
+      "repository": "https://github.com/paranoidninja/BRC4-BOF-Artillery",
+      "source_file": "EnumFiles.c",
+      "source_format": "directory_structure"
+    },
+    {
       "name": "AddUserToDomainGroup",
       "description": "Add a user to a domain group",
       "repository": "https://github.com/Yaxser/CobaltStrike-BOF",
@@ -2786,17 +2821,73 @@
       "source_format": "cna"
     },
     {
-      "name": "GetAppLockerPolicy",
-      "description": "Prints out AppLockerPolicy or drops the information into a desired location",
-      "repository": "https://github.com/jsecu/BOF-pack-1",
-      "source_file": "GetAppLockerPolicy.cna",
+      "name": "ihxexec",
+      "description": "Execute binary in another user",
+      "repository": "https://github.com/Wanssss1/BOFs",
+      "source_file": "ihxexec.cna",
       "source_format": "cna"
+    },
+    {
+      "name": "sessions",
+      "description": "List active Windows sessions",
+      "repository": "https://github.com/Wanssss1/BOFs",
+      "source_file": "ihxexec.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "esc1-unpac",
+      "description": "ESC1 + PKINIT + UnPAC-the-hash (complete ADCS attack chain)",
+      "repository": "https://github.com/Wanssss1/BOFs",
+      "source_file": "esc1-unpac.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "shadowcreds",
+      "description": "Execute Shadow Credentials attack - write msDS-KeyCredentialLink and obtain NT hash via PKINIT",
+      "repository": "https://github.com/Wanssss1/BOFs",
+      "source_file": "shadowcreds.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "luser",
+      "description": "$2 = DOMAIN\\User",
+      "repository": "https://github.com/jaytiwari05/PBOF",
+      "source_file": "make_token.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "uacbomber",
+      "description": "Execute UAC bypass with custom base64 PowerShell payload",
+      "repository": "https://github.com/jaytiwari05/PBOF",
+      "source_file": "uacbomber.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "keycred",
+      "description": "Run the `gencert.py` python script with the DN of the user you're setting shadow creds for",
+      "repository": "https://github.com/muhammadmehdi1656/ldap_bofs",
+      "source_file": "keycred.x64.o",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "rbcd",
+      "description": "Run the `genrbcd.py` python script with the SID of the user you're delegating to",
+      "repository": "https://github.com/muhammadmehdi1656/ldap_bofs",
+      "source_file": "rbcd.c",
+      "source_format": "directory_structure"
     },
     {
       "name": "PrivChanger",
       "description": "Change privileges in a desired process",
       "repository": "https://github.com/jsecu/BOF-pack-1",
       "source_file": "privchanger.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "GetAppLockerPolicy",
+      "description": "Prints out AppLockerPolicy or drops the information into a desired location",
+      "repository": "https://github.com/jsecu/BOF-pack-1",
+      "source_file": "GetAppLockerPolicy.cna",
       "source_format": "cna"
     },
     {
@@ -2814,10 +2905,10 @@
       "source_format": "cna"
     },
     {
-      "name": "WarpWorld",
-      "description": "Patch TermService to allow multiple RDP sessions",
+      "name": "DropOfHoney",
+      "description": "Query an AD user",
       "repository": "https://github.com/Yeeb1/MagicBOFs",
-      "source_file": "WarpWorld.cna",
+      "source_file": "DropOfHoney.cna",
       "source_format": "cna"
     },
     {
@@ -2828,10 +2919,10 @@
       "source_format": "cna"
     },
     {
-      "name": "DropOfHoney",
-      "description": "Query an AD user",
+      "name": "WarpWorld",
+      "description": "Patch TermService to allow multiple RDP sessions",
       "repository": "https://github.com/Yeeb1/MagicBOFs",
-      "source_file": "DropOfHoney.cna",
+      "source_file": "WarpWorld.cna",
       "source_format": "cna"
     },
     {
@@ -2877,10 +2968,10 @@
       "source_format": "cna"
     },
     {
-      "name": "static_syscalls_dump",
-      "description": "Use static syscalls to dump a given PID and save to disk",
+      "name": "helpx",
+      "description": "Lists available commands and colors each command based on its type",
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
-      "source_file": "syscalls_dump.cna",
+      "source_file": "HelpColor.cna",
       "source_format": "cna"
     },
     {
@@ -2895,6 +2986,55 @@
       "description": "Use syscalls from on-disk dll to spawn process and execute CRT beacon shellcode launch with Nt functions.",
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "syscalls_spawn.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "static_syscalls_apc_shspawn",
+      "description": "Spawn process and use syscalls to execute custom shellcode launch with Nt functions (NtMapViewOfSection -> NtQueueUserApc).",
+      "repository": "https://github.com/ZephrFish/QoL-BOFs",
+      "source_file": "static_syscalls_apc_spawn.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "static_syscalls_apc_spawn",
+      "description": "Spawn process and use syscalls to execute beacon shellcode launch with Nt functions (NtMapViewOfSection -> NtQueueUserApc).",
+      "repository": "https://github.com/ZephrFish/QoL-BOFs",
+      "source_file": "static_syscalls_apc_spawn.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "syscalls_shinject",
+      "description": "Use syscalls from on-disk dll to execute custom shellcode launch with Nt functions.",
+      "repository": "https://github.com/ZephrFish/QoL-BOFs",
+      "source_file": "syscalls_inject.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "syscalls_inject",
+      "description": "Use syscalls from on-disk dll to execute CRT beacon shellcode launch with Nt functions.",
+      "repository": "https://github.com/ZephrFish/QoL-BOFs",
+      "source_file": "syscalls_inject.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "static_syscalls_dump",
+      "description": "Use static syscalls to dump a given PID and save to disk",
+      "repository": "https://github.com/ZephrFish/QoL-BOFs",
+      "source_file": "syscalls_dump.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "etw",
+      "description": "Start or stop ETW logging.",
+      "repository": "https://github.com/ZephrFish/QoL-BOFs",
+      "source_file": "etw.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "curl",
+      "description": "Performs a web request against target server and port",
+      "repository": "https://github.com/ZephrFish/QoL-BOFs",
+      "source_file": "curl.cna",
       "source_format": "cna"
     },
     {
@@ -2919,27 +3059,6 @@
       "source_format": "cna"
     },
     {
-      "name": "etw",
-      "description": "Start or stop ETW logging.",
-      "repository": "https://github.com/ZephrFish/QoL-BOFs",
-      "source_file": "etw.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "static_syscalls_apc_shspawn",
-      "description": "Spawn process and use syscalls to execute custom shellcode launch with Nt functions (NtMapViewOfSection -> NtQueueUserApc).",
-      "repository": "https://github.com/ZephrFish/QoL-BOFs",
-      "source_file": "static_syscalls_apc_spawn.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "static_syscalls_apc_spawn",
-      "description": "Spawn process and use syscalls to execute beacon shellcode launch with Nt functions (NtMapViewOfSection -> NtQueueUserApc).",
-      "repository": "https://github.com/ZephrFish/QoL-BOFs",
-      "source_file": "static_syscalls_apc_spawn.cna",
-      "source_format": "cna"
-    },
-    {
       "name": "static_syscalls_shinject",
       "description": "Use static syscalls to execute custom shellcode launch with Nt functions.",
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
@@ -2954,31 +3073,10 @@
       "source_format": "cna"
     },
     {
-      "name": "syscalls_shinject",
-      "description": "Use syscalls from on-disk dll to execute custom shellcode launch with Nt functions.",
-      "repository": "https://github.com/ZephrFish/QoL-BOFs",
-      "source_file": "syscalls_inject.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "syscalls_inject",
-      "description": "Use syscalls from on-disk dll to execute CRT beacon shellcode launch with Nt functions.",
-      "repository": "https://github.com/ZephrFish/QoL-BOFs",
-      "source_file": "syscalls_inject.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "curl",
-      "description": "Performs a web request against target server and port",
-      "repository": "https://github.com/ZephrFish/QoL-BOFs",
-      "source_file": "curl.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "helpx",
-      "description": "Lists available commands and colors each command based on its type",
-      "repository": "https://github.com/ZephrFish/QoL-BOFs",
-      "source_file": "HelpColor.cna",
+      "name": "procargs",
+      "description": "Display process cmdline arguments",
+      "repository": "https://github.com/mlcsec/proctools",
+      "source_file": "procargs.cna",
       "source_format": "cna"
     },
     {
@@ -2989,10 +3087,10 @@
       "source_format": "cna"
     },
     {
-      "name": "procargs",
-      "description": "Display process cmdline arguments",
+      "name": "procinfo",
+      "description": "Display process information",
       "repository": "https://github.com/mlcsec/proctools",
-      "source_file": "procargs.cna",
+      "source_file": "procinfo.cna",
       "source_format": "cna"
     },
     {
@@ -3000,13 +3098,6 @@
       "description": "Kill target process",
       "repository": "https://github.com/mlcsec/proctools",
       "source_file": "prockill.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "procinfo",
-      "description": "Display process information",
-      "repository": "https://github.com/mlcsec/proctools",
-      "source_file": "procinfo.cna",
       "source_format": "cna"
     },
     {
@@ -3066,17 +3157,17 @@
       "source_format": "cna"
     },
     {
-      "name": "CredEnum",
-      "description": "Enumerate creds through wincred API",
-      "repository": "https://github.com/guervild/BOFs",
-      "source_file": "CredEnum.cna",
-      "source_format": "cna"
-    },
-    {
       "name": "credprompt",
       "description": "Prompt a windows ui to ask current user",
       "repository": "https://github.com/guervild/BOFs",
       "source_file": "CredPrompt.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "CredEnum",
+      "description": "Enumerate creds through wincred API",
+      "repository": "https://github.com/guervild/BOFs",
+      "source_file": "CredEnum.cna",
       "source_format": "cna"
     },
     {
@@ -3101,10 +3192,10 @@
       "source_format": "cna"
     },
     {
-      "name": "cat",
-      "description": "Cat the content of a file",
+      "name": "wts_enum_remote_processes",
+      "description": "Enumerate remote processes via WTS APIs",
       "repository": "https://github.com/RiccardoAncarani/BOFs",
-      "source_file": "cat.cna",
+      "source_file": "wts_enum_remote_processes.cna",
       "source_format": "cna"
     },
     {
@@ -3115,17 +3206,17 @@
       "source_format": "cna"
     },
     {
+      "name": "cat",
+      "description": "Cat the content of a file",
+      "repository": "https://github.com/RiccardoAncarani/BOFs",
+      "source_file": "cat.cna",
+      "source_format": "cna"
+    },
+    {
       "name": "send_shellcode_via_pipe",
       "description": "Sends a shellcode via a named pipe",
       "repository": "https://github.com/RiccardoAncarani/BOFs",
       "source_file": "send_shellcode_via_pipe.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "wts_enum_remote_processes",
-      "description": "Enumerate remote processes via WTS APIs",
-      "repository": "https://github.com/RiccardoAncarani/BOFs",
-      "source_file": "wts_enum_remote_processes.cna",
       "source_format": "cna"
     },
     {
@@ -3139,7 +3230,7 @@
       "name": "cascade",
       "description": "- https://itm4n.github.io/windows-server-netman-dll-hijacking/",
       "repository": "https://github.com/v1stra/BOFs",
-      "source_file": "cascade.c",
+      "source_file": "cascade.o",
       "source_format": "directory_structure"
     },
     {
@@ -3157,13 +3248,6 @@
       "source_format": "cna"
     },
     {
-      "name": "chromiumkeydump",
-      "description": "Dump Chrome/Edge Masterkey and download Cookies/LoginData",
-      "repository": "https://github.com/crypt0p3g/bof-collection",
-      "source_file": "ChromiumKeyDump.cna",
-      "source_format": "cna"
-    },
-    {
       "name": "sleeper",
       "description": "BOF to call the SetThreadExecutionState function to prevent host from Sleeping",
       "repository": "https://github.com/crypt0p3g/bof-collection",
@@ -3171,31 +3255,10 @@
       "source_format": "cna"
     },
     {
-      "name": "luser",
-      "description": "LogonUser to create a token with credentials",
-      "repository": "https://github.com/chrispentester/BeaconObjectFile",
-      "source_file": "luser.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "stc_inject",
-      "description": "XPN",
-      "repository": "https://github.com/chrispentester/BeaconObjectFile",
-      "source_file": "stc_inject.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "syscall_stc_inject",
-      "description": "XPN",
-      "repository": "https://github.com/chrispentester/BeaconObjectFile",
-      "source_file": "syscall_stcinject.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "syscall_stc_shinject",
-      "description": "Direct syscalls to execute custom shellcode (.bin) from disk.",
-      "repository": "https://github.com/chrispentester/BeaconObjectFile",
-      "source_file": "syscall_stcinject.cna",
+      "name": "chromiumkeydump",
+      "description": "Dump Chrome/Edge Masterkey and download Cookies/LoginData",
+      "repository": "https://github.com/crypt0p3g/bof-collection",
+      "source_file": "ChromiumKeyDump.cna",
       "source_format": "cna"
     },
     {
@@ -3203,6 +3266,13 @@
       "description": "Basic PE shellcode injection method",
       "repository": "https://github.com/chrispentester/BeaconObjectFile",
       "source_file": "shellcodeinject.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "qua_spawn",
+      "description": "QueueUserAPC spawn and inject method",
+      "repository": "https://github.com/chrispentester/BeaconObjectFile",
+      "source_file": "qua_spawn.cna",
       "source_format": "cna"
     },
     {
@@ -3220,6 +3290,27 @@
       "source_format": "cna"
     },
     {
+      "name": "luser",
+      "description": "LogonUser to create a token with credentials",
+      "repository": "https://github.com/chrispentester/BeaconObjectFile",
+      "source_file": "luser.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "syscall_stc_inject",
+      "description": "XPN",
+      "repository": "https://github.com/chrispentester/BeaconObjectFile",
+      "source_file": "syscall_stcinject.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "syscall_stc_shinject",
+      "description": "Direct syscalls to execute custom shellcode (.bin) from disk.",
+      "repository": "https://github.com/chrispentester/BeaconObjectFile",
+      "source_file": "syscall_stcinject.cna",
+      "source_format": "cna"
+    },
+    {
       "name": "syscall_shellcodeinject",
       "description": "Basic PE shellcode injection method via syscalls",
       "repository": "https://github.com/chrispentester/BeaconObjectFile",
@@ -3227,10 +3318,10 @@
       "source_format": "cna"
     },
     {
-      "name": "qua_spawn",
-      "description": "QueueUserAPC spawn and inject method",
+      "name": "stc_inject",
+      "description": "XPN",
       "repository": "https://github.com/chrispentester/BeaconObjectFile",
-      "source_file": "qua_spawn.cna",
+      "source_file": "stc_inject.cna",
       "source_format": "cna"
     },
     {
@@ -3654,6 +3745,13 @@
       "source_format": "cna"
     },
     {
+      "name": "getAV",
+      "description": "",
+      "repository": "https://github.com/matro7sh/bof-collection",
+      "source_file": "getAV.c",
+      "source_format": "directory_structure"
+    },
+    {
       "name": "checkVM",
       "description": "",
       "repository": "https://github.com/matro7sh/bof-collection",
@@ -3665,13 +3763,6 @@
       "description": "",
       "repository": "https://github.com/matro7sh/bof-collection",
       "source_file": "checkVM2.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "getAV",
-      "description": "",
-      "repository": "https://github.com/matro7sh/bof-collection",
-      "source_file": "getAV.c",
       "source_format": "directory_structure"
     },
     {
@@ -3725,7 +3816,7 @@
     },
     {
       "name": "bof",
-      "description": "BOF that will query logged in suers on the local host, until I figure out parameters",
+      "description": "A BOF that grabs host information by reading Registry keys and using Win32 API",
       "repository": "https://github.com/Workingdaturah/BOF-Learning",
       "source_file": "bof.x64.o",
       "source_format": "directory_structure"
@@ -4200,87 +4291,80 @@
       "source_format": "readme_table"
     },
     {
-      "name": "createremotethread",
-      "description": "createremotethread injection technique",
+      "name": "PrivCheck",
+      "description": "Run all privilege escalation checks",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "Injection.cna",
+      "source_file": "PrivCheck.cna",
       "source_format": "cna"
     },
     {
-      "name": "setthreadcontext",
-      "description": "setthreadcontext injection technique",
+      "name": "AlwaysInstallElevatedCheck",
+      "description": "Check for AlwaysInstallElevated privilege escalation vulnerability",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "Injection.cna",
+      "source_file": "PrivCheck.cna",
       "source_format": "cna"
     },
     {
-      "name": "ntcreatethread",
-      "description": "ntcreatethread injection technique",
+      "name": "AutologonCheck",
+      "description": "Check for stored Autologon credentials in registry",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "Injection.cna",
+      "source_file": "PrivCheck.cna",
       "source_format": "cna"
     },
     {
-      "name": "ntqueueapcthread",
-      "description": "ntqueueapcthread injection technique",
+      "name": "CredentialManagerCheck",
+      "description": "Enumerate credentials from Windows Credential Manager",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "Injection.cna",
+      "source_file": "PrivCheck.cna",
       "source_format": "cna"
     },
     {
-      "name": "kernelcallbacktable",
-      "description": "kernelcallbacktable injection technique",
+      "name": "HijackablePathCheck",
+      "description": "Check for writable directories in system PATH",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "Injection.cna",
+      "source_file": "PrivCheck.cna",
       "source_format": "cna"
     },
     {
-      "name": "tooltip",
-      "description": "tooltip injection technique",
+      "name": "ModifiableAutorunCheck",
+      "description": "Check for modifiable autorun executables",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "Injection.cna",
+      "source_file": "PrivCheck.cna",
       "source_format": "cna"
     },
     {
-      "name": "uxsubclassinfo",
-      "description": "uxsubclassinfo injection technique (targets explorer.exe only)",
+      "name": "TokenPrivilegesCheck",
+      "description": "Enumerate current token privileges",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "Injection.cna",
+      "source_file": "PrivCheck.cna",
       "source_format": "cna"
     },
     {
-      "name": "clipboardinject",
-      "description": "clipboardinject injection technique",
+      "name": "UnquotedSVCPathCheck",
+      "description": "Check for Unquoted Service Paths vulnerability",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "Injection.cna",
+      "source_file": "PrivCheck.cna",
       "source_format": "cna"
     },
     {
-      "name": "conhost",
-      "description": "conhost injection technique (targets conhost.exe only)",
+      "name": "PowerShellHistoryCheck",
+      "description": "Check for PowerShell history file",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "Injection.cna",
+      "source_file": "PrivCheck.cna",
       "source_format": "cna"
     },
     {
-      "name": "ctray",
-      "description": "ctray injection technique (targets explorer.exe only)",
+      "name": "UACStatusCheck",
+      "description": "Check UAC status, integrity level, and admin membership",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "Injection.cna",
+      "source_file": "PrivCheck.cna",
       "source_format": "cna"
     },
     {
-      "name": "dde",
-      "description": "dde injection technique (targets explorer.exe only)",
+      "name": "ModifiableSVCCheck",
+      "description": "Check for services with modifiable permissions",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "Injection.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "svcctrl",
-      "description": "svcctrl injection technique",
-      "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "Injection.cna",
+      "source_file": "PrivCheck.cna",
       "source_format": "cna"
     },
     {
@@ -4508,94 +4592,87 @@
       "source_format": "cna"
     },
     {
-      "name": "PrivCheck",
-      "description": "Run all privilege escalation checks",
+      "name": "createremotethread",
+      "description": "createremotethread injection technique",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "PrivCheck.cna",
+      "source_file": "Injection.cna",
       "source_format": "cna"
     },
     {
-      "name": "AlwaysInstallElevatedCheck",
-      "description": "Check for AlwaysInstallElevated privilege escalation vulnerability",
+      "name": "setthreadcontext",
+      "description": "setthreadcontext injection technique",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "PrivCheck.cna",
+      "source_file": "Injection.cna",
       "source_format": "cna"
     },
     {
-      "name": "AutologonCheck",
-      "description": "Check for stored Autologon credentials in registry",
+      "name": "ntcreatethread",
+      "description": "ntcreatethread injection technique",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "PrivCheck.cna",
+      "source_file": "Injection.cna",
       "source_format": "cna"
     },
     {
-      "name": "CredentialManagerCheck",
-      "description": "Enumerate credentials from Windows Credential Manager",
+      "name": "ntqueueapcthread",
+      "description": "ntqueueapcthread injection technique",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "PrivCheck.cna",
+      "source_file": "Injection.cna",
       "source_format": "cna"
     },
     {
-      "name": "HijackablePathCheck",
-      "description": "Check for writable directories in system PATH",
+      "name": "kernelcallbacktable",
+      "description": "kernelcallbacktable injection technique",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "PrivCheck.cna",
+      "source_file": "Injection.cna",
       "source_format": "cna"
     },
     {
-      "name": "ModifiableAutorunCheck",
-      "description": "Check for modifiable autorun executables",
+      "name": "tooltip",
+      "description": "tooltip injection technique",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "PrivCheck.cna",
+      "source_file": "Injection.cna",
       "source_format": "cna"
     },
     {
-      "name": "TokenPrivilegesCheck",
-      "description": "Enumerate current token privileges",
+      "name": "uxsubclassinfo",
+      "description": "uxsubclassinfo injection technique (targets explorer.exe only)",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "PrivCheck.cna",
+      "source_file": "Injection.cna",
       "source_format": "cna"
     },
     {
-      "name": "UnquotedSVCPathCheck",
-      "description": "Check for Unquoted Service Paths vulnerability",
+      "name": "clipboardinject",
+      "description": "clipboardinject injection technique",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "PrivCheck.cna",
+      "source_file": "Injection.cna",
       "source_format": "cna"
     },
     {
-      "name": "PowerShellHistoryCheck",
-      "description": "Check for PowerShell history file",
+      "name": "conhost",
+      "description": "conhost injection technique (targets conhost.exe only)",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "PrivCheck.cna",
+      "source_file": "Injection.cna",
       "source_format": "cna"
     },
     {
-      "name": "UACStatusCheck",
-      "description": "Check UAC status, integrity level, and admin membership",
+      "name": "ctray",
+      "description": "ctray injection technique (targets explorer.exe only)",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "PrivCheck.cna",
+      "source_file": "Injection.cna",
       "source_format": "cna"
     },
     {
-      "name": "ModifiableSVCCheck",
-      "description": "Check for services with modifiable permissions",
+      "name": "dde",
+      "description": "dde injection technique (targets explorer.exe only)",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "PrivCheck.cna",
+      "source_file": "Injection.cna",
       "source_format": "cna"
     },
     {
-      "name": "scshell",
-      "description": "lateral movement using ChangeServiceConfigA API",
+      "name": "svcctrl",
+      "description": "svcctrl injection technique",
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "scshell.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "scshell-settings",
-      "description": "set options for scshell based jump commands",
-      "repository": "https://github.com/sanackermann/nh_bofs_ag",
-      "source_file": "scshell.cna",
+      "source_file": "Injection.cna",
       "source_format": "cna"
     },
     {
@@ -4963,6 +5040,20 @@
       "source_format": "cna"
     },
     {
+      "name": "scshell",
+      "description": "lateral movement using ChangeServiceConfigA API",
+      "repository": "https://github.com/sanackermann/nh_bofs_ag",
+      "source_file": "scshell.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "scshell-settings",
+      "description": "set options for scshell based jump commands",
+      "repository": "https://github.com/sanackermann/nh_bofs_ag",
+      "source_file": "scshell.cna",
+      "source_format": "cna"
+    },
+    {
       "name": "persistask",
       "description": "Set scheduled task to launch at logon for persistence. Uses COM object to create task for OPSEC.",
       "repository": "https://github.com/giovannicolonna/PersisTask-BOF-AdaptixC2",
@@ -5068,6 +5159,13 @@
       "source_format": "havoc_py"
     },
     {
+      "name": "inject",
+      "description": "Injects shellcode into a process via Thread Hijacking",
+      "repository": "https://github.com/CyberSecurityUP/Havoc-BOF-Development",
+      "source_file": "BOF_ThreadHijacking.py",
+      "source_format": "havoc_py"
+    },
+    {
       "name": "mockingjay",
       "description": "Executes the Mockingjay BOF",
       "repository": "https://github.com/CyberSecurityUP/Havoc-BOF-Development",
@@ -5079,13 +5177,6 @@
       "description": "Inject shellcode from a .bin file into RWX section of a DLL",
       "repository": "https://github.com/CyberSecurityUP/Havoc-BOF-Development",
       "source_file": "BOF-Mockingjay.py",
-      "source_format": "havoc_py"
-    },
-    {
-      "name": "inject",
-      "description": "Injects shellcode into a process via Thread Hijacking",
-      "repository": "https://github.com/CyberSecurityUP/Havoc-BOF-Development",
-      "source_file": "BOF_ThreadHijacking.py",
       "source_format": "havoc_py"
     },
     {
@@ -5488,31 +5579,178 @@
       "source_format": "havoc_py"
     },
     {
+      "name": "whoami",
+      "description": "Show current user and group information",
+      "repository": "https://github.com/pard0p/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "ipconfig",
+      "description": "Show network adapter configuration",
+      "repository": "https://github.com/pard0p/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "cacls",
+      "description": "List file permissions",
+      "repository": "https://github.com/pard0p/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "reg-query",
+      "description": "Query Windows Registry",
+      "repository": "https://github.com/pard0p/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "execute-assembly",
+      "description": "Load CLR and inject .NET assembly",
+      "repository": "https://github.com/pard0p/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "bof",
+      "description": "Execute custom BOF",
+      "repository": "https://github.com/pard0p/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "./Source/PIC-Loader/CP-Dist/link ./Source/PIC-Loader/loader.spec ./Source/Modules/whoami.x64.o ./Bin/whoami.x64.bin",
+      "description": "",
+      "repository": "https://github.com/pard0p/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "./Source/PIC-Loader/CP-Dist/link ./Source/PIC-Loader/loader.spec ./Source/Modules/ipconfig.x64.o ./Bin/ipconfig.x64.bin",
+      "description": "",
+      "repository": "https://github.com/pard0p/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "whoami",
+      "description": "Show current user and group information",
+      "repository": "https://github.com/arshaplayer/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "ipconfig",
+      "description": "Show network adapter configuration",
+      "repository": "https://github.com/arshaplayer/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "cacls",
+      "description": "List file permissions",
+      "repository": "https://github.com/arshaplayer/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "reg-query",
+      "description": "Query Windows Registry",
+      "repository": "https://github.com/arshaplayer/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "execute-assembly",
+      "description": "Load CLR and inject .NET assembly",
+      "repository": "https://github.com/arshaplayer/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "bof",
+      "description": "Execute custom BOF",
+      "repository": "https://github.com/arshaplayer/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "./Source/PIC-Loader/CP-Dist/link ./Source/PIC-Loader/loader.spec ./Source/Modules/whoami.x64.o ./Bin/whoami.x64.bin",
+      "description": "",
+      "repository": "https://github.com/arshaplayer/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "./Source/PIC-Loader/CP-Dist/link ./Source/PIC-Loader/loader.spec ./Source/Modules/ipconfig.x64.o ./Bin/ipconfig.x64.bin",
+      "description": "",
+      "repository": "https://github.com/arshaplayer/Remote-BOF-Runner",
+      "source_file": "remote-bof-runner.py",
+      "source_format": "havoc_py"
+    },
+    {
+      "name": "single",
+      "description": "Extract credentials for a specific user",
+      "repository": "https://github.com/P0142/DCSync-Bof",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "all",
+      "description": "Extract credentials for all domain users",
+      "repository": "https://github.com/P0142/DCSync-Bof",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "sam",
+      "description": "",
+      "repository": "https://github.com/shashinma/LSAdump-BOF",
+      "source_file": "sam.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "secrets",
+      "description": "",
+      "repository": "https://github.com/shashinma/LSAdump-BOF",
+      "source_file": "secrets.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "lsadump_helper",
+      "description": "",
+      "repository": "https://github.com/shashinma/LSAdump-BOF",
+      "source_file": "lsadump_helper.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "cache",
+      "description": "",
+      "repository": "https://github.com/shashinma/LSAdump-BOF",
+      "source_file": "cache.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "base",
+      "description": "",
+      "repository": "https://github.com/shashinma/NBTscan-BOF",
+      "source_file": "base.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "nbtscan",
+      "description": "",
+      "repository": "https://github.com/shashinma/NBTscan-BOF",
+      "source_file": "nbtscan.c",
+      "source_format": "directory_structure"
+    },
+    {
       "name": "dumpguard",
       "description": "",
       "repository": "https://github.com/0xedh/dumpguard_bof",
       "source_file": "dumpguard.x64.o",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "dg_tssspasn1",
-      "description": "",
-      "repository": "https://github.com/0xedh/dumpguard_bof",
-      "source_file": "dg_tssspasn1.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "dg_crypto",
-      "description": "",
-      "repository": "https://github.com/0xedh/dumpguard_bof",
-      "source_file": "dg_crypto.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "dg_spnegoasn1",
-      "description": "",
-      "repository": "https://github.com/0xedh/dumpguard_bof",
-      "source_file": "dg_spnegoasn1.c",
       "source_format": "directory_structure"
     },
     {
@@ -5523,10 +5761,10 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "dg_krb_flow",
+      "name": "dg_api",
       "description": "",
       "repository": "https://github.com/0xedh/dumpguard_bof",
-      "source_file": "dg_krb_flow.c",
+      "source_file": "dg_api.c",
       "source_format": "directory_structure"
     },
     {
@@ -5537,17 +5775,10 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "dg_api",
+      "name": "dg_crypto",
       "description": "",
       "repository": "https://github.com/0xedh/dumpguard_bof",
-      "source_file": "dg_api.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "dg_ntlm_extract",
-      "description": "",
-      "repository": "https://github.com/0xedh/dumpguard_bof",
-      "source_file": "dg_ntlm_extract.c",
+      "source_file": "dg_crypto.c",
       "source_format": "directory_structure"
     },
     {
@@ -5555,6 +5786,20 @@
       "description": "",
       "repository": "https://github.com/0xedh/dumpguard_bof",
       "source_file": "dg_server.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "dg_krb_flow",
+      "description": "",
+      "repository": "https://github.com/0xedh/dumpguard_bof",
+      "source_file": "dg_krb_flow.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "dg_tssspasn1",
+      "description": "",
+      "repository": "https://github.com/0xedh/dumpguard_bof",
+      "source_file": "dg_tssspasn1.c",
       "source_format": "directory_structure"
     },
     {
@@ -5569,6 +5814,20 @@
       "description": "",
       "repository": "https://github.com/0xedh/dumpguard_bof",
       "source_file": "dg_krb5asn1.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "dg_ntlm_extract",
+      "description": "",
+      "repository": "https://github.com/0xedh/dumpguard_bof",
+      "source_file": "dg_ntlm_extract.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "dg_spnegoasn1",
+      "description": "",
+      "repository": "https://github.com/0xedh/dumpguard_bof",
+      "source_file": "dg_spnegoasn1.c",
       "source_format": "directory_structure"
     },
     {
@@ -5656,6 +5915,27 @@
       "source_format": "havoc_py"
     },
     {
+      "name": "runpe",
+      "description": "Execute PE file in memory with custom configuration",
+      "repository": "https://github.com/NtDallas/BOF_RunPe",
+      "source_file": "BOF_RunPe.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "sw2-sec-inject",
+      "description": "Injects beacon shellcode into target process using section mapping with syswhisper2",
+      "repository": "https://github.com/ScriptIdiot/sw2-secinject",
+      "source_file": "sw2-secinject.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "sw2-sec-shinject",
+      "description": "Injects desired shellcode into target process using section mapping with syswhisper2",
+      "repository": "https://github.com/ScriptIdiot/sw2-secinject",
+      "source_file": "sw2-secinject.cna",
+      "source_format": "cna"
+    },
+    {
       "name": "comhijack",
       "description": "Setup COM hijack registry keys",
       "repository": "https://github.com/mwnickerson/COMHijackBOF",
@@ -5701,7 +5981,7 @@
       "name": "cleareventlog",
       "description": "Clear Event Logs",
       "repository": "https://github.com/mertdas/ClearEventlogBOF",
-      "source_file": "cleareventlog.o",
+      "source_file": "cleareventlog.c",
       "source_format": "directory_structure"
     },
     {
@@ -5761,17 +6041,17 @@
       "source_format": "cna"
     },
     {
-      "name": "rbcd",
-      "description": "Run the `genrbcd.py` python script with the SID of the user you're delegating to",
-      "repository": "https://github.com/garrettfoster13/ldap_bofs",
-      "source_file": "rbcd.x64.o",
-      "source_format": "directory_structure"
-    },
-    {
       "name": "keycred",
       "description": "Run the `gencert.py` python script with the DN of the user you're setting shadow creds for",
       "repository": "https://github.com/garrettfoster13/ldap_bofs",
-      "source_file": "keycred.c",
+      "source_file": "keycred.x64.o",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "rbcd",
+      "description": "Run the `genrbcd.py` python script with the SID of the user you're delegating to",
+      "repository": "https://github.com/garrettfoster13/ldap_bofs",
+      "source_file": "rbcd.c",
       "source_format": "directory_structure"
     },
     {
@@ -5799,7 +6079,7 @@
       "name": "portscanner",
       "description": "A Beacon Object File (BOF) for C2 framework (Cobaltstrike/AdaptixC2) that performs TCP port scanning directly from memory. It scans a specified range of ports on a target IP and reports open ports to ",
       "repository": "https://github.com/0xrobinso/PortscannerBOF",
-      "source_file": "portscanner.c",
+      "source_file": "portscanner.o",
       "source_format": "directory_structure"
     },
     {
@@ -6202,24 +6482,10 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "windowspy",
-      "description": "\"Use: windowspy\"",
-      "repository": "https://github.com/CodeXTF2/WindowSpy",
-      "source_file": "WindowSpy.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "windowspy_update",
-      "description": "beacon_inline_execute($bid, $data, \"go\", $args);",
-      "repository": "https://github.com/CodeXTF2/WindowSpy",
-      "source_file": "WindowSpy.cna",
-      "source_format": "cna"
-    },
-    {
-      "name": "Main",
+      "name": "Bof",
       "description": "",
       "repository": "https://github.com/NtDallas/Draugr",
-      "source_file": "Main.c",
+      "source_file": "Bof.c",
       "source_format": "directory_structure"
     },
     {
@@ -6230,10 +6496,10 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "Bof",
+      "name": "Main",
       "description": "",
       "repository": "https://github.com/NtDallas/Draugr",
-      "source_file": "Bof.c",
+      "source_file": "Main.c",
       "source_format": "directory_structure"
     },
     {
@@ -6284,13 +6550,6 @@
       "repository": "https://github.com/FalconForceTeam/bof-winrm-plugin-jump",
       "source_file": "winrm-plugin-jump.cna",
       "source_format": "cna"
-    },
-    {
-      "name": "Source",
-      "description": "",
-      "repository": "https://github.com/BKLockly/BOF-Timestomp",
-      "source_file": "Source.c",
-      "source_format": "directory_structure"
     },
     {
       "name": "spoof-execute",
@@ -6804,17 +7063,17 @@
       "source_format": "cna"
     },
     {
-      "name": "beacon_compatibility",
-      "description": "",
-      "repository": "https://github.com/rkbennett/pybof",
-      "source_file": "beacon_compatibility.c",
-      "source_format": "directory_structure"
-    },
-    {
       "name": "APIResolve",
       "description": "",
       "repository": "https://github.com/rkbennett/pybof",
       "source_file": "APIResolve.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "beacon_compatibility",
+      "description": "",
+      "repository": "https://github.com/rkbennett/pybof",
+      "source_file": "beacon_compatibility.c",
       "source_format": "directory_structure"
     },
     {
@@ -6888,10 +7147,10 @@
       "source_format": "cna"
     },
     {
-      "name": "HerpaDerp",
+      "name": "herpaderp",
       "description": "",
       "repository": "https://github.com/MrAle98/BOF-RunPE",
-      "source_file": "HerpaDerp.c",
+      "source_file": "herpaderp.x64.o",
       "source_format": "directory_structure"
     },
     {
@@ -7301,24 +7560,10 @@
       "source_format": "cna"
     },
     {
-      "name": "token",
-      "description": "",
-      "repository": "https://github.com/j0urney1/bof-NetworkServiceEscalate",
-      "source_file": "token.c",
-      "source_format": "directory_structure"
-    },
-    {
       "name": "server",
       "description": "",
       "repository": "https://github.com/j0urney1/bof-NetworkServiceEscalate",
       "source_file": "server.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "main",
-      "description": "",
-      "repository": "https://github.com/j0urney1/bof-NetworkServiceEscalate",
-      "source_file": "main.c",
       "source_format": "directory_structure"
     },
     {
@@ -7329,10 +7574,17 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "DisableDSE",
+      "name": "main",
       "description": "",
-      "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
-      "source_file": "DisableDSE.c",
+      "repository": "https://github.com/j0urney1/bof-NetworkServiceEscalate",
+      "source_file": "main.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "token",
+      "description": "",
+      "repository": "https://github.com/j0urney1/bof-NetworkServiceEscalate",
+      "source_file": "token.c",
       "source_format": "directory_structure"
     },
     {
@@ -7343,24 +7595,38 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "Intercept",
+      "name": "PersistElevatedRegKey",
       "description": "",
       "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
-      "source_file": "Intercept.c",
+      "source_file": "PersistElevatedRegKey.c",
       "source_format": "directory_structure"
     },
     {
-      "name": "UnloadDriver",
+      "name": "PersistScheduledTaskCOMHijack",
       "description": "",
       "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
-      "source_file": "UnloadDriver.c",
+      "source_file": "PersistScheduledTaskCOMHijack.c",
       "source_format": "directory_structure"
     },
     {
-      "name": "SpawnProcess",
+      "name": "PersistElevatedUserInitRegKey",
       "description": "",
       "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
-      "source_file": "SpawnProcess.c",
+      "source_file": "PersistElevatedUserInitRegKey.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "PersistUserRegKey",
+      "description": "",
+      "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
+      "source_file": "PersistUserRegKey.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "PersistUserInitMprRegKey",
+      "description": "",
+      "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
+      "source_file": "PersistUserInitMprRegKey.c",
       "source_format": "directory_structure"
     },
     {
@@ -7378,17 +7644,17 @@
       "source_format": "directory_structure"
     },
     {
+      "name": "SpawnProcess",
+      "description": "",
+      "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
+      "source_file": "SpawnProcess.c",
+      "source_format": "directory_structure"
+    },
+    {
       "name": "MapViewOfSection",
       "description": "",
       "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
       "source_file": "MapViewOfSection.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "TransactedHollowing",
-      "description": "",
-      "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
-      "source_file": "TransactedHollowing.c",
       "source_format": "directory_structure"
     },
     {
@@ -7399,38 +7665,31 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "PersistElevatedRegKey",
+      "name": "TransactedHollowing",
       "description": "",
       "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
-      "source_file": "PersistElevatedRegKey.c",
+      "source_file": "TransactedHollowing.c",
       "source_format": "directory_structure"
     },
     {
-      "name": "PersistElevatedUserInitRegKey",
+      "name": "DisableDSE",
       "description": "",
       "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
-      "source_file": "PersistElevatedUserInitRegKey.c",
+      "source_file": "DisableDSE.c",
       "source_format": "directory_structure"
     },
     {
-      "name": "PersistUserInitMprRegKey",
+      "name": "Intercept",
       "description": "",
       "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
-      "source_file": "PersistUserInitMprRegKey.c",
+      "source_file": "Intercept.c",
       "source_format": "directory_structure"
     },
     {
-      "name": "PersistScheduledTaskCOMHijack",
+      "name": "UnloadDriver",
       "description": "",
       "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
-      "source_file": "PersistScheduledTaskCOMHijack.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "PersistUserRegKey",
-      "description": "",
-      "repository": "https://github.com/NVISOsecurity/CobaltWhispers",
-      "source_file": "PersistUserRegKey.c",
+      "source_file": "UnloadDriver.c",
       "source_format": "directory_structure"
     },
     {
@@ -7616,13 +7875,6 @@
       "source_format": "cna"
     },
     {
-      "name": "ldapsigncheck",
-      "description": "Check DC for relaying possibilities",
-      "repository": "https://github.com/cube0x0/LdapSignCheck",
-      "source_file": "BofLdapSignCheck.cna",
-      "source_format": "cna"
-    },
-    {
       "name": "get-delegation",
       "description": "Enumerate a given domain for different types of abusable Kerberos Delegation settings.",
       "repository": "https://github.com/IcebreakerSecurity/DelegationBOF",
@@ -7637,10 +7889,10 @@
       "source_format": "cna"
     },
     {
-      "name": "subscribe-wnf",
-      "description": "Subscribes to WNF notifications for a number of seconds",
+      "name": "backdoor-scmanager",
+      "description": "Backdoors SCManager SDDL",
       "repository": "https://github.com/snovvcrash/BOFs",
-      "source_file": "SubscribeWNF.cna",
+      "source_file": "BackdoorSCManager.cna",
       "source_format": "cna"
     },
     {
@@ -7651,10 +7903,10 @@
       "source_format": "cna"
     },
     {
-      "name": "backdoor-scmanager",
-      "description": "Backdoors SCManager SDDL",
+      "name": "subscribe-wnf",
+      "description": "Subscribes to WNF notifications for a number of seconds",
       "repository": "https://github.com/snovvcrash/BOFs",
-      "source_file": "BackdoorSCManager.cna",
+      "source_file": "SubscribeWNF.cna",
       "source_format": "cna"
     },
     {
@@ -7721,17 +7973,17 @@
       "source_format": "cna"
     },
     {
-      "name": "dump",
-      "description": "Beacon Object Files to dump content of clipboard",
-      "repository": "https://github.com/topotam/BOF_dumpclip",
-      "source_file": "dump.o",
-      "source_format": "directory_structure"
-    },
-    {
       "name": "dumpclip",
       "description": "Beacon Object Files to dump content of clipboard",
       "repository": "https://github.com/topotam/BOF_dumpclip",
       "source_file": "dumpclip.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "dump",
+      "description": "Beacon Object Files to dump content of clipboard",
+      "repository": "https://github.com/topotam/BOF_dumpclip",
+      "source_file": "dump.o",
       "source_format": "directory_structure"
     },
     {
@@ -7847,6 +8099,20 @@
       "source_format": "directory_structure"
     },
     {
+      "name": "Mockingjay_BOF",
+      "description": "",
+      "repository": "https://github.com/ewby/Mockingjay_BOF",
+      "source_file": "Mockingjay_BOF.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "Mockingjay_BOF_NTAPI_openproc_access_mod",
+      "description": "",
+      "repository": "https://github.com/ewby/Mockingjay_BOF",
+      "source_file": "Mockingjay_BOF_NTAPI_openproc_access_mod.c",
+      "source_format": "directory_structure"
+    },
+    {
       "name": "Mockingjay_BOF_openproc_access_mod_API_sleep_delay",
       "description": "",
       "repository": "https://github.com/ewby/Mockingjay_BOF",
@@ -7858,20 +8124,6 @@
       "description": "",
       "repository": "https://github.com/ewby/Mockingjay_BOF",
       "source_file": "Mockingjay_BOF_openproc_access_mod.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "Mockingjay_BOF_NTAPI_openproc_access_mod",
-      "description": "",
-      "repository": "https://github.com/ewby/Mockingjay_BOF",
-      "source_file": "Mockingjay_BOF_NTAPI_openproc_access_mod.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "Mockingjay_BOF",
-      "description": "",
-      "repository": "https://github.com/ewby/Mockingjay_BOF",
-      "source_file": "Mockingjay_BOF.c",
       "source_format": "directory_structure"
     },
     {
@@ -8060,7 +8312,7 @@
       "name": "BOFRunPortable",
       "description": "",
       "repository": "https://github.com/9bie/BOFRunPortable",
-      "source_file": "BOFRunPortable.o",
+      "source_file": "BOFRunPortable.c",
       "source_format": "directory_structure"
     },
     {
@@ -8085,6 +8337,13 @@
       "source_format": "directory_structure"
     },
     {
+      "name": "anticrash",
+      "description": "",
+      "repository": "https://github.com/parzel/getsystem-bof",
+      "source_file": "anticrash.c",
+      "source_format": "directory_structure"
+    },
+    {
       "name": "wmi",
       "description": "",
       "repository": "https://github.com/parzel/getsystem-bof",
@@ -8103,13 +8362,6 @@
       "description": "",
       "repository": "https://github.com/parzel/getsystem-bof",
       "source_file": "queue.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "anticrash",
-      "description": "",
-      "repository": "https://github.com/parzel/getsystem-bof",
-      "source_file": "anticrash.c",
       "source_format": "directory_structure"
     },
     {
@@ -8330,17 +8582,17 @@
       "source_format": "cna"
     },
     {
-      "name": "fileread_x64",
-      "description": "",
-      "repository": "https://github.com/sec-consult/aggrokatz",
-      "source_file": "fileread_x64.o",
-      "source_format": "directory_structure"
-    },
-    {
       "name": "fileread",
       "description": "",
       "repository": "https://github.com/sec-consult/aggrokatz",
       "source_file": "fileread.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "fileread_x64",
+      "description": "",
+      "repository": "https://github.com/sec-consult/aggrokatz",
+      "source_file": "fileread_x64.o",
       "source_format": "directory_structure"
     },
     {
@@ -8442,6 +8694,20 @@
       "source_format": "cna"
     },
     {
+      "name": "msi_lateral_mv",
+      "description": "",
+      "repository": "https://github.com/werdhaihai/msi_lateral_mv",
+      "source_file": "msi_lateral_mv.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "comstuff",
+      "description": "",
+      "repository": "https://github.com/werdhaihai/msi_lateral_mv",
+      "source_file": "comstuff.c",
+      "source_format": "directory_structure"
+    },
+    {
       "name": "msilat",
       "description": "",
       "repository": "https://github.com/werdhaihai/msi_lateral_mv",
@@ -8456,17 +8722,206 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "comstuff",
+      "name": "cw-freeze <PID> [Path]",
+      "description": "Freeze process",
+      "repository": "https://github.com/0xsh3llf1r3/ColdWer",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "cw-unfreeze",
+      "description": "Unfreeze previously frozen process",
+      "repository": "https://github.com/0xsh3llf1r3/ColdWer",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "cw-dump <PID> <Path>",
+      "description": "Dump LSASS memory",
+      "repository": "https://github.com/0xsh3llf1r3/ColdWer",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "cw-freeze",
+      "description": "Freeze EDR/AV process using PPL bypass",
+      "repository": "https://github.com/0xsh3llf1r3/ColdWer",
+      "source_file": "coldwer.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "cw-dump",
+      "description": "Dump LSASS bypassing PPL protection",
+      "repository": "https://github.com/0xsh3llf1r3/ColdWer",
+      "source_file": "coldwer.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "hello",
       "description": "",
-      "repository": "https://github.com/werdhaihai/msi_lateral_mv",
-      "source_file": "comstuff.c",
+      "repository": "https://github.com/outflanknl/nix_bof_template",
+      "source_file": "hello.c",
       "source_format": "directory_structure"
     },
     {
-      "name": "msi_lateral_mv",
+      "name": "bofloader",
+      "description": "This is an open source port/reimplementation of the Cobalt Strike BOF Loader **as is**. For the most part, everything is done as in the original Beacon + Teamserver in Cobalt Strike.",
+      "repository": "https://github.com/CodeXTF2/Cobaltstrike_BOFLoader",
+      "source_file": "bofloader.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "bof",
+      "description": "BOF desc",
+      "repository": "https://github.com/CodeXTF2/bof_template",
+      "source_file": "BOF.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "edr_check",
+      "description": "edr_check",
+      "repository": "https://github.com/VirtualAlllocEx/CS-EDR-Enumeration",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "edr_services_bof",
+      "description": "edr_services_bof",
+      "repository": "https://github.com/VirtualAlllocEx/CS-EDR-Enumeration",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "edr_services_pick",
+      "description": "edr_services_pick",
+      "repository": "https://github.com/VirtualAlllocEx/CS-EDR-Enumeration",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "edr_services_cmd",
+      "description": "edr_services_cmd",
+      "repository": "https://github.com/VirtualAlllocEx/CS-EDR-Enumeration",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "edr_services",
+      "description": "edr_services",
+      "repository": "https://github.com/VirtualAlllocEx/CS-EDR-Enumeration",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "edr_enum",
+      "description": "edr_enum",
+      "repository": "https://github.com/VirtualAlllocEx/CS-EDR-Enumeration",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "edr_help",
+      "description": "edr_help",
+      "repository": "https://github.com/VirtualAlllocEx/CS-EDR-Enumeration",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "edr_services_bof svc",
+      "description": "edr_services_bof svc",
+      "repository": "https://github.com/VirtualAlllocEx/CS-EDR-Enumeration",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "edr_services_bof drv",
+      "description": "edr_services_bof drv",
+      "repository": "https://github.com/VirtualAlllocEx/CS-EDR-Enumeration",
+      "source_file": "README.md",
+      "source_format": "readme_table"
+    },
+    {
+      "name": "coff_patch",
       "description": "",
-      "repository": "https://github.com/werdhaihai/msi_lateral_mv",
-      "source_file": "msi_lateral_mv.c",
+      "repository": "https://github.com/9Insomnie/Async_BOFs",
+      "source_file": "coff_patch.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "async_bof_implant",
+      "description": "",
+      "repository": "https://github.com/9Insomnie/Async_BOFs",
+      "source_file": "async_bof_implant.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "opsec_optimizations",
+      "description": "",
+      "repository": "https://github.com/9Insomnie/Async_BOFs",
+      "source_file": "opsec_optimizations.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "monitor_logon",
+      "description": "",
+      "repository": "https://github.com/9Insomnie/Async_BOFs",
+      "source_file": "monitor_logon.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "dpapi_scan",
+      "description": "Scans a directory for DPAPI blobs and dumps associated Master Keys.",
+      "repository": "https://github.com/toneillcodes/DPAPI-BOF",
+      "source_file": "dpapi-bof.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "example",
+      "description": "A standalone C implementation of a \"Beacon Object File\" (BOF) loader designed for Linux x86-64 environments.",
+      "repository": "https://github.com/jm33-m0/linux-bof-loader",
+      "source_file": "example.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "loader_linux_amd64",
+      "description": "A standalone C implementation of a \"Beacon Object File\" (BOF) loader designed for Linux x86-64 environments.",
+      "repository": "https://github.com/jm33-m0/linux-bof-loader",
+      "source_file": "loader_linux_amd64.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "listmodules",
+      "description": "List loaded modules via BOF",
+      "repository": "https://github.com/CodeXTF2/ListModulesBOF",
+      "source_file": "ListModules.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "clipwatch",
+      "description": "This is a Beacon Object File (BOF) extension for [Sliver C2](https://github.com/BishopFox/sliver) that allows you to read the text contents of the clipboard on a target Windows machine. It uses the Wi",
+      "repository": "https://github.com/justJackiee/bof-clipboard-monitor",
+      "source_file": "clipwatch.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "capture",
+      "description": "",
+      "repository": "https://github.com/robhughes72/coercer_bof",
+      "source_file": "capture.x64.o",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "coercer",
+      "description": "",
+      "repository": "https://github.com/robhughes72/coercer_bof",
+      "source_file": "coercer.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "main",
+      "description": "This was made for Situational awareness for pentest when you get an initial access. Most of the SA are in BOF's so vibecoded one, yes you could also use native commands to check for SA or powershell s",
+      "repository": "https://github.com/damaidec/enumlochost",
+      "source_file": "main.c",
       "source_format": "directory_structure"
     },
     {
@@ -8512,13 +8967,6 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "Syscalls",
-      "description": "",
-      "repository": "https://github.com/securifybv/BOFRyptor",
-      "source_file": "Syscalls.c",
-      "source_format": "directory_structure"
-    },
-    {
       "name": "base",
       "description": "",
       "repository": "https://github.com/securifybv/BOFRyptor",
@@ -8526,10 +8974,10 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "whoami",
+      "name": "Syscalls",
       "description": "",
-      "repository": "https://github.com/timwhitez/Bof2PIC",
-      "source_file": "whoami.x64.o",
+      "repository": "https://github.com/securifybv/BOFRyptor",
+      "source_file": "Syscalls.c",
       "source_format": "directory_structure"
     },
     {
@@ -8540,24 +8988,10 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "beacon_compatibility",
+      "name": "whoami",
       "description": "",
       "repository": "https://github.com/timwhitez/Bof2PIC",
-      "source_file": "beacon_compatibility.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "ApiResolve",
-      "description": "",
-      "repository": "https://github.com/timwhitez/Bof2PIC",
-      "source_file": "ApiResolve.c",
-      "source_format": "directory_structure"
-    },
-    {
-      "name": "COFFLoader",
-      "description": "",
-      "repository": "https://github.com/timwhitez/Bof2PIC",
-      "source_file": "COFFLoader.c",
+      "source_file": "whoami.x64.o",
       "source_format": "directory_structure"
     },
     {
@@ -8568,10 +9002,24 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "Syscalls",
+      "name": "ApiResolve",
       "description": "",
-      "repository": "https://github.com/Sh0ckFR/InlineWhispers2",
-      "source_file": "Syscalls.c",
+      "repository": "https://github.com/timwhitez/Bof2PIC",
+      "source_file": "ApiResolve.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "beacon_compatibility",
+      "description": "",
+      "repository": "https://github.com/timwhitez/Bof2PIC",
+      "source_file": "beacon_compatibility.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "COFFLoader",
+      "description": "",
+      "repository": "https://github.com/timwhitez/Bof2PIC",
+      "source_file": "COFFLoader.c",
       "source_format": "directory_structure"
     },
     {
@@ -8579,6 +9027,13 @@
       "description": "",
       "repository": "https://github.com/Sh0ckFR/InlineWhispers2",
       "source_file": "base.c",
+      "source_format": "directory_structure"
+    },
+    {
+      "name": "Syscalls",
+      "description": "",
+      "repository": "https://github.com/Sh0ckFR/InlineWhispers2",
+      "source_file": "Syscalls.c",
       "source_format": "directory_structure"
     },
     {
@@ -8589,10 +9044,10 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "main",
+      "name": "base",
       "description": "",
       "repository": "https://github.com/tdeerenberg/InlineWhispers3",
-      "source_file": "main.c",
+      "source_file": "base.c",
       "source_format": "directory_structure"
     },
     {
@@ -8603,10 +9058,10 @@
       "source_format": "directory_structure"
     },
     {
-      "name": "base",
+      "name": "main",
       "description": "",
       "repository": "https://github.com/tdeerenberg/InlineWhispers3",
-      "source_file": "base.c",
+      "source_file": "main.c",
       "source_format": "directory_structure"
     },
     {

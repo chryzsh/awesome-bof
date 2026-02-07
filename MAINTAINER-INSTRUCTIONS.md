@@ -68,16 +68,54 @@ git commit -m "Add [repo-name] to BOF catalog
 Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>"
 ```
 
+### Step 7: Rebuild the BOF Index
+
+After adding new entries to the catalog, regenerate the search index so the new BOFs are searchable:
+
+```bash
+python3 scripts/bof_indexer.py
+```
+
+This will:
+1. Parse `BOF-CATALOG.md` for all repository URLs
+2. Shallow-clone each repo (or reuse existing clones in `repos/`)
+3. Extract BOF command names and descriptions from READMEs, `.cna` files, Havoc Python, Stage1 Python, and directory structures
+4. Write the updated `bof-index.json`
+
+Note: This clones all repos and takes several minutes. Use `--skip-clone` to reuse existing clones.
+
+Commit the updated index:
+```bash
+git add bof-index.json
+git commit -m "Update BOF index"
+```
+
+## BOF Search
+
+An interactive search tool lets you fuzzy-search across all indexed BOF commands:
+
+```bash
+./scripts/bof-search.sh            # Interactive search
+./scripts/bof-search.sh kerberos   # Search with initial query
+```
+
+Requires `jq` and `fzf`. See [docs/bof-search.md](docs/bof-search.md) for full usage.
+
 ## Repository Structure
 
 ```
 awesome-bof/
-├── BOF-CATALOG.md      # Main catalog - add BOFs here
-├── README.md           # Simple README linking to catalog
+├── BOF-CATALOG.md         # Main catalog - add BOFs here
+├── bof-index.json         # Generated search index (from bof_indexer.py)
+├── README.md              # Simple README linking to catalog
 ├── LICENSE
+├── docs/
+│   └── bof-search.md      # BOF search documentation
 ├── scripts/
-│   ├── find_new_bofs.py   # Discovery script
-│   ├── generate_md.py     # Generate table rows
+│   ├── find_new_bofs.py   # Discovery script (GitHub search)
+│   ├── bof_indexer.py     # BOF index generator (clones + parses repos)
+│   ├── bof-search.sh      # Interactive fzf search over the index
+│   ├── generate_md.py     # Generate table rows for catalog
 │   └── find-dupes.py      # Find duplicate entries
 └── _archive/              # Archived old documentation
 ```
@@ -87,3 +125,4 @@ awesome-bof/
 - Set `GITHUB_TOKEN` env var for higher API rate limits
 - The catalog has 367+ BOFs - always check for duplicates
 - When in doubt, ask the human for approval before adding
+- After adding BOFs, rebuild the index so they appear in search

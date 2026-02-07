@@ -39,16 +39,9 @@ def get_catalog_urls(catalog_path: Path) -> set[str]:
     return urls
 
 
-def search_github_repos(since_date: str, token: str = None) -> list[dict]:
-    """Search GitHub for C repos with 'bof' keyword updated since the given date."""
-    headers = {"Accept": "application/vnd.github.v3+json"}
-    if token:
-        headers["Authorization"] = f"token {token}"
-
-    # Search query: C language, "bof" in name/description/readme, updated since date
-    query = f"bof language:C pushed:>{since_date}"
+def _paginate_search(query: str, headers: dict) -> list[dict]:
+    """Run a paginated GitHub search and return all result items."""
     url = "https://api.github.com/search/repositories"
-
     all_repos = []
     page = 1
 
@@ -84,6 +77,38 @@ def search_github_repos(since_date: str, token: str = None) -> list[dict]:
         page += 1
 
     return all_repos
+
+
+def search_github_repos(since_date: str, token: str = None) -> list[dict]:
+    """Search GitHub for C repos with 'bof' keyword updated since the given date.
+
+    Runs two queries to avoid gaps between discovery runs:
+    1. pushed:>date  — repos with code changes in the window
+    2. created:>date — repos created in the window (catches repos whose
+       only push was at creation time and may age out of the pushed window)
+    """
+    headers = {"Accept": "application/vnd.github.v3+json"}
+    if token:
+        headers["Authorization"] = f"token {token}"
+
+    pushed_query = f"bof language:C pushed:>{since_date}"
+    created_query = f"bof language:C created:>{since_date}"
+
+    pushed_repos = _paginate_search(pushed_query, headers)
+    print(f"  pushed:> query returned {len(pushed_repos)} repos", file=sys.stderr)
+
+    created_repos = _paginate_search(created_query, headers)
+    print(f"  created:> query returned {len(created_repos)} repos", file=sys.stderr)
+
+    # Deduplicate by repo id, preserving order (pushed results first)
+    seen = set()
+    merged = []
+    for repo in pushed_repos + created_repos:
+        if repo["id"] not in seen:
+            seen.add(repo["id"])
+            merged.append(repo)
+
+    return merged
 
 
 def format_repo(repo: dict, markdown: bool = False) -> str:
