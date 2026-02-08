@@ -1,18 +1,16 @@
 :root {
-  --bg-0: #0b121a;
-  --bg-1: #131f2d;
-  --bg-2: #1a2a3a;
-  --panel: #101b28;
-  --panel-2: #0b131d;
-  --panel-3: #131f2d;
-  --text: #ebf2f8;
-  --muted: #9cadbd;
-  --accent: #54d38d;
-  --accent-2: #82dbff;
-  --border: #2a3c50;
+  --bg-0: #111827;
+  --panel: #1f2937;
+  --panel-2: #111827;
+  --panel-3: #243244;
+  --text: #f3f4f6;
+  --muted: #9ca3af;
+  --accent: #60a5fa;
+  --accent-2: #93c5fd;
+  --border: #374151;
   --warn: #f6c768;
-  --mark-bg: #224934;
-  --shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+  --mark-bg: #2b3c55;
+  --shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
 }
 
 * {
@@ -28,10 +26,7 @@ body {
   margin: 0;
   color: var(--text);
   font-family: "JetBrains Mono", "IBM Plex Mono", Menlo, Monaco, Consolas, monospace;
-  background:
-    radial-gradient(circle at 20% -20%, rgba(124, 170, 214, 0.16), transparent 55%),
-    radial-gradient(circle at 120% 10%, rgba(106, 173, 146, 0.1), transparent 50%),
-    linear-gradient(180deg, #1a2938 0%, #122030 40%, #0b121a 100%);
+  background: var(--bg-0);
 }
 
 #app {
@@ -53,7 +48,7 @@ body {
   border-bottom: 1px solid var(--border);
   border: 1px solid var(--border);
   border-radius: 14px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.01));
+  background: var(--panel);
   box-shadow: var(--shadow);
   backdrop-filter: blur(3px);
 }
@@ -126,7 +121,8 @@ body {
   background: var(--panel-2);
   color: var(--text);
   font: inherit;
-  padding: 0.2rem 0.45rem;
+  padding: 0.25rem 0.5rem;
+  min-width: 9rem;
 }
 
 #result-count {
@@ -152,14 +148,12 @@ body {
   padding: 0.85rem;
   border: 1px solid var(--border);
   border-radius: 14px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.01));
+  background: var(--panel);
   box-shadow: var(--shadow);
 }
 
 .pane-list {
-  background:
-    linear-gradient(180deg, rgba(130, 219, 255, 0.05), rgba(255, 255, 255, 0)),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  background: var(--panel);
 }
 
 .pane-detail {
@@ -177,7 +171,7 @@ body {
 .row {
   border: 1px solid var(--border);
   border-radius: 10px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.018), rgba(255, 255, 255, 0.005));
+  background: #1b2635;
   padding: 0.68rem 0.76rem;
   cursor: pointer;
   transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
@@ -185,15 +179,13 @@ body {
 
 .row:hover {
   transform: translateY(-1px);
-  border-color: #43617d;
-  background: rgba(255, 255, 255, 0.05);
+  border-color: #4b5f78;
+  background: #223044;
 }
 
 .row.selected {
   border-color: var(--accent);
-  background:
-    linear-gradient(90deg, rgba(84, 211, 141, 0.15), rgba(84, 211, 141, 0.04)),
-    rgba(255, 255, 255, 0.03);
+  background: #253448;
 }
 
 .name {
@@ -278,7 +270,7 @@ mark {
 
 button {
   border: 1px solid var(--border);
-  background: linear-gradient(180deg, var(--panel-3), var(--panel-2));
+  background: var(--panel-3);
   color: var(--text);
   border-radius: 10px;
   padding: 0.56rem 0.8rem;
@@ -302,7 +294,7 @@ button:disabled {
   border: 1px solid var(--border);
   border-radius: 12px;
   color: var(--warn);
-  background: rgba(9, 15, 22, 0.75);
+  background: var(--panel);
   padding: 0.5rem 1rem;
   min-height: 2rem;
 }
