@@ -1,0 +1,86 @@
+name: Weekly BOF Discovery
+
+on:
+  schedule:
+    - cron: '17 13 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run discovery
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 scripts/find_new_bofs.py --days 14 --markdown > weekly-new-bofs.md 2> weekly-discovery.log
+
+      - name: Build summary report
+        id: summary
+        run: |
+          {
+            echo "# Weekly BOF Discovery Report"
+            echo
+            echo "Run date (UTC): $(date -u +'%Y-%m-%d %H:%M:%S')"
+            echo "Window: last 14 days"
+            echo
+            echo "## Discovery Log"
+            echo
+            echo '```text'
+            cat weekly-discovery.log
+            echo '```'
+            echo
+            echo "## Candidates"
+            echo
+            cat weekly-new-bofs.md
+          } > weekly-report.md
+
+          if [ "$(wc -l < weekly-new-bofs.md)" -gt 2 ]; then
+            echo "has_candidates=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_candidates=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Upload discovery artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-bof-discovery
+          path: |
+            weekly-report.md
+            weekly-new-bofs.md
+            weekly-discovery.log
+
+      - name: Open issue when candidates exist
+        if: steps.summary.outputs.has_candidates == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('weekly-report.md', 'utf8');
+            const date = new Date().toISOString().slice(0, 10);
+            const title = `Weekly BOF discovery report (${date})`;
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body
+            });
