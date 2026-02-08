@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "total_bofs": 1299,
-    "total_repos": 397,
-    "repos_parsed": 355,
+    "total_bofs": 1301,
+    "total_repos": 398,
+    "repos_parsed": 357,
     "format_stats": {
       "readme_table": 16,
-      "cna": 265,
-      "directory_structure": 390,
+      "cna": 267,
+      "directory_structure": 394,
       "stage1_py": 9,
       "havoc_py": 33,
       "readme_bullet": 8
@@ -5999,6 +5999,13 @@
       "source_format": "cna"
     },
     {
+      "name": "ghostkatz",
+      "description": "Dump credentials from LSASS by using signed kernel drivers to read physical memory.",
+      "repository": "https://github.com/RainbowDynamix/GhostKatz",
+      "source_file": "ghostkatz.cna",
+      "source_format": "cna"
+    },
+    {
       "name": "BOFKatz",
       "description": "mimikatz Beacon Object File implementation",
       "repository": "https://github.com/KrakenEU/BOFKatz",
@@ -7872,6 +7879,13 @@
       "description": "Use syscalls to extract the process protection constants associated with a process identifier.",
       "repository": "https://github.com/EspressoCake/Process_Protection_Level_BOF",
       "source_file": "process_protection_enum.cna",
+      "source_format": "cna"
+    },
+    {
+      "name": "ldapsigncheck",
+      "description": "Check DC for relaying possibilities",
+      "repository": "https://github.com/cube0x0/LdapSignCheck",
+      "source_file": "BofLdapSignCheck.cna",
       "source_format": "cna"
     },
     {
