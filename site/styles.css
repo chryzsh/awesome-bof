@@ -124,7 +124,7 @@ body {
 .layout {
   min-height: 0;
   display: grid;
-  grid-template-columns: minmax(28rem, 1.15fr) minmax(20rem, 0.85fr);
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
   gap: 0.75rem;
 }
 
@@ -176,6 +176,8 @@ body {
 
 .name {
   font-weight: 650;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .desc,
@@ -183,9 +185,9 @@ body {
   color: var(--muted);
   font-size: 0.86rem;
   margin-top: 0.2rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 mark {
