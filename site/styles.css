@@ -275,7 +275,7 @@ button:disabled {
 
 @media (max-width: 980px) {
   #app {
-    grid-template-rows: auto auto auto;
+    min-height: auto;
   }
 
   .topbar {
@@ -289,20 +289,10 @@ button:disabled {
 
   .layout {
     grid-template-columns: 1fr;
-    min-height: auto;
-    align-content: start;
-  }
-
-  .pane {
-    min-height: auto;
   }
 
   .pane-list {
-    max-height: 42vh;
+    max-height: 46vh;
     overflow: auto;
-  }
-
-  .pane-detail {
-    min-height: 16rem;
   }
 }
