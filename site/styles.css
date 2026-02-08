@@ -301,6 +301,7 @@ button:disabled {
     grid-template-columns: 1fr;
     grid-template-rows: minmax(0, 58dvh) auto;
     min-height: 0;
+    align-content: start;
   }
 
   .pane {
@@ -314,7 +315,7 @@ button:disabled {
 
   .pane-detail {
     position: static;
-    max-height: 34dvh;
-    overflow: auto;
+    max-height: none;
+    overflow: visible;
   }
 }
