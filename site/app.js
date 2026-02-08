@@ -224,13 +224,28 @@
     nodes.app.setAttribute("aria-busy", "false");
   }
 
-  function moveSelection(delta) {
+  function setSelection(newIndex, shouldScroll = true) {
     if (!state.filtered.length) return;
     const max = state.filtered.length - 1;
-    state.selectedIndex = Math.max(0, Math.min(max, state.selectedIndex + delta));
-    render();
-    const row = nodes.results.querySelector(`.row[data-index="${state.selectedIndex}"]`);
-    row?.scrollIntoView({ block: "nearest" });
+    const clamped = Math.max(0, Math.min(max, newIndex));
+    const prev = state.selectedIndex;
+    if (clamped === prev) return;
+
+    const prevRow = nodes.results.querySelector(`.row[data-index="${prev}"]`);
+    const nextRow = nodes.results.querySelector(`.row[data-index="${clamped}"]`);
+    prevRow?.classList.remove("selected");
+    nextRow?.classList.add("selected");
+
+    state.selectedIndex = clamped;
+    renderDetails(selectedEntry());
+    if (shouldScroll) {
+      nextRow?.scrollIntoView({ block: "nearest" });
+    }
+  }
+
+  function moveSelection(delta) {
+    if (!state.filtered.length) return;
+    setSelection(state.selectedIndex + delta, true);
   }
 
   function openSelected() {
@@ -274,15 +289,13 @@
     nodes.results.addEventListener("click", (e) => {
       const row = e.target.closest(".row");
       if (!row) return;
-      state.selectedIndex = Number.parseInt(row.dataset.index, 10) || 0;
-      render();
+      setSelection(Number.parseInt(row.dataset.index, 10) || 0, false);
     });
 
     nodes.results.addEventListener("dblclick", (e) => {
       const row = e.target.closest(".row");
       if (!row) return;
-      state.selectedIndex = Number.parseInt(row.dataset.index, 10) || 0;
-      render();
+      setSelection(Number.parseInt(row.dataset.index, 10) || 0, false);
       openSelected();
     });
 
