@@ -15,6 +15,7 @@ import json
 import subprocess
 import argparse
 import sys
+import requests
 from pathlib import Path
 from collections import defaultdict
 from typing import Optional
@@ -34,6 +35,8 @@ class BOFEntry:
     repository: str
     source_file: str = ""
     source_format: str = ""  # e.g., "readme_table", "cna", "havoc_py", "stage1_py"
+    repository_stars: int = 0
+    repository_last_updated: str = ""  # YYYY-MM-DD
 
 
 @dataclass 
@@ -46,6 +49,8 @@ class RepoInfo:
     clone_success: bool = False
     bofs_found: list = field(default_factory=list)
     parse_formats_found: list = field(default_factory=list)
+    stars: int = 0
+    last_updated: str = ""
 
 
 # =============================================================================
@@ -175,6 +180,50 @@ def clone_all_repos(repos: list[RepoInfo], repos_dir: str, max_workers: int = 8)
     successful = sum(1 for r in repos if r.clone_success)
     print(f"Successfully cloned {successful}/{len(repos)} repositories")
     
+    return repos
+
+
+def fetch_repo_metadata(repo: RepoInfo, token: str = "") -> RepoInfo:
+    """Fetch repository stars and last-updated date from GitHub API."""
+    if "github.com/" not in repo.url:
+        return repo
+
+    headers = {"Accept": "application/vnd.github+json"}
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+
+    api_url = f"https://api.github.com/repos/{repo.owner}/{repo.name}"
+    try:
+        response = requests.get(api_url, headers=headers, timeout=20)
+        if response.status_code != 200:
+            return repo
+        data = response.json()
+        repo.stars = int(data.get("stargazers_count", 0) or 0)
+        repo.last_updated = (data.get("pushed_at") or "")[:10]
+    except Exception:
+        return repo
+
+    return repo
+
+
+def enrich_repo_metadata(repos: list[RepoInfo], max_workers: int = 12) -> list[RepoInfo]:
+    """Enrich repository list with stars/last-updated data."""
+    token = os.environ.get("GITHUB_TOKEN", "")
+    if not token:
+        print("  Note: GITHUB_TOKEN not set; stars/updated metadata may be incomplete")
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(fetch_repo_metadata, repo, token): repo for repo in repos}
+        completed = 0
+        for future in as_completed(futures):
+            completed += 1
+            try:
+                _ = future.result()
+            except Exception:
+                pass
+            if completed % 50 == 0:
+                print(f"  Metadata progress: {completed}/{len(repos)} repos")
+
     return repos
 
 
@@ -856,6 +905,15 @@ def deduplicate_entries(entries: list[BOFEntry]) -> list[BOFEntry]:
     return unique_entries
 
 
+def attach_repo_metadata(entries: list[BOFEntry], repos: list[RepoInfo]) -> None:
+    """Attach repo-level stars and updated date to each BOF entry."""
+    meta = {r.url.lower(): (r.stars, r.last_updated) for r in repos}
+    for entry in entries:
+        stars, last_updated = meta.get(entry.repository.lower(), (0, ""))
+        entry.repository_stars = stars
+        entry.repository_last_updated = last_updated
+
+
 # =============================================================================
 # Main Entry Point
 # =============================================================================
@@ -923,6 +981,10 @@ def main():
             repo.clone_success = os.path.exists(local_path)
         successful = sum(1 for r in repos if r.clone_success)
         print(f"  Found {successful}/{len(repos)} repositories locally")
+
+    # Step 2.5: Repository metadata for UI sorting
+    print("\nStep 2.5: Fetching repository metadata (stars, last updated)...")
+    repos = enrich_repo_metadata(repos, max_workers=min(args.max_workers * 2, 24))
     
     # Step 3: Analyze formats
     print("\nStep 3: Analyzing documentation formats...")
@@ -948,6 +1010,9 @@ def main():
     # Step 5: Deduplicate
     entries = deduplicate_entries(entries)
     print(f"  After deduplication: {len(entries)} unique BOF entries")
+
+    # Step 5.5: Attach repo metadata to each BOF entry
+    attach_repo_metadata(entries, repos)
     
     # Step 6: Output JSON
     print(f"\nStep 5: Writing output to {output_path}...")

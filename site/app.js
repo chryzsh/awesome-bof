@@ -4,6 +4,8 @@
     filtered: [],
     selectedIndex: 0,
     query: "",
+    sortMode: "relevance",
+    relevanceScores: new Map(),
   };
 
   const nodes = {
@@ -15,6 +17,7 @@
     count: document.getElementById("result-count"),
     open: document.getElementById("open-repo"),
     copy: document.getElementById("copy-repo"),
+    sort: document.getElementById("sort-mode"),
   };
 
   function setStatus(text) {
@@ -39,13 +42,37 @@
     }
   }
 
-  function badgeData(url) {
-    const slug = repoSlug(url);
-    if (!slug.includes("/")) return null;
-    return {
-      stars: `https://img.shields.io/github/stars/${slug}?style=flat&label=stars`,
-      updated: `https://img.shields.io/github/last-commit/${slug}?style=flat&label=updated`,
-    };
+  function formatDate(dateStr) {
+    if (!dateStr) return "n/a";
+    return dateStr;
+  }
+
+  function parseDateRank(dateStr) {
+    if (!dateStr) return 0;
+    const t = Date.parse(dateStr);
+    return Number.isFinite(t) ? t : 0;
+  }
+
+  function sortFiltered() {
+    const mode = state.sortMode;
+    if (mode === "relevance" && !state.query.trim()) {
+      return;
+    }
+    state.filtered.sort((a, b) => {
+      if (mode === "stars") {
+        const byStars = (b.repository_stars || 0) - (a.repository_stars || 0);
+        if (byStars !== 0) return byStars;
+      } else if (mode === "updated") {
+        const byUpdated = parseDateRank(b.repository_last_updated) - parseDateRank(a.repository_last_updated);
+        if (byUpdated !== 0) return byUpdated;
+      } else if (state.query.trim()) {
+        const scoreA = state.relevanceScores.get(a) || 0;
+        const scoreB = state.relevanceScores.get(b) || 0;
+        const byRelevance = scoreB - scoreA;
+        if (byRelevance !== 0) return byRelevance;
+      }
+      return a.name.localeCompare(b.name);
+    });
   }
 
   function normalizeEntry(item) {
@@ -55,6 +82,8 @@
       repository: item?.repository || "",
       source_file: item?.source_file || "",
       source_format: item?.source_format || "",
+      repository_stars: Number(item?.repository_stars || 0),
+      repository_last_updated: item?.repository_last_updated || "",
     };
   }
 
@@ -98,8 +127,11 @@
     state.query = raw;
     const query = raw.trim().toLowerCase();
 
+    state.relevanceScores = new Map();
+
     if (!query) {
       state.filtered = [...state.entries];
+      sortFiltered();
       state.selectedIndex = 0;
       render();
       syncQuery(raw);
@@ -114,8 +146,12 @@
       if (score > 0) matches.push({ entry, score });
     }
 
-    matches.sort((a, b) => b.score - a.score || a.entry.name.localeCompare(b.entry.name));
+    for (const m of matches) {
+      state.relevanceScores.set(m.entry, m.score);
+    }
+
     state.filtered = matches.map((m) => m.entry);
+    sortFiltered();
     state.selectedIndex = 0;
     render();
     syncQuery(raw);
@@ -133,13 +169,12 @@
       return;
     }
 
-    const badges = badgeData(item.repository);
-    const statsHtml = badges
-      ? `<p class="detail-stats">
-           <img class="badge" src="${badges.stars}" alt="GitHub stars" loading="lazy" />
-           <img class="badge" src="${badges.updated}" alt="Last commit date" loading="lazy" />
-         </p>`
-      : "";
+    const stars = Number(item.repository_stars || 0).toLocaleString();
+    const updated = formatDate(item.repository_last_updated);
+    const statsHtml = `<p class="detail-stats">
+      <span class="stat-chip">Stars: ${stars}</span>
+      <span class="stat-chip">Updated: ${updated}</span>
+    </p>`;
 
     nodes.details.innerHTML = `
       <h2>${escapeHtml(item.name)}</h2>
@@ -171,14 +206,10 @@
             <div class="name">${highlight(item.name, state.query)}</div>
             <div class="desc">${highlight(item.description, state.query)}</div>
             <div class="repo">${highlight(repoSlug(item.repository), state.query)}</div>
-            ${(() => {
-              const badges = badgeData(item.repository);
-              if (!badges) return "";
-              return `<div class="row-stats">
-                <img class="badge" src="${badges.stars}" alt="GitHub stars" loading="lazy" />
-                <img class="badge" src="${badges.updated}" alt="Last commit date" loading="lazy" />
-              </div>`;
-            })()}
+            <div class="row-stats">
+              <span class="stat-chip">Stars: ${Number(item.repository_stars || 0).toLocaleString()}</span>
+              <span class="stat-chip">Updated: ${escapeHtml(formatDate(item.repository_last_updated))}</span>
+            </div>
           </li>
         `;
       })
@@ -233,6 +264,12 @@
 
   function bindEvents() {
     nodes.search.addEventListener("input", (e) => applyFilter(e.target.value));
+    nodes.sort.addEventListener("change", (e) => {
+      state.sortMode = e.target.value;
+      sortFiltered();
+      state.selectedIndex = 0;
+      render();
+    });
 
     nodes.results.addEventListener("click", (e) => {
       const row = e.target.closest(".row");
