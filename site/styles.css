@@ -1,7 +1,7 @@
 :root {
-  --bg-0: #090f14;
-  --bg-1: #101722;
-  --bg-2: #182737;
+  --bg-0: #0b121a;
+  --bg-1: #131f2d;
+  --bg-2: #1a2a3a;
   --panel: #101b28;
   --panel-2: #0b131d;
   --panel-3: #131f2d;
@@ -29,9 +29,9 @@ body {
   color: var(--text);
   font-family: "JetBrains Mono", "IBM Plex Mono", Menlo, Monaco, Consolas, monospace;
   background:
-    radial-gradient(circle at 8% -10%, #25455f 0%, transparent 45%),
-    radial-gradient(circle at 110% -15%, #203f36 0%, transparent 42%),
-    linear-gradient(180deg, var(--bg-2) 0%, var(--bg-1) 35%, var(--bg-0) 100%);
+    radial-gradient(circle at 20% -20%, rgba(124, 170, 214, 0.16), transparent 55%),
+    radial-gradient(circle at 120% 10%, rgba(106, 173, 146, 0.1), transparent 50%),
+    linear-gradient(180deg, #1a2938 0%, #122030 40%, #0b121a 100%);
 }
 
 #app {
@@ -188,6 +188,29 @@ body {
   white-space: normal;
   overflow-wrap: anywhere;
   word-break: break-word;
+}
+
+.row-stats {
+  margin-top: 0.45rem;
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.detail-stats {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0.45rem 0 0.25rem;
+}
+
+.badge {
+  height: 20px;
+  width: auto;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 mark {

@@ -39,6 +39,15 @@
     }
   }
 
+  function badgeData(url) {
+    const slug = repoSlug(url);
+    if (!slug.includes("/")) return null;
+    return {
+      stars: `https://img.shields.io/github/stars/${slug}?style=flat&label=stars`,
+      updated: `https://img.shields.io/github/last-commit/${slug}?style=flat&label=updated`,
+    };
+  }
+
   function normalizeEntry(item) {
     return {
       name: item?.name || "(unnamed)",
@@ -124,9 +133,18 @@
       return;
     }
 
+    const badges = badgeData(item.repository);
+    const statsHtml = badges
+      ? `<p class="detail-stats">
+           <img class="badge" src="${badges.stars}" alt="GitHub stars" loading="lazy" />
+           <img class="badge" src="${badges.updated}" alt="Last commit date" loading="lazy" />
+         </p>`
+      : "";
+
     nodes.details.innerHTML = `
       <h2>${escapeHtml(item.name)}</h2>
       <p>${escapeHtml(item.description || "No description available.")}</p>
+      ${statsHtml}
       <p><a href="${escapeHtml(item.repository)}" target="_blank" rel="noopener">${escapeHtml(item.repository)}</a></p>
       <p class="kv">Source: ${escapeHtml(item.source_file)} (${escapeHtml(item.source_format)})</p>
     `;
@@ -153,6 +171,14 @@
             <div class="name">${highlight(item.name, state.query)}</div>
             <div class="desc">${highlight(item.description, state.query)}</div>
             <div class="repo">${highlight(repoSlug(item.repository), state.query)}</div>
+            ${(() => {
+              const badges = badgeData(item.repository);
+              if (!badges) return "";
+              return `<div class="row-stats">
+                <img class="badge" src="${badges.stars}" alt="GitHub stars" loading="lazy" />
+                <img class="badge" src="${badges.updated}" alt="Last commit date" loading="lazy" />
+              </div>`;
+            })()}
           </li>
         `;
       })
