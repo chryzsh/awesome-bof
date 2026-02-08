@@ -261,6 +261,10 @@ button:disabled {
   min-height: 2rem;
 }
 
+#status:empty {
+  display: none;
+}
+
 .empty {
   padding: 0.8rem;
   border: 1px dashed var(--border);
@@ -275,7 +279,7 @@ button:disabled {
 
 @media (max-width: 980px) {
   #app {
-    min-height: auto;
+    min-height: 100vh;
   }
 
   .topbar {
@@ -289,16 +293,24 @@ button:disabled {
 
   .layout {
     grid-template-columns: 1fr;
-    align-content: start;
-    grid-auto-rows: max-content;
+    grid-template-rows: minmax(0, 1fr) auto;
+    min-height: 0;
   }
 
   .pane {
-    overflow: visible;
+    min-height: 0;
   }
 
   .pane-list {
     max-height: none;
-    overflow: visible;
+    overflow: auto;
+  }
+
+  .pane-detail {
+    position: sticky;
+    bottom: 0.5rem;
+    max-height: 40vh;
+    overflow: auto;
+    z-index: 2;
   }
 }
