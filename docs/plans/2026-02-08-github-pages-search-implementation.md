@@ -10,6 +10,18 @@
 
 ---
 
+## Deviation Log
+
+### D1: Search engine implementation changed from Fuse.js to custom weighted search
+
+- **Planned:** Vendored `site/vendor/fuse.min.js` and `new Fuse(...)` integration.
+- **Implemented:** Native JavaScript weighted search in `site/app.js` (`scoreEntry` + `applyFilter`), no external dependency.
+- **Reason:** Keep v1 dependency-free and fully static while preserving required behavior (fast client-side filtering and ranking by name > description > repository).
+- **Impact:** No user-facing feature loss for current scope; lower maintenance and no third-party asset management.
+- **Approved by:** User selected plan-audit option to document deviation before go-live (2026-02-08).
+
+---
+
 ### Task 1: Scaffold static site shell
 
 **Files:**
@@ -182,8 +194,6 @@ git commit -m "feat(site): implement index loading and base app states"
 ### Task 4: Add fuzzy search engine integration
 
 **Files:**
-- Create: `site/vendor/fuse.min.js`
-- Modify: `site/index.html`
 - Modify: `site/app.js`
 
 **Step 1: Write the failing test**
@@ -201,33 +211,31 @@ Expected: no matches.
 
 **Step 3: Write minimal implementation**
 
-```html
-<script src="./vendor/fuse.min.js"></script>
-<script src="./app.js" defer></script>
-```
-
 ```js
-let fuse;
-function initSearch() {
-  fuse = new Fuse(state.entries, {
-    keys: [
-      { name: "name", weight: 0.6 },
-      { name: "description", weight: 0.3 },
-      { name: "repository", weight: 0.1 }
-    ],
-    includeScore: true,
-    threshold: 0.35,
-    ignoreLocation: true
-  });
+function scoreEntry(entry, terms) {
+  let score = 0;
+  const n = entry.name.toLowerCase();
+  const d = entry.description.toLowerCase();
+  const r = entry.repository.toLowerCase();
+
+  for (const term of terms) {
+    if (!term) continue;
+    if (n.startsWith(term)) score += 120;
+    else if (n.includes(term)) score += 80;
+    if (d.includes(term)) score += 28;
+    if (r.includes(term)) score += 16;
+  }
+
+  return score;
 }
 
 function applyFilter(query) {
-  state.query = query;
-  if (!query.trim()) {
-    state.filtered = state.entries;
-  } else {
-    state.filtered = fuse.search(query).map((m) => m.item);
-  }
+  const terms = query.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const matches = state.entries
+    .map((entry) => ({ entry, score: scoreEntry(entry, terms) }))
+    .filter((m) => m.score > 0)
+    .sort((a, b) => b.score - a.score || a.entry.name.localeCompare(b.entry.name));
+  state.filtered = query.trim() ? matches.map((m) => m.entry) : state.entries;
   state.selectedIndex = 0;
   render();
 }
@@ -235,14 +243,14 @@ function applyFilter(query) {
 
 **Step 4: Run test to verify it passes**
 
-Run: `rg -n "new Fuse|keys:|weight:" site/app.js`
-Expected: Fuse config present with weighted keys.
+Run: `rg -n "scoreEntry|applyFilter|startsWith|includes" site/app.js`
+Expected: weighted search implementation present.
 
 **Step 5: Commit**
 
 ```bash
-git add site/vendor/fuse.min.js site/index.html site/app.js
-git commit -m "feat(site): add client-side fuzzy search with weighted ranking"
+git add site/app.js
+git commit -m "feat(site): add client-side weighted search with no external dependency"
 ```
 
 ### Task 5: Implement results rendering, details panel, and action buttons
