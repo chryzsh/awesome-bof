@@ -142,6 +142,7 @@ body {
   min-height: 0;
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: start;
   gap: 0.75rem;
 }
 
@@ -159,6 +160,10 @@ body {
   background:
     linear-gradient(180deg, rgba(130, 219, 255, 0.05), rgba(255, 255, 255, 0)),
     linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+}
+
+.pane-detail {
+  height: fit-content;
 }
 
 #results {
