@@ -278,8 +278,14 @@ button:disabled {
 }
 
 @media (max-width: 980px) {
+  html,
+  body {
+    height: 100dvh;
+  }
+
   #app {
-    min-height: 100vh;
+    min-height: 100dvh;
+    height: 100dvh;
   }
 
   .topbar {
@@ -293,7 +299,7 @@ button:disabled {
 
   .layout {
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(0, 1fr) auto;
+    grid-template-rows: minmax(0, 58dvh) auto;
     min-height: 0;
   }
 
@@ -302,15 +308,13 @@ button:disabled {
   }
 
   .pane-list {
-    max-height: none;
+    max-height: 58dvh;
     overflow: auto;
   }
 
   .pane-detail {
-    position: sticky;
-    bottom: 0.5rem;
-    max-height: 40vh;
+    position: static;
+    max-height: 34dvh;
     overflow: auto;
-    z-index: 2;
   }
 }
