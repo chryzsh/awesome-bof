@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>awesome-bof search</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="app" aria-busy="true">
+      <header class="topbar">
+        <label class="search-wrap" for="search">
+          <span class="search-label">Query</span>
+          <input id="search" type="search" placeholder="Search BOFs by name, description, or repo..." aria-label="Search BOFs" autocomplete="off" />
+        </label>
+        <div class="meta" aria-live="polite">
+          <span id="result-count">0 results</span>
+          <span class="keys">`/` focus, `j/k` move, `Enter` open</span>
+        </div>
+      </header>
+
+      <section class="layout">
+        <section class="pane pane-list" aria-label="Results pane">
+          <ul id="results" aria-label="Search results"></ul>
+        </section>
+
+        <section class="pane pane-detail" aria-label="Details pane">
+          <article id="details" aria-live="polite">
+            <h2>BOF Details</h2>
+            <p>Select a BOF from the left pane.</p>
+          </article>
+          <div class="actions">
+            <button id="open-repo" type="button">Open GitHub Repo</button>
+            <button id="copy-repo" type="button">Copy Repo URL</button>
+          </div>
+        </section>
+      </section>
+
+      <p id="status" role="status">Loading index...</p>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

@@ -2,6 +2,36 @@
 
 Search across 1200+ BOF commands from the catalog using fuzzy search.
 
+## Web UI (GitHub Pages)
+
+A public, static web UI is available in `site/` with keyboard-first navigation.
+
+### Quick Start (local)
+
+```bash
+bash scripts/update-site-data.sh
+python3 -m http.server 8000
+```
+
+Open `http://localhost:8000/site/`.
+
+### Keyboard shortcuts (web)
+
+| Key | Action |
+|-----|--------|
+| `/` | Focus search |
+| `j` / `k` | Move selection down/up |
+| `↑` / `↓` | Move selection down/up |
+| `Enter` | Open selected repository in new tab |
+| `o` | Open selected repository in new tab |
+| `Esc` | Clear search (when input focused) |
+
+### Publish with GitHub Pages
+
+Configure Pages to serve from:
+- Branch: `main`
+- Folder: `/site`
+
 ## Quick Start
 
 ```bash
@@ -65,6 +95,7 @@ To refresh the index with latest BOFs from all repositories:
 
 ```bash
 python3 scripts/bof_indexer.py
+bash scripts/update-site-data.sh
 ```
 
 This will:
@@ -72,6 +103,7 @@ This will:
 2. Clone each repo shallowly
 3. Extract BOF metadata from READMEs, .cna files, directory structures
 4. Output updated `bof-index.json`
+5. Copy refreshed index to `site/data/bof-index.json` for web search
 
 Note: This downloads all repos and takes several minutes.
 
