@@ -289,10 +289,16 @@ button:disabled {
 
   .layout {
     grid-template-columns: 1fr;
+    align-content: start;
+    grid-auto-rows: max-content;
+  }
+
+  .pane {
+    overflow: visible;
   }
 
   .pane-list {
-    max-height: 46vh;
-    overflow: auto;
+    max-height: none;
+    overflow: visible;
   }
 }
