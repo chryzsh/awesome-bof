@@ -90,6 +90,28 @@ git add bof-index.json
 git commit -m "Update BOF index"
 ```
 
+### Step 8: Refresh Web Search Data (GitHub Pages)
+
+After rebuilding `bof-index.json`, sync the web UI copy so the public site uses the latest index:
+
+```bash
+bash scripts/update-site-data.sh
+```
+
+Commit the synced web index:
+
+```bash
+git add site/data/bof-index.json
+git commit -m "Sync web BOF index data"
+```
+
+GitHub Pages is configured for:
+- Branch: `main`
+- Folder: `/`
+
+Public web UI path:
+- `https://chryzsh.github.io/awesome-bof/site/`
+
 ## BOF Search
 
 An interactive search tool lets you fuzzy-search across all indexed BOF commands:

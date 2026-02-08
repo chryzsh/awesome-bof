@@ -30,7 +30,10 @@ Open `http://localhost:8000/site/`.
 
 Configure Pages to serve from:
 - Branch: `main`
-- Folder: `/site`
+- Folder: `/`
+
+Web UI URL:
+- `https://chryzsh.github.io/awesome-bof/site/`
 
 ## Quick Start
 

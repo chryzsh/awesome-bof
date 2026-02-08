@@ -30,4 +30,7 @@ python3 -m http.server 8000
 ### GitHub Pages configuration
 
 - Branch: `main`
-- Folder: `/site`
+- Folder: `/`
+
+The web UI is served at:
+- `https://chryzsh.github.io/awesome-bof/site/`
