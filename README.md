@@ -3,7 +3,7 @@
 A curated list of Beacon Object File (BOF) projects.
 
 ## [View the BOF Catalog](./BOF-CATALOG.md)
-## [Search BOFs (Web UI)](./site/)
+## [Search BOFs (Web UI)](https://chryzsh.github.io/awesome-bof/site/)
 
 ## Contributing
 
