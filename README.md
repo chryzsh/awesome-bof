@@ -1,6 +1,6 @@
 # Awesome BOF
 
-Curated Beacon Object Files, plus a fast searchable index.
+A place to find Beacon Object Files, plus a fast searchable index of them.
 
 ## Start Here
 
