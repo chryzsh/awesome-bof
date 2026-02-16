@@ -734,62 +734,112 @@ class Stage1PythonParser(BOFParser):
 
 
 class DirectoryStructureParser(BOFParser):
-    """Infer BOF names from directory structure when no other documentation exists."""
-    
+    """Infer BOF names from directory structure when no other documentation exists.
+
+    Groups source files by directory so that multiple .c files that compile into
+    a single BOF produce one entry, not one per file.
+    """
+
     name = "directory_structure"
-    
-    BOF_DIR_INDICATORS = ['bof', 'bofs', 'src', 'source', 'kit', 'tools']
+
+    GENERIC_DIR_NAMES = {'src', 'source', 'bof', 'bofs', 'kit', 'tools', '.'}
     BOF_FILE_PATTERNS = [
-        re.compile(r'^(\w+)\.c$'),  # main.c style
-        re.compile(r'^(\w+)_bof\.c$'),  # name_bof.c style
-        re.compile(r'^(\w+)\.x64\.o$'),  # compiled BOF
-        re.compile(r'^(\w+)\.o$'),  # compiled BOF
+        re.compile(r'^([\w-]+)_bof\.c$'),       # name_bof.c style (high confidence)
+        re.compile(r'^([\w-]+)\.c$'),            # name.c style
+        re.compile(r'^([\w-]+)\.x64\.o$'),       # compiled BOF
+        re.compile(r'^([\w-]+)\.o$'),            # compiled BOF
     ]
-    
+
     def can_parse(self, repo_path: str) -> bool:
         """Always available as fallback."""
         return True
-    
+
     def parse(self, repo_path: str, repo_url: str) -> list[BOFEntry]:
-        """Infer BOF entries from directory structure."""
-        entries = []
-        seen_names = set()
-        
+        """Infer BOF entries from directory structure.
+
+        Groups source files by parent directory and emits one entry per
+        directory, since multiple .c files in the same dir typically compile
+        into a single BOF.
+        """
+        # Collect source files grouped by their parent directory
+        dir_files: dict[str, list[tuple[str, str]]] = defaultdict(list)
+
         for root, dirs, files in os.walk(repo_path):
             if '.git' in root:
                 continue
-            
-            # Check for source files that indicate BOF
             for f in files:
                 for pattern in self.BOF_FILE_PATTERNS:
                     match = pattern.match(f)
                     if match:
                         name = match.group(1)
-                        # Try to get description from parent directory or nearby README
-                        desc = self._find_description(root, name)
-                        
-                        if name.lower() not in seen_names and len(name) > 2:
-                            seen_names.add(name.lower())
-                            entries.append(BOFEntry(
-                                name=name,
-                                description=desc,
-                                repository=repo_url,
-                                source_file=f,
-                                source_format=self.name
-                            ))
+                        if len(name) > 2:
+                            dir_files[root].append((f, name))
                         break
-        
+
+        # Derive repo name from clone directory (owner__name format)
+        repo_basename = os.path.basename(repo_path)
+        repo_name = repo_basename.split('__')[-1] if '__' in repo_basename else repo_basename
+
+        entries = []
+        seen_names = set()
+
+        for dir_path, files_and_names in dir_files.items():
+            dir_name = os.path.basename(dir_path)
+            name = self._pick_bof_name(dir_name, repo_name, files_and_names)
+
+            if name.lower() not in seen_names:
+                seen_names.add(name.lower())
+                desc = self._find_description(dir_path, name)
+                # If in a generic subdir like src/, also check parent for README
+                if not desc and dir_name.lower() in self.GENERIC_DIR_NAMES:
+                    desc = self._find_description(os.path.dirname(dir_path), name)
+
+                entries.append(BOFEntry(
+                    name=name,
+                    description=desc,
+                    repository=repo_url,
+                    source_file=files_and_names[0][0],
+                    source_format=self.name
+                ))
+
         return entries
-    
+
+    def _pick_bof_name(self, dir_name: str, repo_name: str, files_and_names: list[tuple[str, str]]) -> str:
+        """Pick the best representative name for a BOF directory."""
+        file_names = {n.lower(): n for _, n in files_and_names}
+
+        # 1. File matching directory name (e.g., dcsync/ has dcsync.c)
+        if dir_name.lower() in file_names:
+            return file_names[dir_name.lower()]
+
+        # 2. File matching repo name minus -bof/_bof suffix
+        clean_repo = re.sub(r'[-_]?bof$', '', repo_name, flags=re.IGNORECASE)
+        if clean_repo and clean_repo.lower() in file_names:
+            return file_names[clean_repo.lower()]
+
+        # 3. File with _bof suffix
+        for _, name in files_and_names:
+            if name.lower().endswith('_bof'):
+                return name
+
+        # 4. Single source file → use its name
+        if len(files_and_names) == 1:
+            return files_and_names[0][1]
+
+        # 5. Directory name if not generic
+        if dir_name.lower() not in self.GENERIC_DIR_NAMES:
+            return dir_name
+
+        # 6. Repo name (last resort)
+        return clean_repo or repo_name
+
     def _find_description(self, dir_path: str, name: str) -> str:
         """Try to find a description for the BOF."""
-        # Check for a README in the same directory
         for readme_name in ['README.md', 'readme.md', 'README.txt']:
             readme_path = os.path.join(dir_path, readme_name)
             if os.path.exists(readme_path):
                 try:
                     with open(readme_path, 'r', encoding='utf-8', errors='ignore') as f:
-                        # Get first non-empty, non-header line
                         for line in f:
                             line = line.strip()
                             if line and not line.startswith('#'):
