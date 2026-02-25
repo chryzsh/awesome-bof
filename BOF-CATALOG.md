@@ -318,6 +318,7 @@ Repositories typically containing a small number (e.g., 3-4) of specific BOFs or
 | [cobaltstrike_bofs](https://github.com/merlinepedra/cobaltstrike_bofs) | BOF collection by merlinepedra. | `Dump`, `SeBackupPrivilege` | ![](https://img.shields.io/github/stars/merlinepedra/cobaltstrike_bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/merlinepedra/cobaltstrike_bofs?label=&style=flat) |
 | [cobaltstrike_bofs](https://github.com/merlinepedra25/cobaltstrike_bofs) | BOF collection by merlinepedra25 (Likely fork/copy). | `Dump`, `SeBackupPrivilege` | ![](https://img.shields.io/github/stars/merlinepedra25/cobaltstrike_bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/merlinepedra25/cobaltstrike_bofs?label=&style=flat) |
 | [BOF-Learning](https://github.com/Workingdaturah/BOF-Learning) | Cobalt Strike BOFS | `Get-OSInfo`, `NetSessionEnum` | ![](https://img.shields.io/github/stars/Workingdaturah/BOF-Learning?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Workingdaturah/BOF-Learning?label=&style=flat) |
+| [Beacon-Object-File-Library](https://github.com/Ap3x/Beacon-Object-File-Library) | A library of different Beacon Object Files in Visual Studio Solution | `EnumDeviceDrivers`, `FileExfiltrationUrlEncoded`, `Ipconfig`, `RegistryPersistence`, `TimeStomp`, `WhoAmI` | ![](https://img.shields.io/github/stars/Ap3x/Beacon-Object-File-Library?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Ap3x/Beacon-Object-File-Library?label=&style=flat) |
 
 
 ---
@@ -352,6 +353,7 @@ This category includes BOFs that were written specifically for a C2 framework th
 | [VaultDumpBOF](https://github.com/MeirV2-2/VaultDumpBOF) | Adaptix BOF to harvest Windows Vaults and Generic Credentials via thread impersonation and DPAPI | ![](https://img.shields.io/github/stars/MeirV2-2/VaultDumpBOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/MeirV2-2/VaultDumpBOF?label=&style=flat) |
 | [DiscordToken-BOF](https://github.com/LeetIDA/DiscordToken-BOF) | Adaptix BOF to extract Discord tokens from LevelDB storage using DPAPI + AES-256-GCM decryption | ![](https://img.shields.io/github/stars/LeetIDA/DiscordToken-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/LeetIDA/DiscordToken-BOF?label=&style=flat) |
 | [CredEnumBOF](https://github.com/0x2LFA/CredEnumBOF) | Sliver BOF to enumerate Windows Credential Manager entries via CredEnumerateW | ![](https://img.shields.io/github/stars/0x2LFA/CredEnumBOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/0x2LFA/CredEnumBOF?label=&style=flat) |
+| [PersistenceBOF](https://github.com/zachmarmolejo/PersistenceBOF) | Scheduled Task Persistence BOF for Havoc C2 | ![](https://img.shields.io/github/stars/zachmarmolejo/PersistenceBOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/zachmarmolejo/PersistenceBOF?label=&style=flat) |
 
 
 ---
@@ -673,6 +675,7 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 | [bof-clipboard-monitor](https://github.com/justJackiee/bof-clipboard-monitor) | BOF for monitoring clipboard contents | ![](https://img.shields.io/github/stars/justJackiee/bof-clipboard-monitor?label=&style=flat) | ![](https://img.shields.io/github/last-commit/justJackiee/bof-clipboard-monitor?label=&style=flat) |
 | [coercer_bof](https://github.com/robhughes72/coercer_bof) | Authentication coercion BOF | ![](https://img.shields.io/github/stars/robhughes72/coercer_bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/robhughes72/coercer_bof?label=&style=flat) |
 | [enumlochost](https://github.com/damaidec/enumlochost) | Situational awareness BOF for local host enumeration during pentests | ![](https://img.shields.io/github/stars/damaidec/enumlochost?label=&style=flat) | ![](https://img.shields.io/github/last-commit/damaidec/enumlochost?label=&style=flat) |
+| [lsawhisper-bof](https://github.com/dazzyddos/lsawhisper-bof) | A Beacon Object File (BOF) that talks directly to Windows authentication packages through the LSA untrusted/trusted client interface, without touching LSASS process memory. | ![](https://img.shields.io/github/stars/dazzyddos/lsawhisper-bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/dazzyddos/lsawhisper-bof?label=&style=flat) |
 
 ---
 
