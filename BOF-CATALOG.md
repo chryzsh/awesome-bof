@@ -265,6 +265,7 @@ These pages primarily serve as curated lists or collections of links to *other* 
 | [CobaltStrike_BOF_Collections](https://github.com/wsummerhill/C2_RedTeam_CheatSheets/blob/main/CobaltStrike/BOF_Collections.md) | Useful BOFs collected and used during red team ops | ![](https://img.shields.io/github/stars/wsummerhill/C2_RedTeam_CheatSheets?label=&style=flat) | ![](https://img.shields.io/github/last-commit/wsummerhill/C2_RedTeam_CheatSheets?label=&style=flat) |
 | [BOFs](https://github.com/BOFs/BOFs) | General-purpose Beacon Object Files repository | ![](https://img.shields.io/github/stars/BOFs/BOFs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/BOFs/BOFs?label=&style=flat) |
 | [BOF-CobaltStrike](https://github.com/hrtywhy/BOF-CobaltStrike) | Cobalt Strike BOFs used during red team engagements | ![](https://img.shields.io/github/stars/hrtywhy/BOF-CobaltStrike?label=&style=flat) | ![](https://img.shields.io/github/last-commit/hrtywhy/BOF-CobaltStrike?label=&style=flat) |
+| [DPAPI_BOF](https://github.com/Bhanunamikaze/DPAPI_BOF) | SharpDPAPI ported to Cobalt Strike BOFs — 19 self-contained BOFs for DPAPI credential triage | ![](https://img.shields.io/github/stars/Bhanunamikaze/DPAPI_BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Bhanunamikaze/DPAPI_BOF?label=&style=flat) |
 
 ---
 
@@ -319,6 +320,7 @@ Repositories typically containing a small number (e.g., 3-4) of specific BOFs or
 | [cobaltstrike_bofs](https://github.com/merlinepedra25/cobaltstrike_bofs) | BOF collection by merlinepedra25 (Likely fork/copy). | `Dump`, `SeBackupPrivilege` | ![](https://img.shields.io/github/stars/merlinepedra25/cobaltstrike_bofs?label=&style=flat) | ![](https://img.shields.io/github/last-commit/merlinepedra25/cobaltstrike_bofs?label=&style=flat) |
 | [BOF-Learning](https://github.com/Workingdaturah/BOF-Learning) | Cobalt Strike BOFS | `Get-OSInfo`, `NetSessionEnum` | ![](https://img.shields.io/github/stars/Workingdaturah/BOF-Learning?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Workingdaturah/BOF-Learning?label=&style=flat) |
 | [Beacon-Object-File-Library](https://github.com/Ap3x/Beacon-Object-File-Library) | A library of different Beacon Object Files in Visual Studio Solution | `EnumDeviceDrivers`, `FileExfiltrationUrlEncoded`, `Ipconfig`, `RegistryPersistence`, `TimeStomp`, `WhoAmI` | ![](https://img.shields.io/github/stars/Ap3x/Beacon-Object-File-Library?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Ap3x/Beacon-Object-File-Library?label=&style=flat) |
+| [BOF-Collection](https://github.com/qmadev/BOF-Collection) | Cobalt Strike BOF collection with shellcode execution and Kerberos ticket extraction | `shellcode`, `ticket_extractor` | ![](https://img.shields.io/github/stars/qmadev/BOF-Collection?label=&style=flat) | ![](https://img.shields.io/github/last-commit/qmadev/BOF-Collection?label=&style=flat) |
 
 
 ---
@@ -354,6 +356,8 @@ This category includes BOFs that were written specifically for a C2 framework th
 | [DiscordToken-BOF](https://github.com/LeetIDA/DiscordToken-BOF) | Adaptix BOF to extract Discord tokens from LevelDB storage using DPAPI + AES-256-GCM decryption | ![](https://img.shields.io/github/stars/LeetIDA/DiscordToken-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/LeetIDA/DiscordToken-BOF?label=&style=flat) |
 | [CredEnumBOF](https://github.com/0x2LFA/CredEnumBOF) | Sliver BOF to enumerate Windows Credential Manager entries via CredEnumerateW | ![](https://img.shields.io/github/stars/0x2LFA/CredEnumBOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/0x2LFA/CredEnumBOF?label=&style=flat) |
 | [PersistenceBOF](https://github.com/zachmarmolejo/PersistenceBOF) | Scheduled Task Persistence BOF for Havoc C2 | ![](https://img.shields.io/github/stars/zachmarmolejo/PersistenceBOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/zachmarmolejo/PersistenceBOF?label=&style=flat) |
+| [EDR-Enum-BOF](https://github.com/DarksBlackSk/EDR-Enum-BOF) | EDR/AV enumeration BOF ported to AdaptixC2 — detects 444 signatures across 48 security vendors | ![](https://img.shields.io/github/stars/DarksBlackSk/EDR-Enum-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/DarksBlackSk/EDR-Enum-BOF?label=&style=flat) |
+| [Adaptix-inject-auto](https://github.com/Svinopesik/Adaptix-inject-auto) | Auto-injection BOF for AdaptixC2 — injects into system processes like svchost.exe and winlogon.exe | ![](https://img.shields.io/github/stars/Svinopesik/Adaptix-inject-auto?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Svinopesik/Adaptix-inject-auto?label=&style=flat) |
 
 
 ---
@@ -709,5 +713,6 @@ These are BOF related tools that are not BOFs themselves.
 | [BOFMask](https://github.com/passthehashbrowns/BOFMask) | BOFMask is a proof-of-concept for masking Cobalt Strike's Beacon payload while executing a Beacon Object File (BOF).  | ![](https://img.shields.io/github/stars/passthehashbrowns/BOFMask?label=&style=flat) | ![](https://img.shields.io/github/last-commit/passthehashbrowns/BOFMask?label=&style=flat) |
 | [BOFMask (fork)](https://github.com/xforcered/BOFMask) | Fork of passthehashbrowns’ BOFMask project  | ![](https://img.shields.io/github/stars/xforcered/BOFMask?label=&style=flat) | ![](https://img.shields.io/github/last-commit/xforcered/BOFMask?label=&style=flat) |
 | [Shoggoth](https://github.com/frkngksl/Shoggoth) | Shoggoth: Asmjit Based Polymorphic Encryptor | ![](https://img.shields.io/github/stars/frkngksl/Shoggoth?label=&style=flat) | ![](https://img.shields.io/github/last-commit/frkngksl/Shoggoth?label=&style=flat) |
+| [wpd_com](https://github.com/mannyfred/wpd_com) | Windows Portable Device COM BOF for enumerating and listing files on connected portable devices | ![](https://img.shields.io/github/stars/mannyfred/wpd_com?label=&style=flat) | ![](https://img.shields.io/github/last-commit/mannyfred/wpd_com?label=&style=flat) |
 
 ---
