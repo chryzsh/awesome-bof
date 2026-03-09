@@ -2,7 +2,7 @@ name: Weekly BOF Discovery
 
 on:
   schedule:
-    - cron: '17 13 * * 1'
+    - cron: '0 4 * * 1'
   workflow_dispatch:
 
 permissions:
