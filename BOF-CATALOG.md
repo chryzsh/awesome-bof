@@ -358,6 +358,8 @@ This category includes BOFs that were written specifically for a C2 framework th
 | [PersistenceBOF](https://github.com/zachmarmolejo/PersistenceBOF) | Scheduled Task Persistence BOF for Havoc C2 | ![](https://img.shields.io/github/stars/zachmarmolejo/PersistenceBOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/zachmarmolejo/PersistenceBOF?label=&style=flat) |
 | [EDR-Enum-BOF](https://github.com/DarksBlackSk/EDR-Enum-BOF) | EDR/AV enumeration BOF ported to AdaptixC2 — detects 444 signatures across 48 security vendors | ![](https://img.shields.io/github/stars/DarksBlackSk/EDR-Enum-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/DarksBlackSk/EDR-Enum-BOF?label=&style=flat) |
 | [Adaptix-inject-auto](https://github.com/Svinopesik/Adaptix-inject-auto) | Auto-injection BOF for AdaptixC2 — injects into system processes like svchost.exe and winlogon.exe | ![](https://img.shields.io/github/stars/Svinopesik/Adaptix-inject-auto?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Svinopesik/Adaptix-inject-auto?label=&style=flat) |
+| [Keylogger-BOF](https://github.com/DarksBlackSk/Keylogger-BOF) | Async keylogger BOF for AdaptixC2 using WH_KEYBOARD_LL hook with shared memory IPC | ![](https://img.shields.io/github/stars/DarksBlackSk/Keylogger-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/DarksBlackSk/Keylogger-BOF?label=&style=flat) |
+| [LSAWhisperer-BOF](https://github.com/Art-Fakt/LSAWhisperer-BOF) | Port of LSA-Whisperer by Evan McBroom / SpecterOps to the Adaptix C2 BOF framework | ![](https://img.shields.io/github/stars/Art-Fakt/LSAWhisperer-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/Art-Fakt/LSAWhisperer-BOF?label=&style=flat) |
 
 
 ---
@@ -680,6 +682,7 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 | [coercer_bof](https://github.com/robhughes72/coercer_bof) | Authentication coercion BOF | ![](https://img.shields.io/github/stars/robhughes72/coercer_bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/robhughes72/coercer_bof?label=&style=flat) |
 | [enumlochost](https://github.com/damaidec/enumlochost) | Situational awareness BOF for local host enumeration during pentests | ![](https://img.shields.io/github/stars/damaidec/enumlochost?label=&style=flat) | ![](https://img.shields.io/github/last-commit/damaidec/enumlochost?label=&style=flat) |
 | [lsawhisper-bof](https://github.com/dazzyddos/lsawhisper-bof) | A Beacon Object File (BOF) that talks directly to Windows authentication packages through the LSA untrusted/trusted client interface, without touching LSASS process memory. | ![](https://img.shields.io/github/stars/dazzyddos/lsawhisper-bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/dazzyddos/lsawhisper-bof?label=&style=flat) |
+| [PEREDBOEMPATAT-BOF](https://github.com/TailoredSecOps/PEREDBOEMPATAT-BOF) | LocalPotato NTLM reflection exploit (CVE-2023-21746) as a Cobalt Strike Beacon Object File | ![](https://img.shields.io/github/stars/TailoredSecOps/PEREDBOEMPATAT-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/TailoredSecOps/PEREDBOEMPATAT-BOF?label=&style=flat) |
 
 ---
 
