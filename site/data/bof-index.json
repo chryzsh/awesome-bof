@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "total_bofs": 1296,
-    "total_repos": 415,
-    "repos_parsed": 379,
+    "total_bofs": 1298,
+    "total_repos": 417,
+    "repos_parsed": 381,
     "format_stats": {
       "readme_table": 19,
-      "cna": 273,
-      "directory_structure": 411,
+      "cna": 274,
+      "directory_structure": 413,
       "stage1_py": 10,
       "havoc_py": 34,
       "readme_bullet": 8
@@ -19,8 +19,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "adcs_enum_com",
@@ -28,8 +28,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "adcs_enum_com2",
@@ -37,8 +37,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "adv_audit_policies",
@@ -46,8 +46,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "arp",
@@ -55,8 +55,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "cacls",
@@ -64,8 +64,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "dir",
@@ -73,8 +73,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "driversigs",
@@ -82,8 +82,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "enum_filter_driver",
@@ -91,8 +91,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "enumLocalSessions",
@@ -100,8 +100,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "env",
@@ -109,8 +109,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "findLoadedModule",
@@ -118,8 +118,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "get_dpapi_system",
@@ -127,8 +127,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "get_password_policy",
@@ -136,8 +136,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "get_session_info",
@@ -145,8 +145,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "ipconfig",
@@ -154,8 +154,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "ldapsearch",
@@ -163,8 +163,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "ldapsecuritycheck",
@@ -172,8 +172,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "listdns",
@@ -181,8 +181,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "list_firewall_rules",
@@ -190,8 +190,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "listmods",
@@ -199,8 +199,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "listpipes",
@@ -208,8 +208,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "locale",
@@ -217,8 +217,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netGroupList",
@@ -226,8 +226,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netGroupListMembers",
@@ -235,8 +235,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netLocalGroupList",
@@ -244,8 +244,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netLocalGroupListMembers",
@@ -253,8 +253,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netLocalGroupListMembers2",
@@ -262,8 +262,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netloggedon",
@@ -271,8 +271,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netloggedon2",
@@ -280,8 +280,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netsession",
@@ -289,8 +289,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netsession2",
@@ -298,8 +298,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netshares",
@@ -307,8 +307,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netstat",
@@ -316,8 +316,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "nettime",
@@ -325,8 +325,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netuptime",
@@ -334,8 +334,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netuser",
@@ -343,8 +343,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netuse_add",
@@ -352,8 +352,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netuse_delete",
@@ -361,8 +361,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netuse_list",
@@ -370,8 +370,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netview",
@@ -379,8 +379,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "nslookup",
@@ -388,8 +388,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "md5",
@@ -397,8 +397,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "probe",
@@ -406,8 +406,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "regsession",
@@ -415,8 +415,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "reg_query",
@@ -424,8 +424,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "reg_query_recursive",
@@ -433,8 +433,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "resources",
@@ -442,8 +442,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "routeprint",
@@ -451,8 +451,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "sc_enum",
@@ -460,8 +460,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "sc_qc",
@@ -469,8 +469,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "sc_qdescription",
@@ -478,8 +478,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "sc_qfailure",
@@ -487,8 +487,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "sc_qtriggerinfo",
@@ -496,8 +496,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "sc_query",
@@ -505,8 +505,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "schtasksenum",
@@ -514,8 +514,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "schtasksquery",
@@ -523,8 +523,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "sha1",
@@ -532,8 +532,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "sha256",
@@ -541,8 +541,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "tasklist",
@@ -550,8 +550,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "uptime",
@@ -559,8 +559,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "useridletime",
@@ -568,8 +568,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "vssenum",
@@ -577,8 +577,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "whoami",
@@ -586,8 +586,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "windowlist",
@@ -595,8 +595,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "wmi_query",
@@ -604,8 +604,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "notepad",
@@ -613,8 +613,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "domainenum",
@@ -622,8 +622,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "userenum",
@@ -631,8 +631,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "netsharesAdmin",
@@ -640,8 +640,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "aadjoininfo",
@@ -649,8 +649,8 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1731,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 1748,
+      "repository_last_updated": "2026-03-10"
     },
     {
       "name": "AddMachineAccount",
@@ -658,7 +658,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -667,7 +667,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -676,7 +676,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -685,7 +685,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -694,7 +694,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -703,7 +703,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -712,7 +712,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -721,7 +721,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -730,7 +730,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -739,7 +739,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -748,7 +748,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -757,7 +757,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -766,7 +766,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -775,7 +775,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -784,7 +784,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -793,7 +793,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -802,7 +802,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -811,7 +811,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -820,7 +820,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -829,7 +829,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -838,7 +838,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -847,7 +847,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -856,7 +856,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "Psx.cna",
       "source_format": "cna",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -865,7 +865,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "ReconAD.cna",
       "source_format": "cna",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -874,7 +874,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "ReconAD.cna",
       "source_format": "cna",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -883,7 +883,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "ReconAD.cna",
       "source_format": "cna",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -892,7 +892,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "FindObjects.cna",
       "source_format": "cna",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -901,7 +901,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "FindObjects.cna",
       "source_format": "cna",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -910,7 +910,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "MachineAccounts.cna",
       "source_format": "cna",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -919,7 +919,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "MachineAccounts.cna",
       "source_format": "cna",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -928,7 +928,7 @@
       "repository": "https://github.com/outflanknl/C2-Tool-Collection",
       "source_file": "MachineAccounts_bof.s1.py",
       "source_format": "stage1_py",
-      "repository_stars": 1369,
+      "repository_stars": 1373,
       "repository_last_updated": "2023-10-27"
     },
     {
@@ -937,7 +937,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -946,7 +946,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -955,7 +955,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -964,7 +964,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -973,7 +973,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -982,7 +982,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -991,7 +991,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1000,7 +1000,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1009,7 +1009,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1018,7 +1018,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1027,7 +1027,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1036,7 +1036,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1045,7 +1045,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1054,7 +1054,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1063,7 +1063,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1072,7 +1072,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1081,7 +1081,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1090,7 +1090,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1099,7 +1099,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1108,7 +1108,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1117,7 +1117,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1126,7 +1126,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1135,7 +1135,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1144,7 +1144,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1153,7 +1153,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1162,7 +1162,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1171,7 +1171,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1180,7 +1180,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1189,7 +1189,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1198,7 +1198,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1207,7 +1207,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1216,7 +1216,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1225,7 +1225,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1234,7 +1234,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1243,7 +1243,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1252,7 +1252,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1261,7 +1261,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1270,7 +1270,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1279,7 +1279,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1288,7 +1288,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1297,7 +1297,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1306,7 +1306,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1315,7 +1315,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1324,7 +1324,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1333,7 +1333,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1342,7 +1342,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1351,7 +1351,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1360,7 +1360,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1369,7 +1369,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1378,7 +1378,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1387,7 +1387,7 @@
       "repository": "https://github.com/trustedsec/CS-Remote-OPs-BOF",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1123,
+      "repository_stars": 1140,
       "repository_last_updated": "2026-03-05"
     },
     {
@@ -1396,7 +1396,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1405,7 +1405,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1414,7 +1414,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1423,7 +1423,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1432,7 +1432,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1441,7 +1441,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1450,7 +1450,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1459,7 +1459,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1468,7 +1468,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1477,7 +1477,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1486,7 +1486,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1495,7 +1495,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1504,7 +1504,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1513,7 +1513,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1522,7 +1522,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1531,7 +1531,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1540,7 +1540,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1549,7 +1549,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1558,7 +1558,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1567,7 +1567,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1576,7 +1576,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1585,7 +1585,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1594,7 +1594,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1603,7 +1603,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1612,7 +1612,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1621,7 +1621,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1630,7 +1630,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1639,7 +1639,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1648,7 +1648,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1657,7 +1657,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1666,7 +1666,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1675,7 +1675,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1684,7 +1684,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1693,7 +1693,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1702,7 +1702,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1711,7 +1711,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1720,7 +1720,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1729,7 +1729,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1738,7 +1738,7 @@
       "repository": "https://github.com/REDMED-X/OperatorsKit",
       "source_file": "OperatorsKit.cna",
       "source_format": "cna",
-      "repository_stars": 676,
+      "repository_stars": 681,
       "repository_last_updated": "2025-08-15"
     },
     {
@@ -1747,7 +1747,7 @@
       "repository": "https://github.com/RayRRT/BOFs",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 103,
+      "repository_stars": 112,
       "repository_last_updated": "2026-01-26"
     },
     {
@@ -1756,7 +1756,7 @@
       "repository": "https://github.com/RayRRT/BOFs",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 103,
+      "repository_stars": 112,
       "repository_last_updated": "2026-01-26"
     },
     {
@@ -1765,7 +1765,7 @@
       "repository": "https://github.com/RayRRT/BOFs",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 103,
+      "repository_stars": 112,
       "repository_last_updated": "2026-01-26"
     },
     {
@@ -1774,7 +1774,7 @@
       "repository": "https://github.com/RayRRT/BOFs",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 103,
+      "repository_stars": 112,
       "repository_last_updated": "2026-01-26"
     },
     {
@@ -1783,7 +1783,7 @@
       "repository": "https://github.com/RayRRT/BOFs",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 103,
+      "repository_stars": 112,
       "repository_last_updated": "2026-01-26"
     },
     {
@@ -1792,7 +1792,7 @@
       "repository": "https://github.com/RayRRT/BOFs",
       "source_file": "ihxexec.cna",
       "source_format": "cna",
-      "repository_stars": 103,
+      "repository_stars": 112,
       "repository_last_updated": "2026-01-26"
     },
     {
@@ -1801,7 +1801,7 @@
       "repository": "https://github.com/RayRRT/BOFs",
       "source_file": "ihxexec.cna",
       "source_format": "cna",
-      "repository_stars": 103,
+      "repository_stars": 112,
       "repository_last_updated": "2026-01-26"
     },
     {
@@ -1810,7 +1810,7 @@
       "repository": "https://github.com/RayRRT/BOFs",
       "source_file": "shadowcreds.cna",
       "source_format": "cna",
-      "repository_stars": 103,
+      "repository_stars": 112,
       "repository_last_updated": "2026-01-26"
     },
     {
@@ -1819,7 +1819,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1828,7 +1828,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1837,7 +1837,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1846,7 +1846,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1855,7 +1855,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1864,7 +1864,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1873,7 +1873,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1882,7 +1882,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1891,7 +1891,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1900,7 +1900,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1909,7 +1909,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1918,7 +1918,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1927,7 +1927,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1936,7 +1936,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1945,7 +1945,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1954,7 +1954,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1963,7 +1963,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1972,7 +1972,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1981,7 +1981,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1990,7 +1990,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -1999,7 +1999,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2008,7 +2008,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2017,7 +2017,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2026,7 +2026,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2035,7 +2035,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2044,7 +2044,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2053,7 +2053,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2062,7 +2062,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2071,7 +2071,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2080,7 +2080,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2089,7 +2089,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2098,7 +2098,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2107,7 +2107,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2116,7 +2116,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2125,7 +2125,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2134,7 +2134,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2143,7 +2143,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2152,7 +2152,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2161,7 +2161,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2170,7 +2170,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2179,7 +2179,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2188,7 +2188,7 @@
       "repository": "https://github.com/P0142/LDAP-Bof-Collection",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 58,
+      "repository_stars": 67,
       "repository_last_updated": "2025-12-15"
     },
     {
@@ -2197,8 +2197,8 @@
       "repository": "https://github.com/entropy-z/PostEx-Arsenal",
       "source_file": "cookie_dump.cna",
       "source_format": "cna",
-      "repository_stars": 94,
-      "repository_last_updated": "2026-03-03"
+      "repository_stars": 97,
+      "repository_last_updated": "2026-03-13"
     },
     {
       "name": "office-dump",
@@ -2206,8 +2206,8 @@
       "repository": "https://github.com/entropy-z/PostEx-Arsenal",
       "source_file": "office-dump.cna",
       "source_format": "cna",
-      "repository_stars": 94,
-      "repository_last_updated": "2026-03-03"
+      "repository_stars": 97,
+      "repository_last_updated": "2026-03-13"
     },
     {
       "name": "masterkeys",
@@ -2386,8 +2386,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "clipboard_grab",
@@ -2395,8 +2395,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "window_handles_enum",
@@ -2404,8 +2404,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "schtask_enum",
@@ -2413,8 +2413,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "session_view",
@@ -2422,8 +2422,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "certstore_loot",
@@ -2431,8 +2431,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "process_tokens_list",
@@ -2440,8 +2440,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "amsi_etw_detect",
@@ -2449,8 +2449,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "app_count",
@@ -2458,8 +2458,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "applocker_policy",
@@ -2467,8 +2467,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "asr_status",
@@ -2476,8 +2476,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "bitlocker_status",
@@ -2485,8 +2485,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "com_probe",
@@ -2494,8 +2494,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "mdm_policy_artifacts",
@@ -2503,8 +2503,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "netjoin_query",
@@ -2512,8 +2512,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "user_idle",
@@ -2521,8 +2521,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "wallpaper_enum",
@@ -2530,8 +2530,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "wef_detect",
@@ -2539,8 +2539,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "wevt_logon_enum",
@@ -2548,8 +2548,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "window_list",
@@ -2557,8 +2557,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "wsc_status",
@@ -2566,8 +2566,8 @@
       "repository": "https://github.com/atomiczsec/Adrenaline",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 240,
-      "repository_last_updated": "2026-03-08"
+      "repository_stars": 265,
+      "repository_last_updated": "2026-03-11"
     },
     {
       "name": "main",
@@ -2611,7 +2611,7 @@
       "repository": "https://github.com/rvrsh3ll/BOF_Collection",
       "source_file": "portscan.cna",
       "source_format": "cna",
-      "repository_stars": 744,
+      "repository_stars": 746,
       "repository_last_updated": "2022-10-16"
     },
     {
@@ -2620,7 +2620,7 @@
       "repository": "https://github.com/rvrsh3ll/BOF_Collection",
       "source_file": "wifidump.cna",
       "source_format": "cna",
-      "repository_stars": 744,
+      "repository_stars": 746,
       "repository_last_updated": "2022-10-16"
     },
     {
@@ -2629,7 +2629,7 @@
       "repository": "https://github.com/rvrsh3ll/BOF_Collection",
       "source_file": "wifidump.cna",
       "source_format": "cna",
-      "repository_stars": 744,
+      "repository_stars": 746,
       "repository_last_updated": "2022-10-16"
     },
     {
@@ -2764,7 +2764,7 @@
       "repository": "https://github.com/mertdas/PrivKit",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 573,
+      "repository_stars": 578,
       "repository_last_updated": "2026-01-20"
     },
     {
@@ -2773,7 +2773,7 @@
       "repository": "https://github.com/mertdas/PrivKit",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 573,
+      "repository_stars": 578,
       "repository_last_updated": "2026-01-20"
     },
     {
@@ -2782,7 +2782,7 @@
       "repository": "https://github.com/mertdas/PrivKit",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 573,
+      "repository_stars": 578,
       "repository_last_updated": "2026-01-20"
     },
     {
@@ -2791,7 +2791,7 @@
       "repository": "https://github.com/mertdas/PrivKit",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 573,
+      "repository_stars": 578,
       "repository_last_updated": "2026-01-20"
     },
     {
@@ -2800,7 +2800,7 @@
       "repository": "https://github.com/mertdas/PrivKit",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 573,
+      "repository_stars": 578,
       "repository_last_updated": "2026-01-20"
     },
     {
@@ -2809,7 +2809,7 @@
       "repository": "https://github.com/mertdas/PrivKit",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 573,
+      "repository_stars": 578,
       "repository_last_updated": "2026-01-20"
     },
     {
@@ -2818,7 +2818,7 @@
       "repository": "https://github.com/mertdas/PrivKit",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 573,
+      "repository_stars": 578,
       "repository_last_updated": "2026-01-20"
     },
     {
@@ -2827,7 +2827,7 @@
       "repository": "https://github.com/mertdas/PrivKit",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 573,
+      "repository_stars": 578,
       "repository_last_updated": "2026-01-20"
     },
     {
@@ -2836,7 +2836,7 @@
       "repository": "https://github.com/mertdas/PrivKit",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 573,
+      "repository_stars": 578,
       "repository_last_updated": "2026-01-20"
     },
     {
@@ -2845,7 +2845,7 @@
       "repository": "https://github.com/mertdas/PrivKit",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 573,
+      "repository_stars": 578,
       "repository_last_updated": "2026-01-20"
     },
     {
@@ -2854,7 +2854,7 @@
       "repository": "https://github.com/mertdas/PrivKit",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 573,
+      "repository_stars": 578,
       "repository_last_updated": "2026-01-20"
     },
     {
@@ -2926,7 +2926,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -2935,7 +2935,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -2944,7 +2944,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -2953,7 +2953,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -2962,7 +2962,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -2971,7 +2971,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -2980,7 +2980,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -2989,7 +2989,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -2998,7 +2998,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3007,7 +3007,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3016,7 +3016,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3025,7 +3025,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3034,7 +3034,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3043,7 +3043,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3052,7 +3052,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3061,7 +3061,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3070,7 +3070,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3079,7 +3079,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3088,7 +3088,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3097,7 +3097,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3106,7 +3106,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3115,7 +3115,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3124,7 +3124,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3133,7 +3133,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3142,7 +3142,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3151,7 +3151,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3160,7 +3160,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3169,7 +3169,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3178,7 +3178,7 @@
       "repository": "https://github.com/Tw1sm/SQL-BOF",
       "source_file": "sql_bof.s1.py",
       "source_format": "stage1_py",
-      "repository_stars": 224,
+      "repository_stars": 227,
       "repository_last_updated": "2025-12-03"
     },
     {
@@ -3187,7 +3187,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3196,7 +3196,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3205,7 +3205,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3214,7 +3214,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3223,7 +3223,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3232,7 +3232,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3241,7 +3241,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3250,7 +3250,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3259,7 +3259,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3268,7 +3268,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3277,7 +3277,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3286,7 +3286,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3295,7 +3295,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3304,7 +3304,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3313,7 +3313,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3322,7 +3322,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3331,7 +3331,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_cs.cna",
       "source_format": "cna",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3340,7 +3340,7 @@
       "repository": "https://github.com/RalfHacker/Kerbeus-BOF",
       "source_file": "kerbeus_oc2_bof.s1.py",
       "source_format": "stage1_py",
-      "repository_stars": 550,
+      "repository_stars": 554,
       "repository_last_updated": "2025-11-23"
     },
     {
@@ -3547,8 +3547,8 @@
       "repository": "https://github.com/Wanssss1/BOFs",
       "source_file": "ihxexec.cna",
       "source_format": "cna",
-      "repository_stars": 4,
-      "repository_last_updated": "2026-03-09"
+      "repository_stars": 10,
+      "repository_last_updated": "2026-03-20"
     },
     {
       "name": "sessions",
@@ -3556,8 +3556,8 @@
       "repository": "https://github.com/Wanssss1/BOFs",
       "source_file": "ihxexec.cna",
       "source_format": "cna",
-      "repository_stars": 4,
-      "repository_last_updated": "2026-03-09"
+      "repository_stars": 10,
+      "repository_last_updated": "2026-03-20"
     },
     {
       "name": "esc1-unpac",
@@ -3565,8 +3565,8 @@
       "repository": "https://github.com/Wanssss1/BOFs",
       "source_file": "esc1-unpac.cna",
       "source_format": "cna",
-      "repository_stars": 4,
-      "repository_last_updated": "2026-03-09"
+      "repository_stars": 10,
+      "repository_last_updated": "2026-03-20"
     },
     {
       "name": "shadowcreds",
@@ -3574,8 +3574,8 @@
       "repository": "https://github.com/Wanssss1/BOFs",
       "source_file": "shadowcreds.cna",
       "source_format": "cna",
-      "repository_stars": 4,
-      "repository_last_updated": "2026-03-09"
+      "repository_stars": 10,
+      "repository_last_updated": "2026-03-20"
     },
     {
       "name": "luser",
@@ -3602,7 +3602,7 @@
       "source_file": "keycred.x64.o",
       "source_format": "directory_structure",
       "repository_stars": 4,
-      "repository_last_updated": "2026-03-09"
+      "repository_last_updated": "2026-03-20"
     },
     {
       "name": "bofthedog",
@@ -3611,7 +3611,7 @@
       "source_file": "rbcd.c",
       "source_format": "directory_structure",
       "repository_stars": 4,
-      "repository_last_updated": "2026-03-09"
+      "repository_last_updated": "2026-03-20"
     },
     {
       "name": "PrivChanger",
@@ -3646,7 +3646,7 @@
       "repository": "https://github.com/Yeeb1/MagicBOFs",
       "source_file": "TappingAtTheWindow.cna",
       "source_format": "cna",
-      "repository_stars": 16,
+      "repository_stars": 18,
       "repository_last_updated": "2025-07-15"
     },
     {
@@ -3655,7 +3655,7 @@
       "repository": "https://github.com/Yeeb1/MagicBOFs",
       "source_file": "DropOfHoney.cna",
       "source_format": "cna",
-      "repository_stars": 16,
+      "repository_stars": 18,
       "repository_last_updated": "2025-07-15"
     },
     {
@@ -3664,7 +3664,7 @@
       "repository": "https://github.com/Yeeb1/MagicBOFs",
       "source_file": "InnocentTraveler.cna",
       "source_format": "cna",
-      "repository_stars": 16,
+      "repository_stars": 18,
       "repository_last_updated": "2025-07-15"
     },
     {
@@ -3673,7 +3673,7 @@
       "repository": "https://github.com/Yeeb1/MagicBOFs",
       "source_file": "WarpWorld.cna",
       "source_format": "cna",
-      "repository_stars": 16,
+      "repository_stars": 18,
       "repository_last_updated": "2025-07-15"
     },
     {
@@ -3682,7 +3682,7 @@
       "repository": "https://github.com/Mr-Un1k0d3r/BOFCode",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 39,
+      "repository_stars": 40,
       "repository_last_updated": "2025-06-30"
     },
     {
@@ -3691,7 +3691,7 @@
       "repository": "https://github.com/Mr-Un1k0d3r/BOFCode",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 39,
+      "repository_stars": 40,
       "repository_last_updated": "2025-06-30"
     },
     {
@@ -3700,7 +3700,7 @@
       "repository": "https://github.com/Mr-Un1k0d3r/BOFCode",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 39,
+      "repository_stars": 40,
       "repository_last_updated": "2025-06-30"
     },
     {
@@ -3709,7 +3709,7 @@
       "repository": "https://github.com/Mr-Un1k0d3r/BOFCode",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 39,
+      "repository_stars": 40,
       "repository_last_updated": "2025-06-30"
     },
     {
@@ -3718,7 +3718,7 @@
       "repository": "https://github.com/Mr-Un1k0d3r/BOFCode",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 39,
+      "repository_stars": 40,
       "repository_last_updated": "2025-06-30"
     },
     {
@@ -3727,7 +3727,7 @@
       "repository": "https://github.com/kozmer/aad-bofs",
       "source_file": "requestaadprt.cna",
       "source_format": "cna",
-      "repository_stars": 138,
+      "repository_stars": 139,
       "repository_last_updated": "2025-11-17"
     },
     {
@@ -3736,7 +3736,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "HelpColor.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3745,7 +3745,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "syscalls_spawn.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3754,7 +3754,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "syscalls_spawn.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3763,7 +3763,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "static_syscalls_apc_spawn.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3772,7 +3772,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "static_syscalls_apc_spawn.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3781,7 +3781,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "syscalls_inject.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3790,7 +3790,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "syscalls_inject.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3799,7 +3799,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "syscalls_dump.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3808,7 +3808,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "etw.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3817,7 +3817,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "curl.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3826,7 +3826,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "functionutil.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3835,7 +3835,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "functionutil.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3844,7 +3844,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "functionutil.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3853,7 +3853,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "static_syscalls_inject.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -3862,7 +3862,7 @@
       "repository": "https://github.com/ZephrFish/QoL-BOFs",
       "source_file": "static_syscalls_inject.cna",
       "source_format": "cna",
-      "repository_stars": 137,
+      "repository_stars": 138,
       "repository_last_updated": "2025-12-07"
     },
     {
@@ -4024,7 +4024,7 @@
       "repository": "https://github.com/RiccardoAncarani/BOFs",
       "source_file": "wts_enum_remote_processes.cna",
       "source_format": "cna",
-      "repository_stars": 121,
+      "repository_stars": 122,
       "repository_last_updated": "2021-09-14"
     },
     {
@@ -4033,7 +4033,7 @@
       "repository": "https://github.com/RiccardoAncarani/BOFs",
       "source_file": "unhook.cna",
       "source_format": "cna",
-      "repository_stars": 121,
+      "repository_stars": 122,
       "repository_last_updated": "2021-09-14"
     },
     {
@@ -4042,7 +4042,7 @@
       "repository": "https://github.com/RiccardoAncarani/BOFs",
       "source_file": "cat.cna",
       "source_format": "cna",
-      "repository_stars": 121,
+      "repository_stars": 122,
       "repository_last_updated": "2021-09-14"
     },
     {
@@ -4051,7 +4051,7 @@
       "repository": "https://github.com/RiccardoAncarani/BOFs",
       "source_file": "send_shellcode_via_pipe.cna",
       "source_format": "cna",
-      "repository_stars": 121,
+      "repository_stars": 122,
       "repository_last_updated": "2021-09-14"
     },
     {
@@ -4816,8 +4816,8 @@
       "repository": "https://github.com/Workingdaturah/BOF-Learning",
       "source_file": "bof.x64.o",
       "source_format": "directory_structure",
-      "repository_stars": 16,
-      "repository_last_updated": "2023-12-20"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "bof_whoami",
@@ -4825,8 +4825,8 @@
       "repository": "https://github.com/Ap3x/Beacon-Object-File-Library",
       "source_file": "WhoAmI.cna",
       "source_format": "cna",
-      "repository_stars": 2,
-      "repository_last_updated": "2026-03-06"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "reg_persist",
@@ -4834,8 +4834,8 @@
       "repository": "https://github.com/Ap3x/Beacon-Object-File-Library",
       "source_file": "RegistryPersistence.cna",
       "source_format": "cna",
-      "repository_stars": 2,
-      "repository_last_updated": "2026-03-06"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "timestomp",
@@ -4843,8 +4843,8 @@
       "repository": "https://github.com/Ap3x/Beacon-Object-File-Library",
       "source_file": "TimeStomp.cna",
       "source_format": "cna",
-      "repository_stars": 2,
-      "repository_last_updated": "2026-03-06"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "file_exfil_url",
@@ -4852,8 +4852,8 @@
       "repository": "https://github.com/Ap3x/Beacon-Object-File-Library",
       "source_file": "FileExfiltrationUrlEncoded.cna",
       "source_format": "cna",
-      "repository_stars": 2,
-      "repository_last_updated": "2026-03-06"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "enum_drivers",
@@ -4861,8 +4861,8 @@
       "repository": "https://github.com/Ap3x/Beacon-Object-File-Library",
       "source_file": "EnumDeviceDrivers.cna",
       "source_format": "cna",
-      "repository_stars": 2,
-      "repository_last_updated": "2026-03-06"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "get_system_directory",
@@ -4870,8 +4870,8 @@
       "repository": "https://github.com/Ap3x/Beacon-Object-File-Library",
       "source_file": "GetSystemDirectory.cna",
       "source_format": "cna",
-      "repository_stars": 2,
-      "repository_last_updated": "2026-03-06"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "bof_ipconfig",
@@ -4879,8 +4879,8 @@
       "repository": "https://github.com/Ap3x/Beacon-Object-File-Library",
       "source_file": "Ipconfig.cna",
       "source_format": "cna",
-      "repository_stars": 2,
-      "repository_last_updated": "2026-03-06"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "extract-tickets",
@@ -4888,8 +4888,8 @@
       "repository": "https://github.com/qmadev/BOF-Collection",
       "source_file": "BOF-Collection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-02-25"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "execute-shellcode-queueuserapc",
@@ -4897,8 +4897,8 @@
       "repository": "https://github.com/qmadev/BOF-Collection",
       "source_file": "BOF-Collection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-02-25"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "ldapsearch",
@@ -4906,8 +4906,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "routeprint",
@@ -4915,8 +4915,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netGroupList",
@@ -4924,8 +4924,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netGroupListMembers",
@@ -4933,8 +4933,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netLocalGroupList",
@@ -4942,8 +4942,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netLocalGroupListMembers",
@@ -4951,8 +4951,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netLocalGroupListMembers2",
@@ -4960,8 +4960,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "reg_query",
@@ -4969,8 +4969,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "reg_query_recursive",
@@ -4978,8 +4978,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "adcs_enum",
@@ -4987,8 +4987,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "adcs_enum_com",
@@ -4996,8 +4996,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "adcs_enum_com2",
@@ -5005,8 +5005,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "ipconfig",
@@ -5014,8 +5014,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "probe",
@@ -5023,8 +5023,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "enumlocalsessions",
@@ -5032,8 +5032,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netshares",
@@ -5041,8 +5041,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "scshell64",
@@ -5050,8 +5050,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "add_machine_account",
@@ -5059,8 +5059,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "del_machine_account",
@@ -5068,8 +5068,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "get_machine_account_quota",
@@ -5077,8 +5077,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "petit_potam",
@@ -5086,8 +5086,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "always_install_elevated_check",
@@ -5095,8 +5095,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "autologon_check",
@@ -5104,8 +5104,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "credential_manager_check",
@@ -5113,8 +5113,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "hijackable_path_check",
@@ -5122,8 +5122,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "modifiable_autorun_check",
@@ -5131,8 +5131,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "token_privileges_check",
@@ -5140,8 +5140,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "unquoted_svc_path_check",
@@ -5149,8 +5149,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "powershell_history_check",
@@ -5158,8 +5158,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "uac_status_check",
@@ -5167,8 +5167,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "modifiable_svc_check",
@@ -5176,8 +5176,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "priv_check_all",
@@ -5185,8 +5185,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sc_config",
@@ -5194,8 +5194,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sc_create",
@@ -5203,8 +5203,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sc_delete",
@@ -5212,8 +5212,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sc_stop",
@@ -5221,8 +5221,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sc_start",
@@ -5230,8 +5230,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "enableuser",
@@ -5239,8 +5239,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "persist_service",
@@ -5248,8 +5248,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-whoami",
@@ -5257,8 +5257,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-info",
@@ -5266,8 +5266,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-enablexp",
@@ -5275,8 +5275,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-xpcmd",
@@ -5284,8 +5284,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-1434udp",
@@ -5293,8 +5293,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-adsi",
@@ -5302,8 +5302,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-agentcmd",
@@ -5311,8 +5311,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-agentstatus",
@@ -5320,8 +5320,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-checkrpc",
@@ -5329,8 +5329,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-clr",
@@ -5338,8 +5338,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-columns",
@@ -5347,8 +5347,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-databases",
@@ -5356,8 +5356,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-disableclr",
@@ -5365,8 +5365,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-disableole",
@@ -5374,8 +5374,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-disablerpc",
@@ -5383,8 +5383,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-disablexp",
@@ -5392,8 +5392,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-enableclr",
@@ -5401,8 +5401,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-enableole",
@@ -5410,8 +5410,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-enablerpc",
@@ -5419,8 +5419,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-impersonate",
@@ -5428,8 +5428,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-links",
@@ -5437,8 +5437,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-olecmd",
@@ -5446,8 +5446,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-query",
@@ -5455,8 +5455,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-rows",
@@ -5464,8 +5464,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-search",
@@ -5473,8 +5473,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-smb",
@@ -5482,8 +5482,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-tables",
@@ -5491,8 +5491,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sql-users",
@@ -5500,8 +5500,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "PrivCheck",
@@ -5509,8 +5509,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "AlwaysInstallElevatedCheck",
@@ -5518,8 +5518,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "AutologonCheck",
@@ -5527,8 +5527,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "CredentialManagerCheck",
@@ -5536,8 +5536,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "HijackablePathCheck",
@@ -5545,8 +5545,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "ModifiableAutorunCheck",
@@ -5554,8 +5554,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "TokenPrivilegesCheck",
@@ -5563,8 +5563,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "UnquotedSVCPathCheck",
@@ -5572,8 +5572,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "PowerShellHistoryCheck",
@@ -5581,8 +5581,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "UACStatusCheck",
@@ -5590,8 +5590,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "ModifiableSVCCheck",
@@ -5599,8 +5599,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "PrivCheck.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sc_description",
@@ -5608,8 +5608,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sc_failure",
@@ -5617,8 +5617,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "reg_set",
@@ -5626,8 +5626,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "reg_delete",
@@ -5635,8 +5635,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "reg_save",
@@ -5644,8 +5644,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "schtaskscreate",
@@ -5653,8 +5653,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "schtasksdelete",
@@ -5662,8 +5662,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "schtasksstop",
@@ -5671,8 +5671,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "schtasksrun",
@@ -5680,8 +5680,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "procdump",
@@ -5689,8 +5689,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "ProcessListHandles",
@@ -5698,8 +5698,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "ProcessDestroy",
@@ -5707,8 +5707,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "setuserpass",
@@ -5716,8 +5716,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "addusertogroup",
@@ -5725,8 +5725,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "adduser",
@@ -5734,8 +5734,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "unexpireuser",
@@ -5743,8 +5743,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "chromeKey",
@@ -5752,8 +5752,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "slackKey",
@@ -5761,8 +5761,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "shspawnas",
@@ -5770,8 +5770,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "adcs_request",
@@ -5779,8 +5779,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "adcs_request_on_behalf",
@@ -5788,8 +5788,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "office_tokens",
@@ -5797,8 +5797,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "lastpass",
@@ -5806,8 +5806,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "suspend",
@@ -5815,8 +5815,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "resume",
@@ -5824,8 +5824,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "get_priv",
@@ -5833,8 +5833,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "ghost_task",
@@ -5842,8 +5842,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "slack_cookie",
@@ -5851,8 +5851,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "shutdown",
@@ -5860,8 +5860,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "global_unprotect",
@@ -5869,8 +5869,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "make_token_cert",
@@ -5878,8 +5878,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "get_azure_token",
@@ -5887,8 +5887,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Remote.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "createremotethread",
@@ -5896,8 +5896,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "setthreadcontext",
@@ -5905,8 +5905,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "ntcreatethread",
@@ -5914,8 +5914,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "ntqueueapcthread",
@@ -5923,8 +5923,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "kernelcallbacktable",
@@ -5932,8 +5932,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "tooltip",
@@ -5941,8 +5941,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "uxsubclassinfo",
@@ -5950,8 +5950,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "clipboardinject",
@@ -5959,8 +5959,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "conhost",
@@ -5968,8 +5968,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "ctray",
@@ -5977,8 +5977,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "dde",
@@ -5986,8 +5986,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "svcctrl",
@@ -5995,8 +5995,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "Injection.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "dir",
@@ -6004,8 +6004,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "env",
@@ -6013,8 +6013,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "get_dpapi_system",
@@ -6022,8 +6022,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "arp",
@@ -6031,8 +6031,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "nslookup",
@@ -6040,8 +6040,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netview",
@@ -6049,8 +6049,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "listdns",
@@ -6058,8 +6058,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "listmods",
@@ -6067,8 +6067,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "locale",
@@ -6076,8 +6076,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "notepad",
@@ -6085,8 +6085,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netuse_add",
@@ -6094,8 +6094,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netuse_list",
@@ -6103,8 +6103,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netuse_delete",
@@ -6112,8 +6112,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netuser",
@@ -6121,8 +6121,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "windowlist",
@@ -6130,8 +6130,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netstat",
@@ -6139,8 +6139,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "whoami",
@@ -6148,8 +6148,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "domainenum",
@@ -6157,8 +6157,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "userenum",
@@ -6166,8 +6166,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "driversigs",
@@ -6175,8 +6175,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netsharesAdmin",
@@ -6184,8 +6184,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "schtasksenum",
@@ -6193,8 +6193,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "schtasksquery",
@@ -6202,8 +6202,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "cacls",
@@ -6211,8 +6211,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sc_query",
@@ -6220,8 +6220,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sc_qc",
@@ -6229,8 +6229,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sc_qdescription",
@@ -6238,8 +6238,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sc_qfailure",
@@ -6247,8 +6247,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sc_qtriggerinfo",
@@ -6256,8 +6256,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sc_enum",
@@ -6265,8 +6265,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "tasklist",
@@ -6274,8 +6274,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "wmi_query",
@@ -6283,8 +6283,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netsession",
@@ -6292,8 +6292,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netsession2",
@@ -6301,8 +6301,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "resources",
@@ -6310,8 +6310,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "uptime",
@@ -6319,8 +6319,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "useridletime",
@@ -6328,8 +6328,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "enum_filter_driver",
@@ -6337,8 +6337,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "adv_audit_policies",
@@ -6346,8 +6346,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "listpipes",
@@ -6355,8 +6355,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "findLoadedModule",
@@ -6364,8 +6364,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "vssenum",
@@ -6373,8 +6373,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "get_password_policy",
@@ -6382,8 +6382,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "list_firewall_rules",
@@ -6391,8 +6391,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netloggedon",
@@ -6400,8 +6400,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netloggedon2",
@@ -6409,8 +6409,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "netuptime",
@@ -6418,8 +6418,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "nettime",
@@ -6427,8 +6427,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "regsession",
@@ -6436,8 +6436,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "aadjoininfo",
@@ -6445,8 +6445,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "get_session_info",
@@ -6454,8 +6454,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "sha256",
@@ -6463,8 +6463,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "scshell",
@@ -6472,8 +6472,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "scshell.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "scshell-settings",
@@ -6481,8 +6481,8 @@
       "repository": "https://github.com/sanackermann/nh_bofs_ag",
       "source_file": "scshell.cna",
       "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-03-05"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "persistask",
@@ -6499,8 +6499,8 @@
       "repository": "https://github.com/0xMorph3us/BRC_BOFS",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 6,
-      "repository_last_updated": "2026-01-16"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "smbtakeover",
@@ -6508,8 +6508,8 @@
       "repository": "https://github.com/0xMorph3us/BRC_BOFS",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 6,
-      "repository_last_updated": "2026-01-16"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "getnetlocalgroup",
@@ -6517,8 +6517,8 @@
       "repository": "https://github.com/0xMorph3us/BRC_BOFS",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 6,
-      "repository_last_updated": "2026-01-16"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "getnetloggedon",
@@ -6526,8 +6526,8 @@
       "repository": "https://github.com/0xMorph3us/BRC_BOFS",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 6,
-      "repository_last_updated": "2026-01-16"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "getnetsession",
@@ -6535,8 +6535,8 @@
       "repository": "https://github.com/0xMorph3us/BRC_BOFS",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 6,
-      "repository_last_updated": "2026-01-16"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "getregsession",
@@ -6544,8 +6544,8 @@
       "repository": "https://github.com/0xMorph3us/BRC_BOFS",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 6,
-      "repository_last_updated": "2026-01-16"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "all",
@@ -6625,8 +6625,8 @@
       "repository": "https://github.com/CyberSecurityUP/Havoc-BOF-Development",
       "source_file": "BOF_ThreadHijacking.py",
       "source_format": "havoc_py",
-      "repository_stars": 8,
-      "repository_last_updated": "2025-02-16"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "mockingjay",
@@ -6634,8 +6634,8 @@
       "repository": "https://github.com/CyberSecurityUP/Havoc-BOF-Development",
       "source_file": "BOF-Mockingjay.py",
       "source_format": "havoc_py",
-      "repository_stars": 8,
-      "repository_last_updated": "2025-02-16"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "bofmockingjay",
@@ -6643,8 +6643,8 @@
       "repository": "https://github.com/CyberSecurityUP/Havoc-BOF-Development",
       "source_file": "BOF-Mockingjay.py",
       "source_format": "havoc_py",
-      "repository_stars": 8,
-      "repository_last_updated": "2025-02-16"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "uac_sspi",
@@ -8173,8 +8173,8 @@
       "repository": "https://github.com/jsecu/CredManBOF",
       "source_file": "CredMan.cna",
       "source_format": "cna",
-      "repository_stars": 99,
-      "repository_last_updated": "2021-09-20"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "ppldump",
@@ -8578,8 +8578,8 @@
       "repository": "https://github.com/AonCyberLabs/CopyUnlocker-BOF",
       "source_file": "copyunlocker.cna",
       "source_format": "cna",
-      "repository_stars": 7,
-      "repository_last_updated": "2024-10-22"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "edrsilencer",
@@ -8920,8 +8920,8 @@
       "repository": "https://github.com/sudonoodle/BOF-entra-authcode-flow",
       "source_file": "entra-authcode-flow.cna",
       "source_format": "cna",
-      "repository_stars": 124,
-      "repository_last_updated": "2026-01-17"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "aadprt",
@@ -9109,8 +9109,8 @@
       "repository": "https://github.com/0x73/CS-auto_inject-BOF",
       "source_file": "auto_inject.cna",
       "source_format": "cna",
-      "repository_stars": 10,
-      "repository_last_updated": "2023-09-06"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "auto_inject",
@@ -9118,8 +9118,8 @@
       "repository": "https://github.com/0x73/CS-auto_inject-BOF",
       "source_file": "auto_inject.cna",
       "source_format": "cna",
-      "repository_stars": 10,
-      "repository_last_updated": "2023-09-06"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "ThreadlessInject_BOF",
@@ -9361,8 +9361,8 @@
       "repository": "https://github.com/0x3rhy/AddUser-Bof",
       "source_file": "AddUser.cna",
       "source_format": "cna",
-      "repository_stars": 79,
-      "repository_last_updated": "2022-10-11"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "uac_bypass_cmstplua",
@@ -9478,8 +9478,8 @@
       "repository": "https://github.com/Crypt0s/DelegationBOF",
       "source_file": "DelegationBOF.cna",
       "source_format": "cna",
-      "repository_stars": 142,
-      "repository_last_updated": "2022-05-04"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "get-spns",
@@ -9487,8 +9487,8 @@
       "repository": "https://github.com/Crypt0s/DelegationBOF",
       "source_file": "DelegationBOF.cna",
       "source_format": "cna",
-      "repository_stars": 142,
-      "repository_last_updated": "2022-05-04"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "zerologon",
@@ -9658,8 +9658,8 @@
       "repository": "https://github.com/alfarom256/BOF-ForeignLsass",
       "source_file": "foreign_access.cna",
       "source_format": "cna",
-      "repository_stars": 101,
-      "repository_last_updated": "2021-08-23"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "bof-trustedpath-uacbypass",
@@ -10315,8 +10315,8 @@
       "repository": "https://github.com/stufus/bofs",
       "source_file": "bofs.cna",
       "source_format": "cna",
-      "repository_stars": 5,
-      "repository_last_updated": "2022-07-15"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "RegSave",
@@ -10603,8 +10603,8 @@
       "repository": "https://github.com/zimnyaa/stoplooking",
       "source_file": "stoplooking.x64.o",
       "source_format": "directory_structure",
-      "repository_stars": 13,
-      "repository_last_updated": "2023-10-13"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "wtsimpersonate",
@@ -10855,8 +10855,8 @@
       "repository": "https://github.com/GeorgePatsias/AskCreds-CS",
       "source_file": "Askcreds.cna",
       "source_format": "cna",
-      "repository_stars": 16,
-      "repository_last_updated": "2022-06-16"
+      "repository_stars": 0,
+      "repository_last_updated": ""
     },
     {
       "name": "evidence",
@@ -11494,6 +11494,24 @@
       "repository": "https://github.com/TailoredSecOps/PEREDBOEMPATAT-BOF",
       "source_file": "localpotato.cna",
       "source_format": "cna",
+      "repository_stars": 0,
+      "repository_last_updated": ""
+    },
+    {
+      "name": "regpwn",
+      "description": "CVE-2026-24291 registry symlink LPE (locks workstation!)",
+      "repository": "https://github.com/Flangvik/RegPwnBOF",
+      "source_file": "regpwn.cna",
+      "source_format": "cna",
+      "repository_stars": 0,
+      "repository_last_updated": ""
+    },
+    {
+      "name": "entry",
+      "description": "A Beacon Object File (BOF) for sending Windows toast notifications. Pairs with the [blog post](https://brmk.me/2026/03/18/toast-my-way.html) for full context and use cases.",
+      "repository": "https://github.com/brmkit/toastnotify-bof",
+      "source_file": "entry.c",
+      "source_format": "directory_structure",
       "repository_stars": 0,
       "repository_last_updated": ""
     },
