@@ -683,6 +683,7 @@ This category includes single-purpose BOFs, specialized tools, loaders, template
 | [enumlochost](https://github.com/damaidec/enumlochost) | Situational awareness BOF for local host enumeration during pentests | ![](https://img.shields.io/github/stars/damaidec/enumlochost?label=&style=flat) | ![](https://img.shields.io/github/last-commit/damaidec/enumlochost?label=&style=flat) |
 | [lsawhisper-bof](https://github.com/dazzyddos/lsawhisper-bof) | A Beacon Object File (BOF) that talks directly to Windows authentication packages through the LSA untrusted/trusted client interface, without touching LSASS process memory. | ![](https://img.shields.io/github/stars/dazzyddos/lsawhisper-bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/dazzyddos/lsawhisper-bof?label=&style=flat) |
 | [PEREDBOEMPATAT-BOF](https://github.com/TailoredSecOps/PEREDBOEMPATAT-BOF) | LocalPotato NTLM reflection exploit (CVE-2023-21746) as a Cobalt Strike Beacon Object File | ![](https://img.shields.io/github/stars/TailoredSecOps/PEREDBOEMPATAT-BOF?label=&style=flat) | ![](https://img.shields.io/github/last-commit/TailoredSecOps/PEREDBOEMPATAT-BOF?label=&style=flat) |
+| [toastnotify-bof](https://github.com/brmkit/toastnotify-bof) | abusing windows toast notifications for fun and user manipulation | ![](https://img.shields.io/github/stars/brmkit/toastnotify-bof?label=&style=flat) | ![](https://img.shields.io/github/last-commit/brmkit/toastnotify-bof?label=&style=flat) |
 
 ---
 
