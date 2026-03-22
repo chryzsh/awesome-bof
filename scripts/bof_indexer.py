@@ -183,9 +183,24 @@ def clone_all_repos(repos: list[RepoInfo], repos_dir: str, max_workers: int = 8)
     return repos
 
 
+class RateLimitError(Exception):
+    """Raised when GitHub API rate limit is hit."""
+    pass
+
+
+# Thread-safe flag to signal rate limiting across all workers
+_rate_limited = False
+_rate_limit_lock = __import__('threading').Lock()
+
+
 def fetch_repo_metadata(repo: RepoInfo, token: str = "") -> RepoInfo:
     """Fetch repository stars and last-updated date from GitHub API."""
+    global _rate_limited
     if "github.com/" not in repo.url:
+        return repo
+
+    # Skip if we've already been rate-limited
+    if _rate_limited:
         return repo
 
     headers = {"Accept": "application/vnd.github+json"}
@@ -195,6 +210,20 @@ def fetch_repo_metadata(repo: RepoInfo, token: str = "") -> RepoInfo:
     api_url = f"https://api.github.com/repos/{repo.owner}/{repo.name}"
     try:
         response = requests.get(api_url, headers=headers, timeout=20)
+        if response.status_code == 403:
+            remaining = response.headers.get("x-ratelimit-remaining", "")
+            if remaining == "0":
+                with _rate_limit_lock:
+                    if not _rate_limited:
+                        _rate_limited = True
+                        reset_ts = response.headers.get("x-ratelimit-reset", "")
+                        reset_info = ""
+                        if reset_ts:
+                            import time as _time
+                            reset_info = f" (resets at {_time.strftime('%H:%M:%S', _time.localtime(int(reset_ts)))})"
+                        print(f"\n  WARNING: GitHub API rate limit hit{reset_info}. "
+                              f"Set GITHUB_TOKEN env var for 5000 req/hr.", file=sys.stderr)
+                return repo
         if response.status_code != 200:
             return repo
         data = response.json()
@@ -208,6 +237,9 @@ def fetch_repo_metadata(repo: RepoInfo, token: str = "") -> RepoInfo:
 
 def enrich_repo_metadata(repos: list[RepoInfo], max_workers: int = 12) -> list[RepoInfo]:
     """Enrich repository list with stars/last-updated data."""
+    global _rate_limited
+    _rate_limited = False
+
     token = os.environ.get("GITHUB_TOKEN", "")
     if not token:
         print("  Note: GITHUB_TOKEN not set; stars/updated metadata may be incomplete")
@@ -223,6 +255,12 @@ def enrich_repo_metadata(repos: list[RepoInfo], max_workers: int = 12) -> list[R
                 pass
             if completed % 50 == 0:
                 print(f"  Metadata progress: {completed}/{len(repos)} repos")
+
+    enriched = sum(1 for r in repos if r.stars > 0 or r.last_updated)
+    github_repos = sum(1 for r in repos if "github.com/" in r.url)
+    if enriched < github_repos:
+        print(f"  Metadata enriched: {enriched}/{github_repos} GitHub repos "
+              f"({github_repos - enriched} missing — likely rate-limited)")
 
     return repos
 
