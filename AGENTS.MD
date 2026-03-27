@@ -253,3 +253,4 @@ awesome-bof/
 - When in doubt, ask the human for approval before adding
 - After adding BOFs, rebuild the index so they appear in search
 - Commit each logical change individually and frequently — don't batch unrelated changes into one commit
+- Always ask before pushing — never push to remote without explicit approval
