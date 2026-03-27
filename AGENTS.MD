@@ -78,10 +78,28 @@ git pull --rebase && git push
 
 ### Step 6: Close the Processed Issues
 
-After pushing, close the issues that were triaged:
+After pushing, close each triaged issue with a structured summary comment containing two tables — one for added repos and one for skipped repos:
+
 ```bash
-gh issue close NUMBER --comment "Triaged: added N repos, skipped M (reason summary)"
+gh issue close NUMBER --comment "$(cat <<'EOF'
+## Triage Summary
+
+### Added (N)
+| Repo | Description | Category |
+|------|-------------|----------|
+| [repo-name](https://github.com/owner/repo) | Short description | Other BOFs |
+
+### Skipped (M)
+| Repo | Reason |
+|------|--------|
+| owner/repo | Fork of existing entry (owner2/repo) |
+| owner/repo | Not a BOF — buffer overflow lab |
+| owner/repo | Generic red team collection, not BOF-specific |
+EOF
+)"
 ```
+
+Omit the "Added" table if nothing was added, or the "Skipped" table if nothing was skipped. Use the catalog section name for the Category column (BOF Collections, Smaller BOF Packs, C2 specific BOFs, Other BOFs).
 
 ---
 
@@ -223,6 +241,7 @@ awesome-bof/
 │   ├── bof_indexer.py     # BOF index generator (clones + parses repos)
 │   ├── bof-search.sh      # Interactive fzf search over the index
 │   ├── generate_md.py     # Generate table rows for catalog
+│   ├── sanitize.py        # Shared input sanitization for untrusted metadata
 │   └── find-dupes.py      # Find duplicate entries
 └── _archive/              # Archived old documentation
 ```
@@ -233,3 +252,4 @@ awesome-bof/
 - The catalog has 367+ BOFs - always check for duplicates
 - When in doubt, ask the human for approval before adding
 - After adding BOFs, rebuild the index so they appear in search
+- Commit each logical change individually and frequently — don't batch unrelated changes into one commit
