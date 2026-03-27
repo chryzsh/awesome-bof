@@ -18,6 +18,9 @@ import sys
 import requests
 from pathlib import Path
 from collections import defaultdict
+
+sys.path.insert(0, str(Path(__file__).parent))
+from sanitize import sanitize_description, sanitize_name
 from typing import Optional
 from dataclasses import dataclass, field, asdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -1098,6 +1101,11 @@ def main():
     # Step 5: Deduplicate
     entries = deduplicate_entries(entries)
     print(f"  After deduplication: {len(entries)} unique BOF entries")
+
+    # Step 5.5a: Sanitize all entries (untrusted repo content)
+    for entry in entries:
+        entry.name = sanitize_name(entry.name)
+        entry.description = sanitize_description(entry.description)
 
     # Step 5.5: Attach repo metadata to each BOF entry
     attach_repo_metadata(entries, repos)

@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
 
+import os
 import requests
 import argparse
 import sys
+from pathlib import Path
 from urllib.parse import urlparse
+
+sys.path.insert(0, str(Path(__file__).parent))
+from sanitize import sanitize_description
 
 def get_repo_info(repo_url):
     """
@@ -35,7 +40,7 @@ def get_repo_info(repo_url):
         elif not description.strip(): # Handle empty string description
              description = "[Description is empty]"
 
-        return username, repo_name, description
+        return username, repo_name, sanitize_description(description)
 
     except requests.exceptions.Timeout:
         print(f"Error: Request timed out while fetching data for {repo_url}.", file=sys.stderr)

@@ -18,6 +18,9 @@ import sys
 from datetime import datetime, timedelta
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+from sanitize import sanitize_description
+
 import requests
 
 
@@ -228,7 +231,7 @@ def format_repo(repo: dict, markdown: bool = False) -> str:
     """Format a repository for output."""
     name = repo["full_name"]
     url = repo["html_url"]
-    description = repo.get("description") or "[No description]"
+    description = sanitize_description(repo.get("description") or "[No description]")
     stars = repo["stargazers_count"]
     updated = repo["pushed_at"][:10]  # YYYY-MM-DD
 
