@@ -37,6 +37,20 @@ gh api repos/OWNER/REPO/readme --jq '.content' | base64 -d | head -80
 - Generic tool collections, cheatsheets, or pentest dumps that aren't BOF-specific
 - Already in the catalog (grep BOF-CATALOG.md first)
 
+**Suspicious/Copycat Detection** — apply extra scrutiny to repos that:
+- Share the same name as an existing catalog entry but have significantly fewer stars
+- Have pre-compiled binaries (.o, .exe, .dll) without corresponding source code or build instructions
+- Were created by accounts less than 90 days old with fewer than 3 public repositories
+- Have descriptions identical or near-identical to an existing catalog entry
+- Are forks of existing entries with no meaningful commits beyond the fork point
+
+When the weekly discovery issue includes **Warnings** annotations, investigate each warning before adding. If a repo has a POSSIBLE_COPYCAT warning, verify it is not a legitimate independent implementation by checking commit history and code differences.
+
+Run the audit script periodically to scan the full catalog:
+```bash
+python3 scripts/audit_catalog.py
+```
+
 ### Step 3: Add to BOF-CATALOG.md
 
 Place each BOF in the correct section:
@@ -135,6 +149,8 @@ The script will:
 - Forks with no meaningful changes
 - Empty or abandoned (no commits in 2+ years, 0 stars, no description)
 - Duplicates of existing entries
+- Suspected copycats (same name as a popular repo, far fewer stars, new account)
+- Repos with pre-compiled binaries but no source code or build instructions
 
 ### Step 3: Categorize
 
