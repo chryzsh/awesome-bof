@@ -20,6 +20,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from sanitize import sanitize_description
+from repo_checks import (
+    build_github_headers,
+    check_binary_files,
+    detect_copycats,
+    fetch_owner_metadata,
+    normalize_repo_name,
+)
 
 import requests
 
@@ -227,7 +234,79 @@ def search_github_repos(
     return merged
 
 
-def format_repo(repo: dict, markdown: bool = False) -> str:
+def compute_suspicion_signals(
+    repo: dict,
+    catalog_names: dict,
+    headers: dict,
+    owner_cache: dict,
+) -> list[str]:
+    """Check a candidate repo for suspicious indicators.
+
+    Args:
+        repo: GitHub API repo dict
+        catalog_names: dict mapping normalized repo name -> "owner/name" (highest-star catalog entry)
+        headers: GitHub API headers
+        owner_cache: dict for caching owner metadata
+
+    Returns list of warning strings.
+    """
+    warnings = []
+    repo_name = repo["name"]
+    full_name = repo["full_name"]
+    norm = normalize_repo_name(repo_name)
+
+    # Check for name collision with existing catalog entries
+    if norm in catalog_names:
+        existing = catalog_names[norm]
+        if full_name.lower() != existing.lower():
+            warnings.append(
+                f"POSSIBLE_COPYCAT: shares name with catalog entry {existing}"
+            )
+
+    # Check owner account
+    owner = repo["owner"]["login"]
+    owner_meta = fetch_owner_metadata(owner, headers, owner_cache)
+    if owner_meta:
+        created = owner_meta.get("created_at", "")
+        pub_repos = owner_meta.get("public_repos", 0)
+        if created:
+            try:
+                from datetime import timezone
+                created_dt = datetime.fromisoformat(created.replace("Z", "+00:00"))
+                age_days = (datetime.now(timezone.utc) - created_dt).days
+                if age_days < 90 and pub_repos < 3:
+                    warnings.append(
+                        f"NEW_ACCOUNT: owner created {age_days}d ago, {pub_repos} public repos"
+                    )
+            except (ValueError, TypeError):
+                pass
+
+    return warnings
+
+
+def build_catalog_name_index(catalog_path: Path) -> dict:
+    """Build a dict mapping normalized repo names to 'owner/name' from the catalog.
+
+    When multiple repos share a normalized name, keeps the first one found
+    (catalog is roughly ordered by prominence).
+    """
+    index = {}
+    if not catalog_path.exists():
+        return index
+
+    pattern = re.compile(r'https?://github\.com/([^/\s\)]+)/([^/\s\)]+)')
+    for line in catalog_path.read_text().splitlines():
+        m = pattern.search(line)
+        if m:
+            owner, name = m.groups()
+            name = name.split("#")[0].split("?")[0].rstrip("/")
+            norm = normalize_repo_name(name)
+            if norm not in index:
+                index[norm] = f"{owner}/{name}"
+    return index
+
+
+def format_repo(repo: dict, markdown: bool = False, warnings: list = None) -> str:
     """Format a repository for output."""
     name = repo["full_name"]
     url = repo["html_url"]
@@ -241,9 +320,17 @@ def format_repo(repo: dict, markdown: bool = False) -> str:
         stars_badge = f"![](https://img.shields.io/github/stars/{owner}/{repo_name}?label=&style=flat)"
         commit_badge = f"![](https://img.shields.io/github/last-commit/{owner}/{repo_name}?label=&style=flat)"
         safe_desc = description.replace("|", "\\|")
-        return f"| [{repo_name}]({url}) | {safe_desc} | {stars_badge} | {commit_badge} |"
+        row = f"| [{repo_name}]({url}) | {safe_desc} | {stars_badge} | {commit_badge} |"
+        if warnings:
+            warning_lines = "; ".join(warnings)
+            row += f"\n> **Warnings:** {warning_lines}"
+        return row
     else:
-        return f"{name} ({stars} stars, updated {updated})\n  {url}\n  {description}"
+        output = f"{name} ({stars} stars, updated {updated})\n  {url}\n  {description}"
+        if warnings:
+            for w in warnings:
+                output += f"\n  WARNING: {w}"
+        return output
 
 
 def main():
@@ -280,6 +367,11 @@ def main():
         type=int,
         default=250,
         help="Max repository detail lookups from code-indicator search (default: 250)"
+    )
+    parser.add_argument(
+        "--skip-suspicious",
+        action="store_true",
+        help="Auto-skip candidates flagged as POSSIBLE_COPYCAT"
     )
 
     args = parser.parse_args()
@@ -326,6 +418,27 @@ def main():
     if not args.include_existing:
         print(f"After filtering existing: {len(new_repos)} new candidates", file=sys.stderr)
 
+    # Compute suspicion signals for each candidate
+    catalog_names = build_catalog_name_index(catalog_path)
+    headers = build_github_headers(token)
+    owner_cache = {}
+    repo_warnings = {}
+    for repo in new_repos:
+        signals = compute_suspicion_signals(repo, catalog_names, headers, owner_cache)
+        if signals:
+            repo_warnings[repo["id"]] = signals
+
+    # Filter out suspicious if requested
+    if args.skip_suspicious:
+        before = len(new_repos)
+        new_repos = [
+            r for r in new_repos
+            if not any("POSSIBLE_COPYCAT" in w for w in repo_warnings.get(r["id"], []))
+        ]
+        skipped = before - len(new_repos)
+        if skipped:
+            print(f"Skipped {skipped} suspicious candidates", file=sys.stderr)
+
     print("", file=sys.stderr)  # Blank line before output
 
     # Output results
@@ -334,7 +447,8 @@ def main():
         print("|---------|-------------|-------|-------------|")
 
     for repo in new_repos:
-        print(format_repo(repo, args.markdown))
+        warnings = repo_warnings.get(repo["id"])
+        print(format_repo(repo, args.markdown, warnings))
         if not args.markdown:
             print()  # Blank line between entries
 
