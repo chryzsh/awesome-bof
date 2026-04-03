@@ -1,5 +1,15 @@
 # Awesome BOF
 
+> [!WARNING]
+> **Security Notice:** Entries in this catalog are community-sourced and **not all manually vetted**.
+> Some repositories may contain malicious code, backdoored binaries, or be copycat repos impersonating legitimate tools.
+>
+> Before using any BOF from this catalog:
+> - **Inspect the source code** before compiling or running
+> - **Never trust pre-compiled binaries** (`.o`, `.exe`, `.dll`) from any repository — always build from source
+> - **Verify the repo author** — check account age, other repos, and stars relative to the original project
+> - **Report suspicious entries** by [opening an issue](https://github.com/chryzsh/awesome-bof/issues)
+
 A place to find Beacon Object Files, plus a fast searchable index of them.
 
 ## Start Here
