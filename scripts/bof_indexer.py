@@ -238,10 +238,37 @@ def fetch_repo_metadata(repo: RepoInfo, token: str = "") -> RepoInfo:
     return repo
 
 
-def enrich_repo_metadata(repos: list[RepoInfo], max_workers: int = 12) -> list[RepoInfo]:
+def load_existing_metadata(index_path: str) -> dict[str, tuple[int, str]]:
+    """Load stars/last-updated from an existing bof-index.json as fallback."""
+    meta = {}
+    try:
+        with open(index_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        for bof in data.get("bofs", []):
+            repo = bof.get("repository", "").lower()
+            stars = bof.get("repository_stars", 0)
+            updated = bof.get("repository_last_updated", "")
+            if repo and (stars or updated):
+                existing = meta.get(repo, (0, ""))
+                if stars > existing[0]:
+                    meta[repo] = (stars, updated)
+        if meta:
+            print(f"  Loaded existing metadata for {len(meta)} repos as fallback")
+    except (FileNotFoundError, json.JSONDecodeError, KeyError):
+        pass
+    return meta
+
+
+def enrich_repo_metadata(repos: list[RepoInfo], max_workers: int = 12,
+                         existing_index_path: str = "") -> list[RepoInfo]:
     """Enrich repository list with stars/last-updated data."""
     global _rate_limited
     _rate_limited = False
+
+    # Load existing metadata as fallback for rate-limited repos
+    fallback_meta = {}
+    if existing_index_path:
+        fallback_meta = load_existing_metadata(existing_index_path)
 
     token = os.environ.get("GITHUB_TOKEN", "")
     if not token:
@@ -259,11 +286,23 @@ def enrich_repo_metadata(repos: list[RepoInfo], max_workers: int = 12) -> list[R
             if completed % 50 == 0:
                 print(f"  Metadata progress: {completed}/{len(repos)} repos")
 
+    # Fill in missing metadata from existing index
+    fallback_used = 0
+    for repo in repos:
+        if repo.stars == 0 and not repo.last_updated:
+            existing = fallback_meta.get(repo.url.lower(), (0, ""))
+            if existing[0] or existing[1]:
+                repo.stars = existing[0]
+                repo.last_updated = existing[1]
+                fallback_used += 1
+
     enriched = sum(1 for r in repos if r.stars > 0 or r.last_updated)
     github_repos = sum(1 for r in repos if "github.com/" in r.url)
     if enriched < github_repos:
         print(f"  Metadata enriched: {enriched}/{github_repos} GitHub repos "
               f"({github_repos - enriched} missing — likely rate-limited)")
+    if fallback_used:
+        print(f"  Backfilled {fallback_used} repos from existing index")
 
     return repos
 
@@ -1075,7 +1114,8 @@ def main():
 
     # Step 2.5: Repository metadata for UI sorting
     print("\nStep 2.5: Fetching repository metadata (stars, last updated)...")
-    repos = enrich_repo_metadata(repos, max_workers=min(args.max_workers * 2, 24))
+    repos = enrich_repo_metadata(repos, max_workers=min(args.max_workers * 2, 24),
+                                 existing_index_path=output_path)
     
     # Step 3: Analyze formats
     print("\nStep 3: Analyzing documentation formats...")
