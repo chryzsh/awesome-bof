@@ -20,12 +20,26 @@ BINARY_EXTENSIONS = {".o", ".obj", ".exe", ".dll", ".bin", ".sys", ".so", ".dyli
 SOURCE_EXTENSIONS = {".c", ".h", ".cpp", ".hpp", ".cxx"}
 
 
-def rate_limited_get(url, headers, params=None, timeout=30):
-    """GET with automatic rate-limit backoff.
+def rate_limited_get(url, headers, params=None, timeout=30, retries=3):
+    """GET with automatic rate-limit backoff and transient-error retry.
 
-    Returns the Response object, or None if rate-limited after retries.
+    Returns the Response object, or None if rate-limited/unreachable after retries.
     """
-    response = requests.get(url, headers=headers, params=params, timeout=timeout)
+    response = None
+    for attempt in range(retries):
+        try:
+            response = requests.get(url, headers=headers, params=params, timeout=timeout)
+            break
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
+            if attempt == retries - 1:
+                print(f"  Network error after {retries} attempts: {e}", file=sys.stderr)
+                return None
+            backoff = 2 ** attempt
+            print(f"  Transient error, retrying in {backoff}s...", file=sys.stderr)
+            time.sleep(backoff)
+
+    if response is None:
+        return None
 
     if response.status_code == 403:
         remaining = int(response.headers.get("X-RateLimit-Remaining", "0"))
@@ -35,9 +49,12 @@ def rate_limited_get(url, headers, params=None, timeout=30):
             if wait <= 120:
                 print(f"  Rate limited, waiting {wait}s...", file=sys.stderr)
                 time.sleep(wait + 1)
-                response = requests.get(
-                    url, headers=headers, params=params, timeout=timeout
-                )
+                try:
+                    response = requests.get(
+                        url, headers=headers, params=params, timeout=timeout
+                    )
+                except (requests.exceptions.ConnectionError, requests.exceptions.Timeout):
+                    return None
             else:
                 print(
                     f"  Rate limited, reset in {wait}s (too long to wait).",
