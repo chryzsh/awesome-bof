@@ -44,11 +44,29 @@ gh api repos/OWNER/REPO/readme --jq '.content' | base64 -d | head -80
 - Have descriptions identical or near-identical to an existing catalog entry
 - Are forks of existing entries with no meaningful commits beyond the fork point
 
+**Malware (zip-dropper) pattern** — seen on GitHub targeting security tooling.
+An attacker copies a legitimate repo's source tree and adds a payload. Reject
+any candidate matching two or more of:
+- `.zip` / `.7z` / `.rar` archive committed into the repo tree, especially
+  inside an oddly-named subdirectory (Aquarius, Taurus, Orion and other
+  zodiac/constellation names are a recurring campaign signature)
+- README contains a download button or badge linking to
+  `raw.githubusercontent.com/<owner>/<repo>/.../*.zip`
+- README instructs users to disable antivirus/firewall/Defender, add
+  exclusions, or whitelist the download
+- README uses "Getting Started / Download the Application / System
+  Requirements / Choose Your Version" marketing boilerplate uncharacteristic
+  of BOF repos
+- Repo description uses emoji + vague phrasing ("🔧 Simplify X with essential
+  BOFs, providing convenient helper scripts...") without naming concrete
+  techniques
+
 When the weekly discovery issue includes **Warnings** annotations, investigate each warning before adding. If a repo has a POSSIBLE_COPYCAT warning, verify it is not a legitimate independent implementation by checking commit history and code differences.
 
-Run the audit script periodically to scan the full catalog:
+Run the scanners periodically to audit the full catalog:
 ```bash
-python3 scripts/audit_catalog.py
+python3 scripts/audit_catalog.py          # broad quality/copycat audit
+python3 scripts/malware_scan.py           # deep malware/dupe scan (zip-dropper focus)
 ```
 
 ### Step 3: Add to BOF-CATALOG.md
@@ -258,6 +276,9 @@ awesome-bof/
 │   ├── bof-search.sh      # Interactive fzf search over the index
 │   ├── generate_md.py     # Generate table rows for catalog
 │   ├── sanitize.py        # Shared input sanitization for untrusted metadata
+│   ├── repo_checks.py     # Shared copycat/suspicion checks
+│   ├── audit_catalog.py   # Full catalog quality/copycat audit
+│   ├── malware_scan.py    # Deep malware/zip-dropper scanner
 │   └── find-dupes.py      # Find duplicate entries
 └── _archive/              # Archived old documentation
 ```
