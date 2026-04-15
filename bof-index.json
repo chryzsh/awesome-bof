@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "total_bofs": 1129,
-    "total_repos": 413,
-    "repos_parsed": 382,
+    "total_bofs": 1123,
+    "total_repos": 411,
+    "repos_parsed": 380,
     "format_stats": {
       "readme_table": 20,
       "cna": 274,
@@ -3668,42 +3668,6 @@
       "repository_last_updated": "2023-02-24"
     },
     {
-      "name": "ihxexec",
-      "description": "Execute binary in another user",
-      "repository": "https://github.com/Wanssss1/BOFs",
-      "source_file": "ihxexec.cna",
-      "source_format": "cna",
-      "repository_stars": 13,
-      "repository_last_updated": "2026-04-13"
-    },
-    {
-      "name": "sessions",
-      "description": "List active Windows sessions",
-      "repository": "https://github.com/Wanssss1/BOFs",
-      "source_file": "ihxexec.cna",
-      "source_format": "cna",
-      "repository_stars": 13,
-      "repository_last_updated": "2026-04-13"
-    },
-    {
-      "name": "shadowcreds",
-      "description": "Execute Shadow Credentials attack - write msDS-KeyCredentialLink and obtain NT hash via PKINIT",
-      "repository": "https://github.com/Wanssss1/BOFs",
-      "source_file": "shadowcreds.cna",
-      "source_format": "cna",
-      "repository_stars": 13,
-      "repository_last_updated": "2026-04-13"
-    },
-    {
-      "name": "esc1-unpac",
-      "description": "ESC1 + PKINIT + UnPAC-the-hash (complete ADCS attack chain)",
-      "repository": "https://github.com/Wanssss1/BOFs",
-      "source_file": "esc1-unpac.cna",
-      "source_format": "cna",
-      "repository_stars": 13,
-      "repository_last_updated": "2026-04-13"
-    },
-    {
       "name": "uacbomber",
       "description": "Execute UAC bypass with custom base64 PowerShell payload",
       "repository": "https://github.com/jaytiwari05/PBOF",
@@ -3720,24 +3684,6 @@
       "source_format": "cna",
       "repository_stars": 2,
       "repository_last_updated": "2025-12-19"
-    },
-    {
-      "name": "bofthedog",
-      "description": "Run the `genrbcd.py` python script with the SID of the user you're delegating to",
-      "repository": "https://github.com/muhammadmehdi1656/ldap_bofs",
-      "source_file": "rbcd.c",
-      "source_format": "directory_structure",
-      "repository_stars": 4,
-      "repository_last_updated": "2026-04-13"
-    },
-    {
-      "name": "bofwhisker",
-      "description": "Run the `gencert.py` python script with the DN of the user you're setting shadow creds for",
-      "repository": "https://github.com/muhammadmehdi1656/ldap_bofs",
-      "source_file": "keycred.x64.o",
-      "source_format": "directory_structure",
-      "repository_stars": 4,
-      "repository_last_updated": "2026-04-13"
     },
     {
       "name": "TokenElevate",
