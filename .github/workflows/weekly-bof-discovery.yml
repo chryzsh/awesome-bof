@@ -85,7 +85,7 @@ jobs:
               body
             });
 
-  refresh-index:
+  remove-dead-repos:
     runs-on: ubuntu-latest
 
     steps:
@@ -98,9 +98,47 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
+        run: pip install requests
+
+      - name: Check for dead repos and remove
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/remove_dead_repos.py --apply
+
+      - name: Commit removals
         run: |
-          python -m pip install --upgrade pip
-          pip install requests
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add BOF-CATALOG.md
+          git diff --cached --quiet || git commit -m "fix(catalog): remove dead repos"
+          git push
+
+  refresh-index:
+    needs: remove-dead-repos
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Get full history so we can fast-forward to whatever
+          # remove-dead-repos pushed before this job started.
+          ref: ${{ github.ref }}
+          fetch-depth: 0
+
+      - name: Fast-forward to branch tip
+        # The prior job may have pushed a catalog cleanup commit after
+        # the workflow trigger SHA; rebuild must run on that tip, and the
+        # final push must be fast-forward against it.
+        run: git pull --ff-only origin "${GITHUB_REF_NAME}"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
 
       - name: Rebuild BOF index
         env:
