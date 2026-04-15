@@ -291,3 +291,38 @@ awesome-bof/
 - After adding BOFs, rebuild the index so they appear in search
 - Commit each logical change individually and frequently — don't batch unrelated changes into one commit
 - Always ask before pushing — never push to remote without explicit approval
+
+### Removing a catalog entry (fast path)
+
+When removing a small number of entries (malware, dead repos), skip the
+full `bof_indexer.py` re-clone and filter the index JSON directly:
+
+```python
+import json
+from pathlib import Path
+for p in [Path("bof-index.json"), Path("site/data/bof-index.json")]:
+    idx = json.loads(p.read_text())
+    drop = {"https://github.com/owner/repo"}  # repos to remove
+    before = len(idx["bofs"])
+    idx["bofs"] = [b for b in idx["bofs"] if b.get("repository") not in drop]
+    meta = idx.get("metadata", {})
+    meta["total_bofs"] = len(idx["bofs"])
+    meta["total_repos"] = max(0, meta.get("total_repos", 0) - len(drop))
+    meta["repos_parsed"] = max(0, meta.get("repos_parsed", 0) - len(drop))
+    p.write_text(json.dumps(idx, indent=2))
+```
+
+This keeps whatever star metadata the last `bof_indexer.py` run produced
+rather than regenerating from scratch (which costs an hour and can drop
+metadata for rate-limited repos).
+
+### Rebasing on top of the weekly workflow's index refresh
+
+The `weekly-bof-discovery.yml` workflow auto-commits a refreshed
+`bof-index.json` from github-actions[bot]. If you land catalog changes
+locally while that bot pushes, you'll hit a merge conflict on
+`bof-index.json`. Resolution: `git checkout --ours bof-index.json
+site/data/bof-index.json` during rebase (this takes the remote's fresh
+stars), then re-apply your catalog filter with the snippet above, then
+`git add` and `git rebase --continue`. During rebase, `--ours` = the
+branch you are rebasing onto (origin/main), opposite of merge.
