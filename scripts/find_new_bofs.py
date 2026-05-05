@@ -15,8 +15,15 @@ import argparse
 import os
 import re
 import sys
+import time
 from datetime import datetime, timedelta
 from pathlib import Path
+
+# GitHub Code Search has a separate 10 req/min quota (vs 5,000/hr for core).
+# Sleep between code-search requests to stay under it; we also honor
+# X-RateLimit-Reset when a 403 is returned.
+_CODE_SEARCH_MIN_INTERVAL_SEC = 7
+_last_code_search_request_ts = 0.0
 
 sys.path.insert(0, str(Path(__file__).parent))
 from sanitize import sanitize_description
@@ -89,11 +96,25 @@ def _paginate_search(query: str, headers: dict) -> list[dict]:
     return all_repos
 
 
-def _paginate_code_search(query: str, headers: dict) -> list[dict]:
-    """Run paginated GitHub code search and return all result items."""
+def _throttle_code_search() -> None:
+    """Sleep so consecutive code-search requests stay under the 10 req/min cap."""
+    global _last_code_search_request_ts
+    elapsed = time.monotonic() - _last_code_search_request_ts
+    if elapsed < _CODE_SEARCH_MIN_INTERVAL_SEC:
+        time.sleep(_CODE_SEARCH_MIN_INTERVAL_SEC - elapsed)
+    _last_code_search_request_ts = time.monotonic()
+
+
+def _paginate_code_search(query: str, headers: dict) -> tuple[list[dict], bool]:
+    """Run paginated GitHub code search.
+
+    Returns (items, rate_limited). The flag lets the caller distinguish
+    "genuinely 0 matches" from "broke at page 1 due to 403".
+    """
     url = "https://api.github.com/search/code"
     all_items = []
     page = 1
+    rate_limited = False
 
     while True:
         params = {
@@ -102,6 +123,7 @@ def _paginate_code_search(query: str, headers: dict) -> list[dict]:
             "page": page,
         }
 
+        _throttle_code_search()
         response = requests.get(url, headers=headers, params=params, timeout=30)
 
         if response.status_code == 401:
@@ -113,7 +135,19 @@ def _paginate_code_search(query: str, headers: dict) -> list[dict]:
             break
 
         if response.status_code == 403:
-            print("Error: API rate limit exceeded during code search.", file=sys.stderr)
+            rate_limited = True
+            reset = response.headers.get("X-RateLimit-Reset")
+            wait = 0
+            if reset:
+                try:
+                    wait = max(0, int(reset) - int(time.time())) + 1
+                except ValueError:
+                    pass
+            print(
+                f"  code search hit 403 on page {page} of '{query}' "
+                f"(rate-limit reset in {wait}s)",
+                file=sys.stderr,
+            )
             break
 
         response.raise_for_status()
@@ -130,7 +164,7 @@ def _paginate_code_search(query: str, headers: dict) -> list[dict]:
 
         page += 1
 
-    return all_items
+    return all_items, rate_limited
 
 
 def _repo_in_date_window(repo: dict, since_date: str) -> bool:
@@ -144,16 +178,22 @@ def _discover_code_indicator_repos(
     since_date: str, headers: dict, max_repo_fetches: int = 250
 ) -> list[dict]:
     """Find BOF repos by BOF-specific code indicators (e.g., .cna patterns)."""
+    # Indicator queries chosen for high specificity to BOFs.
+    # bof_pack was dropped — it consistently returned 0 matches across runs
+    # and just burned a request out of the 10/min code-search budget.
     indicator_queries = [
         "extension:cna beacon_command_register",
         "extension:cna beacon_inline_execute",
-        "extension:cna bof_pack",
     ]
 
     repo_candidates = {}
     for query in indicator_queries:
-        items = _paginate_code_search(query, headers)
-        print(f"  code query '{query}' returned {len(items)} matches", file=sys.stderr)
+        items, rate_limited = _paginate_code_search(query, headers)
+        suffix = " (rate-limited; result is partial)" if rate_limited else ""
+        print(
+            f"  code query '{query}' returned {len(items)} matches{suffix}",
+            file=sys.stderr,
+        )
         for item in items:
             repo = item.get("repository") or {}
             full_name = repo.get("full_name")
