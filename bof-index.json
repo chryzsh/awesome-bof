@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "total_bofs": 1222,
-    "total_repos": 442,
-    "repos_parsed": 411,
+    "total_bofs": 1225,
+    "total_repos": 445,
+    "repos_parsed": 414,
     "format_stats": {
       "readme_table": 21,
-      "cna": 285,
-      "directory_structure": 442,
+      "cna": 287,
+      "directory_structure": 445,
       "stage1_py": 11,
       "havoc_py": 33,
       "readme_bullet": 11
@@ -6374,13 +6374,7 @@
       "source_file": "com_hunter_bof.cna",
       "source_format": "cna",
       "repository_stars": 387,
-      "repository_last_updated": "2026-07-28",
-      "review": {
-        "date": "2026-08-03",
-        "label": "Limited AI-assisted review",
-        "note": "Malformed BOF arguments or oversized CLSIDs can crash Beacon through unchecked input handling.",
-        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#com-hunter"
-      }
+      "repository_last_updated": "2026-07-28"
     },
     {
       "name": "com_hunter_persist",
@@ -6389,13 +6383,7 @@
       "source_file": "com_hunter_bof.cna",
       "source_format": "cna",
       "repository_stars": 387,
-      "repository_last_updated": "2026-07-28",
-      "review": {
-        "date": "2026-08-03",
-        "label": "Limited AI-assisted review",
-        "note": "Malformed BOF arguments or oversized CLSIDs can crash Beacon through unchecked input handling.",
-        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#com-hunter"
-      }
+      "repository_last_updated": "2026-07-28"
     },
     {
       "name": "com_hunter_tasksch",
@@ -6404,13 +6392,7 @@
       "source_file": "com_hunter_bof.cna",
       "source_format": "cna",
       "repository_stars": 387,
-      "repository_last_updated": "2026-07-28",
-      "review": {
-        "date": "2026-08-03",
-        "label": "Limited AI-assisted review",
-        "note": "Malformed BOF arguments or oversized CLSIDs can crash Beacon through unchecked input handling.",
-        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#com-hunter"
-      }
+      "repository_last_updated": "2026-07-28"
     },
     {
       "name": "com_hunter_remove",
@@ -6419,13 +6401,7 @@
       "source_file": "com_hunter_bof.cna",
       "source_format": "cna",
       "repository_stars": 387,
-      "repository_last_updated": "2026-07-28",
-      "review": {
-        "date": "2026-08-03",
-        "label": "Limited AI-assisted review",
-        "note": "Malformed BOF arguments or oversized CLSIDs can crash Beacon through unchecked input handling.",
-        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#com-hunter"
-      }
+      "repository_last_updated": "2026-07-28"
     },
     {
       "name": "com_hunter_treatas",
@@ -6434,13 +6410,7 @@
       "source_file": "com_hunter_bof.cna",
       "source_format": "cna",
       "repository_stars": 387,
-      "repository_last_updated": "2026-07-28",
-      "review": {
-        "date": "2026-08-03",
-        "label": "Limited AI-assisted review",
-        "note": "Malformed BOF arguments or oversized CLSIDs can crash Beacon through unchecked input handling.",
-        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#com-hunter"
-      }
+      "repository_last_updated": "2026-07-28"
     },
     {
       "name": "clr-stomp",
@@ -6449,13 +6419,7 @@
       "source_file": "clr-stomp.cna",
       "source_format": "cna",
       "repository_stars": 147,
-      "repository_last_updated": "2026-05-20",
-      "review": {
-        "date": "2026-08-03",
-        "label": "Limited AI-assisted review",
-        "note": "Artifact-level build and lint remain unverified; managed payload execution can block Beacon indefinitely.",
-        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#clr-stomp"
-      }
+      "repository_last_updated": "2026-05-20"
     },
     {
       "name": "autoplay_hwevent",
@@ -6464,12 +6428,51 @@
       "source_file": "autoplay_hwevent_bof.cna",
       "source_format": "cna",
       "repository_stars": 38,
-      "repository_last_updated": "2026-06-20",
+      "repository_last_updated": "2026-06-20"
+    },
+    {
+      "name": "adwsldapsearch",
+      "description": "BOF - Perform LDAP search with ADWS.",
+      "repository": "https://github.com/e-fin/ADWS-BOF",
+      "source_file": "adws.cna",
+      "source_format": "cna",
+      "repository_stars": 36,
+      "repository_last_updated": "2026-06-12",
       "review": {
         "date": "2026-08-03",
         "label": "Limited AI-assisted review",
-        "note": "The checked-in artifact passed lint, but oversized optional inputs can cause in-process failures.",
-        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#shellhweventexec"
+        "note": "Large or slow ADWS queries can block the in-process Beacon for a substantial period.",
+        "url": "../docs/catalog-reviews/2026-08-03-second-discovery-batch-reviews.md#adws-bof"
+      }
+    },
+    {
+      "name": "geolocation_bof",
+      "description": "Get Windows geolocation coordinates",
+      "repository": "https://github.com/CodeXTF2/GeoLocation_BOF",
+      "source_file": "GeoLocationBOF.cna",
+      "source_format": "cna",
+      "repository_stars": 29,
+      "repository_last_updated": "2026-07-04",
+      "review": {
+        "date": "2026-08-03",
+        "label": "Limited AI-assisted review",
+        "note": "The BOF may change location-service settings and can block Beacon for roughly 60 seconds.",
+        "url": "../docs/catalog-reviews/2026-08-03-second-discovery-batch-reviews.md#geolocation_bof"
+      }
+    },
+    {
+      "name": "main",
+      "description": "Async BOF that notifies the operator when a user connects to a target server and returns relevant information, such as the username & domain, session and process ID. With admin privileges, the logon m",
+      "repository": "https://github.com/jakobfriedl/logon-monitor-bof",
+      "source_file": "main.c",
+      "source_format": "directory_structure",
+      "repository_stars": 34,
+      "repository_last_updated": "2026-07-30",
+      "review": {
+        "date": "2026-08-03",
+        "label": "Limited AI-assisted review",
+        "note": "Requires Conquest asynchronous loading; its optional token-steal mode dispatches an additional operator action.",
+        "url": "../docs/catalog-reviews/2026-08-03-second-discovery-batch-reviews.md#logon-monitor-bof"
       }
     },
     {
@@ -7144,7 +7147,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7153,7 +7156,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7162,7 +7165,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7171,7 +7174,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7180,7 +7183,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7189,7 +7192,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7198,7 +7201,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7207,7 +7210,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7216,7 +7219,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7225,7 +7228,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7234,7 +7237,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7243,7 +7246,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7252,7 +7255,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7261,7 +7264,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "SharpHunter.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -7270,7 +7273,7 @@
       "repository": "https://github.com/lintstar/SharpHunter",
       "source_file": "bofnet.cna",
       "source_format": "cna",
-      "repository_stars": 556,
+      "repository_stars": 554,
       "repository_last_updated": "2025-04-15"
     },
     {
@@ -10465,7 +10468,7 @@
       "repository": "https://github.com/incursi0n/GodPotatoBOF",
       "source_file": "godpotato.cna",
       "source_format": "cna",
-      "repository_stars": 276,
+      "repository_stars": 277,
       "repository_last_updated": "2026-04-16"
     },
     {
