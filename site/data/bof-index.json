@@ -1,15 +1,15 @@
 {
   "metadata": {
-    "total_bofs": 1225,
-    "total_repos": 445,
-    "repos_parsed": 414,
+    "total_bofs": 1228,
+    "total_repos": 448,
+    "repos_parsed": 417,
     "format_stats": {
       "readme_table": 21,
-      "cna": 287,
-      "directory_structure": 445,
+      "cna": 290,
+      "directory_structure": 448,
       "stage1_py": 11,
       "havoc_py": 33,
-      "readme_bullet": 11
+      "readme_bullet": 12
     }
   },
   "bofs": [
@@ -6437,13 +6437,7 @@
       "source_file": "adws.cna",
       "source_format": "cna",
       "repository_stars": 36,
-      "repository_last_updated": "2026-06-12",
-      "review": {
-        "date": "2026-08-03",
-        "label": "Limited AI-assisted review",
-        "note": "Large or slow ADWS queries can block the in-process Beacon for a substantial period.",
-        "url": "../docs/catalog-reviews/2026-08-03-second-discovery-batch-reviews.md#adws-bof"
-      }
+      "repository_last_updated": "2026-06-12"
     },
     {
       "name": "geolocation_bof",
@@ -6452,13 +6446,7 @@
       "source_file": "GeoLocationBOF.cna",
       "source_format": "cna",
       "repository_stars": 29,
-      "repository_last_updated": "2026-07-04",
-      "review": {
-        "date": "2026-08-03",
-        "label": "Limited AI-assisted review",
-        "note": "The BOF may change location-service settings and can block Beacon for roughly 60 seconds.",
-        "url": "../docs/catalog-reviews/2026-08-03-second-discovery-batch-reviews.md#geolocation_bof"
-      }
+      "repository_last_updated": "2026-07-04"
     },
     {
       "name": "main",
@@ -6467,12 +6455,51 @@
       "source_file": "main.c",
       "source_format": "directory_structure",
       "repository_stars": 34,
-      "repository_last_updated": "2026-07-30",
+      "repository_last_updated": "2026-07-30"
+    },
+    {
+      "name": "inject_payload",
+      "description": "Auto-generated BOF command from example/bof_cna_test.etpy",
+      "repository": "https://github.com/entropykit/entropia",
+      "source_file": "bof_cna_test.cna",
+      "source_format": "cna",
+      "repository_stars": 176,
+      "repository_last_updated": "2026-06-28",
       "review": {
         "date": "2026-08-03",
         "label": "Limited AI-assisted review",
-        "note": "Requires Conquest asynchronous loading; its optional token-steal mode dispatches an additional operator action.",
-        "url": "../docs/catalog-reviews/2026-08-03-second-discovery-batch-reviews.md#logon-monitor-bof"
+        "note": "This experimental compiler's output uses sections that some BOF loaders do not support.",
+        "url": "../docs/catalog-reviews/2026-08-03-third-discovery-batch-reviews.md#entropia"
+      }
+    },
+    {
+      "name": "picos",
+      "description": "Manage running pico tasks on this beacon",
+      "repository": "https://github.com/nccgroup/async-pico-hub",
+      "source_file": "picos.cna",
+      "source_format": "cna",
+      "repository_stars": 26,
+      "repository_last_updated": "2026-06-04",
+      "review": {
+        "date": "2026-08-03",
+        "label": "Limited AI-assisted review",
+        "note": "Requires a custom sleepmask and external build dependencies; stopping a PICO can wait up to 30 seconds.",
+        "url": "../docs/catalog-reviews/2026-08-03-third-discovery-batch-reviews.md#async-pico-hub"
+      }
+    },
+    {
+      "name": "get_gdid",
+      "description": "Print the Windows GDID / Passport Unique ID.",
+      "repository": "https://github.com/5mukx/GDID-Extractor",
+      "source_file": "get_gdid.cna",
+      "source_format": "cna",
+      "repository_stars": 37,
+      "repository_last_updated": "2026-07-20",
+      "review": {
+        "date": "2026-08-03",
+        "label": "Limited AI-assisted review",
+        "note": "The rebuilt x86 BOF has an unresolved compiler helper; the project also has limited public history.",
+        "url": "../docs/catalog-reviews/2026-08-03-third-discovery-batch-reviews.md#gdid-extractor"
       }
     },
     {
