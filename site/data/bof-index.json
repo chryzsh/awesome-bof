@@ -6347,7 +6347,13 @@
       "source_file": "rawhive.cna",
       "source_format": "cna",
       "repository_stars": 89,
-      "repository_last_updated": "2026-06-17"
+      "repository_last_updated": "2026-06-17",
+      "review": {
+        "date": "2026-08-03",
+        "label": "Limited AI-assisted review",
+        "note": "The fallback path can scan up to 500,000 MFT records and may block Beacon for a long time.",
+        "url": "../docs/catalog-reviews/2026-08-03-initial-bof-reviews.md#rawhive"
+      }
     },
     {
       "name": "evtxsearch",

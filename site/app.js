@@ -76,7 +76,7 @@
   }
 
   function normalizeEntry(item) {
-    return {
+    const entry = {
       name: item?.name || "(unnamed)",
       description: item?.description || "",
       repository: item?.repository || "",
@@ -85,6 +85,17 @@
       repository_stars: Number(item?.repository_stars || 0),
       repository_last_updated: item?.repository_last_updated || "",
     };
+
+    if (item?.review) {
+      entry.review = {
+        date: item.review.date || "",
+        label: item.review.label || "",
+        note: item.review.note || "",
+        url: item.review.url || "",
+      };
+    }
+
+    return entry;
   }
 
   function scoreEntry(entry, terms) {
@@ -175,10 +186,19 @@
       <span class="stat-chip">Stars: ${stars}</span>
       <span class="stat-chip">Updated: ${updated}</span>
     </p>`;
+    const reviewHtml = item.review
+      ? `<section class="catalog-review" aria-label="Catalog review">
+          <p class="catalog-review-heading">${escapeHtml(item.review.label || "Catalog review")}${item.review.date ? ` <span aria-hidden="true">·</span> ${escapeHtml(item.review.date)}` : ""}</p>
+          ${item.review.note ? `<p class="catalog-review-note">${escapeHtml(item.review.note)}</p>` : ""}
+          ${item.review.url ? `<p class="catalog-review-link"><a href="${escapeHtml(item.review.url)}" target="_blank" rel="noopener">Read full review</a></p>` : ""}
+          <p class="catalog-review-disclaimer">Limited AI-assisted note, not a safety rating, audit, or endorsement.</p>
+        </section>`
+      : "";
 
     nodes.details.innerHTML = `
       <h2>${escapeHtml(item.name)}</h2>
       <p>${escapeHtml(item.description || "No description available.")}</p>
+      ${reviewHtml}
       ${statsHtml}
       <p><a href="${escapeHtml(item.repository)}" target="_blank" rel="noopener">${escapeHtml(item.repository)}</a></p>
       <p class="kv">Source: ${escapeHtml(item.source_file)} (${escapeHtml(item.source_format)})</p>

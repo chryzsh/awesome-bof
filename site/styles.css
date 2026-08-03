@@ -282,6 +282,40 @@ mark {
   color: #a8e8ff;
 }
 
+.catalog-review {
+  margin: 0.8rem 0;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid rgba(229, 195, 112, 0.45);
+  border-left: 3px solid #c9a84c;
+  border-radius: 8px;
+  background: rgba(201, 168, 76, 0.08);
+}
+
+#details .catalog-review p {
+  margin: 0;
+}
+
+#details .catalog-review-heading {
+  color: #f0d88c;
+  font-size: 0.82rem;
+  font-weight: 650;
+}
+
+#details .catalog-review-note {
+  margin-top: 0.35rem;
+}
+
+#details .catalog-review-link {
+  margin-top: 0.45rem;
+  font-size: 0.9rem;
+}
+
+#details .catalog-review-disclaimer {
+  margin-top: 0.45rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
 .kv {
   color: var(--muted);
   font-size: 0.9rem;
