@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "total_bofs": 1215,
-    "total_repos": 439,
-    "repos_parsed": 408,
+    "total_bofs": 1222,
+    "total_repos": 442,
+    "repos_parsed": 411,
     "format_stats": {
       "readme_table": 21,
-      "cna": 282,
-      "directory_structure": 439,
+      "cna": 285,
+      "directory_structure": 442,
       "stage1_py": 11,
       "havoc_py": 33,
       "readme_bullet": 11
@@ -19,7 +19,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -28,7 +28,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -37,7 +37,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -46,7 +46,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -55,7 +55,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -64,7 +64,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -73,7 +73,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -82,7 +82,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -91,7 +91,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -100,7 +100,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -109,7 +109,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -118,7 +118,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -127,7 +127,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -136,7 +136,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -145,7 +145,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -154,7 +154,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -163,7 +163,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -172,7 +172,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -181,7 +181,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -190,7 +190,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -199,7 +199,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -208,7 +208,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -217,7 +217,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -226,7 +226,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -235,7 +235,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -244,7 +244,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -253,7 +253,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -262,7 +262,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -271,7 +271,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -280,7 +280,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -289,7 +289,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -298,7 +298,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -307,7 +307,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -316,7 +316,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -325,7 +325,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -334,7 +334,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -343,7 +343,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -352,7 +352,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -361,7 +361,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -370,7 +370,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -379,7 +379,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -388,7 +388,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -397,7 +397,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -406,7 +406,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -415,7 +415,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -424,7 +424,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -433,7 +433,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -442,7 +442,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -451,7 +451,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -460,7 +460,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -469,7 +469,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -478,7 +478,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -487,7 +487,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -496,7 +496,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -505,7 +505,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -514,7 +514,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -523,7 +523,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -532,7 +532,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -541,7 +541,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -550,7 +550,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -559,7 +559,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -568,7 +568,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -577,7 +577,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -586,7 +586,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -595,7 +595,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -604,7 +604,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "README.md",
       "source_format": "readme_table",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -613,7 +613,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -622,7 +622,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -631,7 +631,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -640,7 +640,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -649,7 +649,7 @@
       "repository": "https://github.com/trustedsec/CS-Situational-Awareness-BOF",
       "source_file": "SA.cna",
       "source_format": "cna",
-      "repository_stars": 1851,
+      "repository_stars": 1853,
       "repository_last_updated": "2026-07-27"
     },
     {
@@ -6346,14 +6346,8 @@
       "repository": "https://github.com/nmht3t/RawHive",
       "source_file": "rawhive.cna",
       "source_format": "cna",
-      "repository_stars": 89,
-      "repository_last_updated": "2026-06-17",
-      "review": {
-        "date": "2026-08-03",
-        "label": "Limited AI-assisted review",
-        "note": "The fallback path can scan up to 500,000 MFT records and may block Beacon for a long time.",
-        "url": "../docs/catalog-reviews/2026-08-03-initial-bof-reviews.md#rawhive"
-      }
+      "repository_stars": 90,
+      "repository_last_updated": "2026-06-17"
     },
     {
       "name": "evtxsearch",
@@ -6372,6 +6366,111 @@
       "source_format": "directory_structure",
       "repository_stars": 11,
       "repository_last_updated": "2026-07-08"
+    },
+    {
+      "name": "com_hunter_search",
+      "description": "Search for COM objects in registry by CLSID",
+      "repository": "https://github.com/nickvourd/COM-Hunter",
+      "source_file": "com_hunter_bof.cna",
+      "source_format": "cna",
+      "repository_stars": 387,
+      "repository_last_updated": "2026-07-28",
+      "review": {
+        "date": "2026-08-03",
+        "label": "Limited AI-assisted review",
+        "note": "Malformed BOF arguments or oversized CLSIDs can crash Beacon through unchecked input handling.",
+        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#com-hunter"
+      }
+    },
+    {
+      "name": "com_hunter_persist",
+      "description": "Establish COM hijacking persistence in HKCU",
+      "repository": "https://github.com/nickvourd/COM-Hunter",
+      "source_file": "com_hunter_bof.cna",
+      "source_format": "cna",
+      "repository_stars": 387,
+      "repository_last_updated": "2026-07-28",
+      "review": {
+        "date": "2026-08-03",
+        "label": "Limited AI-assisted review",
+        "note": "Malformed BOF arguments or oversized CLSIDs can crash Beacon through unchecked input handling.",
+        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#com-hunter"
+      }
+    },
+    {
+      "name": "com_hunter_tasksch",
+      "description": "Establish Task Scheduler COM hijacking persistence in HKCU",
+      "repository": "https://github.com/nickvourd/COM-Hunter",
+      "source_file": "com_hunter_bof.cna",
+      "source_format": "cna",
+      "repository_stars": 387,
+      "repository_last_updated": "2026-07-28",
+      "review": {
+        "date": "2026-08-03",
+        "label": "Limited AI-assisted review",
+        "note": "Malformed BOF arguments or oversized CLSIDs can crash Beacon through unchecked input handling.",
+        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#com-hunter"
+      }
+    },
+    {
+      "name": "com_hunter_remove",
+      "description": "Remove COM hijacking persistence from registry by CLSID",
+      "repository": "https://github.com/nickvourd/COM-Hunter",
+      "source_file": "com_hunter_bof.cna",
+      "source_format": "cna",
+      "repository_stars": 387,
+      "repository_last_updated": "2026-07-28",
+      "review": {
+        "date": "2026-08-03",
+        "label": "Limited AI-assisted review",
+        "note": "Malformed BOF arguments or oversized CLSIDs can crash Beacon through unchecked input handling.",
+        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#com-hunter"
+      }
+    },
+    {
+      "name": "com_hunter_treatas",
+      "description": "Establish TreatAs COM hijacking persistence in HKCU",
+      "repository": "https://github.com/nickvourd/COM-Hunter",
+      "source_file": "com_hunter_bof.cna",
+      "source_format": "cna",
+      "repository_stars": 387,
+      "repository_last_updated": "2026-07-28",
+      "review": {
+        "date": "2026-08-03",
+        "label": "Limited AI-assisted review",
+        "note": "Malformed BOF arguments or oversized CLSIDs can crash Beacon through unchecked input handling.",
+        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#com-hunter"
+      }
+    },
+    {
+      "name": "clr-stomp",
+      "description": "Execute a .NET assembly in-process via CLR hosting and GAC victim stomping",
+      "repository": "https://github.com/nettitude/CLR-Stomp",
+      "source_file": "clr-stomp.cna",
+      "source_format": "cna",
+      "repository_stars": 147,
+      "repository_last_updated": "2026-05-20",
+      "review": {
+        "date": "2026-08-03",
+        "label": "Limited AI-assisted review",
+        "note": "Artifact-level build and lint remain unverified; managed payload execution can block Beacon indefinitely.",
+        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#clr-stomp"
+      }
+    },
+    {
+      "name": "autoplay_hwevent",
+      "description": "ShellHWEventExec: fire a command through Shell.HWEventHandlerShellExecute",
+      "repository": "https://github.com/0xHossam/ShellHWEventExec",
+      "source_file": "autoplay_hwevent_bof.cna",
+      "source_format": "cna",
+      "repository_stars": 38,
+      "repository_last_updated": "2026-06-20",
+      "review": {
+        "date": "2026-08-03",
+        "label": "Limited AI-assisted review",
+        "note": "The checked-in artifact passed lint, but oversized optional inputs can cause in-process failures.",
+        "url": "../docs/catalog-reviews/2026-08-03-first-discovery-batch-reviews.md#shellhweventexec"
+      }
     },
     {
       "name": "dumpguard",
