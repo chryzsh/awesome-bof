@@ -33,7 +33,7 @@ Set the date to `2026-08-03`, label to `Limited AI-assisted review`, link to `do
 
 **Files:**
 - Modify: `site/app.js:164-189`
-- Modify: `site/style.css`
+- Modify: `site/styles.css`
 
 **Step 1: Render only when review metadata exists**
 
@@ -51,7 +51,7 @@ Confirm an entry without review metadata has no blank block or extra spacing.
 
 **Files:**
 - Modify: `site/app.js`
-- Modify: `site/style.css`
+- Modify: `site/styles.css`
 - Modify: `bof-index.json`
 - Modify: `site/data/bof-index.json`
 
@@ -66,5 +66,5 @@ Run the local site and open the RawHive search result. Confirm the review block 
 
 **Step 3: Commit and publish**
 
-Run: `git add site/app.js site/style.css bof-index.json site/data/bof-index.json docs/plans/2026-08-03-search-review-card-pilot.md && git commit -m "feat(site): show catalog review metadata" && git push origin main`
+Run: `git add site/app.js site/styles.css bof-index.json site/data/bof-index.json docs/plans/2026-08-03-search-review-card-pilot.md && git commit -m "feat(site): show catalog review metadata" && git push origin main`
 Expected: the Pages deployment publishes the pilot.
