@@ -24,6 +24,8 @@ from pathlib import Path
 # X-RateLimit-Reset when a 403 is returned.
 _CODE_SEARCH_MIN_INTERVAL_SEC = 7
 _last_code_search_request_ts = 0.0
+_SEARCH_REQUEST_RETRIES = 3
+_SEARCH_RETRY_BACKOFF_SEC = 1
 
 sys.path.insert(0, str(Path(__file__).parent))
 from sanitize import sanitize_description
@@ -56,6 +58,43 @@ def get_catalog_urls(catalog_path: Path) -> set[str]:
     return urls
 
 
+def _github_api_get(url: str, headers: dict, params: dict = None):
+    """Make a GitHub discovery API request, retrying only transient failures.
+
+    A scheduled discovery job is most useful when it can publish the results it
+    already collected.  Consequently, callers receive ``None`` after repeated
+    transport or server failures and can stop pagination without losing earlier
+    pages.  Client errors, including rate limits, are returned for callers to
+    report as partial results.
+    """
+    for attempt in range(_SEARCH_REQUEST_RETRIES):
+        try:
+            response = requests.get(url, headers=headers, params=params, timeout=30)
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as exc:
+            reason = f"network error: {exc}"
+        else:
+            if response.status_code < 500:
+                return response
+            reason = f"server returned HTTP {response.status_code}"
+
+        if attempt == _SEARCH_REQUEST_RETRIES - 1:
+            print(
+                f"Warning: GitHub discovery API unavailable after "
+                f"{_SEARCH_REQUEST_RETRIES} attempts ({reason}); result is partial.",
+                file=sys.stderr,
+            )
+            return None
+
+        backoff = _SEARCH_RETRY_BACKOFF_SEC * (2 ** attempt)
+        print(
+            f"Warning: GitHub discovery API {reason}; retrying in {backoff}s.",
+            file=sys.stderr,
+        )
+        time.sleep(backoff)
+
+    return None
+
+
 def _paginate_search(query: str, headers: dict) -> list[dict]:
     """Run a paginated GitHub search and return all result items."""
     url = "https://api.github.com/search/repositories"
@@ -71,14 +110,26 @@ def _paginate_search(query: str, headers: dict) -> list[dict]:
             "page": page
         }
 
-        response = requests.get(url, headers=headers, params=params, timeout=30)
+        response = _github_api_get(url, headers, params)
 
-        if response.status_code == 403:
-            print("Error: API rate limit exceeded. Set GITHUB_TOKEN env var for higher limits.",
-                  file=sys.stderr)
+        if response is None:
             break
 
-        response.raise_for_status()
+        if response.status_code in (403, 429):
+            print(
+                "Warning: repository search was rate-limited; result is partial. "
+                "Set GITHUB_TOKEN env var for higher limits.",
+                file=sys.stderr,
+            )
+            break
+
+        if response.status_code != 200:
+            print(
+                f"Warning: repository search returned HTTP {response.status_code}; "
+                "result is partial.",
+                file=sys.stderr,
+            )
+            break
         data = response.json()
 
         repos = data.get("items", [])
@@ -124,7 +175,16 @@ def _paginate_code_search(query: str, headers: dict) -> tuple[list[dict], bool]:
         }
 
         _throttle_code_search()
-        response = requests.get(url, headers=headers, params=params, timeout=30)
+        response = _github_api_get(url, headers, params)
+
+        if response is None:
+            rate_limited = True
+            print(
+                f"  code search unavailable on page {page} of '{query}' "
+                "(result is partial)",
+                file=sys.stderr,
+            )
+            break
 
         if response.status_code == 401:
             print(
@@ -134,7 +194,7 @@ def _paginate_code_search(query: str, headers: dict) -> tuple[list[dict], bool]:
             )
             break
 
-        if response.status_code == 403:
+        if response.status_code in (403, 429):
             rate_limited = True
             reset = response.headers.get("X-RateLimit-Reset")
             wait = 0
@@ -144,13 +204,20 @@ def _paginate_code_search(query: str, headers: dict) -> tuple[list[dict], bool]:
                 except ValueError:
                     pass
             print(
-                f"  code search hit 403 on page {page} of '{query}' "
-                f"(rate-limit reset in {wait}s)",
+                f"  code search hit HTTP {response.status_code} on page {page} of '{query}' "
+                f"(rate-limit reset in {wait}s; result is partial)",
                 file=sys.stderr,
             )
             break
 
-        response.raise_for_status()
+        if response.status_code != 200:
+            rate_limited = True
+            print(
+                f"  code search returned HTTP {response.status_code} on page {page} "
+                f"of '{query}' (result is partial)",
+                file=sys.stderr,
+            )
+            break
         data = response.json()
         items = data.get("items", [])
         if not items:
@@ -217,9 +284,15 @@ def _discover_code_indicator_repos(
                 file=sys.stderr,
             )
             break
-        response = requests.get(api_url, headers=headers, timeout=30)
-        if response.status_code == 403:
-            print("Error: API rate limit exceeded while fetching repo details.", file=sys.stderr)
+        response = _github_api_get(api_url, headers)
+        if response is None:
+            break
+        if response.status_code in (403, 429):
+            print(
+                "Warning: rate-limited while fetching repo details; "
+                "code-indicator result is partial.",
+                file=sys.stderr,
+            )
             break
         if response.status_code != 200:
             continue

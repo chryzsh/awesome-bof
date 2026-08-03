@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: '0 4 * * 1'
   workflow_dispatch:
+    inputs:
+      since:
+        description: 'Optional backfill start date (YYYY-MM-DD)'
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -12,6 +17,8 @@ permissions:
 jobs:
   discover:
     runs-on: ubuntu-latest
+    env:
+      DISCOVERY_SINCE: ${{ inputs.since }}
 
     steps:
       - name: Checkout
@@ -31,7 +38,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python3 scripts/find_new_bofs.py --days 14 --markdown > weekly-new-bofs.md 2> weekly-discovery.log
+          if [ -n "$DISCOVERY_SINCE" ]; then
+            if ! [[ "$DISCOVERY_SINCE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]] || \
+              [ "$(date -u -d "$DISCOVERY_SINCE" +%F 2>/dev/null)" != "$DISCOVERY_SINCE" ]; then
+              echo "The since input must be a valid YYYY-MM-DD date." >&2
+              exit 2
+            fi
+            python3 scripts/find_new_bofs.py --since "$DISCOVERY_SINCE" --markdown
+          else
+            python3 scripts/find_new_bofs.py --days 14 --markdown
+          fi > weekly-new-bofs.md 2> weekly-discovery.log
 
       - name: Build summary report
         id: summary
@@ -40,7 +56,11 @@ jobs:
             echo "# Weekly BOF Discovery Report"
             echo
             echo "Run date (UTC): $(date -u +'%Y-%m-%d %H:%M:%S')"
-            echo "Window: last 14 days"
+            if [ -n "$DISCOVERY_SINCE" ]; then
+              echo "Window: since $DISCOVERY_SINCE"
+            else
+              echo "Window: last 14 days"
+            fi
             echo
             echo "## Discovery Log"
             echo
