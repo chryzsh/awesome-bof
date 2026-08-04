@@ -4376,7 +4376,13 @@
       "source_file": "README.md",
       "source_format": "readme_table",
       "repository_stars": 1854,
-      "repository_last_updated": "2026-07-27"
+      "repository_last_updated": "2026-07-27",
+      "review": {
+        "date": "2026-08-04",
+        "label": "Limited AI-assisted review",
+        "note": "141 of 142 artifacts passed lint; driversigs.x86 has an unresolved _strlen import.",
+        "url": "../docs/catalog-reviews/2026-08-04-high-star-batch-1.md#cs-situational-awareness-bof"
+      }
     },
     {
       "name": "adcs_enum_com",
@@ -13844,7 +13850,13 @@
       "source_file": "NanoDump.cna",
       "source_format": "cna",
       "repository_stars": 2131,
-      "repository_last_updated": "2024-09-17"
+      "repository_last_updated": "2024-09-17",
+      "review": {
+        "date": "2026-08-04",
+        "label": "Limited AI-assisted review",
+        "note": "The full documented build fails; the x86 SSP artifact has an unresolved import.",
+        "url": "../docs/catalog-reviews/2026-08-04-high-star-batch-1.md#nanodump"
+      }
     },
     {
       "name": "nanodump_ppl_dump",
@@ -15806,7 +15818,13 @@
       "source_file": "scshell.cna",
       "source_format": "cna",
       "repository_stars": 1651,
-      "repository_last_updated": "2023-07-10"
+      "repository_last_updated": "2023-07-10",
+      "review": {
+        "date": "2026-08-04",
+        "label": "Limited AI-assisted review",
+        "note": "The BOF can leave a target service set to demand start after a successful run.",
+        "url": "../docs/catalog-reviews/2026-08-04-high-star-batch-1.md#scshell"
+      }
     },
     {
       "name": "scshell-settings",
