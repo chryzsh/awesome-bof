@@ -35,7 +35,16 @@ gh api repos/OWNER/REPO/readme --jq '.content' | base64 -d | head -80
 - Forks/copies of existing BOFs with no meaningful changes
 - Empty, no description, or clearly abandoned learning repos
 - Generic tool collections, cheatsheets, or pentest dumps that aren't BOF-specific
-- Already in the catalog (grep BOF-CATALOG.md first)
+- Already in the catalog. Grep BOF-CATALOG.md, but resolve the candidate's
+  canonical name first, because a grep cannot match a renamed repo:
+
+  ```bash
+  gh api repos/OWNER/REPO --jq '.full_name'
+  ```
+
+  GitHub redirects a renamed repo, so the old URL keeps working and the
+  candidate reads as new. Grep the catalog for the canonical `full_name`,
+  not the name the discovery issue reported.
 
 **Suspicious/Copycat Detection** — apply extra scrutiny to repos that:
 - Share the same name as an existing catalog entry but have significantly fewer stars
@@ -68,6 +77,14 @@ Run the scanners periodically to audit the full catalog:
 python3 scripts/audit_catalog.py          # broad quality/copycat audit
 python3 scripts/malware_scan.py           # deep malware/dupe scan (zip-dropper focus)
 ```
+
+`audit_catalog.py` also reports two rename-related flags. `STALE_URL`
+means the catalog URL redirects to a different canonical name; repoint it
+so the shields.io badges stop relying on the redirect. `DUPLICATE_ENTRY`
+means two rows resolve to the same repo, so one should be removed. Note
+that `malware_scan.py` cannot find these: its `NAME_COLLISION_LOW_STARS`
+check needs a 5x star ratio, and a redirect serves identical metadata for
+both URLs, making the ratio always 1.
 
 ### Step 3: Add to BOF-CATALOG.md
 

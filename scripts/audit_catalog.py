@@ -53,6 +53,8 @@ class AuditResult:
     binary_files: list = field(default_factory=list)
     possible_copycat_of: str = ""
     catalog_line: int = 0
+    canonical_slug: str = ""
+    duplicate_of_line: int = 0
 
 
 def parse_catalog(catalog_path):
@@ -91,6 +93,14 @@ def audit_repo(entry, headers, owner_cache, min_stars=3, check_binaries=False):
     result.stars = meta.get("stargazers_count", 0)
     result.description = meta.get("description") or ""
     result.created_at = meta.get("created_at", "")
+
+    # GitHub redirects renamed repos, so the catalog URL can still resolve
+    # while pointing at an owner/name that no longer exists. full_name is
+    # already in this response, so the check costs no extra API calls.
+    result.canonical_slug = meta.get("full_name") or ""
+    if (result.canonical_slug
+            and result.canonical_slug.lower() != f"{entry['owner']}/{entry['name']}".lower()):
+        result.flags.append("STALE_URL")
 
     # Low stars
     if result.stars < min_stars:
@@ -161,6 +171,21 @@ def run_audit(entries, headers, min_stars=3, check_binaries=False):
             result.possible_copycat_of = copycats[key]
             result.flags.append("POSSIBLE_COPYCAT")
 
+    # Two catalog rows resolving to the same canonical repo are the same
+    # entry listed twice, usually because one side was renamed. Star-ratio
+    # copycat detection cannot see these: a redirect serves identical
+    # metadata for both URLs, so the ratio is always 1.
+    first_seen = {}
+    for result in results:
+        slug = result.canonical_slug.lower()
+        if not slug:
+            continue
+        if slug in first_seen:
+            result.duplicate_of_line = first_seen[slug]
+            result.flags.append("DUPLICATE_ENTRY")
+        else:
+            first_seen[slug] = result.catalog_line
+
     return results
 
 
@@ -177,7 +202,9 @@ def format_report(results, output_json=False):
     # Group by severity
     severity_order = [
         "REPO_NOT_FOUND",
+        "DUPLICATE_ENTRY",
         "POSSIBLE_COPYCAT",
+        "STALE_URL",
         "PRECOMPILED_BINARIES",
         "NEW_ACCOUNT",
         "LOW_ACTIVITY_ACCOUNT",
@@ -205,6 +232,10 @@ def format_report(results, output_json=False):
 
         for r in matching:
             details = ""
+            if r.duplicate_of_line:
+                details += f"duplicate of line {r.duplicate_of_line} ({r.canonical_slug}) "
+            if "STALE_URL" in r.flags:
+                details += f"renamed to {r.canonical_slug} "
             if r.possible_copycat_of:
                 details += f"copycat of {r.possible_copycat_of}"
             if r.binary_files:
