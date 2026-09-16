@@ -434,5 +434,10 @@ print("site copy in sync:",
 EOF
 ```
 
-Every `new` count should be at least the `old` count. If one dropped, the
-index was rebuilt under rate limiting. Redo the change with the fast path.
+For an addition or a rename, every `new` count should be at least the `old`
+count. If one dropped, the index was rebuilt under rate limiting. Redo the
+change with the fast path.
+
+For a removal, each count drops by exactly the number of entries you
+removed. Confirm the deltas match that number. A larger drop means
+something else was lost.
