@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "total_bofs": 1910,
-    "total_repos": 505,
-    "repos_parsed": 476,
+    "total_bofs": 1962,
+    "total_repos": 511,
+    "repos_parsed": 482,
     "format_stats": {
       "cna": 327,
-      "directory_structure": 505,
+      "directory_structure": 511,
       "readme_table": 37,
       "havoc_py": 36,
       "stage1_py": 14,
@@ -16000,7 +16000,7 @@
     {
       "name": "KslKatz",
       "description": "A Beacon Object File (BOF) in-line LSASS credential extraction from C2 using the KslD.sys BYOVD technique.",
-      "repository": "https://github.com/PrincipleCheck/KslKatzBof",
+      "repository": "https://github.com/avantguard-cyber-security-ag/KslKatzBof",
       "source_file": "memory.c",
       "source_format": "directory_structure",
       "repository_stars": 89,
@@ -16009,7 +16009,7 @@
     {
       "name": "kslkatzbof",
       "description": "",
-      "repository": "https://github.com/PrincipleCheck/KslKatzBof",
+      "repository": "https://github.com/avantguard-cyber-security-ag/KslKatzBof",
       "source_file": "kslkatzbof.x64.o",
       "source_format": "directory_structure",
       "repository_stars": 89,
@@ -17202,6 +17202,474 @@
       "source_format": "directory_structure",
       "repository_stars": 61,
       "repository_last_updated": "2026-04-26"
+    },
+    {
+      "name": "arp",
+      "description": "ARP / neighbor table enumeration",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "container_detect",
+      "description": "Docker / K8s / LXC detection + escape vectors",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "cred_harvest",
+      "description": "AWS / GCP / Azure / K8s / Git credentials + env secrets",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "host_recon",
+      "description": "System info, interfaces, users, groups, CPU",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "kernel_exploit_check",
+      "description": "Kernel CVE checks + security features",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "keylogger_start",
+      "description": "Start keylogger (async, all keyboards)",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "keylogger_dump",
+      "description": "Retrieve captured keystrokes",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "krb",
+      "description": "Kerberos credential cache enumeration",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "ld_preload_check",
+      "description": "Detect LD\\_PRELOAD hooks in processes",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "net_enum",
+      "description": "Interfaces, routes, ARP, DNS, TCP connections",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "nslookup",
+      "description": "DNS lookup via raw UDP (no libc resolver)",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "persist_cron",
+      "description": "Cron-based persistence",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "persist_systemd",
+      "description": "Systemd-based persistence",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "portscan",
+      "description": "TCP port scanner with banner grab",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "proc_enum",
+      "description": "Process tree (USER/PID/PPID/STATE/CMD)",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "service_enum",
+      "description": "Listening ports, root daemons, systemd units",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "shadow_dump",
+      "description": "/etc/shadow hash extraction",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "ssh_keys",
+      "description": "SSH private keys, authorized\\_keys, configs",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "sudo_check",
+      "description": "Sudoers audit + privilege group membership",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "suid_scan",
+      "description": "SUID/SGID scanner with GTFOBins hints",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "timestomp",
+      "description": "File timestamp manipulation (atime/mtime)",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "uptime",
+      "description": "System uptime, RAM, process count",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "chown",
+      "description": "change the owner and the group",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "chmod",
+      "description": "change permissions",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "df",
+      "description": "show the amount of available and used space on the disk file systems",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "load_elf",
+      "description": "Loader ELF in Memory",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "mv",
+      "description": "move or rename files and directories",
+      "repository": "https://github.com/Loky-rt/linux-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 10,
+      "repository_last_updated": "2026-09-15"
+    },
+    {
+      "name": "groupmod",
+      "description": "remove`",
+      "repository": "https://github.com/purpleranges/bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-09-05"
+    },
+    {
+      "name": "gmsa-authorize",
+      "description": "clear []`",
+      "repository": "https://github.com/purpleranges/bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-09-05"
+    },
+    {
+      "name": "gmsa-readpwd",
+      "description": "Reads msDS-ManagedPassword blob via LDAPS and returns NT hash (rc4_hmac). LDAPS 636.",
+      "repository": "https://github.com/purpleranges/bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-09-05"
+    },
+    {
+      "name": "regsave",
+      "description": "Save SECURITY + SYSTEM registry hives via WinAPI (no cmd.exe). Requires SYSTEM (SeBackupPrivilege).",
+      "repository": "https://github.com/purpleranges/bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-09-05"
+    },
+    {
+      "name": "upload_rename",
+      "description": "",
+      "repository": "https://github.com/kingcarey/upload_rename",
+      "source_file": "upload_rename.cna",
+      "source_format": "cna",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-09-08"
+    },
+    {
+      "name": "krbrelay",
+      "description": "Run one fresh COM activation and relay its machine Kerberos exchange",
+      "repository": "https://github.com/antroguy/KrbRelayBof",
+      "source_file": "krbrelay.cna",
+      "source_format": "cna",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "askwam",
+      "description": "Silently request a token from Windows WAM",
+      "repository": "https://github.com/dirkjanm/askWAM",
+      "source_file": "askwam.cna",
+      "source_format": "cna",
+      "repository_stars": 111,
+      "repository_last_updated": "2026-09-11"
+    },
+    {
+      "name": "BeaconDataParse(datap p, char buf, int sz)",
+      "description": "Initialize argument parser",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "BeaconDataInt(datap *p)",
+      "description": "Extract 4-byte int (little-endian)",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "BeaconDataShort(datap *p)",
+      "description": "Extract 2-byte short",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "BeaconDataLength(datap *p)",
+      "description": "Remaining unparsed bytes",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "BeaconDataExtract(datap p, int sz)",
+      "description": "Extract length-prefixed string",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "BeaconOutput(int type, char *data, int len)",
+      "description": "Emit raw output bytes",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "BeaconPrintf(int type, char *fmt, ...)",
+      "description": "Emit formatted output",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "BeaconFormatAlloc(formatp *f, int maxsz)",
+      "description": "Allocate format buffer",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "BeaconFormatReset/Append/Printf/ToString/Free/Int",
+      "description": "Format buffer operations",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "BeaconIsAdmin()",
+      "description": "Returns 1 if euid == 0",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "BeaconGetStopJobEvent()",
+      "description": "Returns poll fd for async stop (-1 if sync)",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "AxSetGlobal(key, ptr)",
+      "description": "Store a pointer by name (max 16, key must be a string literal)",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "AxGetGlobal(key)",
+      "description": "Retrieve a pointer by name (NULL if missing)",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "[args...]",
+      "description": "Execute BOF synchronously",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "jobs",
+      "description": "List running background BOFs",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "kill",
+      "description": "Stop a background BOF",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "help",
+      "description": "Show commands",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
+    },
+    {
+      "name": "exit",
+      "description": "Quit (kills all running jobs)",
+      "repository": "https://github.com/Loky-rt/elf-bof",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-09-09"
     }
   ]
 }
