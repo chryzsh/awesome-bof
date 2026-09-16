@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "total_bofs": 1962,
-    "total_repos": 511,
-    "repos_parsed": 482,
+    "total_bofs": 1923,
+    "total_repos": 502,
+    "repos_parsed": 473,
     "format_stats": {
       "cna": 327,
       "directory_structure": 511,
@@ -147,24 +147,6 @@
       "source_format": "cna",
       "repository_stars": 0,
       "repository_last_updated": "2026-06-10"
-    },
-    {
-      "name": "bypass-all",
-      "description": "Process injection is a core component to Cobalt Strike post exploitation.",
-      "repository": "https://github.com/Icy-Senpal/bypass-all",
-      "source_file": "process_inject_explicit.c",
-      "source_format": "directory_structure",
-      "repository_stars": 7,
-      "repository_last_updated": "2026-09-14"
-    },
-    {
-      "name": "main",
-      "description": "",
-      "repository": "https://github.com/Icy-Senpal/bypass-all",
-      "source_file": "main.c",
-      "source_format": "directory_structure",
-      "repository_stars": 7,
-      "repository_last_updated": "2026-09-14"
     },
     {
       "name": "adcs_enum",
@@ -9779,24 +9761,6 @@
       "repository_last_updated": "2026-06-26"
     },
     {
-      "name": "bofthedog",
-      "description": "Run the `genrbcd.py` python script with the SID of the user you're delegating to",
-      "repository": "https://github.com/muhammadmehdi1656/ldap_bofs",
-      "source_file": "rbcd.x64.o",
-      "source_format": "directory_structure",
-      "repository_stars": 5,
-      "repository_last_updated": "2026-09-13"
-    },
-    {
-      "name": "bofwhisker",
-      "description": "Run the `gencert.py` python script with the DN of the user you're setting shadow creds for",
-      "repository": "https://github.com/muhammadmehdi1656/ldap_bofs",
-      "source_file": "keycred.x64.o",
-      "source_format": "directory_structure",
-      "repository_stars": 5,
-      "repository_last_updated": "2026-09-13"
-    },
-    {
       "name": "bin",
       "description": "",
       "repository": "https://github.com/onedays12/Iris",
@@ -10841,204 +10805,6 @@
       "repository_last_updated": "2026-07-23"
     },
     {
-      "name": "type",
-      "description": "Display contents of a file to beacon output",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "mkdir",
-      "description": "Create a directory and all intermediate directories",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "move",
-      "description": "Move or rename files; supports wildcards and UNC paths; file-only, directories skipped",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "del",
-      "description": "Delete files; supports wildcards; file-only, directories skipped",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "copy",
-      "description": "Copy files; supports wildcards and UNC paths; file-only, directories skipped",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "pwd",
-      "description": "Print the beacon's current working directory",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "cd",
-      "description": "Change working directory; supports relative paths and UNC paths",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "rmdir",
-      "description": "Remove an empty directory; supports UNC paths",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "exit process",
-      "description": "Terminate beacon process via RtlExitUserProcess(0). Terminal.",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "exit thread",
-      "description": "Terminate beacon thread via RtlExitUserThread(0). Terminal.",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "ps list",
-      "description": "List all running processes (PID, PPID, session, owner, arch)",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "ps kill",
-      "description": "Terminate a process; optional exit code",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "ps run",
-      "description": "Launch a process (CreateProcess/WithLogon/WithToken); optional PPID spoofing and pipe capture",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "ps grep",
-      "description": "Inspect a process: token, modules, cmdline, threads",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "ps suspend",
-      "description": "Suspend a process",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "ps resume",
-      "description": "Resume a suspended process",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "steal",
-      "description": "Duplicate a process token; optionally skip impersonation with --no-apply",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "use",
-      "description": "Impersonate a previously obtained token handle",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "make",
-      "description": "Create a token via LogonUserW; supports --domain, --logon-type, --no-apply",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "rm",
-      "description": "Close a token handle and free the kernel object",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "revert",
-      "description": "Drop impersonation and revert to process token",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
-      "name": "privget",
-      "description": "Enable all privileges on the current token",
-      "repository": "https://github.com/TheGr3atJosh/BOF-Collection",
-      "source_file": "README.md",
-      "source_format": "readme_table",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-06-22"
-    },
-    {
       "name": "asyncscan",
       "description": "Async BOFs for performing port scanning or ping sweeping in a target network. Both run in the background without obstructing the agent's main thread. When `verbose` mode is enabled, results are report",
       "repository": "https://github.com/jakobfriedl/asyncscan-bof",
@@ -11291,15 +11057,6 @@
       "repository_last_updated": "2026-04-08"
     },
     {
-      "name": "regpwn",
-      "description": "CVE-2026-24291 registry symlink LPE (locks workstation!)",
-      "repository": "https://github.com/Snowyheronmusculusadductorlongus456/RegPwnBOF",
-      "source_file": "regpwn.cna",
-      "source_format": "cna",
-      "repository_stars": 2,
-      "repository_last_updated": "2026-09-14"
-    },
-    {
       "name": "timeroast",
       "description": "Usage: timeroast  [RID2] [RID3] ...",
       "repository": "https://github.com/Udayveer17/Timeroast-BOF",
@@ -11361,69 +11118,6 @@
       "source_format": "directory_structure",
       "repository_stars": 1,
       "repository_last_updated": "2026-05-20"
-    },
-    {
-      "name": "edr_check",
-      "description": "Quick EDR check via process list [NOISE: * Minimal]",
-      "repository": "https://github.com/mohamedanas069/CS-EDR-Enumeration",
-      "source_file": "edr-enum.cna",
-      "source_format": "cna",
-      "repository_stars": 4,
-      "repository_last_updated": "2026-09-14"
-    },
-    {
-      "name": "edr_enum",
-      "description": "Full AV/EPP/EDR enum: processes + WMI [NOISE: **** High]",
-      "repository": "https://github.com/mohamedanas069/CS-EDR-Enumeration",
-      "source_file": "edr-enum.cna",
-      "source_format": "cna",
-      "repository_stars": 4,
-      "repository_last_updated": "2026-09-14"
-    },
-    {
-      "name": "edr_services",
-      "description": "Service enum via PowerShell Get-Service [NOISE: **** High]",
-      "repository": "https://github.com/mohamedanas069/CS-EDR-Enumeration",
-      "source_file": "edr-enum.cna",
-      "source_format": "cna",
-      "repository_stars": 4,
-      "repository_last_updated": "2026-09-14"
-    },
-    {
-      "name": "edr_services_cmd",
-      "description": "Service enum via cmd.exe + sc query [NOISE: *** Moderate]",
-      "repository": "https://github.com/mohamedanas069/CS-EDR-Enumeration",
-      "source_file": "edr-enum.cna",
-      "source_format": "cna",
-      "repository_stars": 4,
-      "repository_last_updated": "2026-09-14"
-    },
-    {
-      "name": "edr_services_pick",
-      "description": "Service enum via unmanaged PowerShell [NOISE: ** Low]",
-      "repository": "https://github.com/mohamedanas069/CS-EDR-Enumeration",
-      "source_file": "edr-enum.cna",
-      "source_format": "cna",
-      "repository_stars": 4,
-      "repository_last_updated": "2026-09-14"
-    },
-    {
-      "name": "edr_services_bof",
-      "description": "Service + driver enum via inline BOF [NOISE: * Minimal]",
-      "repository": "https://github.com/mohamedanas069/CS-EDR-Enumeration",
-      "source_file": "edr-enum.cna",
-      "source_format": "cna",
-      "repository_stars": 4,
-      "repository_last_updated": "2026-09-14"
-    },
-    {
-      "name": "edr_help",
-      "description": "Detailed EDR enumeration help and noise reference",
-      "repository": "https://github.com/mohamedanas069/CS-EDR-Enumeration",
-      "source_file": "edr-enum.cna",
-      "source_format": "cna",
-      "repository_stars": 4,
-      "repository_last_updated": "2026-09-14"
     },
     {
       "name": "firefoxdump",
@@ -11604,15 +11298,6 @@
       "source_format": "directory_structure",
       "repository_stars": 0,
       "repository_last_updated": "2026-07-16"
-    },
-    {
-      "name": "webcam",
-      "description": "Webcam capability for Cobalt Strike",
-      "repository": "https://github.com/yinyu-cybersecurity/WebcamBOF-HD",
-      "source_file": "webcamBOF.cna",
-      "source_format": "cna",
-      "repository_stars": 1,
-      "repository_last_updated": "2026-04-18"
     },
     {
       "name": "rawhive",
@@ -12004,7 +11689,7 @@
     {
       "name": "sheepclone",
       "description": "SheepClone BOF Aggressor Script",
-      "repository": "https://github.com/RealRedTeam/SheepClone",
+      "repository": "https://github.com/SnoopJesus420/SheepClone",
       "source_file": "SheepClone.cna",
       "source_format": "cna",
       "repository_stars": 8,
@@ -12310,7 +11995,7 @@
     {
       "name": "enumprotections",
       "description": "Enumerate system process protection levels, service relation, user, session, and path",
-      "repository": "https://github.com/Fauzan-Aldi/Enumeration-of-Buffer-Overflow-Protections",
+      "repository": "https://github.com/Fauzan-Aldi/EnumerationOfBufferOverflowProtections",
       "source_file": "enumprotections.cna",
       "source_format": "cna",
       "repository_stars": 1,
@@ -12778,7 +12463,7 @@
     {
       "name": "getlapsbof",
       "description": "getlapsbof version 1.4.0 - Retrieve decrypted On-Prem LAPSv2 and Azure/Entra LAPS Credentials",
-      "repository": "https://github.com/Savsanta/getlapsbof",
+      "repository": "https://github.com/SavSanta/getlapsbof",
       "source_file": "getlapsbof.cna",
       "source_format": "cna",
       "repository_stars": 21,
@@ -12823,7 +12508,7 @@
     {
       "name": "copyunlocker",
       "description": "Find handle to target file locked by another process, optionally copy locked file by duplicating handle in current process",
-      "repository": "https://github.com/AonCyberLabs/CopyUnlocker-BOF",
+      "repository": "https://github.com/strozfriedberg/CopyUnlocker-BOF",
       "source_file": "copyunlocker.cna",
       "source_format": "cna",
       "repository_stars": 7,
@@ -12832,7 +12517,7 @@
     {
       "name": "edrsilencer",
       "description": "Create WFP filter to block EDR network traffic",
-      "repository": "https://github.com/AonCyberLabs/EDRSilencer-BOF",
+      "repository": "https://github.com/strozfriedberg/EDRSilencer-BOF",
       "source_file": "edrsilencer.cna",
       "source_format": "cna",
       "repository_stars": 37,
@@ -13066,7 +12751,7 @@
     {
       "name": "EDRenum",
       "description": "EDR and AV enumeration",
-      "repository": "https://github.com/mlcsec/EDREnum-BOF",
+      "repository": "https://github.com/mlcsec/EDRenum-BOF",
       "source_file": "EDRenum-BOF.cna",
       "source_format": "cna",
       "repository_stars": 135,
@@ -13138,7 +12823,7 @@
     {
       "name": "etw",
       "description": "Patch ETW for current process",
-      "repository": "https://github.com/b4rth0v5k1/BOF_Beginner",
+      "repository": "https://github.com/ph3n1x007/BOF_Beginner",
       "source_file": "etw.cna",
       "source_format": "cna",
       "repository_stars": 6,
@@ -14387,24 +14072,6 @@
       "repository_last_updated": "2024-08-07"
     },
     {
-      "name": "get-delegation",
-      "description": "Enumerate a given domain for different types of abusable Kerberos Delegation settings.",
-      "repository": "https://github.com/IcebreakerSecurity/DelegationBOF",
-      "source_file": "DelegationBOF.cna",
-      "source_format": "cna",
-      "repository_stars": 143,
-      "repository_last_updated": "2022-05-04"
-    },
-    {
-      "name": "get-spns",
-      "description": "Enumerate a given domain for user accounts with SPNs and ASREP.",
-      "repository": "https://github.com/IcebreakerSecurity/DelegationBOF",
-      "source_file": "DelegationBOF.cna",
-      "source_format": "cna",
-      "repository_stars": 143,
-      "repository_last_updated": "2022-05-04"
-    },
-    {
       "name": "backdoor-scmanager",
       "description": "Backdoors SCManager SDDL",
       "repository": "https://github.com/snovvcrash/BOFs",
@@ -14441,15 +14108,6 @@
       "repository_last_updated": "2023-03-04"
     },
     {
-      "name": "cookie-graber",
-      "description": "C or BOF file to extract WebKit master key to decrypt user cookie. The C code can be used to compile an executable or a bof script for Cobalt Strike.",
-      "repository": "https://github.com/Mr-Un1k0d3r/Cookie-Graber-BOF",
-      "source_file": "handle-stealer-x64.o",
-      "source_format": "directory_structure",
-      "repository_stars": 213,
-      "repository_last_updated": "2024-04-29"
-    },
-    {
       "name": "GetWeChatBOF",
       "description": "\u7528\u4e8e\u83b7\u53d6\u5fae\u4fe1\u4fe1\u606f\u7684BOF\u6d4b\u8bd5\u6587\u4ef6",
       "repository": "https://github.com/pyroxenites/BOFTools",
@@ -14484,15 +14142,6 @@
       "source_format": "cna",
       "repository_stars": 206,
       "repository_last_updated": "2023-08-25"
-    },
-    {
-      "name": "persist-ice",
-      "description": "A set of persistence techniques to appeal the masses",
-      "repository": "https://github.com/IcebreakerSecurity/PersistBOF",
-      "source_file": "PersistBOF.cna",
-      "source_format": "cna",
-      "repository_stars": 298,
-      "repository_last_updated": "2023-03-07"
     },
     {
       "name": "amd_ryzen_master_driver_v17_exploit",
