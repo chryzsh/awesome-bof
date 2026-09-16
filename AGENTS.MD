@@ -94,6 +94,11 @@ python3 scripts/bof_indexer.py
 bash scripts/update-site-data.sh
 ```
 
+The indexer re-queries the GitHub API for every repo and drops
+`repository_stars` and `repository_last_updated` for any repo that gets
+rate-limited. Check the result against "Verifying an index change" below
+before committing.
+
 ### Step 5: Commit and Push
 
 Stage all three files, commit, and push:
@@ -103,10 +108,16 @@ git commit -m "feat(catalog): add N BOFs from weekly discovery issues #X and #Y"
 git push
 ```
 
-If push is rejected (remote has new commits), pull with rebase first:
+If push is rejected, the remote has new commits, usually the weekly
+workflow's auto-committed index refresh:
+
 ```bash
-git pull --rebase && git push
+git pull --rebase
 ```
+
+This conflicts on `bof-index.json` and `site/data/bof-index.json`. Resolve
+it with the fast path in "Rebasing on top of the weekly workflow's index
+refresh" below, not by re-running `bof_indexer.py`, then push.
 
 ### Step 6: Close the Processed Issues
 
@@ -316,13 +327,112 @@ This keeps whatever star metadata the last `bof_indexer.py` run produced
 rather than regenerating from scratch (which costs an hour and can drop
 metadata for rate-limited repos).
 
+### Adding catalog entries (fast path)
+
+To merge newly added repos into the remote's index without a full rebuild,
+first build a local index to parse the new repos' BOF entries:
+
+```bash
+python3 scripts/bof_indexer.py
+```
+
+Ignore its metadata, which may be rate-limited, and take only the entries
+for the new repos. Fetch their stars and dates directly:
+
+```bash
+gh api repos/OWNER/REPO --jq '"\(.full_name)|\(.stargazers_count)|\(.pushed_at)"'
+```
+
+Then merge onto the remote's index:
+
+```python
+import json, subprocess
+from pathlib import Path
+
+base = json.loads(subprocess.run(
+    ["git", "show", "origin/main:bof-index.json"],
+    capture_output=True, text=True, check=True).stdout)
+fresh = json.loads(Path("bof-index.json").read_text())
+
+# repo URL -> (stars, "YYYY-MM-DD"), from the gh api call above
+META = {
+    "https://github.com/owner/repo": (10, "2026-09-15"),
+}
+
+added = 0
+for b in fresh["bofs"]:
+    if b.get("repository") in META:
+        b["repository_stars"], b["repository_last_updated"] = META[b["repository"]]
+        base["bofs"].append(b)
+        added += 1
+
+m = base["metadata"]
+m["total_bofs"] = len(base["bofs"])
+m["total_repos"] = m.get("total_repos", 0) + len(META)
+m["repos_parsed"] = m.get("repos_parsed", 0) + len(META)
+m["format_stats"]["directory_structure"] = (
+    m["format_stats"].get("directory_structure", 0) + len(META))
+
+Path("bof-index.json").write_text(json.dumps(base, indent=2))
+print(f"added={added} total_bofs={m['total_bofs']}")
+```
+
+Then `bash scripts/update-site-data.sh`.
+
+Handle an owner rename the same way. Rewrite `repository` on the existing
+entries in `base` instead of appending new ones, and leave the counts alone.
+
 ### Rebasing on top of the weekly workflow's index refresh
 
 The `weekly-bof-discovery.yml` workflow auto-commits a refreshed
 `bof-index.json` from github-actions[bot]. If you land catalog changes
-locally while that bot pushes, you'll hit a merge conflict on
-`bof-index.json`. Resolution: `git checkout --ours bof-index.json
-site/data/bof-index.json` during rebase (this takes the remote's fresh
-stars), then re-apply your catalog filter with the snippet above, then
-`git add` and `git rebase --continue`. During rebase, `--ours` = the
-branch you are rebasing onto (origin/main), opposite of merge.
+locally while that bot pushes, `git pull --rebase` conflicts on
+`bof-index.json` and `site/data/bof-index.json`. `BOF-CATALOG.md`
+normally auto-merges.
+
+Resolve by taking the remote's index, which carries fresh stars and dates,
+and re-applying your own change on top:
+
+```bash
+git checkout --ours bof-index.json site/data/bof-index.json
+```
+
+During rebase, `--ours` = the branch you are rebasing onto (origin/main),
+opposite of merge.
+
+Then re-apply your change:
+
+- **Removals** — re-run the filter snippet above.
+- **Additions** — merge in only your new entries with the snippet above.
+
+Do **not** resolve by re-running `bof_indexer.py`. A full rebuild
+re-queries the GitHub API for every repo and silently drops
+`repository_stars` and `repository_last_updated` for any repo that gets
+rate-limited. A rebuild during the 2026-09-16 triage returned
+`repository_last_updated` on 1626 entries against the remote's 1908, and
+27 fewer entries overall.
+
+Finish with `git add` on all three files and `git rebase --continue`.
+
+### Verifying an index change
+
+Before committing any index change, confirm you did not regress metadata
+coverage against the remote:
+
+```bash
+python3 - <<'EOF'
+import json, subprocess
+new = json.load(open("bof-index.json"))
+old = json.loads(subprocess.run(["git", "show", "origin/main:bof-index.json"],
+                                capture_output=True, text=True).stdout)
+def cov(idx, k):
+    return sum(1 for b in idx["bofs"] if b.get(k) not in (None, "", 0))
+for k in ["repository_stars", "repository_last_updated", "description"]:
+    print(f"{k:24s} new={cov(new, k):5d} old={cov(old, k):5d}")
+print("site copy in sync:",
+      open("bof-index.json").read() == open("site/data/bof-index.json").read())
+EOF
+```
+
+Every `new` count should be at least the `old` count. If one dropped, the
+index was rebuilt under rate limiting. Redo the change with the fast path.
