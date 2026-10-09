@@ -44,7 +44,7 @@ Expected: the report records exact reviewed commits and review scope.
 
 **Step 2: Build and run `boflint` for each available BOF artifact.**
 
-Run: each project’s documented build command followed by `python3 ~/.claude/skills/bof-development/assets/boflint.py <artifact> --loader any`.
+Run: each project’s documented build command followed by `python3 boflint.py <artifact> --loader any`.
 
 Expected: build and lint outcomes are recorded; failures remain factual review notes.
 
