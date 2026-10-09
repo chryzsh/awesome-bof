@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "total_bofs": 1936,
-    "total_repos": 501,
-    "repos_parsed": 472,
+    "total_bofs": 1971,
+    "total_repos": 506,
+    "repos_parsed": 477,
     "format_stats": {
       "cna": 324,
-      "directory_structure": 501,
+      "directory_structure": 506,
       "readme_table": 40,
       "havoc_py": 36,
       "stage1_py": 15,
@@ -17436,6 +17436,321 @@
       "source_format": "directory_structure",
       "repository_stars": 61,
       "repository_last_updated": "2026-04-26"
+    },
+    {
+      "name": "adduser-domaingroup",
+      "description": "Adds a user to a domain global/universal group via NetGroupAddUser (target a DC)",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "adduser-localgroup",
+      "description": "Adds a user to a local group on a Windows computer",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "bkread",
+      "description": "Reads a file with SeBackupPrivilege and backup semantics, without changing ACLs",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "checkaccess",
+      "description": "Probes read access for a directory path and subfolders (depth-1 or recursive)",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "credguard-check",
+      "description": "Checks Credential Guard, HVCI, LSA Protection, VBS status",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "curl",
+      "description": "HTTP/HTTPS requests with TLS fingerprinting",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "decrypt-credmanager",
+      "description": "Decrypts Windows Credential Manager entries using DPAPI",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "dpapi-unprotect",
+      "description": "Decrypts an arbitrary DPAPI blob (with optional entropy) in the current user's context",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "dsreg-status",
+      "description": "Reports documented dsregcmd /status device, tenant, user, and proxy state",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "edge-passdump",
+      "description": "Dumps plaintext passwords saved in Microsoft Edge from process memory",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "enum-credmanager",
+      "description": "Lists Windows Credential Manager entries (no decryption)",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "enum-creds",
+      "description": "Credential-focused file enumeration with optional app-data discovery and inline content dump",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "enum-logon-events",
+      "description": "Queries Security Event Log for logon events (4624)",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "enum-registry",
+      "description": "Extracts RDP history, installed software, env vars, WSL/Docker info across all loaded user hives",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "enum-stored-accounts",
+      "description": "Lists service accounts, tasks with stored passwords, and per-profile DPAPI material (which tokens are worth stealing)",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "enum-user-right",
+      "description": "Lists accounts assigned an effective LSA user right; defaults to SeMachineAccountPrivilege",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "fake-windows-popup (BOF-PE, x64)",
+      "description": "Shows native Windows credential UI with optional validation and password output",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "enumshares",
+      "description": "Enumerate remote shares and test filesystem access (single host)",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "enumshares-file",
+      "description": "Enumerate remote shares from an uploaded hostnames file",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "listpipes",
+      "description": "Lists named pipes for IPC reconnaissance",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "lsfiles",
+      "description": "Recursive file/directory listing with wildcards, date/size filters",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "removeuser-domaingroup",
+      "description": "Removes a user from a domain global/universal group via NetGroupDelUser (target a DC)",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "removeuser-localgroup",
+      "description": "Removes a user from a local group on a Windows computer (or a domain-local group when targeted at a DC)",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "sccm-wmi",
+      "description": "Recovers SCCM Network Access Account credentials from live WMI policy as SYSTEM (CRED-3)",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "sccm-disk",
+      "description": "Recovers SCCM Network Access Account credentials from on-disk OBJECTS.DATA as SYSTEM (CRED-4)",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "sccm-local-recon",
+      "description": "Local SCCM client recon: paths, cache permissions, ManagementPoints, log UNC/URL scraping (RECON-7)",
+      "repository": "https://github.com/chryzsh/redteam-bofs",
+      "source_file": "README.md",
+      "source_format": "readme_table",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-09"
+    },
+    {
+      "name": "notepad_grab",
+      "description": "",
+      "repository": "https://github.com/Xpatr0nX/Brute-Ratel-BOFs",
+      "source_file": "notepad_grab.c",
+      "source_format": "directory_structure",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-01"
+    },
+    {
+      "name": "process_tokens_list",
+      "description": "",
+      "repository": "https://github.com/Xpatr0nX/Brute-Ratel-BOFs",
+      "source_file": "process_tokens_list.c",
+      "source_format": "directory_structure",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-01"
+    },
+    {
+      "name": "change_wallpaper",
+      "description": "",
+      "repository": "https://github.com/Xpatr0nX/Brute-Ratel-BOFs",
+      "source_file": "change_wallpaper.c",
+      "source_format": "directory_structure",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-01"
+    },
+    {
+      "name": "compress_zip",
+      "description": "",
+      "repository": "https://github.com/Xpatr0nX/Brute-Ratel-BOFs",
+      "source_file": "compress_zip.c",
+      "source_format": "directory_structure",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-01"
+    },
+    {
+      "name": "clipboard_grab",
+      "description": "",
+      "repository": "https://github.com/Xpatr0nX/Brute-Ratel-BOFs",
+      "source_file": "clipboard_grab.c",
+      "source_format": "directory_structure",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-01"
+    },
+    {
+      "name": "timestamp",
+      "description": "Brute Ratel BOF that modifies the Creation, Last Access, and Last Write timestamps of a file on disk. This is useful for timestomping dropped payloads to match legitimate surrounding files.",
+      "repository": "https://github.com/Xpatr0nX/Brute-Ratel-BOFs",
+      "source_file": "timestamp.c",
+      "source_format": "directory_structure",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-10-01"
+    },
+    {
+      "name": "AIE-Spawn",
+      "description": "AIE-Spawn is an x64 Beacon Object File (BOF) that demonstrates privilege escalation through a misconfigured `AlwaysInstallElevated` policy. It embeds a purpose-built MSI package and operator-provided",
+      "repository": "https://github.com/AlexLinov/AIE-Spawn",
+      "source_file": "main.c",
+      "source_format": "directory_structure",
+      "repository_stars": 13,
+      "repository_last_updated": "2026-09-17"
+    },
+    {
+      "name": "entrasyncdump",
+      "description": "Entra Connect (Azure AD Connect) certificate dumper",
+      "repository": "https://github.com/Jamjim01/entraconnectdump-bof",
+      "source_file": "entrasyncdump.cna",
+      "source_format": "cna",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-09-24"
+    },
+    {
+      "name": "program",
+      "description": "",
+      "repository": "https://github.com/JssNGC/OnTheEdge",
+      "source_file": "program.c",
+      "source_format": "directory_structure",
+      "repository_stars": 11,
+      "repository_last_updated": "2026-09-23"
     }
   ]
 }
