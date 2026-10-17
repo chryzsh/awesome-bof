@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "total_bofs": 1971,
-    "total_repos": 505,
-    "repos_parsed": 476,
+    "total_bofs": 2000,
+    "total_repos": 509,
+    "repos_parsed": 480,
     "format_stats": {
       "cna": 325,
-      "directory_structure": 505,
+      "directory_structure": 509,
       "readme_table": 41,
       "havoc_py": 37,
       "stage1_py": 16,
@@ -17751,6 +17751,267 @@
       "source_format": "directory_structure",
       "repository_stars": 61,
       "repository_last_updated": "2026-04-26"
+    },
+    {
+      "name": "zip-utf16-test",
+      "description": "Exercise ZIP BOF with pre-encoded UTF-16LE paths",
+      "repository": "https://github.com/rubyattack3r/Zip-BOF",
+      "source_file": "zip_utf16.cna",
+      "source_format": "cna",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-10"
+    },
+    {
+      "name": "unzip",
+      "description": "Extract a ZIP archive into a new directory on the target",
+      "repository": "https://github.com/rubyattack3r/Zip-BOF",
+      "source_file": "unzip.cna",
+      "source_format": "cna",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-10"
+    },
+    {
+      "name": "zip",
+      "description": "Create a ZIP archive and download it or save it on the target",
+      "repository": "https://github.com/rubyattack3r/Zip-BOF",
+      "source_file": "zip.cna",
+      "source_format": "cna",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-10"
+    },
+    {
+      "name": "snap",
+      "description": "JPEG on disk",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "listen",
+      "description": "Kali window, TCP listen",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "stream",
+      "description": "live MJPG to Kali window",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "checkin",
+      "description": "privacy/FrameServer/KS \u2014 what is missing",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "on",
+      "description": "Allow + FrameServerMode=0, stop FrameServer",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "off",
+      "description": "revert registry, start FrameServer",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "help",
+      "description": "list webcam commands",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "webcam",
+      "description": "JPEG on disk (webcam snap)",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "webcam-listen",
+      "description": "Kali window, TCP listen",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "webcam-stream",
+      "description": "live MJPG to Kali window",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "webcam-checkin",
+      "description": "privacy/FrameServer/KS \u2014 what is missing",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "webcam-on",
+      "description": "Allow + FrameServerMode=0, stop FrameServer",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "webcam-off",
+      "description": "revert registry, start FrameServer",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "webcam-help",
+      "description": "list webcam commands",
+      "repository": "https://github.com/DonMorpheus/uvc-bof",
+      "source_file": "uvc.py",
+      "source_format": "havoc_py",
+      "repository_stars": 0,
+      "repository_last_updated": "2026-10-11"
+    },
+    {
+      "name": "privesc",
+      "description": "",
+      "repository": "https://github.com/Loky-rt/Collection-BOF-Adaptix",
+      "source_file": "privesc_bof.c",
+      "source_format": "directory_structure",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-10-10"
+    },
+    {
+      "name": "clipboard",
+      "description": "",
+      "repository": "https://github.com/Loky-rt/Collection-BOF-Adaptix",
+      "source_file": "clipboard.c",
+      "source_format": "directory_structure",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-10-10"
+    },
+    {
+      "name": "timestomp",
+      "description": "",
+      "repository": "https://github.com/Loky-rt/Collection-BOF-Adaptix",
+      "source_file": "timestomp.c",
+      "source_format": "directory_structure",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-10-10"
+    },
+    {
+      "name": "base",
+      "description": "",
+      "repository": "https://github.com/Loky-rt/Collection-BOF-Adaptix",
+      "source_file": "base.c",
+      "source_format": "directory_structure",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-10-10"
+    },
+    {
+      "name": "monitor",
+      "description": "",
+      "repository": "https://github.com/Loky-rt/Collection-BOF-Adaptix",
+      "source_file": "monitor.c",
+      "source_format": "directory_structure",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-10-10"
+    },
+    {
+      "name": "reg",
+      "description": "",
+      "repository": "https://github.com/Loky-rt/Collection-BOF-Adaptix",
+      "source_file": "reg_bof.c",
+      "source_format": "directory_structure",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-10-10"
+    },
+    {
+      "name": "Collection-BOF-Adaptix",
+      "description": "",
+      "repository": "https://github.com/Loky-rt/Collection-BOF-Adaptix",
+      "source_file": "base.c",
+      "source_format": "directory_structure",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-10-10"
+    },
+    {
+      "name": "zip",
+      "description": "",
+      "repository": "https://github.com/Loky-rt/Collection-BOF-Adaptix",
+      "source_file": "zip.c",
+      "source_format": "directory_structure",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-10-10"
+    },
+    {
+      "name": "wifidump",
+      "description": "",
+      "repository": "https://github.com/Loky-rt/Collection-BOF-Adaptix",
+      "source_file": "wifidump.c",
+      "source_format": "directory_structure",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-10-10"
+    },
+    {
+      "name": "dnsacl",
+      "description": "Queries Active Directory DNS object permissions using the current Windows security",
+      "repository": "https://github.com/ADHDMurky/AdaptixBOFs",
+      "source_file": "dnsacl.c",
+      "source_format": "directory_structure",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-09-29"
+    },
+    {
+      "name": "dnsadd",
+      "description": "Creates a new IPv4 A record in an existing Active Directory DNS zone using the",
+      "repository": "https://github.com/ADHDMurky/AdaptixBOFs",
+      "source_file": "dnsadd.c",
+      "source_format": "directory_structure",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-09-29"
+    },
+    {
+      "name": "record-test",
+      "description": "",
+      "repository": "https://github.com/ADHDMurky/AdaptixBOFs",
+      "source_file": "record-test.c",
+      "source_format": "directory_structure",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-09-29"
     }
   ]
 }
