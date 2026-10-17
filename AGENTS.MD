@@ -6,13 +6,25 @@ Instructions for an LLM to discover and add new BOFs to the catalog.
 
 A GitHub Actions workflow runs weekly and creates an issue titled "Weekly BOF discovery report" with candidate repos. This is the main way new BOFs get added.
 
-### Step 1: Check the Latest Open Issues
+### Step 1: Check All Open Issues
 
 ```bash
-gh issue list --limit 2 --state open --json number,title,author,body,url,createdAt
+gh issue list --state open --limit 100 --json number,title,author,body,url,createdAt
 ```
 
-Look for issues titled "Weekly BOF discovery report" created by `app/github-actions`.
+Triage every open issue, not only the weekly report:
+
+- **Weekly BOF discovery report** issues created by `app/github-actions`.
+  Process all open ones, oldest first.
+- **Manual requests**, such as "Add https://github.com/owner/repo" from the
+  maintainer or a contributor. Evaluate the named repo with the same
+  criteria as a discovery candidate. If it also appears in a discovery
+  report, record the decision once and reference both issues.
+- **Other issues** (bug reports, removal requests, questions). Act on them
+  if the fix is clear and in scope. Otherwise, list them in the session
+  summary for the human and leave them open.
+
+Close every issue you handle in Step 6.
 
 ### Step 2: Evaluate Candidates
 
@@ -138,7 +150,7 @@ refresh" below, not by re-running `bof_indexer.py`, then push.
 
 ### Step 6: Close the Processed Issues
 
-After pushing, close each triaged issue with a structured summary comment containing two tables — one for added repos and one for skipped repos:
+After pushing, close each triaged issue, including manual requests, with a structured summary comment containing two tables — one for added repos and one for skipped repos:
 
 ```bash
 gh issue close NUMBER --comment "$(cat <<'EOF'
