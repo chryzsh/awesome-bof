@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "total_bofs": 2010,
-    "total_repos": 505,
-    "repos_parsed": 476,
+    "total_bofs": 2032,
+    "total_repos": 512,
+    "repos_parsed": 483,
     "format_stats": {
       "cna": 322,
-      "directory_structure": 505,
+      "directory_structure": 512,
       "readme_table": 41,
       "havoc_py": 37,
       "stage1_py": 16,
@@ -18102,6 +18102,204 @@
       "source_format": "directory_structure",
       "repository_stars": 62,
       "repository_last_updated": "2026-04-26"
+    },
+    {
+      "name": "rex",
+      "description": "Execute one registered remote-execution technique against one target",
+      "repository": "https://github.com/rubyattack3r/Rex-BOF",
+      "source_file": "rex.cna",
+      "source_format": "cna",
+      "repository_stars": 1,
+      "repository_last_updated": "2026-11-05"
+    },
+    {
+      "name": "phantompersist",
+      "description": "",
+      "repository": "https://github.com/Tw1sm/Misfit-BOFs",
+      "source_file": "phantompersist.x64.o",
+      "source_format": "directory_structure",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-10-30"
+    },
+    {
+      "name": "sessionhop",
+      "description": "",
+      "repository": "https://github.com/Tw1sm/Misfit-BOFs",
+      "source_file": "sessionhop.x64.o",
+      "source_format": "directory_structure",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-10-30"
+    },
+    {
+      "name": "ts-qwinsta",
+      "description": "",
+      "repository": "https://github.com/Tw1sm/Misfit-BOFs",
+      "source_file": "ts-qwinsta.x64.o",
+      "source_format": "directory_structure",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-10-30"
+    },
+    {
+      "name": "reboot",
+      "description": "",
+      "repository": "https://github.com/Tw1sm/Misfit-BOFs",
+      "source_file": "reboot.x64.o",
+      "source_format": "directory_structure",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-10-30"
+    },
+    {
+      "name": "dcsync",
+      "description": "",
+      "repository": "https://github.com/Tw1sm/Misfit-BOFs",
+      "source_file": "dcsync.x64.o",
+      "source_format": "directory_structure",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-10-30"
+    },
+    {
+      "name": "recentfiles",
+      "description": "",
+      "repository": "https://github.com/Tw1sm/Misfit-BOFs",
+      "source_file": "recentfiles.x64.o",
+      "source_format": "directory_structure",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-10-30"
+    },
+    {
+      "name": "ts-tasklist",
+      "description": "",
+      "repository": "https://github.com/Tw1sm/Misfit-BOFs",
+      "source_file": "ts-tasklist.x64.o",
+      "source_format": "directory_structure",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-10-30"
+    },
+    {
+      "name": "entry",
+      "description": "Registers the current executable for Windows Application Restart and installs an unload-safe shutdown handler implementing the Phantom Persistence technique. The handler replaces a normal shutdown, re",
+      "repository": "https://github.com/Tw1sm/Misfit-BOFs",
+      "source_file": "entry.c",
+      "source_format": "directory_structure",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-10-30"
+    },
+    {
+      "name": "ms-drsr",
+      "description": "",
+      "repository": "https://github.com/Tw1sm/Misfit-BOFs",
+      "source_file": "ms-drsr_c_x86.c",
+      "source_format": "directory_structure",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-10-30"
+    },
+    {
+      "name": "base",
+      "description": "",
+      "repository": "https://github.com/Tw1sm/Misfit-BOFs",
+      "source_file": "base.c",
+      "source_format": "directory_structure",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-10-30"
+    },
+    {
+      "name": "ms-tsts",
+      "description": "",
+      "repository": "https://github.com/Tw1sm/Misfit-BOFs",
+      "source_file": "ms-tsts_tspubrpc_c_x86.c",
+      "source_format": "directory_structure",
+      "repository_stars": 3,
+      "repository_last_updated": "2026-10-30"
+    },
+    {
+      "name": "ime-token",
+      "description": "mint the Intune enrollment token into beacon KV",
+      "repository": "https://github.com/an0x03e8/IMEclient-bof",
+      "source_file": "ime.cna",
+      "source_format": "cna",
+      "repository_stars": 4,
+      "repository_last_updated": "2026-10-20"
+    },
+    {
+      "name": "ime-auth",
+      "description": "store the enrollment token/IW url/device id as the imeCtx for the other ime-* commands",
+      "repository": "https://github.com/an0x03e8/IMEclient-bof",
+      "source_file": "ime.cna",
+      "source_format": "cna",
+      "repository_stars": 4,
+      "repository_last_updated": "2026-10-20"
+    },
+    {
+      "name": "ime-list",
+      "description": "list Intune self-service applications available to this user/device",
+      "repository": "https://github.com/an0x03e8/IMEclient-bof",
+      "source_file": "ime.cna",
+      "source_format": "cna",
+      "repository_stars": 4,
+      "repository_last_updated": "2026-10-20"
+    },
+    {
+      "name": "ime-install",
+      "description": "trigger install/uninstall of a catalogged app via Intune self-service",
+      "repository": "https://github.com/an0x03e8/IMEclient-bof",
+      "source_file": "ime.cna",
+      "source_format": "cna",
+      "repository_stars": 4,
+      "repository_last_updated": "2026-10-20"
+    },
+    {
+      "name": "ime-checkin",
+      "description": "trigger an Intune agent check-in over the native net.pipe channel",
+      "repository": "https://github.com/an0x03e8/IMEclient-bof",
+      "source_file": "ime.cna",
+      "source_format": "cna",
+      "repository_stars": 4,
+      "repository_last_updated": "2026-10-20"
+    },
+    {
+      "name": "SeDebugPrivilege",
+      "description": "Beacon Object File that enables `SeDebugPrivilege` on the current process token",
+      "repository": "https://github.com/retimax/SeDebugPrivilege-BOF",
+      "source_file": "SeDebugPrivilege.c",
+      "source_format": "directory_structure",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-10-24"
+    },
+    {
+      "name": "krbrelay",
+      "description": "Run one fresh COM activation and relay its machine Kerberos exchange",
+      "repository": "https://github.com/antroguy/KrbRelayBof",
+      "source_file": "krbrelay.cna",
+      "source_format": "cna",
+      "repository_stars": 2,
+      "repository_last_updated": "2026-11-04"
+    },
+    {
+      "name": "CabinetBOF",
+      "description": "",
+      "repository": "https://github.com/Hackcraft-Labs/CabinetBOF",
+      "source_file": "CabinetBOF.cna",
+      "source_format": "cna",
+      "repository_stars": 4,
+      "repository_last_updated": "2026-10-15"
+    },
+    {
+      "name": "list-wam-accounts",
+      "description": "Proof of concept BOF to interact with the WinRT WebAuthenticationCoreManager via COM and enumerate Azure AD/Entra ID accounts added to the current user's profile.",
+      "repository": "https://github.com/Tw1sm/list-wam-accounts",
+      "source_file": "base.c",
+      "source_format": "directory_structure",
+      "repository_stars": 26,
+      "repository_last_updated": "2025-12-11"
+    },
+    {
+      "name": "listwamaccounts",
+      "description": "",
+      "repository": "https://github.com/Tw1sm/list-wam-accounts",
+      "source_file": "listwamaccounts.x64.o",
+      "source_format": "directory_structure",
+      "repository_stars": 26,
+      "repository_last_updated": "2025-12-11"
     }
   ]
 }
